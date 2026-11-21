@@ -213,6 +213,29 @@ public class GamePanel extends JPanel {
         persist();
     }
 
+    private String getPlayerSpriteKey() {
+        boolean ch1Done = true;
+        boolean ch2Done = true;
+        for (Level lv : levels) {
+            for (Entity e : lv.entities) {
+                if (!save.completedEntities.contains(e.id)) {
+                    if (lv.id <= 50) {
+                        ch1Done = false;
+                    } else {
+                        ch2Done = false;
+                    }
+                }
+            }
+        }
+        if (ch2Done) {
+            return "sprites/player_crown_big";
+        }
+        if (ch1Done) {
+            return "sprites/player_crown_small";
+        }
+        return "sprites/player";
+    }
+
     private int countLevelDone() {
         int done = 0;
         for (Entity e : currentLevel.entities) {
@@ -478,7 +501,7 @@ public class GamePanel extends JPanel {
         float py = NativeEngine.nativeGetPlayerY();
         int pDrawX = Math.round(px - s * 0.5f);
         int pDrawY = Math.round(UIUtils.HUD_HEIGHT + py - s * 0.5f);
-        BufferedImage pImg = assets.getImage("sprites/player");
+        BufferedImage pImg = assets.getImage(getPlayerSpriteKey());
         if (pImg != null) {
             g.drawImage(pImg, pDrawX, pDrawY, s, s, null);
         }

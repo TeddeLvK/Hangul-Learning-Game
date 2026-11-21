@@ -67,6 +67,40 @@ public class MainMenuOverlay {
         return null;
     }
 
+    private String getPlayerSpriteKey() {
+        boolean ch1Done = true;
+        for (int lv = 1; lv <= 50; lv++) {
+            for (int e = 1; e <= 4; e++) {
+                if (!save.completedEntities.contains("l" + lv + "_e" + e)) {
+                    ch1Done = false;
+                    break;
+                }
+            }
+            if (!ch1Done) {
+                break;
+            }
+        }
+        boolean ch2Done = true;
+        for (int lv = 51; lv <= 79; lv++) {
+            for (int e = 1; e <= 5; e++) {
+                if (!save.completedEntities.contains("l" + lv + "_e" + e)) {
+                    ch2Done = false;
+                    break;
+                }
+            }
+            if (!ch2Done) {
+                break;
+            }
+        }
+        if (ch2Done) {
+            return "sprites/player_crown_big";
+        }
+        if (ch1Done) {
+            return "sprites/player_crown_small";
+        }
+        return "sprites/player";
+    }
+
     public void draw(Graphics2D g, Point mouse) {
         g.setColor(new Color(10, 14, 22, 215));
         g.fillRect(0, 0, UIUtils.SCREEN_WIDTH, UIUtils.SCREEN_HEIGHT);
@@ -83,7 +117,7 @@ public class MainMenuOverlay {
         g.setStroke(new BasicStroke(2.5f));
         g.drawRoundRect(panel.x, panel.y, panel.width, panel.height, 22, 22);
 
-        drawPixelSprite(g, "sprites/player", panel.x + 34, panel.y + 42, 64);
+        drawPixelSprite(g, getPlayerSpriteKey(), panel.x + 34, panel.y + 42, 64);
         drawPixelSprite(g, "sprites/npc_barista", panel.x + panel.width - 98, panel.y + 42, 64);
         drawPixelSprite(g, "objects/coffee", panel.x + 38, panel.y + panel.height - 96, 48);
         drawPixelSprite(g, "objects/bibimbap", panel.x + panel.width - 86, panel.y + panel.height - 96, 48);
