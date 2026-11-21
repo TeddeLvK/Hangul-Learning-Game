@@ -40,5 +40,35 @@ run: all
 clean:
 	rm -rf $(BUILD_DIR)
 
-run: all
-	java --enable-native-access=ALL-UNNAMED -Djava.library.path=$(BUILD_DIR) -cp $(CLASSES_DIR) com.koreangame.Main
+jar: java
+	@mkdir -p build/jar_stage/data
+	@cp -R build/classes/* build/jar_stage/
+	@cp -R Assets build/jar_stage/
+	@cp src/data/levels.txt src/data/glossary.txt build/jar_stage/data/
+	jar --create --file Hangeulmon.jar --main-class com.koreangame.Main -C build/jar_stage .
+
+icon:
+	@rm -rf build/Hangeulmon.iconset build/Hangeulmon.icns
+	@mkdir -p build/Hangeulmon.iconset
+	@sips -z 16 16     Assets/sprites/player_crown_big.png --out build/Hangeulmon.iconset/icon_16x16.png >/dev/null
+	@sips -z 32 32     Assets/sprites/player_crown_big.png --out build/Hangeulmon.iconset/icon_16x16@2x.png >/dev/null
+	@sips -z 32 32     Assets/sprites/player_crown_big.png --out build/Hangeulmon.iconset/icon_32x32.png >/dev/null
+	@sips -z 64 64     Assets/sprites/player_crown_big.png --out build/Hangeulmon.iconset/icon_32x32@2x.png >/dev/null
+	@sips -z 128 128   Assets/sprites/player_crown_big.png --out build/Hangeulmon.iconset/icon_128x128.png >/dev/null
+	@sips -z 256 256   Assets/sprites/player_crown_big.png --out build/Hangeulmon.iconset/icon_128x128@2x.png >/dev/null
+	@sips -z 256 256   Assets/sprites/player_crown_big.png --out build/Hangeulmon.iconset/icon_256x256.png >/dev/null
+	@sips -z 512 512   Assets/sprites/player_crown_big.png --out build/Hangeulmon.iconset/icon_256x256@2x.png >/dev/null
+	@sips -z 512 512   Assets/sprites/player_crown_big.png --out build/Hangeulmon.iconset/icon_512x512.png >/dev/null
+	@iconutil -c icns build/Hangeulmon.iconset -o build/Hangeulmon.icns
+
+app: jar icon
+	@rm -rf build/jpackage_in dist/Hangeulmon.app
+	@mkdir -p build/jpackage_in dist
+	@cp Hangeulmon.jar build/jpackage_in/
+	jpackage --type app-image --name Hangeulmon --app-version 1.0.0 --input build/jpackage_in --main-jar Hangeulmon.jar --main-class com.koreangame.Main --icon build/Hangeulmon.icns --dest dist --java-options "--enable-native-access=ALL-UNNAMED" --java-options "-Xdock:name=Hangeulmon"
+
+dmg: jar icon
+	@rm -rf build/jpackage_in dist/Hangeulmon-1.0.0.dmg
+	@mkdir -p build/jpackage_in dist
+	@cp Hangeulmon.jar build/jpackage_in/
+	jpackage --type dmg --name Hangeulmon --app-version 1.0.0 --input build/jpackage_in --main-jar Hangeulmon.jar --main-class com.koreangame.Main --icon build/Hangeulmon.icns --dest dist --java-options "--enable-native-access=ALL-UNNAMED" --java-options "-Xdock:name=Hangeulmon"

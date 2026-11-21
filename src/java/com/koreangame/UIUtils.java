@@ -55,12 +55,45 @@ public final class UIUtils {
             g.setStroke(new BasicStroke(2f));
             g.drawRoundRect(r.x, r.y, r.width, r.height, 14, 14);
         }
-        g.setFont(font);
-        g.setColor(textColor);
+
+        int maxW = Math.max(20, r.width - 18);
+        Font useFont = font;
+        g.setFont(useFont);
         FontMetrics fm = g.getFontMetrics();
-        int tx = r.x + (r.width - fm.stringWidth(label)) / 2;
-        int ty = r.y + (r.height - fm.getHeight()) / 2 + fm.getAscent();
-        g.drawString(label, tx, ty);
+
+        while (fm.stringWidth(label) > maxW && useFont.getSize() > 11) {
+            useFont = useFont.deriveFont((float) (useFont.getSize() - 1));
+            g.setFont(useFont);
+            fm = g.getFontMetrics();
+        }
+
+        g.setColor(textColor);
+        if (fm.stringWidth(label) <= maxW) {
+            int tx = r.x + (r.width - fm.stringWidth(label)) / 2;
+            int ty = r.y + (r.height - fm.getHeight()) / 2 + fm.getAscent();
+            g.drawString(label, tx, ty);
+        } else {
+            List<String> lines = wrapText(label, fm, maxW);
+            int lineCount = Math.min(2, lines.size());
+            int totalH = lineCount * fm.getHeight();
+            int startY = r.y + (r.height - totalH) / 2 + fm.getAscent();
+            for (int i = 0; i < lineCount; i++) {
+                String line = lines.get(i);
+                if ((i == 1 && lines.size() > 2) || fm.stringWidth(line) > maxW) {
+                    line = ellipsize(line, fm, maxW);
+                }
+                int tx = r.x + (r.width - fm.stringWidth(line)) / 2;
+                g.drawString(line, tx, startY + i * fm.getHeight());
+            }
+        }
+    }
+
+    private static String ellipsize(String s, FontMetrics fm, int maxW) {
+        String out = s;
+        while (out.length() > 1 && fm.stringWidth(out + "…") > maxW) {
+            out = out.substring(0, out.length() - 1);
+        }
+        return out + "…";
     }
 
     public static List<String> wrapText(String text, FontMetrics fm, int maxWidth) {

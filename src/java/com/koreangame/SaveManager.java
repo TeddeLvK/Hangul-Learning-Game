@@ -22,6 +22,8 @@ public class SaveManager {
     public boolean hasSavedPos = false;
     public final Set<String> completedEntities = new HashSet<>();
     public final Set<Integer> seenIntros = new HashSet<>();
+    public final Set<String> passedExams = new HashSet<>();
+    public final Set<String> unlockedAchievements = new HashSet<>();
 
     private final Path savePath;
 
@@ -31,17 +33,24 @@ public class SaveManager {
     }
 
     public static SaveManager[] loadAllSlots() {
-        Path legacy = Paths.get("save_data.txt");
-        Path slot1 = Paths.get("save_slot_1.txt");
-        if (Files.exists(legacy) && !Files.exists(slot1)) {
-            try {
-                Files.copy(legacy, slot1, StandardCopyOption.REPLACE_EXISTING);
-            } catch (IOException ignored) {
+        Path saveDir = Paths.get(System.getProperty("user.home"), ".hangeulmon");
+        try {
+            Files.createDirectories(saveDir);
+        } catch (IOException ignored) {
+        }
+        for (int i = 1; i <= 3; i++) {
+            Path localSlot = Paths.get("save_slot_" + i + ".txt");
+            Path homeSlot = saveDir.resolve("save_slot_" + i + ".txt");
+            if (Files.exists(localSlot) && !Files.exists(homeSlot)) {
+                try {
+                    Files.copy(localSlot, homeSlot, StandardCopyOption.REPLACE_EXISTING);
+                } catch (IOException ignored) {
+                }
             }
         }
         SaveManager[] slots = new SaveManager[3];
         for (int i = 0; i < 3; i++) {
-            slots[i] = new SaveManager(i + 1, Paths.get("save_slot_" + (i + 1) + ".txt"));
+            slots[i] = new SaveManager(i + 1, saveDir.resolve("save_slot_" + (i + 1) + ".txt"));
             slots[i].load();
         }
         return slots;
@@ -49,7 +58,7 @@ public class SaveManager {
 
     public boolean hasProgress() {
         return Files.exists(savePath)
-            && (xp > 0 || currentLevel > 1 || unlockedLevel > 1 || !completedEntities.isEmpty() || !seenIntros.isEmpty());
+            && (xp > 0 || currentLevel > 1 || unlockedLevel > 1 || !completedEntities.isEmpty() || !seenIntros.isEmpty() || !passedExams.isEmpty() || !unlockedAchievements.isEmpty());
     }
 
     public void reset() {
@@ -61,6 +70,8 @@ public class SaveManager {
         hasSavedPos = false;
         completedEntities.clear();
         seenIntros.clear();
+        passedExams.clear();
+        unlockedAchievements.clear();
         try {
             Files.deleteIfExists(savePath);
         } catch (IOException ignored) {
@@ -115,6 +126,24 @@ public class SaveManager {
                             }
                         }
                         break;
+                    case "passedExams":
+                        if (!v.isEmpty()) {
+                            for (String id : v.split(",")) {
+                                if (!id.isEmpty()) {
+                                    passedExams.add(id);
+                                }
+                            }
+                        }
+                        break;
+                    case "achievements":
+                        if (!v.isEmpty()) {
+                            for (String id : v.split(",")) {
+                                if (!id.isEmpty()) {
+                                    unlockedAchievements.add(id);
+                                }
+                            }
+                        }
+                        break;
                     default:
                         break;
                 }
@@ -142,6 +171,8 @@ public class SaveManager {
                 seenSb.append(id);
             }
             bw.write("seenIntros=" + seenSb + "\n");
+            bw.write("passedExams=" + String.join(",", new TreeSet<>(passedExams)) + "\n");
+            bw.write("achievements=" + String.join(",", new TreeSet<>(unlockedAchievements)) + "\n");
         } catch (IOException ignored) {
             return;
         }

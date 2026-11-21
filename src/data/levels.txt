@@ -1566,34 +1566,34 @@ MAP|KSSSSSSSAASSSSSSSK
 MAP|KNNNNK..AA..KNNNNK
 MAP|KSSSSS..XX..SSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l51_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l51_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|오늘 점심 뭐 먹을지 아직 못 정했어요!
 TASK|choice|Conjugate 가다 (to go) into Polite present (-아/어요):|가요;갑니다;가;간다|가요|가다 -> 가요 (polite present).
-TASK|fill|지금 ___. (Formal present (-(스)ㅂ니다)) [먹다 - to eat]|먹습니다;먹어요;먹어;먹는다|먹습니다|먹다 -> 먹습니다 (formal present).
+TASK|fill|퇴근하고 친구랑 지금 ___. (Formal present (-(스)ㅂ니다)) [먹다 - to eat]|먹습니다;먹어요;먹어;먹는다|먹습니다|먹다 -> 먹습니다 (formal present).
 TASK|build|Build (Casual present (-아/어)): 오늘 + 보다 (to see/watch)|오늘;봐|봐요;봅니다|보다 -> 봐 (casual present).
 TASK|choice|Conjugate 읽다 (to read) into Plain present (-는다/ㄴ다):|읽는다;읽어요;읽습니다;읽어|읽는다|읽다 -> 읽는다 (plain present).
-TASK|fill|서울에서 ___. (Polite present (-아/어요)) [듣다 - to listen (ㄷ-irreg)]|들어요;듣습니다;들어;듣는다|들어요|듣다 -> 들어요 (polite present).
-ENTITY|l51_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 서울에서 ___. (Polite present (-아/어요)) [듣다 - to listen (ㄷ-irreg)]|들어요;듣습니다;들어;듣는다|들어요|듣다 -> 들어요 (polite present).
+ENTITY|l51_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아, 커피 한 잔 마셔야 잠이 깰 것 같아요.
 TASK|build|Build (Formal present (-(스)ㅂ니다)): 지금 + 만들다 (to make (ㄹ-irreg))|지금;만듭니다|만들어요;만들어|만들다 -> 만듭니다 (formal present).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Casual present (-아/어):|써;써요;씁니다;쓴다|써|쓰다 -> 써 (casual present).
-TASK|fill|매일 ___. (Plain present (-는다/ㄴ다)) [가다 - to go]|간다;가요;갑니다;가|간다|가다 -> 간다 (plain present).
+TASK|fill|주말에 시간 나면 매일 ___. (Plain present (-는다/ㄴ다)) [가다 - to go]|간다;가요;갑니다;가|간다|가다 -> 간다 (plain present).
 TASK|build|Build (Polite present (-아/어요)): 서울에서 + 먹다 (to eat)|서울에서;먹어요|먹습니다;먹어|먹다 -> 먹어요 (polite present).
 TASK|choice|Conjugate 보다 (to see/watch) into Formal present (-(스)ㅂ니다):|봅니다;봐요;봐;본다|봅니다|보다 -> 봅니다 (formal present).
-ENTITY|l51_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|오늘 ___. (Casual present (-아/어)) [읽다 - to read]|읽어;읽어요;읽습니다;읽는다|읽어|읽다 -> 읽어 (casual present).
+ENTITY|l51_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|방금 지하철 간신히 탔어요, 휴!
+TASK|fill|아침에 일어나서 오늘 ___. (Casual present (-아/어)) [읽다 - to read]|읽어;읽어요;읽습니다;읽는다|읽어|읽다 -> 읽어 (casual present).
 TASK|build|Build (Plain present (-는다/ㄴ다)): 매일 + 듣다 (to listen (ㄷ-irreg))|매일;듣는다|들어요;듣습니다|듣다 -> 듣는다 (plain present).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Polite present (-아/어요):|만들어요;만듭니다;만들어;만든다|만들어요|만들다 -> 만들어요 (polite present).
-TASK|fill|지금 ___. (Formal present (-(스)ㅂ니다)) [쓰다 - to write (ㅡ-irreg)]|씁니다;써요;써;쓴다|씁니다|쓰다 -> 씁니다 (formal present).
+TASK|fill|카페에서 쉬면서 지금 ___. (Formal present (-(스)ㅂ니다)) [쓰다 - to write (ㅡ-irreg)]|씁니다;써요;써;쓴다|씁니다|쓰다 -> 씁니다 (formal present).
 TASK|build|Build (Casual present (-아/어)): 오늘 + 가다 (to go)|오늘;가|가요;갑니다|가다 -> 가 (casual present).
-ENTITY|l51_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l51_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|오늘 날씨 진짜 좋죠? 산책하기 딱이에요.
 TASK|choice|Conjugate 먹다 (to eat) into Plain present (-는다/ㄴ다):|먹는다;먹어요;먹습니다;먹어|먹는다|먹다 -> 먹는다 (plain present).
-TASK|fill|서울에서 ___. (Polite present (-아/어요)) [보다 - to see/watch]|봐요;봅니다;봐;본다|봐요|보다 -> 봐요 (polite present).
+TASK|fill|지하철 타고 가다가 서울에서 ___. (Polite present (-아/어요)) [보다 - to see/watch]|봐요;봅니다;봐;본다|봐요|보다 -> 봐요 (polite present).
 TASK|build|Build (Formal present (-(스)ㅂ니다)): 지금 + 읽다 (to read)|지금;읽습니다|읽어요;읽어|읽다 -> 읽습니다 (formal present).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Casual present (-아/어):|들어;들어요;듣습니다;듣는다|들어|듣다 -> 들어 (casual present).
-TASK|fill|매일 ___. (Plain present (-는다/ㄴ다)) [만들다 - to make (ㄹ-irreg)]|만든다;만들어요;만듭니다;만들어|만든다|만들다 -> 만든다 (plain present).
-ENTITY|l51_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 매일 ___. (Plain present (-는다/ㄴ다)) [만들다 - to make (ㄹ-irreg)]|만든다;만들어요;만듭니다;만들어|만든다|만들다 -> 만든다 (plain present).
+ENTITY|l51_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|퇴근하고 친구랑 저녁 먹기로 했어요!
 TASK|build|Build (Polite present (-아/어요)): 서울에서 + 쓰다 (to write (ㅡ-irreg))|서울에서;써요|씁니다;써|쓰다 -> 써요 (polite present).
 TASK|choice|Conjugate 가다 (to go) into Formal present (-(스)ㅂ니다):|갑니다;가요;가;간다|갑니다|가다 -> 갑니다 (formal present).
-TASK|fill|오늘 ___. (Casual present (-아/어)) [먹다 - to eat]|먹어;먹어요;먹습니다;먹는다|먹어|먹다 -> 먹어 (casual present).
+TASK|fill|약속 시간 전에 오늘 ___. (Casual present (-아/어)) [먹다 - to eat]|먹어;먹어요;먹습니다;먹는다|먹어|먹다 -> 먹어 (casual present).
 TASK|build|Build (Plain present (-는다/ㄴ다)): 매일 + 보다 (to see/watch)|매일;본다|봐요;봅니다|보다 -> 본다 (plain present).
 TASK|choice|Conjugate 읽다 (to read) into Polite present (-아/어요):|읽어요;읽습니다;읽어;읽는다|읽어요|읽다 -> 읽어요 (polite present).
 ENDLEVEL
@@ -1615,34 +1615,34 @@ MAP|KSSSSSSLLLLSSSSSSK
 MAP|KNNNNKSSLLSSKNNNNK
 MAP|KSSSSSSLLLLSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l52_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|서울 중심가에 오신 걸 환영해요!
+ENTITY|l52_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|어제 늦게 자서 오늘 좀 피곤하네요.
 TASK|choice|Conjugate 먹다 (to eat) into Polite past (-았/었어요):|먹었어요;먹었습니다;먹었어;먹었다|먹었어요|먹다 -> 먹었어요 (polite past).
-TASK|fill|어제 ___. (Formal past (-았/었습니다)) [보다 - to see/watch]|봤습니다;봤어요;봤어;봤다|봤습니다|보다 -> 봤습니다 (formal past).
+TASK|fill|퇴근하고 친구랑 어제 ___. (Formal past (-았/었습니다)) [보다 - to see/watch]|봤습니다;봤어요;봤어;봤다|봤습니다|보다 -> 봤습니다 (formal past).
 TASK|build|Build (Casual past (-았/었어)): 어제 + 읽다 (to read)|어제;읽었어|읽었어요;읽었습니다|읽다 -> 읽었어 (casual past).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Plain past (-았/었다):|들었다;들었어요;들었습니다;들었어|들었다|듣다 -> 들었다 (plain past).
-TASK|fill|어제 ___. (Polite past (-았/었어요)) [만들다 - to make (ㄹ-irreg)]|만들었어요;만들었습니다;만들었어;만들었다|만들었어요|만들다 -> 만들었어요 (polite past).
-ENTITY|l52_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 어제 ___. (Polite past (-았/었어요)) [만들다 - to make (ㄹ-irreg)]|만들었어요;만들었습니다;만들었어;만들었다|만들었어요|만들다 -> 만들었어요 (polite past).
+ENTITY|l52_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|주말에 뭐 할 계획 있어요?
 TASK|build|Build (Formal past (-았/었습니다)): 어제 + 쓰다 (to write (ㅡ-irreg))|어제;썼습니다|썼어요;썼어|쓰다 -> 썼습니다 (formal past).
 TASK|choice|Conjugate 가다 (to go) into Casual past (-았/었어):|갔어;갔어요;갔습니다;갔다|갔어|가다 -> 갔어 (casual past).
-TASK|fill|어제 ___. (Plain past (-았/었다)) [먹다 - to eat]|먹었다;먹었어요;먹었습니다;먹었어|먹었다|먹다 -> 먹었다 (plain past).
+TASK|fill|주말에 시간 나면 어제 ___. (Plain past (-았/었다)) [먹다 - to eat]|먹었다;먹었어요;먹었습니다;먹었어|먹었다|먹다 -> 먹었다 (plain past).
 TASK|build|Build (Polite past (-았/었어요)): 어제 + 보다 (to see/watch)|어제;봤어요|봤습니다;봤어|보다 -> 봤어요 (polite past).
 TASK|choice|Conjugate 읽다 (to read) into Formal past (-았/었습니다):|읽었습니다;읽었어요;읽었어;읽었다|읽었습니다|읽다 -> 읽었습니다 (formal past).
-ENTITY|l52_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|어제 ___. (Casual past (-았/었어)) [듣다 - to listen (ㄷ-irreg)]|들었어;들었어요;들었습니다;들었다|들었어|듣다 -> 들었어 (casual past).
+ENTITY|l52_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|여기 근처에 맛있는 카페 아세요?
+TASK|fill|아침에 일어나서 어제 ___. (Casual past (-았/었어)) [듣다 - to listen (ㄷ-irreg)]|들었어;들었어요;들었습니다;들었다|들었어|듣다 -> 들었어 (casual past).
 TASK|build|Build (Plain past (-았/었다)): 어제 + 만들다 (to make (ㄹ-irreg))|어제;만들었다|만들었어요;만들었습니다|만들다 -> 만들었다 (plain past).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Polite past (-았/었어요):|썼어요;썼습니다;썼어;썼다|썼어요|쓰다 -> 썼어요 (polite past).
-TASK|fill|어제 ___. (Formal past (-았/었습니다)) [가다 - to go]|갔습니다;갔어요;갔어;갔다|갔습니다|가다 -> 갔습니다 (formal past).
+TASK|fill|카페에서 쉬면서 어제 ___. (Formal past (-았/었습니다)) [가다 - to go]|갔습니다;갔어요;갔어;갔다|갔습니다|가다 -> 갔습니다 (formal past).
 TASK|build|Build (Casual past (-았/었어)): 어제 + 먹다 (to eat)|어제;먹었어|먹었어요;먹었습니다|먹다 -> 먹었어 (casual past).
-ENTITY|l52_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l52_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|잠깐 시간 있으면 같이 이야기할래요?
 TASK|choice|Conjugate 보다 (to see/watch) into Plain past (-았/었다):|봤다;봤어요;봤습니다;봤어|봤다|보다 -> 봤다 (plain past).
-TASK|fill|어제 ___. (Polite past (-았/었어요)) [읽다 - to read]|읽었어요;읽었습니다;읽었어;읽었다|읽었어요|읽다 -> 읽었어요 (polite past).
+TASK|fill|지하철 타고 가다가 어제 ___. (Polite past (-았/었어요)) [읽다 - to read]|읽었어요;읽었습니다;읽었어;읽었다|읽었어요|읽다 -> 읽었어요 (polite past).
 TASK|build|Build (Formal past (-았/었습니다)): 어제 + 듣다 (to listen (ㄷ-irreg))|어제;들었습니다|들었어요;들었어|듣다 -> 들었습니다 (formal past).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Casual past (-았/었어):|만들었어;만들었어요;만들었습니다;만들었다|만들었어|만들다 -> 만들었어 (casual past).
-TASK|fill|어제 ___. (Plain past (-았/었다)) [쓰다 - to write (ㅡ-irreg)]|썼다;썼어요;썼습니다;썼어|썼다|쓰다 -> 썼다 (plain past).
-ENTITY|l52_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 어제 ___. (Plain past (-았/었다)) [쓰다 - to write (ㅡ-irreg)]|썼다;썼어요;썼습니다;썼어|썼다|쓰다 -> 썼다 (plain past).
+ENTITY|l52_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|요즘 한국어 공부 진짜 열심히 하시네요!
 TASK|build|Build (Polite past (-았/었어요)): 어제 + 가다 (to go)|어제;갔어요|갔습니다;갔어|가다 -> 갔어요 (polite past).
 TASK|choice|Conjugate 먹다 (to eat) into Formal past (-았/었습니다):|먹었습니다;먹었어요;먹었어;먹었다|먹었습니다|먹다 -> 먹었습니다 (formal past).
-TASK|fill|어제 ___. (Casual past (-았/었어)) [보다 - to see/watch]|봤어;봤어요;봤습니다;봤다|봤어|보다 -> 봤어 (casual past).
+TASK|fill|약속 시간 전에 어제 ___. (Casual past (-았/었어)) [보다 - to see/watch]|봤어;봤어요;봤습니다;봤다|봤어|보다 -> 봤어 (casual past).
 TASK|build|Build (Plain past (-았/었다)): 어제 + 읽다 (to read)|어제;읽었다|읽었어요;읽었습니다|읽다 -> 읽었다 (plain past).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Polite past (-았/었어요):|들었어요;들었습니다;들었어;들었다|들었어요|듣다 -> 들었어요 (polite past).
 ENDLEVEL
@@ -1664,34 +1664,34 @@ MAP|KSSLLSS.TT.SSLLSSK
 MAP|KNNNNSSSSSSSSNNNNK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l53_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l53_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|배고픈데 떡볶이 먹고 싶어요!
 TASK|choice|Conjugate 보다 (to see/watch) into Polite future (-(으)ㄹ 거예요):|볼 거예요;볼 겁니다;볼게요;봤어요|볼 거예요|보다 -> 볼 거예요 (polite future).
-TASK|fill|내일 ___. (Formal future (-(으)ㄹ 겁니다)) [읽다 - to read]|읽을 겁니다;읽을 거예요;읽을게요;읽었습니다|읽을 겁니다|읽다 -> 읽을 겁니다 (formal future).
+TASK|fill|퇴근하고 친구랑 내일 ___. (Formal future (-(으)ㄹ 겁니다)) [읽다 - to read]|읽을 겁니다;읽을 거예요;읽을게요;읽었습니다|읽을 겁니다|읽다 -> 읽을 겁니다 (formal future).
 TASK|build|Build (Promise/intention (-(으)ㄹ게요)): 제가 + 듣다 (to listen (ㄷ-irreg))|제가;들을게요|들을 거예요;들을 겁니다|듣다 -> 들을게요 (promise/intention).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Polite conjecture (-겠어요):|만들다;만들어요;만들었어요;만들 거예요|만들다|만들다 stem + 겠어요 expresses conjecture.
-TASK|fill|내일 ___. (Polite future (-(으)ㄹ 거예요)) [쓰다 - to write (ㅡ-irreg)]|쓸 거예요;쓸 겁니다;쓸게요;썼어요|쓸 거예요|쓰다 -> 쓸 거예요 (polite future).
-ENTITY|l53_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 내일 ___. (Polite future (-(으)ㄹ 거예요)) [쓰다 - to write (ㅡ-irreg)]|쓸 거예요;쓸 겁니다;쓸게요;썼어요|쓸 거예요|쓰다 -> 쓸 거예요 (polite future).
+ENTITY|l53_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|우산 챙기셨어요? 오후에 비 올 수도 있대요.
 TASK|build|Build (Formal future (-(으)ㄹ 겁니다)): 내일 + 가다 (to go)|내일;갈;겁니다|갈 거예요;갈게요|가다 -> 갈 겁니다 (formal future).
 TASK|choice|Conjugate 먹다 (to eat) into Promise/intention (-(으)ㄹ게요):|먹을게요;먹을 거예요;먹을 겁니다;먹어요|먹을게요|먹다 -> 먹을게요 (promise/intention).
-TASK|fill|아마 ___. (Polite conjecture (-겠어요)) [보다 - to see/watch]|보다;봐요;봤어요;볼 거예요|보다|보다 stem + 겠어요 expresses conjecture.
+TASK|fill|주말에 시간 나면 아마 ___. (Polite conjecture (-겠어요)) [보다 - to see/watch]|보다;봐요;봤어요;볼 거예요|보다|보다 stem + 겠어요 expresses conjecture.
 TASK|build|Build (Polite future (-(으)ㄹ 거예요)): 내일 + 읽다 (to read)|내일;읽을;거예요|읽을 겁니다;읽을게요|읽다 -> 읽을 거예요 (polite future).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Formal future (-(으)ㄹ 겁니다):|들을 겁니다;들을 거예요;들을게요;들었습니다|들을 겁니다|듣다 -> 들을 겁니다 (formal future).
-ENTITY|l53_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|제가 ___. (Promise/intention (-(으)ㄹ게요)) [만들다 - to make (ㄹ-irreg)]|만들게요;만들 거예요;만들 겁니다;만들어요|만들게요|만들다 -> 만들게요 (promise/intention).
+ENTITY|l53_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|강남역은 언제 와도 사람이 많네요!
+TASK|fill|아침에 일어나서 제가 ___. (Promise/intention (-(으)ㄹ게요)) [만들다 - to make (ㄹ-irreg)]|만들게요;만들 거예요;만들 겁니다;만들어요|만들게요|만들다 -> 만들게요 (promise/intention).
 TASK|build|Build (Polite conjecture (-겠어요)): 아마 + 쓰다 (to write (ㅡ-irreg))|아마;쓰다|써요;썼어요|쓰다 stem + 겠어요 expresses conjecture.
 TASK|choice|Conjugate 가다 (to go) into Polite future (-(으)ㄹ 거예요):|갈 거예요;갈 겁니다;갈게요;갔어요|갈 거예요|가다 -> 갈 거예요 (polite future).
-TASK|fill|내일 ___. (Formal future (-(으)ㄹ 겁니다)) [먹다 - to eat]|먹을 겁니다;먹을 거예요;먹을게요;먹었습니다|먹을 겁니다|먹다 -> 먹을 겁니다 (formal future).
+TASK|fill|카페에서 쉬면서 내일 ___. (Formal future (-(으)ㄹ 겁니다)) [먹다 - to eat]|먹을 겁니다;먹을 거예요;먹을게요;먹었습니다|먹을 겁니다|먹다 -> 먹을 겁니다 (formal future).
 TASK|build|Build (Promise/intention (-(으)ㄹ게요)): 제가 + 보다 (to see/watch)|제가;볼게요|볼 거예요;볼 겁니다|보다 -> 볼게요 (promise/intention).
-ENTITY|l53_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l53_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|오늘 일찍 끝나면 영화 보러 갈 거예요.
 TASK|choice|Conjugate 읽다 (to read) into Polite conjecture (-겠어요):|읽다;읽어요;읽었어요;읽을 거예요|읽다|읽다 stem + 겠어요 expresses conjecture.
-TASK|fill|내일 ___. (Polite future (-(으)ㄹ 거예요)) [듣다 - to listen (ㄷ-irreg)]|들을 거예요;들을 겁니다;들을게요;들었어요|들을 거예요|듣다 -> 들을 거예요 (polite future).
+TASK|fill|지하철 타고 가다가 내일 ___. (Polite future (-(으)ㄹ 거예요)) [듣다 - to listen (ㄷ-irreg)]|들을 거예요;들을 겁니다;들을게요;들었어요|들을 거예요|듣다 -> 들을 거예요 (polite future).
 TASK|build|Build (Formal future (-(으)ㄹ 겁니다)): 내일 + 만들다 (to make (ㄹ-irreg))|내일;만들;겁니다|만들 거예요;만들게요|만들다 -> 만들 겁니다 (formal future).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Promise/intention (-(으)ㄹ게요):|쓸게요;쓸 거예요;쓸 겁니다;써요|쓸게요|쓰다 -> 쓸게요 (promise/intention).
-TASK|fill|아마 ___. (Polite conjecture (-겠어요)) [가다 - to go]|가다;가요;갔어요;갈 거예요|가다|가다 stem + 겠어요 expresses conjecture.
-ENTITY|l53_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 아마 ___. (Polite conjecture (-겠어요)) [가다 - to go]|가다;가요;갔어요;갈 거예요|가다|가다 stem + 겠어요 expresses conjecture.
+ENTITY|l53_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|편의점에서 삼각김밥 하나 사 왔어요.
 TASK|build|Build (Polite future (-(으)ㄹ 거예요)): 내일 + 먹다 (to eat)|내일;먹을;거예요|먹을 겁니다;먹을게요|먹다 -> 먹을 거예요 (polite future).
 TASK|choice|Conjugate 보다 (to see/watch) into Formal future (-(으)ㄹ 겁니다):|볼 겁니다;볼 거예요;볼게요;봤습니다|볼 겁니다|보다 -> 볼 겁니다 (formal future).
-TASK|fill|제가 ___. (Promise/intention (-(으)ㄹ게요)) [읽다 - to read]|읽을게요;읽을 거예요;읽을 겁니다;읽어요|읽을게요|읽다 -> 읽을게요 (promise/intention).
+TASK|fill|약속 시간 전에 제가 ___. (Promise/intention (-(으)ㄹ게요)) [읽다 - to read]|읽을게요;읽을 거예요;읽을 겁니다;읽어요|읽을게요|읽다 -> 읽을게요 (promise/intention).
 TASK|build|Build (Polite conjecture (-겠어요)): 아마 + 듣다 (to listen (ㄷ-irreg))|아마;듣다|들어요;들었어요|듣다 stem + 겠어요 expresses conjecture.
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Polite future (-(으)ㄹ 거예요):|만들 거예요;만들 겁니다;만들게요;만들었어요|만들 거예요|만들다 -> 만들 거예요 (polite future).
 ENDLEVEL
@@ -1713,34 +1713,34 @@ MAP|KNNNK.SSLLSS.KNNNK
 MAP|KSSSSSSSLLSSSSSSSK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l54_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|서울 중심가에 오신 걸 환영해요!
+ENTITY|l54_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|방금 버스 놓쳐서 다음 차 기다리는 중이에요.
 TASK|choice|Conjugate 읽다 (to read) into Progressive (-고 있다):|읽고 있어요;읽어 있어요;읽게 됐어요;읽어요|읽고 있어요|읽다 -> 읽고 있어요 (action in progress).
-TASK|fill|여기에 ___. (Resultative state (-아/어 있다)) [듣다 - to listen (ㄷ-irreg)]|들어 있어요;듣고 있어요;듣게 됐어요;들었어요|들어 있어요|듣다 -> 들어 있어요 (resulting state).
+TASK|fill|퇴근하고 친구랑 여기에 ___. (Resultative state (-아/어 있다)) [듣다 - to listen (ㄷ-irreg)]|들어 있어요;듣고 있어요;듣게 됐어요;들었어요|들어 있어요|듣다 -> 들어 있어요 (resulting state).
 TASK|build|Build (Gradual progress forward (-아/어 가다)): 점점 + 만들다 (to make (ㄹ-irreg))|점점;만들어;가요|만들어 왔어요;만들고 있어요|만들다 -> 만들어 가요 (gradual progress forward).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Progress to present (-아/어 오다):|써 왔어요;써 가요;쓰고 있어요;쓰게 됐어요|써 왔어요|쓰다 -> 써 왔어요 (progress up to present).
-TASK|fill|결국 ___. (Come to / Get to (-게 되다)) [가다 - to go]|가게 됐어요;가고 있어요;가 있어요;갔어요|가게 됐어요|가다 -> 가게 됐어요 (came to / got to).
-ENTITY|l54_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 결국 ___. (Come to / Get to (-게 되다)) [가다 - to go]|가게 됐어요;가고 있어요;가 있어요;갔어요|가게 됐어요|가다 -> 가게 됐어요 (came to / got to).
+ENTITY|l54_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|이 동네 골목에 숨은 맛집이 진짜 많아요.
 TASK|build|Build (Progressive (-고 있다)): 지금 + 먹다 (to eat)|지금;먹고;있어요|먹어 있어요;먹게 됐어요|먹다 -> 먹고 있어요 (action in progress).
 TASK|choice|Conjugate 보다 (to see/watch) into Resultative state (-아/어 있다):|봐 있어요;보고 있어요;보게 됐어요;봤어요|봐 있어요|보다 -> 봐 있어요 (resulting state).
-TASK|fill|점점 ___. (Gradual progress forward (-아/어 가다)) [읽다 - to read]|읽어 가요;읽어 왔어요;읽고 있어요;읽게 됐어요|읽어 가요|읽다 -> 읽어 가요 (gradual progress forward).
+TASK|fill|주말에 시간 나면 점점 ___. (Gradual progress forward (-아/어 가다)) [읽다 - to read]|읽어 가요;읽어 왔어요;읽고 있어요;읽게 됐어요|읽어 가요|읽다 -> 읽어 가요 (gradual progress forward).
 TASK|build|Build (Progress to present (-아/어 오다)): 계속 + 듣다 (to listen (ㄷ-irreg))|계속;들어;왔어요|들어 가요;듣고 있어요|듣다 -> 들어 왔어요 (progress up to present).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Come to / Get to (-게 되다):|만들게 됐어요;만들고 있어요;만들어 있어요;만들었어요|만들게 됐어요|만들다 -> 만들게 됐어요 (came to / got to).
-ENTITY|l54_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|지금 ___. (Progressive (-고 있다)) [쓰다 - to write (ㅡ-irreg)]|쓰고 있어요;써 있어요;쓰게 됐어요;써요|쓰고 있어요|쓰다 -> 쓰고 있어요 (action in progress).
+ENTITY|l54_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|시험 끝나면 푹 쉬고 싶어요!
+TASK|fill|아침에 일어나서 지금 ___. (Progressive (-고 있다)) [쓰다 - to write (ㅡ-irreg)]|쓰고 있어요;써 있어요;쓰게 됐어요;써요|쓰고 있어요|쓰다 -> 쓰고 있어요 (action in progress).
 TASK|build|Build (Resultative state (-아/어 있다)): 여기에 + 가다 (to go)|여기에;가;있어요|가고 있어요;가게 됐어요|가다 -> 가 있어요 (resulting state).
 TASK|choice|Conjugate 먹다 (to eat) into Gradual progress forward (-아/어 가다):|먹어 가요;먹어 왔어요;먹고 있어요;먹게 됐어요|먹어 가요|먹다 -> 먹어 가요 (gradual progress forward).
-TASK|fill|계속 ___. (Progress to present (-아/어 오다)) [보다 - to see/watch]|봐 왔어요;봐 가요;보고 있어요;보게 됐어요|봐 왔어요|보다 -> 봐 왔어요 (progress up to present).
+TASK|fill|카페에서 쉬면서 계속 ___. (Progress to present (-아/어 오다)) [보다 - to see/watch]|봐 왔어요;봐 가요;보고 있어요;보게 됐어요|봐 왔어요|보다 -> 봐 왔어요 (progress up to present).
 TASK|build|Build (Come to / Get to (-게 되다)): 결국 + 읽다 (to read)|결국;읽게;됐어요|읽고 있어요;읽어 있어요|읽다 -> 읽게 됐어요 (came to / got to).
-ENTITY|l54_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l54_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|커피 아이스로 드릴까요, 따뜻하게 드릴까요?
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Progressive (-고 있다):|듣고 있어요;들어 있어요;듣게 됐어요;들어요|듣고 있어요|듣다 -> 듣고 있어요 (action in progress).
-TASK|fill|여기에 ___. (Resultative state (-아/어 있다)) [만들다 - to make (ㄹ-irreg)]|만들어 있어요;만들고 있어요;만들게 됐어요;만들었어요|만들어 있어요|만들다 -> 만들어 있어요 (resulting state).
+TASK|fill|지하철 타고 가다가 여기에 ___. (Resultative state (-아/어 있다)) [만들다 - to make (ㄹ-irreg)]|만들어 있어요;만들고 있어요;만들게 됐어요;만들었어요|만들어 있어요|만들다 -> 만들어 있어요 (resulting state).
 TASK|build|Build (Gradual progress forward (-아/어 가다)): 점점 + 쓰다 (to write (ㅡ-irreg))|점점;써;가요|써 왔어요;쓰고 있어요|쓰다 -> 써 가요 (gradual progress forward).
 TASK|choice|Conjugate 가다 (to go) into Progress to present (-아/어 오다):|가 왔어요;가 가요;가고 있어요;가게 됐어요|가 왔어요|가다 -> 가 왔어요 (progress up to present).
-TASK|fill|결국 ___. (Come to / Get to (-게 되다)) [먹다 - to eat]|먹게 됐어요;먹고 있어요;먹어 있어요;먹었어요|먹게 됐어요|먹다 -> 먹게 됐어요 (came to / got to).
-ENTITY|l54_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 결국 ___. (Come to / Get to (-게 되다)) [먹다 - to eat]|먹게 됐어요;먹고 있어요;먹어 있어요;먹었어요|먹게 됐어요|먹다 -> 먹게 됐어요 (came to / got to).
+ENTITY|l54_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|오랜만이에요! 요즘 어떻게 지내요?
 TASK|build|Build (Progressive (-고 있다)): 지금 + 보다 (to see/watch)|지금;보고;있어요|봐 있어요;보게 됐어요|보다 -> 보고 있어요 (action in progress).
 TASK|choice|Conjugate 읽다 (to read) into Resultative state (-아/어 있다):|읽어 있어요;읽고 있어요;읽게 됐어요;읽었어요|읽어 있어요|읽다 -> 읽어 있어요 (resulting state).
-TASK|fill|점점 ___. (Gradual progress forward (-아/어 가다)) [듣다 - to listen (ㄷ-irreg)]|들어 가요;들어 왔어요;듣고 있어요;듣게 됐어요|들어 가요|듣다 -> 들어 가요 (gradual progress forward).
+TASK|fill|약속 시간 전에 점점 ___. (Gradual progress forward (-아/어 가다)) [듣다 - to listen (ㄷ-irreg)]|들어 가요;들어 왔어요;듣고 있어요;듣게 됐어요|들어 가요|듣다 -> 들어 가요 (gradual progress forward).
 TASK|build|Build (Progress to present (-아/어 오다)): 계속 + 만들다 (to make (ㄹ-irreg))|계속;만들어;왔어요|만들어 가요;만들고 있어요|만들다 -> 만들어 왔어요 (progress up to present).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Come to / Get to (-게 되다):|쓰게 됐어요;쓰고 있어요;써 있어요;썼어요|쓰게 됐어요|쓰다 -> 쓰게 됐어요 (came to / got to).
 ENDLEVEL
@@ -1762,34 +1762,34 @@ MAP|KSSSSSSSAASSSSSSSK
 MAP|KNNNNK..AA..KNNNNK
 MAP|KSSSSS..XX..SSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l55_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l55_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|오늘 점심 뭐 먹을지 아직 못 정했어요!
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into After/Because (-아/어서):|들어서;듣자마자;듣기 전에;들은 후에|들어서|듣다 -> 들어서 (after/because).
-TASK|fill|먼저 ___. (After (-(으)ㄴ 후에)) [만들다 - to make (ㄹ-irreg)]|만든 후에;만들기 전에;만들자마자;만들어서|만든 후에|만들다 -> 만든 후에 (after doing).
+TASK|fill|퇴근하고 친구랑 먼저 ___. (After (-(으)ㄴ 후에)) [만들다 - to make (ㄹ-irreg)]|만든 후에;만들기 전에;만들자마자;만들어서|만든 후에|만들다 -> 만든 후에 (after doing).
 TASK|build|Build (Before (-기 전에)): 출발 + 쓰다 (to write (ㅡ-irreg))|출발;쓰기;전에|쓴 후에;쓰자마자|쓰다 -> 쓰기 전에 (before doing).
 TASK|choice|Conjugate 가다 (to go) into As soon as (-자마자):|가자마자;가서;가기 전에;간 후에|가자마자|가다 -> 가자마자 (as soon as).
-TASK|fill|먼저 ___. (After/Because (-아/어서)) [먹다 - to eat]|먹어서;먹자마자;먹기 전에;먹은 후에|먹어서|먹다 -> 먹어서 (after/because).
-ENTITY|l55_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 먼저 ___. (After/Because (-아/어서)) [먹다 - to eat]|먹어서;먹자마자;먹기 전에;먹은 후에|먹어서|먹다 -> 먹어서 (after/because).
+ENTITY|l55_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아, 커피 한 잔 마셔야 잠이 깰 것 같아요.
 TASK|build|Build (After (-(으)ㄴ 후에)): 먼저 + 보다 (to see/watch)|먼저;본;후에|보기 전에;보자마자|보다 -> 본 후에 (after doing).
 TASK|choice|Conjugate 읽다 (to read) into Before (-기 전에):|읽기 전에;읽은 후에;읽자마자;읽어서|읽기 전에|읽다 -> 읽기 전에 (before doing).
-TASK|fill|도착 ___. (As soon as (-자마자)) [듣다 - to listen (ㄷ-irreg)]|듣자마자;들어서;듣기 전에;들은 후에|듣자마자|듣다 -> 듣자마자 (as soon as).
+TASK|fill|주말에 시간 나면 도착 ___. (As soon as (-자마자)) [듣다 - to listen (ㄷ-irreg)]|듣자마자;들어서;듣기 전에;들은 후에|듣자마자|듣다 -> 듣자마자 (as soon as).
 TASK|build|Build (After/Because (-아/어서)): 먼저 + 만들다 (to make (ㄹ-irreg))|먼저;만들어서|만들자마자;만들기 전에|만들다 -> 만들어서 (after/because).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into After (-(으)ㄴ 후에):|쓴 후에;쓰기 전에;쓰자마자;써서|쓴 후에|쓰다 -> 쓴 후에 (after doing).
-ENTITY|l55_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|출발 ___. (Before (-기 전에)) [가다 - to go]|가기 전에;간 후에;가자마자;가서|가기 전에|가다 -> 가기 전에 (before doing).
+ENTITY|l55_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|방금 지하철 간신히 탔어요, 휴!
+TASK|fill|아침에 일어나서 출발 ___. (Before (-기 전에)) [가다 - to go]|가기 전에;간 후에;가자마자;가서|가기 전에|가다 -> 가기 전에 (before doing).
 TASK|build|Build (As soon as (-자마자)): 도착 + 먹다 (to eat)|도착;먹자마자|먹어서;먹기 전에|먹다 -> 먹자마자 (as soon as).
 TASK|choice|Conjugate 보다 (to see/watch) into After/Because (-아/어서):|봐서;보자마자;보기 전에;본 후에|봐서|보다 -> 봐서 (after/because).
-TASK|fill|먼저 ___. (After (-(으)ㄴ 후에)) [읽다 - to read]|읽은 후에;읽기 전에;읽자마자;읽어서|읽은 후에|읽다 -> 읽은 후에 (after doing).
+TASK|fill|카페에서 쉬면서 먼저 ___. (After (-(으)ㄴ 후에)) [읽다 - to read]|읽은 후에;읽기 전에;읽자마자;읽어서|읽은 후에|읽다 -> 읽은 후에 (after doing).
 TASK|build|Build (Before (-기 전에)): 출발 + 듣다 (to listen (ㄷ-irreg))|출발;듣기;전에|들은 후에;듣자마자|듣다 -> 듣기 전에 (before doing).
-ENTITY|l55_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l55_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|오늘 날씨 진짜 좋죠? 산책하기 딱이에요.
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into As soon as (-자마자):|만들자마자;만들어서;만들기 전에;만든 후에|만들자마자|만들다 -> 만들자마자 (as soon as).
-TASK|fill|먼저 ___. (After/Because (-아/어서)) [쓰다 - to write (ㅡ-irreg)]|써서;쓰자마자;쓰기 전에;쓴 후에|써서|쓰다 -> 써서 (after/because).
+TASK|fill|지하철 타고 가다가 먼저 ___. (After/Because (-아/어서)) [쓰다 - to write (ㅡ-irreg)]|써서;쓰자마자;쓰기 전에;쓴 후에|써서|쓰다 -> 써서 (after/because).
 TASK|build|Build (After (-(으)ㄴ 후에)): 먼저 + 가다 (to go)|먼저;간;후에|가기 전에;가자마자|가다 -> 간 후에 (after doing).
 TASK|choice|Conjugate 먹다 (to eat) into Before (-기 전에):|먹기 전에;먹은 후에;먹자마자;먹어서|먹기 전에|먹다 -> 먹기 전에 (before doing).
-TASK|fill|도착 ___. (As soon as (-자마자)) [보다 - to see/watch]|보자마자;봐서;보기 전에;본 후에|보자마자|보다 -> 보자마자 (as soon as).
-ENTITY|l55_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 도착 ___. (As soon as (-자마자)) [보다 - to see/watch]|보자마자;봐서;보기 전에;본 후에|보자마자|보다 -> 보자마자 (as soon as).
+ENTITY|l55_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|퇴근하고 친구랑 저녁 먹기로 했어요!
 TASK|build|Build (After/Because (-아/어서)): 먼저 + 읽다 (to read)|먼저;읽어서|읽자마자;읽기 전에|읽다 -> 읽어서 (after/because).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into After (-(으)ㄴ 후에):|들은 후에;듣기 전에;듣자마자;들어서|들은 후에|듣다 -> 들은 후에 (after doing).
-TASK|fill|출발 ___. (Before (-기 전에)) [만들다 - to make (ㄹ-irreg)]|만들기 전에;만든 후에;만들자마자;만들어서|만들기 전에|만들다 -> 만들기 전에 (before doing).
+TASK|fill|약속 시간 전에 출발 ___. (Before (-기 전에)) [만들다 - to make (ㄹ-irreg)]|만들기 전에;만든 후에;만들자마자;만들어서|만들기 전에|만들다 -> 만들기 전에 (before doing).
 TASK|build|Build (As soon as (-자마자)): 도착 + 쓰다 (to write (ㅡ-irreg))|도착;쓰자마자|써서;쓰기 전에|쓰다 -> 쓰자마자 (as soon as).
 TASK|choice|Conjugate 가다 (to go) into After/Because (-아/어서):|가서;가자마자;가기 전에;간 후에|가서|가다 -> 가서 (after/because).
 ENDLEVEL
@@ -1811,34 +1811,34 @@ MAP|KSSSSSSLLLLSSSSSSK
 MAP|KNNNNKSSLLSSKNNNNK
 MAP|KSSSSSSLLLLSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l56_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|서울 중심가에 오신 걸 환영해요!
+ENTITY|l56_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|어제 늦게 자서 오늘 좀 피곤하네요.
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Simultaneous 'while' (-(으)면서):|만들면서;만들다가;만들어서;만들지만|만들면서|만들다 -> 만들면서 (simultaneous action).
-TASK|fill|방금 ___. (Shift/interruption (-다가)) [쓰다 - to write (ㅡ-irreg)]|쓰다가;쓰면서;써서;쓰지만|쓰다가|쓰다 -> 쓰다가 (while doing, then...).
+TASK|fill|퇴근하고 친구랑 방금 ___. (Shift/interruption (-다가)) [쓰다 - to write (ㅡ-irreg)]|쓰다가;쓰면서;써서;쓰지만|쓰다가|쓰다 -> 쓰다가 (while doing, then...).
 TASK|build|Build (Simultaneous 'while' (-(으)면서)): 함께 + 가다 (to go)|함께;가면서|가다가;가서|가다 -> 가면서 (simultaneous action).
 TASK|choice|Conjugate 먹다 (to eat) into Shift/interruption (-다가):|먹다가;먹으면서;먹어서;먹지만|먹다가|먹다 -> 먹다가 (while doing, then...).
-TASK|fill|함께 ___. (Simultaneous 'while' (-(으)면서)) [보다 - to see/watch]|보면서;보다가;봐서;보지만|보면서|보다 -> 보면서 (simultaneous action).
-ENTITY|l56_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 함께 ___. (Simultaneous 'while' (-(으)면서)) [보다 - to see/watch]|보면서;보다가;봐서;보지만|보면서|보다 -> 보면서 (simultaneous action).
+ENTITY|l56_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|주말에 뭐 할 계획 있어요?
 TASK|build|Build (Shift/interruption (-다가)): 방금 + 읽다 (to read)|방금;읽다가|읽으면서;읽어서|읽다 -> 읽다가 (while doing, then...).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Simultaneous 'while' (-(으)면서):|들으면서;듣다가;들어서;듣지만|들으면서|듣다 -> 들으면서 (simultaneous action).
-TASK|fill|방금 ___. (Shift/interruption (-다가)) [만들다 - to make (ㄹ-irreg)]|만들다가;만들면서;만들어서;만들지만|만들다가|만들다 -> 만들다가 (while doing, then...).
+TASK|fill|주말에 시간 나면 방금 ___. (Shift/interruption (-다가)) [만들다 - to make (ㄹ-irreg)]|만들다가;만들면서;만들어서;만들지만|만들다가|만들다 -> 만들다가 (while doing, then...).
 TASK|build|Build (Simultaneous 'while' (-(으)면서)): 함께 + 쓰다 (to write (ㅡ-irreg))|함께;쓰면서|쓰다가;써서|쓰다 -> 쓰면서 (simultaneous action).
 TASK|choice|Conjugate 가다 (to go) into Shift/interruption (-다가):|가다가;가면서;가서;가지만|가다가|가다 -> 가다가 (while doing, then...).
-ENTITY|l56_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|함께 ___. (Simultaneous 'while' (-(으)면서)) [먹다 - to eat]|먹으면서;먹다가;먹어서;먹지만|먹으면서|먹다 -> 먹으면서 (simultaneous action).
+ENTITY|l56_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|여기 근처에 맛있는 카페 아세요?
+TASK|fill|아침에 일어나서 함께 ___. (Simultaneous 'while' (-(으)면서)) [먹다 - to eat]|먹으면서;먹다가;먹어서;먹지만|먹으면서|먹다 -> 먹으면서 (simultaneous action).
 TASK|build|Build (Shift/interruption (-다가)): 방금 + 보다 (to see/watch)|방금;보다가|보면서;봐서|보다 -> 보다가 (while doing, then...).
 TASK|choice|Conjugate 읽다 (to read) into Simultaneous 'while' (-(으)면서):|읽으면서;읽다가;읽어서;읽지만|읽으면서|읽다 -> 읽으면서 (simultaneous action).
-TASK|fill|방금 ___. (Shift/interruption (-다가)) [듣다 - to listen (ㄷ-irreg)]|듣다가;들으면서;들어서;듣지만|듣다가|듣다 -> 듣다가 (while doing, then...).
+TASK|fill|카페에서 쉬면서 방금 ___. (Shift/interruption (-다가)) [듣다 - to listen (ㄷ-irreg)]|듣다가;들으면서;들어서;듣지만|듣다가|듣다 -> 듣다가 (while doing, then...).
 TASK|build|Build (Simultaneous 'while' (-(으)면서)): 함께 + 만들다 (to make (ㄹ-irreg))|함께;만들면서|만들다가;만들어서|만들다 -> 만들면서 (simultaneous action).
-ENTITY|l56_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l56_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|잠깐 시간 있으면 같이 이야기할래요?
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Shift/interruption (-다가):|쓰다가;쓰면서;써서;쓰지만|쓰다가|쓰다 -> 쓰다가 (while doing, then...).
-TASK|fill|함께 ___. (Simultaneous 'while' (-(으)면서)) [가다 - to go]|가면서;가다가;가서;가지만|가면서|가다 -> 가면서 (simultaneous action).
+TASK|fill|지하철 타고 가다가 함께 ___. (Simultaneous 'while' (-(으)면서)) [가다 - to go]|가면서;가다가;가서;가지만|가면서|가다 -> 가면서 (simultaneous action).
 TASK|build|Build (Shift/interruption (-다가)): 방금 + 먹다 (to eat)|방금;먹다가|먹으면서;먹어서|먹다 -> 먹다가 (while doing, then...).
 TASK|choice|Conjugate 보다 (to see/watch) into Simultaneous 'while' (-(으)면서):|보면서;보다가;봐서;보지만|보면서|보다 -> 보면서 (simultaneous action).
-TASK|fill|방금 ___. (Shift/interruption (-다가)) [읽다 - to read]|읽다가;읽으면서;읽어서;읽지만|읽다가|읽다 -> 읽다가 (while doing, then...).
-ENTITY|l56_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 방금 ___. (Shift/interruption (-다가)) [읽다 - to read]|읽다가;읽으면서;읽어서;읽지만|읽다가|읽다 -> 읽다가 (while doing, then...).
+ENTITY|l56_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|요즘 한국어 공부 진짜 열심히 하시네요!
 TASK|build|Build (Simultaneous 'while' (-(으)면서)): 함께 + 듣다 (to listen (ㄷ-irreg))|함께;들으면서|듣다가;들어서|듣다 -> 들으면서 (simultaneous action).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Shift/interruption (-다가):|만들다가;만들면서;만들어서;만들지만|만들다가|만들다 -> 만들다가 (while doing, then...).
-TASK|fill|함께 ___. (Simultaneous 'while' (-(으)면서)) [쓰다 - to write (ㅡ-irreg)]|쓰면서;쓰다가;써서;쓰지만|쓰면서|쓰다 -> 쓰면서 (simultaneous action).
+TASK|fill|약속 시간 전에 함께 ___. (Simultaneous 'while' (-(으)면서)) [쓰다 - to write (ㅡ-irreg)]|쓰면서;쓰다가;써서;쓰지만|쓰면서|쓰다 -> 쓰면서 (simultaneous action).
 TASK|build|Build (Shift/interruption (-다가)): 방금 + 가다 (to go)|방금;가다가|가면서;가서|가다 -> 가다가 (while doing, then...).
 TASK|choice|Conjugate 먹다 (to eat) into Simultaneous 'while' (-(으)면서):|먹으면서;먹다가;먹어서;먹지만|먹으면서|먹다 -> 먹으면서 (simultaneous action).
 ENDLEVEL
@@ -1860,34 +1860,34 @@ MAP|KSSLLSS.TT.SSLLSSK
 MAP|KNNNNSSSSSSSSNNNNK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l57_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l57_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|배고픈데 떡볶이 먹고 싶어요!
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Direct contrast (-지만):|쓰지만;쓰는데;써서;쓰면|쓰지만|쓰다 -> 쓰지만 (direct 'but').
-TASK|fill|지금 ___. (Soft contrast / background (-는데)) [가다 - to go]|가는데;가지만;가서;가면|가는데|가다 -> 가는데 (background/soft contrast).
+TASK|fill|퇴근하고 친구랑 지금 ___. (Soft contrast / background (-는데)) [가다 - to go]|가는데;가지만;가서;가면|가는데|가다 -> 가는데 (background/soft contrast).
 TASK|build|Build (Direct contrast (-지만)): 매일 + 먹다 (to eat)|매일;먹지만|먹는데;먹어서|먹다 -> 먹지만 (direct 'but').
 TASK|choice|Conjugate 보다 (to see/watch) into Soft contrast / background (-는데):|보는데;보지만;봐서;보면|보는데|보다 -> 보는데 (background/soft contrast).
-TASK|fill|매일 ___. (Direct contrast (-지만)) [읽다 - to read]|읽지만;읽는데;읽어서;읽으면|읽지만|읽다 -> 읽지만 (direct 'but').
-ENTITY|l57_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 매일 ___. (Direct contrast (-지만)) [읽다 - to read]|읽지만;읽는데;읽어서;읽으면|읽지만|읽다 -> 읽지만 (direct 'but').
+ENTITY|l57_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|우산 챙기셨어요? 오후에 비 올 수도 있대요.
 TASK|build|Build (Soft contrast / background (-는데)): 지금 + 듣다 (to listen (ㄷ-irreg))|지금;듣는데|듣지만;들어서|듣다 -> 듣는데 (background/soft contrast).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Direct contrast (-지만):|만들지만;만드는데;만들어서;만들면|만들지만|만들다 -> 만들지만 (direct 'but').
-TASK|fill|지금 ___. (Soft contrast / background (-는데)) [쓰다 - to write (ㅡ-irreg)]|쓰는데;쓰지만;써서;쓰면|쓰는데|쓰다 -> 쓰는데 (background/soft contrast).
+TASK|fill|주말에 시간 나면 지금 ___. (Soft contrast / background (-는데)) [쓰다 - to write (ㅡ-irreg)]|쓰는데;쓰지만;써서;쓰면|쓰는데|쓰다 -> 쓰는데 (background/soft contrast).
 TASK|build|Build (Direct contrast (-지만)): 매일 + 가다 (to go)|매일;가지만|가는데;가서|가다 -> 가지만 (direct 'but').
 TASK|choice|Conjugate 먹다 (to eat) into Soft contrast / background (-는데):|먹는데;먹지만;먹어서;먹으면|먹는데|먹다 -> 먹는데 (background/soft contrast).
-ENTITY|l57_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|매일 ___. (Direct contrast (-지만)) [보다 - to see/watch]|보지만;보는데;봐서;보면|보지만|보다 -> 보지만 (direct 'but').
+ENTITY|l57_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|강남역은 언제 와도 사람이 많네요!
+TASK|fill|아침에 일어나서 매일 ___. (Direct contrast (-지만)) [보다 - to see/watch]|보지만;보는데;봐서;보면|보지만|보다 -> 보지만 (direct 'but').
 TASK|build|Build (Soft contrast / background (-는데)): 지금 + 읽다 (to read)|지금;읽는데|읽지만;읽어서|읽다 -> 읽는데 (background/soft contrast).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Direct contrast (-지만):|듣지만;듣는데;들어서;들으면|듣지만|듣다 -> 듣지만 (direct 'but').
-TASK|fill|지금 ___. (Soft contrast / background (-는데)) [만들다 - to make (ㄹ-irreg)]|만드는데;만들지만;만들어서;만들면|만드는데|만들다 -> 만드는데 (background/soft contrast).
+TASK|fill|카페에서 쉬면서 지금 ___. (Soft contrast / background (-는데)) [만들다 - to make (ㄹ-irreg)]|만드는데;만들지만;만들어서;만들면|만드는데|만들다 -> 만드는데 (background/soft contrast).
 TASK|build|Build (Direct contrast (-지만)): 매일 + 쓰다 (to write (ㅡ-irreg))|매일;쓰지만|쓰는데;써서|쓰다 -> 쓰지만 (direct 'but').
-ENTITY|l57_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l57_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|오늘 일찍 끝나면 영화 보러 갈 거예요.
 TASK|choice|Conjugate 가다 (to go) into Soft contrast / background (-는데):|가는데;가지만;가서;가면|가는데|가다 -> 가는데 (background/soft contrast).
-TASK|fill|매일 ___. (Direct contrast (-지만)) [먹다 - to eat]|먹지만;먹는데;먹어서;먹으면|먹지만|먹다 -> 먹지만 (direct 'but').
+TASK|fill|지하철 타고 가다가 매일 ___. (Direct contrast (-지만)) [먹다 - to eat]|먹지만;먹는데;먹어서;먹으면|먹지만|먹다 -> 먹지만 (direct 'but').
 TASK|build|Build (Soft contrast / background (-는데)): 지금 + 보다 (to see/watch)|지금;보는데|보지만;봐서|보다 -> 보는데 (background/soft contrast).
 TASK|choice|Conjugate 읽다 (to read) into Direct contrast (-지만):|읽지만;읽는데;읽어서;읽으면|읽지만|읽다 -> 읽지만 (direct 'but').
-TASK|fill|지금 ___. (Soft contrast / background (-는데)) [듣다 - to listen (ㄷ-irreg)]|듣는데;듣지만;들어서;들으면|듣는데|듣다 -> 듣는데 (background/soft contrast).
-ENTITY|l57_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 지금 ___. (Soft contrast / background (-는데)) [듣다 - to listen (ㄷ-irreg)]|듣는데;듣지만;들어서;들으면|듣는데|듣다 -> 듣는데 (background/soft contrast).
+ENTITY|l57_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|편의점에서 삼각김밥 하나 사 왔어요.
 TASK|build|Build (Direct contrast (-지만)): 매일 + 만들다 (to make (ㄹ-irreg))|매일;만들지만|만드는데;만들어서|만들다 -> 만들지만 (direct 'but').
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Soft contrast / background (-는데):|쓰는데;쓰지만;써서;쓰면|쓰는데|쓰다 -> 쓰는데 (background/soft contrast).
-TASK|fill|매일 ___. (Direct contrast (-지만)) [가다 - to go]|가지만;가는데;가서;가면|가지만|가다 -> 가지만 (direct 'but').
+TASK|fill|약속 시간 전에 매일 ___. (Direct contrast (-지만)) [가다 - to go]|가지만;가는데;가서;가면|가지만|가다 -> 가지만 (direct 'but').
 TASK|build|Build (Soft contrast / background (-는데)): 지금 + 먹다 (to eat)|지금;먹는데|먹지만;먹어서|먹다 -> 먹는데 (background/soft contrast).
 TASK|choice|Conjugate 보다 (to see/watch) into Direct contrast (-지만):|보지만;보는데;봐서;보면|보지만|보다 -> 보지만 (direct 'but').
 ENDLEVEL
@@ -1909,34 +1909,34 @@ MAP|KNNNK.SSLLSS.KNNNK
 MAP|KSSSSSSSLLSSSSSSSK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l58_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|서울 중심가에 오신 걸 환영해요!
+ENTITY|l58_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|방금 버스 놓쳐서 다음 차 기다리는 중이에요.
 TASK|choice|Conjugate 가다 (to go) into Conditional 'if' (-(으)면):|가면;가도;가거든;갈 때|가면|가다 -> 가면 (if).
-TASK|fill|아무리 ___. (Concessive 'even if' (-아/어도)) [먹다 - to eat]|먹어도;먹으면;먹거든;먹을 때|먹어도|먹다 -> 먹어도 (even if).
+TASK|fill|퇴근하고 친구랑 아무리 ___. (Concessive 'even if' (-아/어도)) [먹다 - to eat]|먹어도;먹으면;먹거든;먹을 때|먹어도|먹다 -> 먹어도 (even if).
 TASK|build|Build (Conversational 'if' (-거든)): 혹시 + 보다 (to see/watch)|혹시;보거든|보면;봐도|보다 -> 보거든 (if/when).
 TASK|choice|Conjugate 읽다 (to read) into Time 'when' (-(으)ㄹ 때):|읽을 때;읽으면;읽어도;읽거든|읽을 때|읽다 -> 읽을 때 (when).
-TASK|fill|빨리 ___. (Intention 'if intending to' (-(으)려면)) [듣다 - to listen (ㄷ-irreg)]|들으려고;들으면;들어도;듣거든|들으려고|듣다 -> 들으려고 (purpose/intention stem).
-ENTITY|l58_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 빨리 ___. (Intention 'if intending to' (-(으)려면)) [듣다 - to listen (ㄷ-irreg)]|들으려고;들으면;들어도;듣거든|들으려고|듣다 -> 들으려고 (purpose/intention stem).
+ENTITY|l58_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|이 동네 골목에 숨은 맛집이 진짜 많아요.
 TASK|build|Build (Conditional 'if' (-(으)면)): 내일 + 만들다 (to make (ㄹ-irreg))|내일;만들면|만들어도;만들거든|만들다 -> 만들면 (if).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Concessive 'even if' (-아/어도):|써도;쓰면;쓰거든;쓸 때|써도|쓰다 -> 써도 (even if).
-TASK|fill|혹시 ___. (Conversational 'if' (-거든)) [가다 - to go]|가거든;가면;가도;갈 때|가거든|가다 -> 가거든 (if/when).
+TASK|fill|주말에 시간 나면 혹시 ___. (Conversational 'if' (-거든)) [가다 - to go]|가거든;가면;가도;갈 때|가거든|가다 -> 가거든 (if/when).
 TASK|build|Build (Time 'when' (-(으)ㄹ 때)): 서울에 + 먹다 (to eat)|서울에;먹을;때|먹으면;먹어도|먹다 -> 먹을 때 (when).
 TASK|choice|Conjugate 보다 (to see/watch) into Intention 'if intending to' (-(으)려면):|보려고;보면;봐도;보거든|보려고|보다 -> 보려고 (purpose/intention stem).
-ENTITY|l58_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|내일 ___. (Conditional 'if' (-(으)면)) [읽다 - to read]|읽으면;읽어도;읽거든;읽을 때|읽으면|읽다 -> 읽으면 (if).
+ENTITY|l58_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|시험 끝나면 푹 쉬고 싶어요!
+TASK|fill|아침에 일어나서 내일 ___. (Conditional 'if' (-(으)면)) [읽다 - to read]|읽으면;읽어도;읽거든;읽을 때|읽으면|읽다 -> 읽으면 (if).
 TASK|build|Build (Concessive 'even if' (-아/어도)): 아무리 + 듣다 (to listen (ㄷ-irreg))|아무리;들어도|들으면;듣거든|듣다 -> 들어도 (even if).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Conversational 'if' (-거든):|만들거든;만들면;만들어도;만들 때|만들거든|만들다 -> 만들거든 (if/when).
-TASK|fill|서울에 ___. (Time 'when' (-(으)ㄹ 때)) [쓰다 - to write (ㅡ-irreg)]|쓸 때;쓰면;써도;쓰거든|쓸 때|쓰다 -> 쓸 때 (when).
+TASK|fill|카페에서 쉬면서 서울에 ___. (Time 'when' (-(으)ㄹ 때)) [쓰다 - to write (ㅡ-irreg)]|쓸 때;쓰면;써도;쓰거든|쓸 때|쓰다 -> 쓸 때 (when).
 TASK|build|Build (Intention 'if intending to' (-(으)려면)): 빨리 + 가다 (to go)|빨리;가려고|가면;가도|가다 -> 가려고 (purpose/intention stem).
-ENTITY|l58_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l58_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|커피 아이스로 드릴까요, 따뜻하게 드릴까요?
 TASK|choice|Conjugate 먹다 (to eat) into Conditional 'if' (-(으)면):|먹으면;먹어도;먹거든;먹을 때|먹으면|먹다 -> 먹으면 (if).
-TASK|fill|아무리 ___. (Concessive 'even if' (-아/어도)) [보다 - to see/watch]|봐도;보면;보거든;볼 때|봐도|보다 -> 봐도 (even if).
+TASK|fill|지하철 타고 가다가 아무리 ___. (Concessive 'even if' (-아/어도)) [보다 - to see/watch]|봐도;보면;보거든;볼 때|봐도|보다 -> 봐도 (even if).
 TASK|build|Build (Conversational 'if' (-거든)): 혹시 + 읽다 (to read)|혹시;읽거든|읽으면;읽어도|읽다 -> 읽거든 (if/when).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Time 'when' (-(으)ㄹ 때):|들을 때;들으면;들어도;듣거든|들을 때|듣다 -> 들을 때 (when).
-TASK|fill|빨리 ___. (Intention 'if intending to' (-(으)려면)) [만들다 - to make (ㄹ-irreg)]|만들려고;만들면;만들어도;만들거든|만들려고|만들다 -> 만들려고 (purpose/intention stem).
-ENTITY|l58_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 빨리 ___. (Intention 'if intending to' (-(으)려면)) [만들다 - to make (ㄹ-irreg)]|만들려고;만들면;만들어도;만들거든|만들려고|만들다 -> 만들려고 (purpose/intention stem).
+ENTITY|l58_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|오랜만이에요! 요즘 어떻게 지내요?
 TASK|build|Build (Conditional 'if' (-(으)면)): 내일 + 쓰다 (to write (ㅡ-irreg))|내일;쓰면|써도;쓰거든|쓰다 -> 쓰면 (if).
 TASK|choice|Conjugate 가다 (to go) into Concessive 'even if' (-아/어도):|가도;가면;가거든;갈 때|가도|가다 -> 가도 (even if).
-TASK|fill|혹시 ___. (Conversational 'if' (-거든)) [먹다 - to eat]|먹거든;먹으면;먹어도;먹을 때|먹거든|먹다 -> 먹거든 (if/when).
+TASK|fill|약속 시간 전에 혹시 ___. (Conversational 'if' (-거든)) [먹다 - to eat]|먹거든;먹으면;먹어도;먹을 때|먹거든|먹다 -> 먹거든 (if/when).
 TASK|build|Build (Time 'when' (-(으)ㄹ 때)): 서울에 + 보다 (to see/watch)|서울에;볼;때|보면;봐도|보다 -> 볼 때 (when).
 TASK|choice|Conjugate 읽다 (to read) into Intention 'if intending to' (-(으)려면):|읽으려고;읽으면;읽어도;읽거든|읽으려고|읽다 -> 읽으려고 (purpose/intention stem).
 ENDLEVEL
@@ -1958,34 +1958,34 @@ MAP|KSSSSSSSAASSSSSSSK
 MAP|KNNNNK..AA..KNNNNK
 MAP|KSSSSS..XX..SSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l59_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l59_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|오늘 점심 뭐 먹을지 아직 못 정했어요!
 TASK|choice|Conjugate 먹다 (to eat) into In order to (-(으)려고):|먹으려고;먹으러;먹게;먹도록|먹으려고|먹다 -> 먹으려고 (in order to).
-TASK|fill|식당에 ___. (Motion purpose (-(으)러)) [보다 - to see/watch]|보러;보려고;보게;보도록|보러|보다 -> 보러 (motion purpose).
+TASK|fill|퇴근하고 친구랑 식당에 ___. (Motion purpose (-(으)러)) [보다 - to see/watch]|보러;보려고;보게;보도록|보러|보다 -> 보러 (motion purpose).
 TASK|build|Build (So that (-게)): 잘 + 읽다 (to read)|잘;읽게|읽도록;읽으려고|읽다 -> 읽게 (so that).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into So that / Until (-도록):|듣도록;듣게;들으려고;들으러|듣도록|듣다 -> 듣도록 (so that / until).
-TASK|fill|지금 ___. (In order to (-(으)려고)) [만들다 - to make (ㄹ-irreg)]|만들려고;만들러;만들게;만들도록|만들려고|만들다 -> 만들려고 (in order to).
-ENTITY|l59_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 지금 ___. (In order to (-(으)려고)) [만들다 - to make (ㄹ-irreg)]|만들려고;만들러;만들게;만들도록|만들려고|만들다 -> 만들려고 (in order to).
+ENTITY|l59_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아, 커피 한 잔 마셔야 잠이 깰 것 같아요.
 TASK|build|Build (Motion purpose (-(으)러)): 식당에 + 쓰다 (to write (ㅡ-irreg))|식당에;쓰러|쓰려고;쓰게|쓰다 -> 쓰러 (motion purpose).
 TASK|choice|Conjugate 가다 (to go) into So that (-게):|가게;가도록;가려고;가러|가게|가다 -> 가게 (so that).
-TASK|fill|다 ___. (So that / Until (-도록)) [먹다 - to eat]|먹도록;먹게;먹으려고;먹으러|먹도록|먹다 -> 먹도록 (so that / until).
+TASK|fill|주말에 시간 나면 다 ___. (So that / Until (-도록)) [먹다 - to eat]|먹도록;먹게;먹으려고;먹으러|먹도록|먹다 -> 먹도록 (so that / until).
 TASK|build|Build (In order to (-(으)려고)): 지금 + 보다 (to see/watch)|지금;보려고|보러;보게|보다 -> 보려고 (in order to).
 TASK|choice|Conjugate 읽다 (to read) into Motion purpose (-(으)러):|읽으러;읽으려고;읽게;읽도록|읽으러|읽다 -> 읽으러 (motion purpose).
-ENTITY|l59_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|잘 ___. (So that (-게)) [듣다 - to listen (ㄷ-irreg)]|듣게;듣도록;들으려고;들으러|듣게|듣다 -> 듣게 (so that).
+ENTITY|l59_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|방금 지하철 간신히 탔어요, 휴!
+TASK|fill|아침에 일어나서 잘 ___. (So that (-게)) [듣다 - to listen (ㄷ-irreg)]|듣게;듣도록;들으려고;들으러|듣게|듣다 -> 듣게 (so that).
 TASK|build|Build (So that / Until (-도록)): 다 + 만들다 (to make (ㄹ-irreg))|다;만들도록|만들게;만들려고|만들다 -> 만들도록 (so that / until).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into In order to (-(으)려고):|쓰려고;쓰러;쓰게;쓰도록|쓰려고|쓰다 -> 쓰려고 (in order to).
-TASK|fill|식당에 ___. (Motion purpose (-(으)러)) [가다 - to go]|가러;가려고;가게;가도록|가러|가다 -> 가러 (motion purpose).
+TASK|fill|카페에서 쉬면서 식당에 ___. (Motion purpose (-(으)러)) [가다 - to go]|가러;가려고;가게;가도록|가러|가다 -> 가러 (motion purpose).
 TASK|build|Build (So that (-게)): 잘 + 먹다 (to eat)|잘;먹게|먹도록;먹으려고|먹다 -> 먹게 (so that).
-ENTITY|l59_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l59_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|오늘 날씨 진짜 좋죠? 산책하기 딱이에요.
 TASK|choice|Conjugate 보다 (to see/watch) into So that / Until (-도록):|보도록;보게;보려고;보러|보도록|보다 -> 보도록 (so that / until).
-TASK|fill|지금 ___. (In order to (-(으)려고)) [읽다 - to read]|읽으려고;읽으러;읽게;읽도록|읽으려고|읽다 -> 읽으려고 (in order to).
+TASK|fill|지하철 타고 가다가 지금 ___. (In order to (-(으)려고)) [읽다 - to read]|읽으려고;읽으러;읽게;읽도록|읽으려고|읽다 -> 읽으려고 (in order to).
 TASK|build|Build (Motion purpose (-(으)러)): 식당에 + 듣다 (to listen (ㄷ-irreg))|식당에;들으러|들으려고;듣게|듣다 -> 들으러 (motion purpose).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into So that (-게):|만들게;만들도록;만들려고;만들러|만들게|만들다 -> 만들게 (so that).
-TASK|fill|다 ___. (So that / Until (-도록)) [쓰다 - to write (ㅡ-irreg)]|쓰도록;쓰게;쓰려고;쓰러|쓰도록|쓰다 -> 쓰도록 (so that / until).
-ENTITY|l59_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 다 ___. (So that / Until (-도록)) [쓰다 - to write (ㅡ-irreg)]|쓰도록;쓰게;쓰려고;쓰러|쓰도록|쓰다 -> 쓰도록 (so that / until).
+ENTITY|l59_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|퇴근하고 친구랑 저녁 먹기로 했어요!
 TASK|build|Build (In order to (-(으)려고)): 지금 + 가다 (to go)|지금;가려고|가러;가게|가다 -> 가려고 (in order to).
 TASK|choice|Conjugate 먹다 (to eat) into Motion purpose (-(으)러):|먹으러;먹으려고;먹게;먹도록|먹으러|먹다 -> 먹으러 (motion purpose).
-TASK|fill|잘 ___. (So that (-게)) [보다 - to see/watch]|보게;보도록;보려고;보러|보게|보다 -> 보게 (so that).
+TASK|fill|약속 시간 전에 잘 ___. (So that (-게)) [보다 - to see/watch]|보게;보도록;보려고;보러|보게|보다 -> 보게 (so that).
 TASK|build|Build (So that / Until (-도록)): 다 + 읽다 (to read)|다;읽도록|읽게;읽으려고|읽다 -> 읽도록 (so that / until).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into In order to (-(으)려고):|들으려고;들으러;듣게;듣도록|들으려고|듣다 -> 들으려고 (in order to).
 ENDLEVEL
@@ -2007,34 +2007,34 @@ MAP|KSSSSSSLLLLSSSSSSK
 MAP|KNNNNKSSLLSSKNNNNK
 MAP|KSSSSSSLLLLSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l60_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|서울 중심가에 오신 걸 환영해요!
+ENTITY|l60_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|어제 늦게 자서 오늘 좀 피곤하네요.
 TASK|choice|Conjugate 보다 (to see/watch) into Go out in order to (-(으)러 나가요):|보러 나가요;보러 나와요;보러 들어가요;보러 올라가요|보러 나가요|보다 -> 보러 나가요 (go out to).
-TASK|fill|잠깐 ___. (Come out in order to (-(으)러 나와요)) [읽다 - to read]|읽으러 나와요;읽으러 나가요;읽으러 들어와요;읽으러 내려가요|읽으러 나와요|읽다 -> 읽으러 나와요 (come out to).
+TASK|fill|퇴근하고 친구랑 잠깐 ___. (Come out in order to (-(으)러 나와요)) [읽다 - to read]|읽으러 나와요;읽으러 나가요;읽으러 들어와요;읽으러 내려가요|읽으러 나와요|읽다 -> 읽으러 나와요 (come out to).
 TASK|build|Build (Commute in order to (-(으)러 다녀요)): 매일 + 듣다 (to listen (ㄷ-irreg))|매일;들으러;다녀요|들으러 가요;들으러 와요|듣다 -> 들으러 다녀요 (commute to).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Go in in order to (-(으)러 들어가요):|만들러 들어가요;만들러 나가요;만들러 들어와요;만들러 올라가요|만들러 들어가요|만들다 -> 만들러 들어가요 (go in to).
-TASK|fill|옥상에 ___. (Go up in order to (-(으)러 올라가요)) [쓰다 - to write (ㅡ-irreg)]|쓰러 올라가요;쓰러 내려가요;쓰러 들어가요;쓰러 나가요|쓰러 올라가요|쓰다 -> 쓰러 올라가요 (go up to).
-ENTITY|l60_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 옥상에 ___. (Go up in order to (-(으)러 올라가요)) [쓰다 - to write (ㅡ-irreg)]|쓰러 올라가요;쓰러 내려가요;쓰러 들어가요;쓰러 나가요|쓰러 올라가요|쓰다 -> 쓰러 올라가요 (go up to).
+ENTITY|l60_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|주말에 뭐 할 계획 있어요?
 TASK|build|Build (Go down in order to (-(으)러 내려가요)): 지하에 + 가다 (to go)|지하에;가러;내려가요|가러 올라가요;가러 나와요|가다 -> 가러 내려가요 (go down to).
 TASK|choice|Conjugate 먹다 (to eat) into Go out in order to (-(으)러 나가요):|먹으러 나가요;먹으러 나와요;먹으러 들어가요;먹으러 올라가요|먹으러 나가요|먹다 -> 먹으러 나가요 (go out to).
-TASK|fill|잠깐 ___. (Come out in order to (-(으)러 나와요)) [보다 - to see/watch]|보러 나와요;보러 나가요;보러 들어와요;보러 내려가요|보러 나와요|보다 -> 보러 나와요 (come out to).
+TASK|fill|주말에 시간 나면 잠깐 ___. (Come out in order to (-(으)러 나와요)) [보다 - to see/watch]|보러 나와요;보러 나가요;보러 들어와요;보러 내려가요|보러 나와요|보다 -> 보러 나와요 (come out to).
 TASK|build|Build (Commute in order to (-(으)러 다녀요)): 매일 + 읽다 (to read)|매일;읽으러;다녀요|읽으러 가요;읽으러 와요|읽다 -> 읽으러 다녀요 (commute to).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Go in in order to (-(으)러 들어가요):|들으러 들어가요;들으러 나가요;들으러 들어와요;들으러 올라가요|들으러 들어가요|듣다 -> 들으러 들어가요 (go in to).
-ENTITY|l60_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|옥상에 ___. (Go up in order to (-(으)러 올라가요)) [만들다 - to make (ㄹ-irreg)]|만들러 올라가요;만들러 내려가요;만들러 들어가요;만들러 나가요|만들러 올라가요|만들다 -> 만들러 올라가요 (go up to).
+ENTITY|l60_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|여기 근처에 맛있는 카페 아세요?
+TASK|fill|아침에 일어나서 옥상에 ___. (Go up in order to (-(으)러 올라가요)) [만들다 - to make (ㄹ-irreg)]|만들러 올라가요;만들러 내려가요;만들러 들어가요;만들러 나가요|만들러 올라가요|만들다 -> 만들러 올라가요 (go up to).
 TASK|build|Build (Go down in order to (-(으)러 내려가요)): 지하에 + 쓰다 (to write (ㅡ-irreg))|지하에;쓰러;내려가요|쓰러 올라가요;쓰러 나와요|쓰다 -> 쓰러 내려가요 (go down to).
 TASK|choice|Conjugate 가다 (to go) into Go out in order to (-(으)러 나가요):|가러 나가요;가러 나와요;가러 들어가요;가러 올라가요|가러 나가요|가다 -> 가러 나가요 (go out to).
-TASK|fill|잠깐 ___. (Come out in order to (-(으)러 나와요)) [먹다 - to eat]|먹으러 나와요;먹으러 나가요;먹으러 들어와요;먹으러 내려가요|먹으러 나와요|먹다 -> 먹으러 나와요 (come out to).
+TASK|fill|카페에서 쉬면서 잠깐 ___. (Come out in order to (-(으)러 나와요)) [먹다 - to eat]|먹으러 나와요;먹으러 나가요;먹으러 들어와요;먹으러 내려가요|먹으러 나와요|먹다 -> 먹으러 나와요 (come out to).
 TASK|build|Build (Commute in order to (-(으)러 다녀요)): 매일 + 보다 (to see/watch)|매일;보러;다녀요|보러 가요;보러 와요|보다 -> 보러 다녀요 (commute to).
-ENTITY|l60_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l60_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|잠깐 시간 있으면 같이 이야기할래요?
 TASK|choice|Conjugate 읽다 (to read) into Go in in order to (-(으)러 들어가요):|읽으러 들어가요;읽으러 나가요;읽으러 들어와요;읽으러 올라가요|읽으러 들어가요|읽다 -> 읽으러 들어가요 (go in to).
-TASK|fill|옥상에 ___. (Go up in order to (-(으)러 올라가요)) [듣다 - to listen (ㄷ-irreg)]|들으러 올라가요;들으러 내려가요;들으러 들어가요;들으러 나가요|들으러 올라가요|듣다 -> 들으러 올라가요 (go up to).
+TASK|fill|지하철 타고 가다가 옥상에 ___. (Go up in order to (-(으)러 올라가요)) [듣다 - to listen (ㄷ-irreg)]|들으러 올라가요;들으러 내려가요;들으러 들어가요;들으러 나가요|들으러 올라가요|듣다 -> 들으러 올라가요 (go up to).
 TASK|build|Build (Go down in order to (-(으)러 내려가요)): 지하에 + 만들다 (to make (ㄹ-irreg))|지하에;만들러;내려가요|만들러 올라가요;만들러 나와요|만들다 -> 만들러 내려가요 (go down to).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Go out in order to (-(으)러 나가요):|쓰러 나가요;쓰러 나와요;쓰러 들어가요;쓰러 올라가요|쓰러 나가요|쓰다 -> 쓰러 나가요 (go out to).
-TASK|fill|잠깐 ___. (Come out in order to (-(으)러 나와요)) [가다 - to go]|가러 나와요;가러 나가요;가러 들어와요;가러 내려가요|가러 나와요|가다 -> 가러 나와요 (come out to).
-ENTITY|l60_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 잠깐 ___. (Come out in order to (-(으)러 나와요)) [가다 - to go]|가러 나와요;가러 나가요;가러 들어와요;가러 내려가요|가러 나와요|가다 -> 가러 나와요 (come out to).
+ENTITY|l60_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|요즘 한국어 공부 진짜 열심히 하시네요!
 TASK|build|Build (Commute in order to (-(으)러 다녀요)): 매일 + 먹다 (to eat)|매일;먹으러;다녀요|먹으러 가요;먹으러 와요|먹다 -> 먹으러 다녀요 (commute to).
 TASK|choice|Conjugate 보다 (to see/watch) into Go in in order to (-(으)러 들어가요):|보러 들어가요;보러 나가요;보러 들어와요;보러 올라가요|보러 들어가요|보다 -> 보러 들어가요 (go in to).
-TASK|fill|옥상에 ___. (Go up in order to (-(으)러 올라가요)) [읽다 - to read]|읽으러 올라가요;읽으러 내려가요;읽으러 들어가요;읽으러 나가요|읽으러 올라가요|읽다 -> 읽으러 올라가요 (go up to).
+TASK|fill|약속 시간 전에 옥상에 ___. (Go up in order to (-(으)러 올라가요)) [읽다 - to read]|읽으러 올라가요;읽으러 내려가요;읽으러 들어가요;읽으러 나가요|읽으러 올라가요|읽다 -> 읽으러 올라가요 (go up to).
 TASK|build|Build (Go down in order to (-(으)러 내려가요)): 지하에 + 듣다 (to listen (ㄷ-irreg))|지하에;들으러;내려가요|들으러 올라가요;들으러 나와요|듣다 -> 들으러 내려가요 (go down to).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Go out in order to (-(으)러 나가요):|만들러 나가요;만들러 나와요;만들러 들어가요;만들러 올라가요|만들러 나가요|만들다 -> 만들러 나가요 (go out to).
 ENDLEVEL
@@ -2056,34 +2056,34 @@ MAP|KSSLLSS.TT.SSLLSSK
 MAP|KNNNNSSSSSSSSNNNNK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l61_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l61_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|배고픈데 떡볶이 먹고 싶어요!
 TASK|choice|Conjugate 읽다 (to read) into Can (-(으)ㄹ 수 있어요):|읽을 수 있어요;읽을 수 없어요;읽지 못해요;읽어요|읽을 수 있어요|읽다 -> 읽을 수 있어요 (can).
-TASK|fill|오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [듣다 - to listen (ㄷ-irreg)]|들을 수 없어요;들을 수 있어요;듣지 못해요;듣지 않아요|들을 수 없어요|듣다 -> 들을 수 없어요 (cannot).
+TASK|fill|퇴근하고 친구랑 오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [듣다 - to listen (ㄷ-irreg)]|들을 수 없어요;들을 수 있어요;듣지 못해요;듣지 않아요|들을 수 없어요|듣다 -> 들을 수 없어요 (cannot).
 TASK|build|Build (Circumstantial cannot (-지 못해요)): 바빠서 + 만들다 (to make (ㄹ-irreg))|바빠서;만들지;못해요|만들 수 있어요;만들지 않아요|만들다 -> 만들지 못해요 (cannot due to circumstance).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Can (-(으)ㄹ 수 있어요):|쓸 수 있어요;쓸 수 없어요;쓰지 못해요;써요|쓸 수 있어요|쓰다 -> 쓸 수 있어요 (can).
-TASK|fill|오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [가다 - to go]|갈 수 없어요;갈 수 있어요;가지 못해요;가지 않아요|갈 수 없어요|가다 -> 갈 수 없어요 (cannot).
-ENTITY|l61_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [가다 - to go]|갈 수 없어요;갈 수 있어요;가지 못해요;가지 않아요|갈 수 없어요|가다 -> 갈 수 없어요 (cannot).
+ENTITY|l61_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|우산 챙기셨어요? 오후에 비 올 수도 있대요.
 TASK|build|Build (Circumstantial cannot (-지 못해요)): 바빠서 + 먹다 (to eat)|바빠서;먹지;못해요|먹을 수 있어요;먹지 않아요|먹다 -> 먹지 못해요 (cannot due to circumstance).
 TASK|choice|Conjugate 보다 (to see/watch) into Can (-(으)ㄹ 수 있어요):|볼 수 있어요;볼 수 없어요;보지 못해요;봐요|볼 수 있어요|보다 -> 볼 수 있어요 (can).
-TASK|fill|오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [읽다 - to read]|읽을 수 없어요;읽을 수 있어요;읽지 못해요;읽지 않아요|읽을 수 없어요|읽다 -> 읽을 수 없어요 (cannot).
+TASK|fill|주말에 시간 나면 오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [읽다 - to read]|읽을 수 없어요;읽을 수 있어요;읽지 못해요;읽지 않아요|읽을 수 없어요|읽다 -> 읽을 수 없어요 (cannot).
 TASK|build|Build (Circumstantial cannot (-지 못해요)): 바빠서 + 듣다 (to listen (ㄷ-irreg))|바빠서;듣지;못해요|들을 수 있어요;듣지 않아요|듣다 -> 듣지 못해요 (cannot due to circumstance).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Can (-(으)ㄹ 수 있어요):|만들 수 있어요;만들 수 없어요;만들지 못해요;만들어요|만들 수 있어요|만들다 -> 만들 수 있어요 (can).
-ENTITY|l61_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [쓰다 - to write (ㅡ-irreg)]|쓸 수 없어요;쓸 수 있어요;쓰지 못해요;쓰지 않아요|쓸 수 없어요|쓰다 -> 쓸 수 없어요 (cannot).
+ENTITY|l61_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|강남역은 언제 와도 사람이 많네요!
+TASK|fill|아침에 일어나서 오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [쓰다 - to write (ㅡ-irreg)]|쓸 수 없어요;쓸 수 있어요;쓰지 못해요;쓰지 않아요|쓸 수 없어요|쓰다 -> 쓸 수 없어요 (cannot).
 TASK|build|Build (Circumstantial cannot (-지 못해요)): 바빠서 + 가다 (to go)|바빠서;가지;못해요|갈 수 있어요;가지 않아요|가다 -> 가지 못해요 (cannot due to circumstance).
 TASK|choice|Conjugate 먹다 (to eat) into Can (-(으)ㄹ 수 있어요):|먹을 수 있어요;먹을 수 없어요;먹지 못해요;먹어요|먹을 수 있어요|먹다 -> 먹을 수 있어요 (can).
-TASK|fill|오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [보다 - to see/watch]|볼 수 없어요;볼 수 있어요;보지 못해요;보지 않아요|볼 수 없어요|보다 -> 볼 수 없어요 (cannot).
+TASK|fill|카페에서 쉬면서 오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [보다 - to see/watch]|볼 수 없어요;볼 수 있어요;보지 못해요;보지 않아요|볼 수 없어요|보다 -> 볼 수 없어요 (cannot).
 TASK|build|Build (Circumstantial cannot (-지 못해요)): 바빠서 + 읽다 (to read)|바빠서;읽지;못해요|읽을 수 있어요;읽지 않아요|읽다 -> 읽지 못해요 (cannot due to circumstance).
-ENTITY|l61_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l61_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|오늘 일찍 끝나면 영화 보러 갈 거예요.
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Can (-(으)ㄹ 수 있어요):|들을 수 있어요;들을 수 없어요;듣지 못해요;들어요|들을 수 있어요|듣다 -> 들을 수 있어요 (can).
-TASK|fill|오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [만들다 - to make (ㄹ-irreg)]|만들 수 없어요;만들 수 있어요;만들지 못해요;만들지 않아요|만들 수 없어요|만들다 -> 만들 수 없어요 (cannot).
+TASK|fill|지하철 타고 가다가 오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [만들다 - to make (ㄹ-irreg)]|만들 수 없어요;만들 수 있어요;만들지 못해요;만들지 않아요|만들 수 없어요|만들다 -> 만들 수 없어요 (cannot).
 TASK|build|Build (Circumstantial cannot (-지 못해요)): 바빠서 + 쓰다 (to write (ㅡ-irreg))|바빠서;쓰지;못해요|쓸 수 있어요;쓰지 않아요|쓰다 -> 쓰지 못해요 (cannot due to circumstance).
 TASK|choice|Conjugate 가다 (to go) into Can (-(으)ㄹ 수 있어요):|갈 수 있어요;갈 수 없어요;가지 못해요;가요|갈 수 있어요|가다 -> 갈 수 있어요 (can).
-TASK|fill|오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [먹다 - to eat]|먹을 수 없어요;먹을 수 있어요;먹지 못해요;먹지 않아요|먹을 수 없어요|먹다 -> 먹을 수 없어요 (cannot).
-ENTITY|l61_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [먹다 - to eat]|먹을 수 없어요;먹을 수 있어요;먹지 못해요;먹지 않아요|먹을 수 없어요|먹다 -> 먹을 수 없어요 (cannot).
+ENTITY|l61_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|편의점에서 삼각김밥 하나 사 왔어요.
 TASK|build|Build (Circumstantial cannot (-지 못해요)): 바빠서 + 보다 (to see/watch)|바빠서;보지;못해요|볼 수 있어요;보지 않아요|보다 -> 보지 못해요 (cannot due to circumstance).
 TASK|choice|Conjugate 읽다 (to read) into Can (-(으)ㄹ 수 있어요):|읽을 수 있어요;읽을 수 없어요;읽지 못해요;읽어요|읽을 수 있어요|읽다 -> 읽을 수 있어요 (can).
-TASK|fill|오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [듣다 - to listen (ㄷ-irreg)]|들을 수 없어요;들을 수 있어요;듣지 못해요;듣지 않아요|들을 수 없어요|듣다 -> 들을 수 없어요 (cannot).
+TASK|fill|약속 시간 전에 오늘은 ___. (Cannot (-(으)ㄹ 수 없어요)) [듣다 - to listen (ㄷ-irreg)]|들을 수 없어요;들을 수 있어요;듣지 못해요;듣지 않아요|들을 수 없어요|듣다 -> 들을 수 없어요 (cannot).
 TASK|build|Build (Circumstantial cannot (-지 못해요)): 바빠서 + 만들다 (to make (ㄹ-irreg))|바빠서;만들지;못해요|만들 수 있어요;만들지 않아요|만들다 -> 만들지 못해요 (cannot due to circumstance).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Can (-(으)ㄹ 수 있어요):|쓸 수 있어요;쓸 수 없어요;쓰지 못해요;써요|쓸 수 있어요|쓰다 -> 쓸 수 있어요 (can).
 ENDLEVEL
@@ -2105,34 +2105,34 @@ MAP|KNNNK.SSLLSS.KNNNK
 MAP|KSSSSSSSLLSSSSSSSK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l62_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|서울 중심가에 오신 걸 환영해요!
+ENTITY|l62_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|방금 버스 놓쳐서 다음 차 기다리는 중이에요.
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Must (-아/어야 해요):|들어야 해요;들어야 돼요;들을 필요가 있어요;들어야지|들어야 해요|듣다 -> 들어야 해요 (must).
-TASK|fill|꼭 ___. (Should (-아/어야 돼요)) [만들다 - to make (ㄹ-irreg)]|만들어야 돼요;만들어야 해요;만들 필요가 있어요;만들어야지|만들어야 돼요|만들다 -> 만들어야 돼요 (should).
+TASK|fill|퇴근하고 친구랑 꼭 ___. (Should (-아/어야 돼요)) [만들다 - to make (ㄹ-irreg)]|만들어야 돼요;만들어야 해요;만들 필요가 있어요;만들어야지|만들어야 돼요|만들다 -> 만들어야 돼요 (should).
 TASK|build|Build (Need to (-(으)ㄹ 필요가 있어요)): 미리 + 쓰다 (to write (ㅡ-irreg))|미리;쓸;필요가;있어요|써야 해요;써야 돼요|쓰다 -> 쓸 필요가 있어요 (need to).
 TASK|choice|Conjugate 가다 (to go) into Self-reminder (-아/어야지):|가야지;가야 해요;가야 돼요;갈 필요가 있어요|가야지|가다 -> 가야지 (should/must).
-TASK|fill|오늘 ___. (Must (-아/어야 해요)) [먹다 - to eat]|먹어야 해요;먹어야 돼요;먹을 필요가 있어요;먹어야지|먹어야 해요|먹다 -> 먹어야 해요 (must).
-ENTITY|l62_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 오늘 ___. (Must (-아/어야 해요)) [먹다 - to eat]|먹어야 해요;먹어야 돼요;먹을 필요가 있어요;먹어야지|먹어야 해요|먹다 -> 먹어야 해요 (must).
+ENTITY|l62_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|이 동네 골목에 숨은 맛집이 진짜 많아요.
 TASK|build|Build (Should (-아/어야 돼요)): 꼭 + 보다 (to see/watch)|꼭;봐야;돼요|봐야 해요;볼 필요가 있어요|보다 -> 봐야 돼요 (should).
 TASK|choice|Conjugate 읽다 (to read) into Need to (-(으)ㄹ 필요가 있어요):|읽을 필요가 있어요;읽어야 해요;읽어야 돼요;읽어야지|읽을 필요가 있어요|읽다 -> 읽을 필요가 있어요 (need to).
-TASK|fill|이제 ___. (Self-reminder (-아/어야지)) [듣다 - to listen (ㄷ-irreg)]|들어야지;들어야 해요;들어야 돼요;들을 필요가 있어요|들어야지|듣다 -> 들어야지 (should/must).
+TASK|fill|주말에 시간 나면 이제 ___. (Self-reminder (-아/어야지)) [듣다 - to listen (ㄷ-irreg)]|들어야지;들어야 해요;들어야 돼요;들을 필요가 있어요|들어야지|듣다 -> 들어야지 (should/must).
 TASK|build|Build (Must (-아/어야 해요)): 오늘 + 만들다 (to make (ㄹ-irreg))|오늘;만들어야;해요|만들어야 돼요;만들 필요가 있어요|만들다 -> 만들어야 해요 (must).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Should (-아/어야 돼요):|써야 돼요;써야 해요;쓸 필요가 있어요;써야지|써야 돼요|쓰다 -> 써야 돼요 (should).
-ENTITY|l62_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|미리 ___. (Need to (-(으)ㄹ 필요가 있어요)) [가다 - to go]|갈 필요가 있어요;가야 해요;가야 돼요;가야지|갈 필요가 있어요|가다 -> 갈 필요가 있어요 (need to).
+ENTITY|l62_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|시험 끝나면 푹 쉬고 싶어요!
+TASK|fill|아침에 일어나서 미리 ___. (Need to (-(으)ㄹ 필요가 있어요)) [가다 - to go]|갈 필요가 있어요;가야 해요;가야 돼요;가야지|갈 필요가 있어요|가다 -> 갈 필요가 있어요 (need to).
 TASK|build|Build (Self-reminder (-아/어야지)): 이제 + 먹다 (to eat)|이제;먹어야지|먹어야 해요;먹어야 돼요|먹다 -> 먹어야지 (should/must).
 TASK|choice|Conjugate 보다 (to see/watch) into Must (-아/어야 해요):|봐야 해요;봐야 돼요;볼 필요가 있어요;봐야지|봐야 해요|보다 -> 봐야 해요 (must).
-TASK|fill|꼭 ___. (Should (-아/어야 돼요)) [읽다 - to read]|읽어야 돼요;읽어야 해요;읽을 필요가 있어요;읽어야지|읽어야 돼요|읽다 -> 읽어야 돼요 (should).
+TASK|fill|카페에서 쉬면서 꼭 ___. (Should (-아/어야 돼요)) [읽다 - to read]|읽어야 돼요;읽어야 해요;읽을 필요가 있어요;읽어야지|읽어야 돼요|읽다 -> 읽어야 돼요 (should).
 TASK|build|Build (Need to (-(으)ㄹ 필요가 있어요)): 미리 + 듣다 (to listen (ㄷ-irreg))|미리;들을;필요가;있어요|들어야 해요;들어야 돼요|듣다 -> 들을 필요가 있어요 (need to).
-ENTITY|l62_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l62_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|커피 아이스로 드릴까요, 따뜻하게 드릴까요?
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Self-reminder (-아/어야지):|만들어야지;만들어야 해요;만들어야 돼요;만들 필요가 있어요|만들어야지|만들다 -> 만들어야지 (should/must).
-TASK|fill|오늘 ___. (Must (-아/어야 해요)) [쓰다 - to write (ㅡ-irreg)]|써야 해요;써야 돼요;쓸 필요가 있어요;써야지|써야 해요|쓰다 -> 써야 해요 (must).
+TASK|fill|지하철 타고 가다가 오늘 ___. (Must (-아/어야 해요)) [쓰다 - to write (ㅡ-irreg)]|써야 해요;써야 돼요;쓸 필요가 있어요;써야지|써야 해요|쓰다 -> 써야 해요 (must).
 TASK|build|Build (Should (-아/어야 돼요)): 꼭 + 가다 (to go)|꼭;가야;돼요|가야 해요;갈 필요가 있어요|가다 -> 가야 돼요 (should).
 TASK|choice|Conjugate 먹다 (to eat) into Need to (-(으)ㄹ 필요가 있어요):|먹을 필요가 있어요;먹어야 해요;먹어야 돼요;먹어야지|먹을 필요가 있어요|먹다 -> 먹을 필요가 있어요 (need to).
-TASK|fill|이제 ___. (Self-reminder (-아/어야지)) [보다 - to see/watch]|봐야지;봐야 해요;봐야 돼요;볼 필요가 있어요|봐야지|보다 -> 봐야지 (should/must).
-ENTITY|l62_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 이제 ___. (Self-reminder (-아/어야지)) [보다 - to see/watch]|봐야지;봐야 해요;봐야 돼요;볼 필요가 있어요|봐야지|보다 -> 봐야지 (should/must).
+ENTITY|l62_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|오랜만이에요! 요즘 어떻게 지내요?
 TASK|build|Build (Must (-아/어야 해요)): 오늘 + 읽다 (to read)|오늘;읽어야;해요|읽어야 돼요;읽을 필요가 있어요|읽다 -> 읽어야 해요 (must).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Should (-아/어야 돼요):|들어야 돼요;들어야 해요;들을 필요가 있어요;들어야지|들어야 돼요|듣다 -> 들어야 돼요 (should).
-TASK|fill|미리 ___. (Need to (-(으)ㄹ 필요가 있어요)) [만들다 - to make (ㄹ-irreg)]|만들 필요가 있어요;만들어야 해요;만들어야 돼요;만들어야지|만들 필요가 있어요|만들다 -> 만들 필요가 있어요 (need to).
+TASK|fill|약속 시간 전에 미리 ___. (Need to (-(으)ㄹ 필요가 있어요)) [만들다 - to make (ㄹ-irreg)]|만들 필요가 있어요;만들어야 해요;만들어야 돼요;만들어야지|만들 필요가 있어요|만들다 -> 만들 필요가 있어요 (need to).
 TASK|build|Build (Self-reminder (-아/어야지)): 이제 + 쓰다 (to write (ㅡ-irreg))|이제;써야지|써야 해요;써야 돼요|쓰다 -> 써야지 (should/must).
 TASK|choice|Conjugate 가다 (to go) into Must (-아/어야 해요):|가야 해요;가야 돼요;갈 필요가 있어요;가야지|가야 해요|가다 -> 가야 해요 (must).
 ENDLEVEL
@@ -2154,34 +2154,34 @@ MAP|KSSSSSSSAASSSSSSSK
 MAP|KNNNNK..AA..KNNNNK
 MAP|KSSSSS..XX..SSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l63_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l63_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|오늘 점심 뭐 먹을지 아직 못 정했어요!
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Permission 'may' (-아/어도 돼요):|만들어도 돼요;만들면 안 돼요;만들지 마세요;만들어야 해요|만들어도 돼요|만들다 -> 만들어도 돼요 (may / allowed).
-TASK|fill|여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [쓰다 - to write (ㅡ-irreg)]|쓰면 안 돼요;써도 돼요;쓰지 마세요;써야 돼요|쓰면 안 돼요|쓰다 -> 쓰면 안 돼요 (must not).
+TASK|fill|퇴근하고 친구랑 여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [쓰다 - to write (ㅡ-irreg)]|쓰면 안 돼요;써도 돼요;쓰지 마세요;써야 돼요|쓰면 안 돼요|쓰다 -> 쓰면 안 돼요 (must not).
 TASK|build|Build (Polite 'don't' (-지 마세요)): 절대 + 가다 (to go)|절대;가지;마세요|가도 돼요;가면 안 돼요|가다 -> 가지 마세요 (please don't).
 TASK|choice|Conjugate 먹다 (to eat) into Permission 'may' (-아/어도 돼요):|먹어도 돼요;먹으면 안 돼요;먹지 마세요;먹어야 해요|먹어도 돼요|먹다 -> 먹어도 돼요 (may / allowed).
-TASK|fill|여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [보다 - to see/watch]|보면 안 돼요;봐도 돼요;보지 마세요;봐야 돼요|보면 안 돼요|보다 -> 보면 안 돼요 (must not).
-ENTITY|l63_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [보다 - to see/watch]|보면 안 돼요;봐도 돼요;보지 마세요;봐야 돼요|보면 안 돼요|보다 -> 보면 안 돼요 (must not).
+ENTITY|l63_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아, 커피 한 잔 마셔야 잠이 깰 것 같아요.
 TASK|build|Build (Polite 'don't' (-지 마세요)): 절대 + 읽다 (to read)|절대;읽지;마세요|읽어도 돼요;읽으면 안 돼요|읽다 -> 읽지 마세요 (please don't).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Permission 'may' (-아/어도 돼요):|들어도 돼요;들으면 안 돼요;듣지 마세요;들어야 해요|들어도 돼요|듣다 -> 들어도 돼요 (may / allowed).
-TASK|fill|여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [만들다 - to make (ㄹ-irreg)]|만들면 안 돼요;만들어도 돼요;만들지 마세요;만들어야 돼요|만들면 안 돼요|만들다 -> 만들면 안 돼요 (must not).
+TASK|fill|주말에 시간 나면 여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [만들다 - to make (ㄹ-irreg)]|만들면 안 돼요;만들어도 돼요;만들지 마세요;만들어야 돼요|만들면 안 돼요|만들다 -> 만들면 안 돼요 (must not).
 TASK|build|Build (Polite 'don't' (-지 마세요)): 절대 + 쓰다 (to write (ㅡ-irreg))|절대;쓰지;마세요|써도 돼요;쓰면 안 돼요|쓰다 -> 쓰지 마세요 (please don't).
 TASK|choice|Conjugate 가다 (to go) into Permission 'may' (-아/어도 돼요):|가도 돼요;가면 안 돼요;가지 마세요;가야 해요|가도 돼요|가다 -> 가도 돼요 (may / allowed).
-ENTITY|l63_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [먹다 - to eat]|먹으면 안 돼요;먹어도 돼요;먹지 마세요;먹어야 돼요|먹으면 안 돼요|먹다 -> 먹으면 안 돼요 (must not).
+ENTITY|l63_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|방금 지하철 간신히 탔어요, 휴!
+TASK|fill|아침에 일어나서 여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [먹다 - to eat]|먹으면 안 돼요;먹어도 돼요;먹지 마세요;먹어야 돼요|먹으면 안 돼요|먹다 -> 먹으면 안 돼요 (must not).
 TASK|build|Build (Polite 'don't' (-지 마세요)): 절대 + 보다 (to see/watch)|절대;보지;마세요|봐도 돼요;보면 안 돼요|보다 -> 보지 마세요 (please don't).
 TASK|choice|Conjugate 읽다 (to read) into Permission 'may' (-아/어도 돼요):|읽어도 돼요;읽으면 안 돼요;읽지 마세요;읽어야 해요|읽어도 돼요|읽다 -> 읽어도 돼요 (may / allowed).
-TASK|fill|여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [듣다 - to listen (ㄷ-irreg)]|들으면 안 돼요;들어도 돼요;듣지 마세요;들어야 돼요|들으면 안 돼요|듣다 -> 들으면 안 돼요 (must not).
+TASK|fill|카페에서 쉬면서 여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [듣다 - to listen (ㄷ-irreg)]|들으면 안 돼요;들어도 돼요;듣지 마세요;들어야 돼요|들으면 안 돼요|듣다 -> 들으면 안 돼요 (must not).
 TASK|build|Build (Polite 'don't' (-지 마세요)): 절대 + 만들다 (to make (ㄹ-irreg))|절대;만들지;마세요|만들어도 돼요;만들면 안 돼요|만들다 -> 만들지 마세요 (please don't).
-ENTITY|l63_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l63_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|오늘 날씨 진짜 좋죠? 산책하기 딱이에요.
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Permission 'may' (-아/어도 돼요):|써도 돼요;쓰면 안 돼요;쓰지 마세요;써야 해요|써도 돼요|쓰다 -> 써도 돼요 (may / allowed).
-TASK|fill|여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [가다 - to go]|가면 안 돼요;가도 돼요;가지 마세요;가야 돼요|가면 안 돼요|가다 -> 가면 안 돼요 (must not).
+TASK|fill|지하철 타고 가다가 여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [가다 - to go]|가면 안 돼요;가도 돼요;가지 마세요;가야 돼요|가면 안 돼요|가다 -> 가면 안 돼요 (must not).
 TASK|build|Build (Polite 'don't' (-지 마세요)): 절대 + 먹다 (to eat)|절대;먹지;마세요|먹어도 돼요;먹으면 안 돼요|먹다 -> 먹지 마세요 (please don't).
 TASK|choice|Conjugate 보다 (to see/watch) into Permission 'may' (-아/어도 돼요):|봐도 돼요;보면 안 돼요;보지 마세요;봐야 해요|봐도 돼요|보다 -> 봐도 돼요 (may / allowed).
-TASK|fill|여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [읽다 - to read]|읽으면 안 돼요;읽어도 돼요;읽지 마세요;읽어야 돼요|읽으면 안 돼요|읽다 -> 읽으면 안 돼요 (must not).
-ENTITY|l63_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [읽다 - to read]|읽으면 안 돼요;읽어도 돼요;읽지 마세요;읽어야 돼요|읽으면 안 돼요|읽다 -> 읽으면 안 돼요 (must not).
+ENTITY|l63_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|퇴근하고 친구랑 저녁 먹기로 했어요!
 TASK|build|Build (Polite 'don't' (-지 마세요)): 절대 + 듣다 (to listen (ㄷ-irreg))|절대;듣지;마세요|들어도 돼요;들으면 안 돼요|듣다 -> 듣지 마세요 (please don't).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Permission 'may' (-아/어도 돼요):|만들어도 돼요;만들면 안 돼요;만들지 마세요;만들어야 해요|만들어도 돼요|만들다 -> 만들어도 돼요 (may / allowed).
-TASK|fill|여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [쓰다 - to write (ㅡ-irreg)]|쓰면 안 돼요;써도 돼요;쓰지 마세요;써야 돼요|쓰면 안 돼요|쓰다 -> 쓰면 안 돼요 (must not).
+TASK|fill|약속 시간 전에 여기서 ___. (Prohibition 'must not' (-(으)면 안 돼요)) [쓰다 - to write (ㅡ-irreg)]|쓰면 안 돼요;써도 돼요;쓰지 마세요;써야 돼요|쓰면 안 돼요|쓰다 -> 쓰면 안 돼요 (must not).
 TASK|build|Build (Polite 'don't' (-지 마세요)): 절대 + 가다 (to go)|절대;가지;마세요|가도 돼요;가면 안 돼요|가다 -> 가지 마세요 (please don't).
 TASK|choice|Conjugate 먹다 (to eat) into Permission 'may' (-아/어도 돼요):|먹어도 돼요;먹으면 안 돼요;먹지 마세요;먹어야 해요|먹어도 돼요|먹다 -> 먹어도 돼요 (may / allowed).
 ENDLEVEL
@@ -2203,34 +2203,34 @@ MAP|KSSSSSSLLLLSSSSSSK
 MAP|KNNNNKSSLLSSKNNNNK
 MAP|KSSSSSSLLLLSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l64_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|서울 중심가에 오신 걸 환영해요!
+ENTITY|l64_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|어제 늦게 자서 오늘 좀 피곤하네요.
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Want to (-고 싶어요):|쓰고 싶어요;쓸래요?;썼으면 좋겠어요;써요|쓰고 싶어요|쓰다 -> 쓰고 싶어요 (want to).
-TASK|fill|같이 ___. (Will you / I will (-(으)ㄹ래요?)) [가다 - to go]|갈래요?;가고 싶어요;갔으면 좋겠어요;갈까요?|갈래요?|가다 -> 갈래요? (will you / I'll).
+TASK|fill|퇴근하고 친구랑 같이 ___. (Will you / I will (-(으)ㄹ래요?)) [가다 - to go]|갈래요?;가고 싶어요;갔으면 좋겠어요;갈까요?|갈래요?|가다 -> 갈래요? (will you / I'll).
 TASK|build|Build (Hope / Wish (-았/었으면 좋겠어요)): 꼭 + 먹다 (to eat)|꼭;먹었으면;좋겠어요|먹고 싶어요;먹을래요?|먹다 -> 먹었으면 좋겠어요 (hope/wish).
 TASK|choice|Conjugate 보다 (to see/watch) into Want to (-고 싶어요):|보고 싶어요;볼래요?;봤으면 좋겠어요;봐요|보고 싶어요|보다 -> 보고 싶어요 (want to).
-TASK|fill|같이 ___. (Will you / I will (-(으)ㄹ래요?)) [읽다 - to read]|읽을래요?;읽고 싶어요;읽었으면 좋겠어요;읽을까요?|읽을래요?|읽다 -> 읽을래요? (will you / I'll).
-ENTITY|l64_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 같이 ___. (Will you / I will (-(으)ㄹ래요?)) [읽다 - to read]|읽을래요?;읽고 싶어요;읽었으면 좋겠어요;읽을까요?|읽을래요?|읽다 -> 읽을래요? (will you / I'll).
+ENTITY|l64_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|주말에 뭐 할 계획 있어요?
 TASK|build|Build (Hope / Wish (-았/었으면 좋겠어요)): 꼭 + 듣다 (to listen (ㄷ-irreg))|꼭;들었으면;좋겠어요|듣고 싶어요;들을래요?|듣다 -> 들었으면 좋겠어요 (hope/wish).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Want to (-고 싶어요):|만들고 싶어요;만들래요?;만들었으면 좋겠어요;만들어요|만들고 싶어요|만들다 -> 만들고 싶어요 (want to).
-TASK|fill|같이 ___. (Will you / I will (-(으)ㄹ래요?)) [쓰다 - to write (ㅡ-irreg)]|쓸래요?;쓰고 싶어요;썼으면 좋겠어요;쓸까요?|쓸래요?|쓰다 -> 쓸래요? (will you / I'll).
+TASK|fill|주말에 시간 나면 같이 ___. (Will you / I will (-(으)ㄹ래요?)) [쓰다 - to write (ㅡ-irreg)]|쓸래요?;쓰고 싶어요;썼으면 좋겠어요;쓸까요?|쓸래요?|쓰다 -> 쓸래요? (will you / I'll).
 TASK|build|Build (Hope / Wish (-았/었으면 좋겠어요)): 꼭 + 가다 (to go)|꼭;갔으면;좋겠어요|가고 싶어요;갈래요?|가다 -> 갔으면 좋겠어요 (hope/wish).
 TASK|choice|Conjugate 먹다 (to eat) into Want to (-고 싶어요):|먹고 싶어요;먹을래요?;먹었으면 좋겠어요;먹어요|먹고 싶어요|먹다 -> 먹고 싶어요 (want to).
-ENTITY|l64_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|같이 ___. (Will you / I will (-(으)ㄹ래요?)) [보다 - to see/watch]|볼래요?;보고 싶어요;봤으면 좋겠어요;볼까요?|볼래요?|보다 -> 볼래요? (will you / I'll).
+ENTITY|l64_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|여기 근처에 맛있는 카페 아세요?
+TASK|fill|아침에 일어나서 같이 ___. (Will you / I will (-(으)ㄹ래요?)) [보다 - to see/watch]|볼래요?;보고 싶어요;봤으면 좋겠어요;볼까요?|볼래요?|보다 -> 볼래요? (will you / I'll).
 TASK|build|Build (Hope / Wish (-았/었으면 좋겠어요)): 꼭 + 읽다 (to read)|꼭;읽었으면;좋겠어요|읽고 싶어요;읽을래요?|읽다 -> 읽었으면 좋겠어요 (hope/wish).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Want to (-고 싶어요):|듣고 싶어요;들을래요?;들었으면 좋겠어요;들어요|듣고 싶어요|듣다 -> 듣고 싶어요 (want to).
-TASK|fill|같이 ___. (Will you / I will (-(으)ㄹ래요?)) [만들다 - to make (ㄹ-irreg)]|만들래요?;만들고 싶어요;만들었으면 좋겠어요;만들까요?|만들래요?|만들다 -> 만들래요? (will you / I'll).
+TASK|fill|카페에서 쉬면서 같이 ___. (Will you / I will (-(으)ㄹ래요?)) [만들다 - to make (ㄹ-irreg)]|만들래요?;만들고 싶어요;만들었으면 좋겠어요;만들까요?|만들래요?|만들다 -> 만들래요? (will you / I'll).
 TASK|build|Build (Hope / Wish (-았/었으면 좋겠어요)): 꼭 + 쓰다 (to write (ㅡ-irreg))|꼭;썼으면;좋겠어요|쓰고 싶어요;쓸래요?|쓰다 -> 썼으면 좋겠어요 (hope/wish).
-ENTITY|l64_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l64_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|잠깐 시간 있으면 같이 이야기할래요?
 TASK|choice|Conjugate 가다 (to go) into Want to (-고 싶어요):|가고 싶어요;갈래요?;갔으면 좋겠어요;가요|가고 싶어요|가다 -> 가고 싶어요 (want to).
-TASK|fill|같이 ___. (Will you / I will (-(으)ㄹ래요?)) [먹다 - to eat]|먹을래요?;먹고 싶어요;먹었으면 좋겠어요;먹을까요?|먹을래요?|먹다 -> 먹을래요? (will you / I'll).
+TASK|fill|지하철 타고 가다가 같이 ___. (Will you / I will (-(으)ㄹ래요?)) [먹다 - to eat]|먹을래요?;먹고 싶어요;먹었으면 좋겠어요;먹을까요?|먹을래요?|먹다 -> 먹을래요? (will you / I'll).
 TASK|build|Build (Hope / Wish (-았/었으면 좋겠어요)): 꼭 + 보다 (to see/watch)|꼭;봤으면;좋겠어요|보고 싶어요;볼래요?|보다 -> 봤으면 좋겠어요 (hope/wish).
 TASK|choice|Conjugate 읽다 (to read) into Want to (-고 싶어요):|읽고 싶어요;읽을래요?;읽었으면 좋겠어요;읽어요|읽고 싶어요|읽다 -> 읽고 싶어요 (want to).
-TASK|fill|같이 ___. (Will you / I will (-(으)ㄹ래요?)) [듣다 - to listen (ㄷ-irreg)]|들을래요?;듣고 싶어요;들었으면 좋겠어요;들을까요?|들을래요?|듣다 -> 들을래요? (will you / I'll).
-ENTITY|l64_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 같이 ___. (Will you / I will (-(으)ㄹ래요?)) [듣다 - to listen (ㄷ-irreg)]|들을래요?;듣고 싶어요;들었으면 좋겠어요;들을까요?|들을래요?|듣다 -> 들을래요? (will you / I'll).
+ENTITY|l64_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|요즘 한국어 공부 진짜 열심히 하시네요!
 TASK|build|Build (Hope / Wish (-았/었으면 좋겠어요)): 꼭 + 만들다 (to make (ㄹ-irreg))|꼭;만들었으면;좋겠어요|만들고 싶어요;만들래요?|만들다 -> 만들었으면 좋겠어요 (hope/wish).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Want to (-고 싶어요):|쓰고 싶어요;쓸래요?;썼으면 좋겠어요;써요|쓰고 싶어요|쓰다 -> 쓰고 싶어요 (want to).
-TASK|fill|같이 ___. (Will you / I will (-(으)ㄹ래요?)) [가다 - to go]|갈래요?;가고 싶어요;갔으면 좋겠어요;갈까요?|갈래요?|가다 -> 갈래요? (will you / I'll).
+TASK|fill|약속 시간 전에 같이 ___. (Will you / I will (-(으)ㄹ래요?)) [가다 - to go]|갈래요?;가고 싶어요;갔으면 좋겠어요;갈까요?|갈래요?|가다 -> 갈래요? (will you / I'll).
 TASK|build|Build (Hope / Wish (-았/었으면 좋겠어요)): 꼭 + 먹다 (to eat)|꼭;먹었으면;좋겠어요|먹고 싶어요;먹을래요?|먹다 -> 먹었으면 좋겠어요 (hope/wish).
 TASK|choice|Conjugate 보다 (to see/watch) into Want to (-고 싶어요):|보고 싶어요;볼래요?;봤으면 좋겠어요;봐요|보고 싶어요|보다 -> 보고 싶어요 (want to).
 ENDLEVEL
@@ -2252,34 +2252,34 @@ MAP|KSSLLSS.TT.SSLLSSK
 MAP|KNNNNSSSSSSSSNNNNK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l65_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l65_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|배고픈데 떡볶이 먹고 싶어요!
 TASK|choice|Conjugate 가다 (to go) into Please do (-아/어 주세요):|가 주세요;가세요;갈까요?;가자|가 주세요|가다 -> 가 주세요 (please do for me).
-TASK|fill|여기로 ___. (Honorific please (-(으)세요)) [먹다 - to eat]|드세요;먹어 주세요;먹을까요?;먹자|드세요|먹다 -> 드세요 (honorific please).
+TASK|fill|퇴근하고 친구랑 여기로 ___. (Honorific please (-(으)세요)) [먹다 - to eat]|드세요;먹어 주세요;먹을까요?;먹자|드세요|먹다 -> 드세요 (honorific please).
 TASK|build|Build (Shall we? (-(으)ㄹ까요?)): 같이 + 보다 (to see/watch)|같이;볼까요?|봐 주세요;보세요|보다 -> 볼까요? (shall we?).
 TASK|choice|Conjugate 읽다 (to read) into Casual 'Let's' (-자):|읽자;읽을까요?;읽어 주세요;읽지 않을래요?|읽자|읽다 -> 읽자 (casual let's).
-TASK|fill|같이 ___. (Won't you? (-지 않을래요?)) [듣다 - to listen (ㄷ-irreg)]|듣지 않을래요?;들을까요?;들어 주세요;듣지 마세요|듣지 않을래요?|듣다 -> 듣지 않을래요? (won't you?).
-ENTITY|l65_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 같이 ___. (Won't you? (-지 않을래요?)) [듣다 - to listen (ㄷ-irreg)]|듣지 않을래요?;들을까요?;들어 주세요;듣지 마세요|듣지 않을래요?|듣다 -> 듣지 않을래요? (won't you?).
+ENTITY|l65_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|우산 챙기셨어요? 오후에 비 올 수도 있대요.
 TASK|build|Build (Please do (-아/어 주세요)): 제발 + 만들다 (to make (ㄹ-irreg))|제발;만들어;주세요|만드세요;만들까요?|만들다 -> 만들어 주세요 (please do for me).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Honorific please (-(으)세요):|쓰세요;써 주세요;쓸까요?;쓰자|쓰세요|쓰다 -> 쓰세요 (honorific please).
-TASK|fill|같이 ___. (Shall we? (-(으)ㄹ까요?)) [가다 - to go]|갈까요?;가 주세요;가세요;가자|갈까요?|가다 -> 갈까요? (shall we?).
+TASK|fill|주말에 시간 나면 같이 ___. (Shall we? (-(으)ㄹ까요?)) [가다 - to go]|갈까요?;가 주세요;가세요;가자|갈까요?|가다 -> 갈까요? (shall we?).
 TASK|build|Build (Casual 'Let's' (-자)): 우리 + 먹다 (to eat)|우리;먹자|먹을까요?;먹어 주세요|먹다 -> 먹자 (casual let's).
 TASK|choice|Conjugate 보다 (to see/watch) into Won't you? (-지 않을래요?):|보지 않을래요?;볼까요?;봐 주세요;보지 마세요|보지 않을래요?|보다 -> 보지 않을래요? (won't you?).
-ENTITY|l65_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|제발 ___. (Please do (-아/어 주세요)) [읽다 - to read]|읽어 주세요;읽으세요;읽을까요?;읽자|읽어 주세요|읽다 -> 읽어 주세요 (please do for me).
+ENTITY|l65_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|강남역은 언제 와도 사람이 많네요!
+TASK|fill|아침에 일어나서 제발 ___. (Please do (-아/어 주세요)) [읽다 - to read]|읽어 주세요;읽으세요;읽을까요?;읽자|읽어 주세요|읽다 -> 읽어 주세요 (please do for me).
 TASK|build|Build (Honorific please (-(으)세요)): 여기로 + 듣다 (to listen (ㄷ-irreg))|여기로;들으세요|들어 주세요;들을까요?|듣다 -> 들으세요 (honorific please).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Shall we? (-(으)ㄹ까요?):|만들까요?;만들어 주세요;만드세요;만들자|만들까요?|만들다 -> 만들까요? (shall we?).
-TASK|fill|우리 ___. (Casual 'Let's' (-자)) [쓰다 - to write (ㅡ-irreg)]|쓰자;쓸까요?;써 주세요;쓰지 않을래요?|쓰자|쓰다 -> 쓰자 (casual let's).
+TASK|fill|카페에서 쉬면서 우리 ___. (Casual 'Let's' (-자)) [쓰다 - to write (ㅡ-irreg)]|쓰자;쓸까요?;써 주세요;쓰지 않을래요?|쓰자|쓰다 -> 쓰자 (casual let's).
 TASK|build|Build (Won't you? (-지 않을래요?)): 같이 + 가다 (to go)|같이;가지;않을래요?|갈까요?;가 주세요|가다 -> 가지 않을래요? (won't you?).
-ENTITY|l65_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l65_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|오늘 일찍 끝나면 영화 보러 갈 거예요.
 TASK|choice|Conjugate 먹다 (to eat) into Please do (-아/어 주세요):|먹어 주세요;드세요;먹을까요?;먹자|먹어 주세요|먹다 -> 먹어 주세요 (please do for me).
-TASK|fill|여기로 ___. (Honorific please (-(으)세요)) [보다 - to see/watch]|보세요;봐 주세요;볼까요?;보자|보세요|보다 -> 보세요 (honorific please).
+TASK|fill|지하철 타고 가다가 여기로 ___. (Honorific please (-(으)세요)) [보다 - to see/watch]|보세요;봐 주세요;볼까요?;보자|보세요|보다 -> 보세요 (honorific please).
 TASK|build|Build (Shall we? (-(으)ㄹ까요?)): 같이 + 읽다 (to read)|같이;읽을까요?|읽어 주세요;읽으세요|읽다 -> 읽을까요? (shall we?).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Casual 'Let's' (-자):|듣자;들을까요?;들어 주세요;듣지 않을래요?|듣자|듣다 -> 듣자 (casual let's).
-TASK|fill|같이 ___. (Won't you? (-지 않을래요?)) [만들다 - to make (ㄹ-irreg)]|만들지 않을래요?;만들까요?;만들어 주세요;만들지 마세요|만들지 않을래요?|만들다 -> 만들지 않을래요? (won't you?).
-ENTITY|l65_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 같이 ___. (Won't you? (-지 않을래요?)) [만들다 - to make (ㄹ-irreg)]|만들지 않을래요?;만들까요?;만들어 주세요;만들지 마세요|만들지 않을래요?|만들다 -> 만들지 않을래요? (won't you?).
+ENTITY|l65_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|편의점에서 삼각김밥 하나 사 왔어요.
 TASK|build|Build (Please do (-아/어 주세요)): 제발 + 쓰다 (to write (ㅡ-irreg))|제발;써;주세요|쓰세요;쓸까요?|쓰다 -> 써 주세요 (please do for me).
 TASK|choice|Conjugate 가다 (to go) into Honorific please (-(으)세요):|가세요;가 주세요;갈까요?;가자|가세요|가다 -> 가세요 (honorific please).
-TASK|fill|같이 ___. (Shall we? (-(으)ㄹ까요?)) [먹다 - to eat]|먹을까요?;먹어 주세요;드세요;먹자|먹을까요?|먹다 -> 먹을까요? (shall we?).
+TASK|fill|약속 시간 전에 같이 ___. (Shall we? (-(으)ㄹ까요?)) [먹다 - to eat]|먹을까요?;먹어 주세요;드세요;먹자|먹을까요?|먹다 -> 먹을까요? (shall we?).
 TASK|build|Build (Casual 'Let's' (-자)): 우리 + 보다 (to see/watch)|우리;보자|볼까요?;봐 주세요|보다 -> 보자 (casual let's).
 TASK|choice|Conjugate 읽다 (to read) into Won't you? (-지 않을래요?):|읽지 않을래요?;읽을까요?;읽어 주세요;읽지 마세요|읽지 않을래요?|읽다 -> 읽지 않을래요? (won't you?).
 ENDLEVEL
@@ -2301,34 +2301,34 @@ MAP|KNNNK.SSLLSS.KNNNK
 MAP|KSSSSSSSLLSSSSSSSK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l66_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|서울 중심가에 오신 걸 환영해요!
+ENTITY|l66_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|방금 버스 놓쳐서 다음 차 기다리는 중이에요.
 TASK|choice|Conjugate 먹다 (to eat) into Do for someone (-아/어 줘요):|먹어 줘요;먹어 드려요;먹어 받아요;먹어 주세요|먹어 줘요|먹다 -> 먹어 줘요 (do for someone).
-TASK|fill|할머니께 ___. (Do for elder (-아/어 드려요)) [보다 - to see/watch]|봐 드려요;봐 줘요;봐 받아요;봐 주세요|봐 드려요|보다 -> 봐 드려요 (humble/honorific give).
+TASK|fill|퇴근하고 친구랑 할머니께 ___. (Do for elder (-아/어 드려요)) [보다 - to see/watch]|봐 드려요;봐 줘요;봐 받아요;봐 주세요|봐 드려요|보다 -> 봐 드려요 (humble/honorific give).
 TASK|build|Build (Receive action (-아/어 받아요)): 직접 + 읽다 (to read)|직접;읽어;받아요|읽어 줘요;읽어 드려요|읽다 -> 읽어 받아요 (receive action).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Do for someone (-아/어 줘요):|들어 줘요;들어 드려요;들어 받아요;들어 주세요|들어 줘요|듣다 -> 들어 줘요 (do for someone).
-TASK|fill|할머니께 ___. (Do for elder (-아/어 드려요)) [만들다 - to make (ㄹ-irreg)]|만들어 드려요;만들어 줘요;만들어 받아요;만들어 주세요|만들어 드려요|만들다 -> 만들어 드려요 (humble/honorific give).
-ENTITY|l66_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 할머니께 ___. (Do for elder (-아/어 드려요)) [만들다 - to make (ㄹ-irreg)]|만들어 드려요;만들어 줘요;만들어 받아요;만들어 주세요|만들어 드려요|만들다 -> 만들어 드려요 (humble/honorific give).
+ENTITY|l66_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|이 동네 골목에 숨은 맛집이 진짜 많아요.
 TASK|build|Build (Receive action (-아/어 받아요)): 직접 + 쓰다 (to write (ㅡ-irreg))|직접;써;받아요|써 줘요;써 드려요|쓰다 -> 써 받아요 (receive action).
 TASK|choice|Conjugate 가다 (to go) into Do for someone (-아/어 줘요):|가 줘요;가 드려요;가 받아요;가 주세요|가 줘요|가다 -> 가 줘요 (do for someone).
-TASK|fill|할머니께 ___. (Do for elder (-아/어 드려요)) [먹다 - to eat]|먹어 드려요;먹어 줘요;먹어 받아요;먹어 주세요|먹어 드려요|먹다 -> 먹어 드려요 (humble/honorific give).
+TASK|fill|주말에 시간 나면 할머니께 ___. (Do for elder (-아/어 드려요)) [먹다 - to eat]|먹어 드려요;먹어 줘요;먹어 받아요;먹어 주세요|먹어 드려요|먹다 -> 먹어 드려요 (humble/honorific give).
 TASK|build|Build (Receive action (-아/어 받아요)): 직접 + 보다 (to see/watch)|직접;봐;받아요|봐 줘요;봐 드려요|보다 -> 봐 받아요 (receive action).
 TASK|choice|Conjugate 읽다 (to read) into Do for someone (-아/어 줘요):|읽어 줘요;읽어 드려요;읽어 받아요;읽어 주세요|읽어 줘요|읽다 -> 읽어 줘요 (do for someone).
-ENTITY|l66_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|할머니께 ___. (Do for elder (-아/어 드려요)) [듣다 - to listen (ㄷ-irreg)]|들어 드려요;들어 줘요;들어 받아요;들어 주세요|들어 드려요|듣다 -> 들어 드려요 (humble/honorific give).
+ENTITY|l66_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|시험 끝나면 푹 쉬고 싶어요!
+TASK|fill|아침에 일어나서 할머니께 ___. (Do for elder (-아/어 드려요)) [듣다 - to listen (ㄷ-irreg)]|들어 드려요;들어 줘요;들어 받아요;들어 주세요|들어 드려요|듣다 -> 들어 드려요 (humble/honorific give).
 TASK|build|Build (Receive action (-아/어 받아요)): 직접 + 만들다 (to make (ㄹ-irreg))|직접;만들어;받아요|만들어 줘요;만들어 드려요|만들다 -> 만들어 받아요 (receive action).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Do for someone (-아/어 줘요):|써 줘요;써 드려요;써 받아요;써 주세요|써 줘요|쓰다 -> 써 줘요 (do for someone).
-TASK|fill|할머니께 ___. (Do for elder (-아/어 드려요)) [가다 - to go]|가 드려요;가 줘요;가 받아요;가 주세요|가 드려요|가다 -> 가 드려요 (humble/honorific give).
+TASK|fill|카페에서 쉬면서 할머니께 ___. (Do for elder (-아/어 드려요)) [가다 - to go]|가 드려요;가 줘요;가 받아요;가 주세요|가 드려요|가다 -> 가 드려요 (humble/honorific give).
 TASK|build|Build (Receive action (-아/어 받아요)): 직접 + 먹다 (to eat)|직접;먹어;받아요|먹어 줘요;먹어 드려요|먹다 -> 먹어 받아요 (receive action).
-ENTITY|l66_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l66_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|커피 아이스로 드릴까요, 따뜻하게 드릴까요?
 TASK|choice|Conjugate 보다 (to see/watch) into Do for someone (-아/어 줘요):|봐 줘요;봐 드려요;봐 받아요;봐 주세요|봐 줘요|보다 -> 봐 줘요 (do for someone).
-TASK|fill|할머니께 ___. (Do for elder (-아/어 드려요)) [읽다 - to read]|읽어 드려요;읽어 줘요;읽어 받아요;읽어 주세요|읽어 드려요|읽다 -> 읽어 드려요 (humble/honorific give).
+TASK|fill|지하철 타고 가다가 할머니께 ___. (Do for elder (-아/어 드려요)) [읽다 - to read]|읽어 드려요;읽어 줘요;읽어 받아요;읽어 주세요|읽어 드려요|읽다 -> 읽어 드려요 (humble/honorific give).
 TASK|build|Build (Receive action (-아/어 받아요)): 직접 + 듣다 (to listen (ㄷ-irreg))|직접;들어;받아요|들어 줘요;들어 드려요|듣다 -> 들어 받아요 (receive action).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Do for someone (-아/어 줘요):|만들어 줘요;만들어 드려요;만들어 받아요;만들어 주세요|만들어 줘요|만들다 -> 만들어 줘요 (do for someone).
-TASK|fill|할머니께 ___. (Do for elder (-아/어 드려요)) [쓰다 - to write (ㅡ-irreg)]|써 드려요;써 줘요;써 받아요;써 주세요|써 드려요|쓰다 -> 써 드려요 (humble/honorific give).
-ENTITY|l66_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 할머니께 ___. (Do for elder (-아/어 드려요)) [쓰다 - to write (ㅡ-irreg)]|써 드려요;써 줘요;써 받아요;써 주세요|써 드려요|쓰다 -> 써 드려요 (humble/honorific give).
+ENTITY|l66_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|오랜만이에요! 요즘 어떻게 지내요?
 TASK|build|Build (Receive action (-아/어 받아요)): 직접 + 가다 (to go)|직접;가;받아요|가 줘요;가 드려요|가다 -> 가 받아요 (receive action).
 TASK|choice|Conjugate 먹다 (to eat) into Do for someone (-아/어 줘요):|먹어 줘요;먹어 드려요;먹어 받아요;먹어 주세요|먹어 줘요|먹다 -> 먹어 줘요 (do for someone).
-TASK|fill|할머니께 ___. (Do for elder (-아/어 드려요)) [보다 - to see/watch]|봐 드려요;봐 줘요;봐 받아요;봐 주세요|봐 드려요|보다 -> 봐 드려요 (humble/honorific give).
+TASK|fill|약속 시간 전에 할머니께 ___. (Do for elder (-아/어 드려요)) [보다 - to see/watch]|봐 드려요;봐 줘요;봐 받아요;봐 주세요|봐 드려요|보다 -> 봐 드려요 (humble/honorific give).
 TASK|build|Build (Receive action (-아/어 받아요)): 직접 + 읽다 (to read)|직접;읽어;받아요|읽어 줘요;읽어 드려요|읽다 -> 읽어 받아요 (receive action).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Do for someone (-아/어 줘요):|들어 줘요;들어 드려요;들어 받아요;들어 주세요|들어 줘요|듣다 -> 들어 줘요 (do for someone).
 ENDLEVEL
@@ -2350,34 +2350,34 @@ MAP|KSSSSSSSAASSSSSSSK
 MAP|KNNNNK..AA..KNNNNK
 MAP|KSSSSS..XX..SSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l67_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l67_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|오늘 점심 뭐 먹을지 아직 못 정했어요!
 TASK|choice|Conjugate 보다 (to see/watch) into Try doing (-아/어 봐요):|봐 봐요;본 적이 있어요;본 적이 없어요;봐요|봐 봐요|보다 -> 봐 봐요 (try doing).
-TASK|fill|예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [읽다 - to read]|읽은 적이 있어요;읽은 적이 없어요;읽어 봐요;읽었어요|읽은 적이 있어요|읽다 -> 읽은 적이 있어요 (have done).
+TASK|fill|퇴근하고 친구랑 예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [읽다 - to read]|읽은 적이 있어요;읽은 적이 없어요;읽어 봐요;읽었어요|읽은 적이 있어요|읽다 -> 읽은 적이 있어요 (have done).
 TASK|build|Build (Have never done (-(으)ㄴ 적이 없어요)): 아직 + 듣다 (to listen (ㄷ-irreg))|아직;들은;적이;없어요|들은 적이 있어요;들어 봐요|듣다 -> 들은 적이 없어요 (have never done).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Try doing (-아/어 봐요):|만들어 봐요;만든 적이 있어요;만든 적이 없어요;만들어요|만들어 봐요|만들다 -> 만들어 봐요 (try doing).
-TASK|fill|예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [쓰다 - to write (ㅡ-irreg)]|쓴 적이 있어요;쓴 적이 없어요;써 봐요;썼어요|쓴 적이 있어요|쓰다 -> 쓴 적이 있어요 (have done).
-ENTITY|l67_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [쓰다 - to write (ㅡ-irreg)]|쓴 적이 있어요;쓴 적이 없어요;써 봐요;썼어요|쓴 적이 있어요|쓰다 -> 쓴 적이 있어요 (have done).
+ENTITY|l67_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아, 커피 한 잔 마셔야 잠이 깰 것 같아요.
 TASK|build|Build (Have never done (-(으)ㄴ 적이 없어요)): 아직 + 가다 (to go)|아직;간;적이;없어요|간 적이 있어요;가 봐요|가다 -> 간 적이 없어요 (have never done).
 TASK|choice|Conjugate 먹다 (to eat) into Try doing (-아/어 봐요):|먹어 봐요;먹은 적이 있어요;먹은 적이 없어요;먹어요|먹어 봐요|먹다 -> 먹어 봐요 (try doing).
-TASK|fill|예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [보다 - to see/watch]|본 적이 있어요;본 적이 없어요;봐 봐요;봤어요|본 적이 있어요|보다 -> 본 적이 있어요 (have done).
+TASK|fill|주말에 시간 나면 예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [보다 - to see/watch]|본 적이 있어요;본 적이 없어요;봐 봐요;봤어요|본 적이 있어요|보다 -> 본 적이 있어요 (have done).
 TASK|build|Build (Have never done (-(으)ㄴ 적이 없어요)): 아직 + 읽다 (to read)|아직;읽은;적이;없어요|읽은 적이 있어요;읽어 봐요|읽다 -> 읽은 적이 없어요 (have never done).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Try doing (-아/어 봐요):|들어 봐요;들은 적이 있어요;들은 적이 없어요;들어요|들어 봐요|듣다 -> 들어 봐요 (try doing).
-ENTITY|l67_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [만들다 - to make (ㄹ-irreg)]|만든 적이 있어요;만든 적이 없어요;만들어 봐요;만들었어요|만든 적이 있어요|만들다 -> 만든 적이 있어요 (have done).
+ENTITY|l67_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|방금 지하철 간신히 탔어요, 휴!
+TASK|fill|아침에 일어나서 예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [만들다 - to make (ㄹ-irreg)]|만든 적이 있어요;만든 적이 없어요;만들어 봐요;만들었어요|만든 적이 있어요|만들다 -> 만든 적이 있어요 (have done).
 TASK|build|Build (Have never done (-(으)ㄴ 적이 없어요)): 아직 + 쓰다 (to write (ㅡ-irreg))|아직;쓴;적이;없어요|쓴 적이 있어요;써 봐요|쓰다 -> 쓴 적이 없어요 (have never done).
 TASK|choice|Conjugate 가다 (to go) into Try doing (-아/어 봐요):|가 봐요;간 적이 있어요;간 적이 없어요;가요|가 봐요|가다 -> 가 봐요 (try doing).
-TASK|fill|예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [먹다 - to eat]|먹은 적이 있어요;먹은 적이 없어요;먹어 봐요;먹었어요|먹은 적이 있어요|먹다 -> 먹은 적이 있어요 (have done).
+TASK|fill|카페에서 쉬면서 예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [먹다 - to eat]|먹은 적이 있어요;먹은 적이 없어요;먹어 봐요;먹었어요|먹은 적이 있어요|먹다 -> 먹은 적이 있어요 (have done).
 TASK|build|Build (Have never done (-(으)ㄴ 적이 없어요)): 아직 + 보다 (to see/watch)|아직;본;적이;없어요|본 적이 있어요;봐 봐요|보다 -> 본 적이 없어요 (have never done).
-ENTITY|l67_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l67_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|오늘 날씨 진짜 좋죠? 산책하기 딱이에요.
 TASK|choice|Conjugate 읽다 (to read) into Try doing (-아/어 봐요):|읽어 봐요;읽은 적이 있어요;읽은 적이 없어요;읽어요|읽어 봐요|읽다 -> 읽어 봐요 (try doing).
-TASK|fill|예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [듣다 - to listen (ㄷ-irreg)]|들은 적이 있어요;들은 적이 없어요;들어 봐요;들었어요|들은 적이 있어요|듣다 -> 들은 적이 있어요 (have done).
+TASK|fill|지하철 타고 가다가 예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [듣다 - to listen (ㄷ-irreg)]|들은 적이 있어요;들은 적이 없어요;들어 봐요;들었어요|들은 적이 있어요|듣다 -> 들은 적이 있어요 (have done).
 TASK|build|Build (Have never done (-(으)ㄴ 적이 없어요)): 아직 + 만들다 (to make (ㄹ-irreg))|아직;만든;적이;없어요|만든 적이 있어요;만들어 봐요|만들다 -> 만든 적이 없어요 (have never done).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Try doing (-아/어 봐요):|써 봐요;쓴 적이 있어요;쓴 적이 없어요;써요|써 봐요|쓰다 -> 써 봐요 (try doing).
-TASK|fill|예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [가다 - to go]|간 적이 있어요;간 적이 없어요;가 봐요;갔어요|간 적이 있어요|가다 -> 간 적이 있어요 (have done).
-ENTITY|l67_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [가다 - to go]|간 적이 있어요;간 적이 없어요;가 봐요;갔어요|간 적이 있어요|가다 -> 간 적이 있어요 (have done).
+ENTITY|l67_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|퇴근하고 친구랑 저녁 먹기로 했어요!
 TASK|build|Build (Have never done (-(으)ㄴ 적이 없어요)): 아직 + 먹다 (to eat)|아직;먹은;적이;없어요|먹은 적이 있어요;먹어 봐요|먹다 -> 먹은 적이 없어요 (have never done).
 TASK|choice|Conjugate 보다 (to see/watch) into Try doing (-아/어 봐요):|봐 봐요;본 적이 있어요;본 적이 없어요;봐요|봐 봐요|보다 -> 봐 봐요 (try doing).
-TASK|fill|예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [읽다 - to read]|읽은 적이 있어요;읽은 적이 없어요;읽어 봐요;읽었어요|읽은 적이 있어요|읽다 -> 읽은 적이 있어요 (have done).
+TASK|fill|약속 시간 전에 예전에 ___. (Have done (-(으)ㄴ 적이 있어요)) [읽다 - to read]|읽은 적이 있어요;읽은 적이 없어요;읽어 봐요;읽었어요|읽은 적이 있어요|읽다 -> 읽은 적이 있어요 (have done).
 TASK|build|Build (Have never done (-(으)ㄴ 적이 없어요)): 아직 + 듣다 (to listen (ㄷ-irreg))|아직;들은;적이;없어요|들은 적이 있어요;들어 봐요|듣다 -> 들은 적이 없어요 (have never done).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Try doing (-아/어 봐요):|만들어 봐요;만든 적이 있어요;만든 적이 없어요;만들어요|만들어 봐요|만들다 -> 만들어 봐요 (try doing).
 ENDLEVEL
@@ -2399,34 +2399,34 @@ MAP|KSSSSSSLLLLSSSSSSK
 MAP|KNNNNKSSLLSSKNNNNK
 MAP|KSSSSSSLLLLSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l68_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|서울 중심가에 오신 걸 환영해요!
+ENTITY|l68_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|어제 늦게 자서 오늘 좀 피곤하네요.
 TASK|choice|Conjugate 읽다 (to read) into Completely do (-아/어 버렸어요):|읽어 버렸어요;읽고 말았어요;읽어 놨어요;읽었어요|읽어 버렸어요|읽다 -> 읽어 버렸어요 (completely did).
-TASK|fill|결국 ___. (End up doing (-고 말았어요)) [듣다 - to listen (ㄷ-irreg)]|듣고 말았어요;들어 버렸어요;들어 놨어요;들었어요|듣고 말았어요|듣다 -> 듣고 말았어요 (ended up doing).
+TASK|fill|퇴근하고 친구랑 결국 ___. (End up doing (-고 말았어요)) [듣다 - to listen (ㄷ-irreg)]|듣고 말았어요;들어 버렸어요;들어 놨어요;들었어요|듣고 말았어요|듣다 -> 듣고 말았어요 (ended up doing).
 TASK|build|Build (Do in advance (-아/어 놨어요)): 미리 + 만들다 (to make (ㄹ-irreg))|미리;만들어;놨어요|만들어 버렸어요;만들고 말았어요|만들다 -> 만들어 놨어요 (did in advance).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Completely do (-아/어 버렸어요):|써 버렸어요;쓰고 말았어요;써 놨어요;썼어요|써 버렸어요|쓰다 -> 써 버렸어요 (completely did).
-TASK|fill|결국 ___. (End up doing (-고 말았어요)) [가다 - to go]|가고 말았어요;가 버렸어요;가 놨어요;갔어요|가고 말았어요|가다 -> 가고 말았어요 (ended up doing).
-ENTITY|l68_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 결국 ___. (End up doing (-고 말았어요)) [가다 - to go]|가고 말았어요;가 버렸어요;가 놨어요;갔어요|가고 말았어요|가다 -> 가고 말았어요 (ended up doing).
+ENTITY|l68_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|주말에 뭐 할 계획 있어요?
 TASK|build|Build (Do in advance (-아/어 놨어요)): 미리 + 먹다 (to eat)|미리;먹어;놨어요|먹어 버렸어요;먹고 말았어요|먹다 -> 먹어 놨어요 (did in advance).
 TASK|choice|Conjugate 보다 (to see/watch) into Completely do (-아/어 버렸어요):|봐 버렸어요;보고 말았어요;봐 놨어요;봤어요|봐 버렸어요|보다 -> 봐 버렸어요 (completely did).
-TASK|fill|결국 ___. (End up doing (-고 말았어요)) [읽다 - to read]|읽고 말았어요;읽어 버렸어요;읽어 놨어요;읽었어요|읽고 말았어요|읽다 -> 읽고 말았어요 (ended up doing).
+TASK|fill|주말에 시간 나면 결국 ___. (End up doing (-고 말았어요)) [읽다 - to read]|읽고 말았어요;읽어 버렸어요;읽어 놨어요;읽었어요|읽고 말았어요|읽다 -> 읽고 말았어요 (ended up doing).
 TASK|build|Build (Do in advance (-아/어 놨어요)): 미리 + 듣다 (to listen (ㄷ-irreg))|미리;들어;놨어요|들어 버렸어요;듣고 말았어요|듣다 -> 들어 놨어요 (did in advance).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Completely do (-아/어 버렸어요):|만들어 버렸어요;만들고 말았어요;만들어 놨어요;만들었어요|만들어 버렸어요|만들다 -> 만들어 버렸어요 (completely did).
-ENTITY|l68_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|결국 ___. (End up doing (-고 말았어요)) [쓰다 - to write (ㅡ-irreg)]|쓰고 말았어요;써 버렸어요;써 놨어요;썼어요|쓰고 말았어요|쓰다 -> 쓰고 말았어요 (ended up doing).
+ENTITY|l68_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|여기 근처에 맛있는 카페 아세요?
+TASK|fill|아침에 일어나서 결국 ___. (End up doing (-고 말았어요)) [쓰다 - to write (ㅡ-irreg)]|쓰고 말았어요;써 버렸어요;써 놨어요;썼어요|쓰고 말았어요|쓰다 -> 쓰고 말았어요 (ended up doing).
 TASK|build|Build (Do in advance (-아/어 놨어요)): 미리 + 가다 (to go)|미리;가;놨어요|가 버렸어요;가고 말았어요|가다 -> 가 놨어요 (did in advance).
 TASK|choice|Conjugate 먹다 (to eat) into Completely do (-아/어 버렸어요):|먹어 버렸어요;먹고 말았어요;먹어 놨어요;먹었어요|먹어 버렸어요|먹다 -> 먹어 버렸어요 (completely did).
-TASK|fill|결국 ___. (End up doing (-고 말았어요)) [보다 - to see/watch]|보고 말았어요;봐 버렸어요;봐 놨어요;봤어요|보고 말았어요|보다 -> 보고 말았어요 (ended up doing).
+TASK|fill|카페에서 쉬면서 결국 ___. (End up doing (-고 말았어요)) [보다 - to see/watch]|보고 말았어요;봐 버렸어요;봐 놨어요;봤어요|보고 말았어요|보다 -> 보고 말았어요 (ended up doing).
 TASK|build|Build (Do in advance (-아/어 놨어요)): 미리 + 읽다 (to read)|미리;읽어;놨어요|읽어 버렸어요;읽고 말았어요|읽다 -> 읽어 놨어요 (did in advance).
-ENTITY|l68_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l68_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|잠깐 시간 있으면 같이 이야기할래요?
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Completely do (-아/어 버렸어요):|들어 버렸어요;듣고 말았어요;들어 놨어요;들었어요|들어 버렸어요|듣다 -> 들어 버렸어요 (completely did).
-TASK|fill|결국 ___. (End up doing (-고 말았어요)) [만들다 - to make (ㄹ-irreg)]|만들고 말았어요;만들어 버렸어요;만들어 놨어요;만들었어요|만들고 말았어요|만들다 -> 만들고 말았어요 (ended up doing).
+TASK|fill|지하철 타고 가다가 결국 ___. (End up doing (-고 말았어요)) [만들다 - to make (ㄹ-irreg)]|만들고 말았어요;만들어 버렸어요;만들어 놨어요;만들었어요|만들고 말았어요|만들다 -> 만들고 말았어요 (ended up doing).
 TASK|build|Build (Do in advance (-아/어 놨어요)): 미리 + 쓰다 (to write (ㅡ-irreg))|미리;써;놨어요|써 버렸어요;쓰고 말았어요|쓰다 -> 써 놨어요 (did in advance).
 TASK|choice|Conjugate 가다 (to go) into Completely do (-아/어 버렸어요):|가 버렸어요;가고 말았어요;가 놨어요;갔어요|가 버렸어요|가다 -> 가 버렸어요 (completely did).
-TASK|fill|결국 ___. (End up doing (-고 말았어요)) [먹다 - to eat]|먹고 말았어요;먹어 버렸어요;먹어 놨어요;먹었어요|먹고 말았어요|먹다 -> 먹고 말았어요 (ended up doing).
-ENTITY|l68_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 결국 ___. (End up doing (-고 말았어요)) [먹다 - to eat]|먹고 말았어요;먹어 버렸어요;먹어 놨어요;먹었어요|먹고 말았어요|먹다 -> 먹고 말았어요 (ended up doing).
+ENTITY|l68_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|요즘 한국어 공부 진짜 열심히 하시네요!
 TASK|build|Build (Do in advance (-아/어 놨어요)): 미리 + 보다 (to see/watch)|미리;봐;놨어요|봐 버렸어요;보고 말았어요|보다 -> 봐 놨어요 (did in advance).
 TASK|choice|Conjugate 읽다 (to read) into Completely do (-아/어 버렸어요):|읽어 버렸어요;읽고 말았어요;읽어 놨어요;읽었어요|읽어 버렸어요|읽다 -> 읽어 버렸어요 (completely did).
-TASK|fill|결국 ___. (End up doing (-고 말았어요)) [듣다 - to listen (ㄷ-irreg)]|듣고 말았어요;들어 버렸어요;들어 놨어요;들었어요|듣고 말았어요|듣다 -> 듣고 말았어요 (ended up doing).
+TASK|fill|약속 시간 전에 결국 ___. (End up doing (-고 말았어요)) [듣다 - to listen (ㄷ-irreg)]|듣고 말았어요;들어 버렸어요;들어 놨어요;들었어요|듣고 말았어요|듣다 -> 듣고 말았어요 (ended up doing).
 TASK|build|Build (Do in advance (-아/어 놨어요)): 미리 + 만들다 (to make (ㄹ-irreg))|미리;만들어;놨어요|만들어 버렸어요;만들고 말았어요|만들다 -> 만들어 놨어요 (did in advance).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Completely do (-아/어 버렸어요):|써 버렸어요;쓰고 말았어요;써 놨어요;썼어요|써 버렸어요|쓰다 -> 써 버렸어요 (completely did).
 ENDLEVEL
@@ -2448,34 +2448,34 @@ MAP|KSSLLSS.TT.SSLLSSK
 MAP|KNNNNSSSSSSSSNNNNK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l69_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l69_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|배고픈데 떡볶이 먹고 싶어요!
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Short 'not' (안 + Verb):|안 들어요;듣지 않아요;못 들어요;듣지 마세요|안 들어요|듣다 -> 안 들어요 (short negation).
-TASK|fill|절대 ___. (Long 'not' (-지 않아요)) [만들다 - to make (ㄹ-irreg)]|만들지 않아요;안 만들어요;만들지 못해요;만들지 마세요|만들지 않아요|만들다 -> 만들지 않아요 (long negation).
+TASK|fill|퇴근하고 친구랑 절대 ___. (Long 'not' (-지 않아요)) [만들다 - to make (ㄹ-irreg)]|만들지 않아요;안 만들어요;만들지 못해요;만들지 마세요|만들지 않아요|만들다 -> 만들지 않아요 (long negation).
 TASK|build|Build (Short 'cannot' (못 + Verb)): 너무 바빠서 + 쓰다 (to write (ㅡ-irreg))|너무 바빠서;못;써요|안 써요;쓰지 못해요|쓰다 -> 못 써요 (short inability).
 TASK|choice|Conjugate 가다 (to go) into Long 'cannot' (-지 못해요):|가지 못해요;못 가요;가지 않아요;가지 마세요|가지 못해요|가다 -> 가지 못해요 (long inability).
-TASK|fill|제발 ___. (Negative command (-지 마세요)) [먹다 - to eat]|먹지 마세요;먹지 않아요;먹지 못해요;드세요|먹지 마세요|먹다 -> 먹지 마세요 (polite don't).
-ENTITY|l69_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 제발 ___. (Negative command (-지 마세요)) [먹다 - to eat]|먹지 마세요;먹지 않아요;먹지 못해요;드세요|먹지 마세요|먹다 -> 먹지 마세요 (polite don't).
+ENTITY|l69_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|우산 챙기셨어요? 오후에 비 올 수도 있대요.
 TASK|build|Build (Short 'not' (안 + Verb)): 오늘은 + 보다 (to see/watch)|오늘은;안;봐요|보지 않아요;못 봐요|보다 -> 안 봐요 (short negation).
 TASK|choice|Conjugate 읽다 (to read) into Long 'not' (-지 않아요):|읽지 않아요;안 읽어요;읽지 못해요;읽지 마세요|읽지 않아요|읽다 -> 읽지 않아요 (long negation).
-TASK|fill|너무 바빠서 ___. (Short 'cannot' (못 + Verb)) [듣다 - to listen (ㄷ-irreg)]|못 들어요;안 들어요;듣지 못해요;듣지 않아요|못 들어요|듣다 -> 못 들어요 (short inability).
+TASK|fill|주말에 시간 나면 너무 바빠서 ___. (Short 'cannot' (못 + Verb)) [듣다 - to listen (ㄷ-irreg)]|못 들어요;안 들어요;듣지 못해요;듣지 않아요|못 들어요|듣다 -> 못 들어요 (short inability).
 TASK|build|Build (Long 'cannot' (-지 못해요)): 결국 + 만들다 (to make (ㄹ-irreg))|결국;만들지;못해요|못 만들어요;만들지 않아요|만들다 -> 만들지 못해요 (long inability).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Negative command (-지 마세요):|쓰지 마세요;쓰지 않아요;쓰지 못해요;쓰세요|쓰지 마세요|쓰다 -> 쓰지 마세요 (polite don't).
-ENTITY|l69_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|오늘은 ___. (Short 'not' (안 + Verb)) [가다 - to go]|안 가요;가지 않아요;못 가요;가지 마세요|안 가요|가다 -> 안 가요 (short negation).
+ENTITY|l69_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|강남역은 언제 와도 사람이 많네요!
+TASK|fill|아침에 일어나서 오늘은 ___. (Short 'not' (안 + Verb)) [가다 - to go]|안 가요;가지 않아요;못 가요;가지 마세요|안 가요|가다 -> 안 가요 (short negation).
 TASK|build|Build (Long 'not' (-지 않아요)): 절대 + 먹다 (to eat)|절대;먹지;않아요|안 먹어요;먹지 못해요|먹다 -> 먹지 않아요 (long negation).
 TASK|choice|Conjugate 보다 (to see/watch) into Short 'cannot' (못 + Verb):|못 봐요;안 봐요;보지 못해요;보지 않아요|못 봐요|보다 -> 못 봐요 (short inability).
-TASK|fill|결국 ___. (Long 'cannot' (-지 못해요)) [읽다 - to read]|읽지 못해요;못 읽어요;읽지 않아요;읽지 마세요|읽지 못해요|읽다 -> 읽지 못해요 (long inability).
+TASK|fill|카페에서 쉬면서 결국 ___. (Long 'cannot' (-지 못해요)) [읽다 - to read]|읽지 못해요;못 읽어요;읽지 않아요;읽지 마세요|읽지 못해요|읽다 -> 읽지 못해요 (long inability).
 TASK|build|Build (Negative command (-지 마세요)): 제발 + 듣다 (to listen (ㄷ-irreg))|제발;듣지;마세요|듣지 않아요;듣지 못해요|듣다 -> 듣지 마세요 (polite don't).
-ENTITY|l69_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l69_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|오늘 일찍 끝나면 영화 보러 갈 거예요.
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Short 'not' (안 + Verb):|안 만들어요;만들지 않아요;못 만들어요;만들지 마세요|안 만들어요|만들다 -> 안 만들어요 (short negation).
-TASK|fill|절대 ___. (Long 'not' (-지 않아요)) [쓰다 - to write (ㅡ-irreg)]|쓰지 않아요;안 써요;쓰지 못해요;쓰지 마세요|쓰지 않아요|쓰다 -> 쓰지 않아요 (long negation).
+TASK|fill|지하철 타고 가다가 절대 ___. (Long 'not' (-지 않아요)) [쓰다 - to write (ㅡ-irreg)]|쓰지 않아요;안 써요;쓰지 못해요;쓰지 마세요|쓰지 않아요|쓰다 -> 쓰지 않아요 (long negation).
 TASK|build|Build (Short 'cannot' (못 + Verb)): 너무 바빠서 + 가다 (to go)|너무 바빠서;못;가요|안 가요;가지 못해요|가다 -> 못 가요 (short inability).
 TASK|choice|Conjugate 먹다 (to eat) into Long 'cannot' (-지 못해요):|먹지 못해요;못 먹어요;먹지 않아요;먹지 마세요|먹지 못해요|먹다 -> 먹지 못해요 (long inability).
-TASK|fill|제발 ___. (Negative command (-지 마세요)) [보다 - to see/watch]|보지 마세요;보지 않아요;보지 못해요;보세요|보지 마세요|보다 -> 보지 마세요 (polite don't).
-ENTITY|l69_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 제발 ___. (Negative command (-지 마세요)) [보다 - to see/watch]|보지 마세요;보지 않아요;보지 못해요;보세요|보지 마세요|보다 -> 보지 마세요 (polite don't).
+ENTITY|l69_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|편의점에서 삼각김밥 하나 사 왔어요.
 TASK|build|Build (Short 'not' (안 + Verb)): 오늘은 + 읽다 (to read)|오늘은;안;읽어요|읽지 않아요;못 읽어요|읽다 -> 안 읽어요 (short negation).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Long 'not' (-지 않아요):|듣지 않아요;안 들어요;듣지 못해요;듣지 마세요|듣지 않아요|듣다 -> 듣지 않아요 (long negation).
-TASK|fill|너무 바빠서 ___. (Short 'cannot' (못 + Verb)) [만들다 - to make (ㄹ-irreg)]|못 만들어요;안 만들어요;만들지 못해요;만들지 않아요|못 만들어요|만들다 -> 못 만들어요 (short inability).
+TASK|fill|약속 시간 전에 너무 바빠서 ___. (Short 'cannot' (못 + Verb)) [만들다 - to make (ㄹ-irreg)]|못 만들어요;안 만들어요;만들지 못해요;만들지 않아요|못 만들어요|만들다 -> 못 만들어요 (short inability).
 TASK|build|Build (Long 'cannot' (-지 못해요)): 결국 + 쓰다 (to write (ㅡ-irreg))|결국;쓰지;못해요|못 써요;쓰지 않아요|쓰다 -> 쓰지 못해요 (long inability).
 TASK|choice|Conjugate 가다 (to go) into Negative command (-지 마세요):|가지 마세요;가지 않아요;가지 못해요;가세요|가지 마세요|가다 -> 가지 마세요 (polite don't).
 ENDLEVEL
@@ -2497,34 +2497,34 @@ MAP|KNNNK.SSLLSS.KNNNK
 MAP|KSSSSSSSLLSSSSSSSK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l70_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|서울 중심가에 오신 걸 환영해요!
+ENTITY|l70_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|방금 버스 놓쳐서 다음 차 기다리는 중이에요.
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Simple question (-아/어요?):|만들어요?;만들까요?;만들래요?;만들죠?|만들어요?|만들다 -> 만들어요? (simple question).
-TASK|fill|같이 ___. (Shall we? (-(으)ㄹ까요?)) [쓰다 - to write (ㅡ-irreg)]|쓸까요?;쓸래요?;쓰죠?;써요?|쓸까요?|쓰다 -> 쓸까요? (shall we?).
+TASK|fill|퇴근하고 친구랑 같이 ___. (Shall we? (-(으)ㄹ까요?)) [쓰다 - to write (ㅡ-irreg)]|쓸까요?;쓸래요?;쓰죠?;써요?|쓸까요?|쓰다 -> 쓸까요? (shall we?).
 TASK|build|Build (Will you? (-(으)ㄹ래요?)): 오늘 + 가다 (to go)|오늘;갈래요?|갈까요?;가죠?|가다 -> 갈래요? (will you?).
 TASK|choice|Conjugate 먹다 (to eat) into Confirmation 'Right?' (-죠?):|먹죠?;먹을까요?;먹을래요?;먹으니까?|먹죠?|먹다 -> 먹죠? (right? / isn't it?).
-TASK|fill|왜 ___. (Reason question (-(으)니까?)) [보다 - to see/watch]|보니까?;보죠?;볼까요?;볼래요?|보니까?|보다 -> 보니까? (because...?).
-ENTITY|l70_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 왜 ___. (Reason question (-(으)니까?)) [보다 - to see/watch]|보니까?;보죠?;볼까요?;볼래요?|보니까?|보다 -> 보니까? (because...?).
+ENTITY|l70_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|이 동네 골목에 숨은 맛집이 진짜 많아요.
 TASK|build|Build (Simple question (-아/어요?)): 지금 + 읽다 (to read)|지금;읽어요?|읽을까요?;읽을래요?|읽다 -> 읽어요? (simple question).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Shall we? (-(으)ㄹ까요?):|들을까요?;들을래요?;듣죠?;들어요?|들을까요?|듣다 -> 들을까요? (shall we?).
-TASK|fill|오늘 ___. (Will you? (-(으)ㄹ래요?)) [만들다 - to make (ㄹ-irreg)]|만들래요?;만들까요?;만들죠?;만들어요?|만들래요?|만들다 -> 만들래요? (will you?).
+TASK|fill|주말에 시간 나면 오늘 ___. (Will you? (-(으)ㄹ래요?)) [만들다 - to make (ㄹ-irreg)]|만들래요?;만들까요?;만들죠?;만들어요?|만들래요?|만들다 -> 만들래요? (will you?).
 TASK|build|Build (Confirmation 'Right?' (-죠?)): 매일 + 쓰다 (to write (ㅡ-irreg))|매일;쓰죠?|쓸까요?;쓸래요?|쓰다 -> 쓰죠? (right? / isn't it?).
 TASK|choice|Conjugate 가다 (to go) into Reason question (-(으)니까?):|가니까?;가죠?;갈까요?;갈래요?|가니까?|가다 -> 가니까? (because...?).
-ENTITY|l70_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|지금 ___. (Simple question (-아/어요?)) [먹다 - to eat]|먹어요?;먹을까요?;먹을래요?;먹죠?|먹어요?|먹다 -> 먹어요? (simple question).
+ENTITY|l70_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|시험 끝나면 푹 쉬고 싶어요!
+TASK|fill|아침에 일어나서 지금 ___. (Simple question (-아/어요?)) [먹다 - to eat]|먹어요?;먹을까요?;먹을래요?;먹죠?|먹어요?|먹다 -> 먹어요? (simple question).
 TASK|build|Build (Shall we? (-(으)ㄹ까요?)): 같이 + 보다 (to see/watch)|같이;볼까요?|볼래요?;보죠?|보다 -> 볼까요? (shall we?).
 TASK|choice|Conjugate 읽다 (to read) into Will you? (-(으)ㄹ래요?):|읽을래요?;읽을까요?;읽죠?;읽어요?|읽을래요?|읽다 -> 읽을래요? (will you?).
-TASK|fill|매일 ___. (Confirmation 'Right?' (-죠?)) [듣다 - to listen (ㄷ-irreg)]|듣죠?;들을까요?;들을래요?;들으니까?|듣죠?|듣다 -> 듣죠? (right? / isn't it?).
+TASK|fill|카페에서 쉬면서 매일 ___. (Confirmation 'Right?' (-죠?)) [듣다 - to listen (ㄷ-irreg)]|듣죠?;들을까요?;들을래요?;들으니까?|듣죠?|듣다 -> 듣죠? (right? / isn't it?).
 TASK|build|Build (Reason question (-(으)니까?)): 왜 + 만들다 (to make (ㄹ-irreg))|왜;만드니까?|만들죠?;만들까요?|만들다 -> 만드니까? (because...?).
-ENTITY|l70_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l70_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|커피 아이스로 드릴까요, 따뜻하게 드릴까요?
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Simple question (-아/어요?):|써요?;쓸까요?;쓸래요?;쓰죠?|써요?|쓰다 -> 써요? (simple question).
-TASK|fill|같이 ___. (Shall we? (-(으)ㄹ까요?)) [가다 - to go]|갈까요?;갈래요?;가죠?;가요?|갈까요?|가다 -> 갈까요? (shall we?).
+TASK|fill|지하철 타고 가다가 같이 ___. (Shall we? (-(으)ㄹ까요?)) [가다 - to go]|갈까요?;갈래요?;가죠?;가요?|갈까요?|가다 -> 갈까요? (shall we?).
 TASK|build|Build (Will you? (-(으)ㄹ래요?)): 오늘 + 먹다 (to eat)|오늘;먹을래요?|먹을까요?;먹죠?|먹다 -> 먹을래요? (will you?).
 TASK|choice|Conjugate 보다 (to see/watch) into Confirmation 'Right?' (-죠?):|보죠?;볼까요?;볼래요?;보니까?|보죠?|보다 -> 보죠? (right? / isn't it?).
-TASK|fill|왜 ___. (Reason question (-(으)니까?)) [읽다 - to read]|읽으니까?;읽죠?;읽을까요?;읽을래요?|읽으니까?|읽다 -> 읽으니까? (because...?).
-ENTITY|l70_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 왜 ___. (Reason question (-(으)니까?)) [읽다 - to read]|읽으니까?;읽죠?;읽을까요?;읽을래요?|읽으니까?|읽다 -> 읽으니까? (because...?).
+ENTITY|l70_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|오랜만이에요! 요즘 어떻게 지내요?
 TASK|build|Build (Simple question (-아/어요?)): 지금 + 듣다 (to listen (ㄷ-irreg))|지금;들어요?|들을까요?;들을래요?|듣다 -> 들어요? (simple question).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Shall we? (-(으)ㄹ까요?):|만들까요?;만들래요?;만들죠?;만들어요?|만들까요?|만들다 -> 만들까요? (shall we?).
-TASK|fill|오늘 ___. (Will you? (-(으)ㄹ래요?)) [쓰다 - to write (ㅡ-irreg)]|쓸래요?;쓸까요?;쓰죠?;써요?|쓸래요?|쓰다 -> 쓸래요? (will you?).
+TASK|fill|약속 시간 전에 오늘 ___. (Will you? (-(으)ㄹ래요?)) [쓰다 - to write (ㅡ-irreg)]|쓸래요?;쓸까요?;쓰죠?;써요?|쓸래요?|쓰다 -> 쓸래요? (will you?).
 TASK|build|Build (Confirmation 'Right?' (-죠?)): 매일 + 가다 (to go)|매일;가죠?|갈까요?;갈래요?|가다 -> 가죠? (right? / isn't it?).
 TASK|choice|Conjugate 먹다 (to eat) into Reason question (-(으)니까?):|먹으니까?;먹죠?;먹을까요?;먹을래요?|먹으니까?|먹다 -> 먹으니까? (because...?).
 ENDLEVEL
@@ -2546,34 +2546,34 @@ MAP|KSSSSSSSAASSSSSSSK
 MAP|KNNNNK..AA..KNNNNK
 MAP|KSSSSS..XX..SSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l71_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l71_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|오늘 점심 뭐 먹을지 아직 못 정했어요!
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Alternative 'or' (-거나):|쓰거나;쓰든지;쓰지만;써서|쓰거나|쓰다 -> 쓰거나 (or).
-TASK|fill|언제 ___. (Whether/or (-든지)) [가다 - to go]|가든지;가거나;가지만;가면|가든지|가다 -> 가든지 (whether/or).
+TASK|fill|퇴근하고 친구랑 언제 ___. (Whether/or (-든지)) [가다 - to go]|가든지;가거나;가지만;가면|가든지|가다 -> 가든지 (whether/or).
 TASK|build|Build (Alternative 'or' (-거나)): 주말에 + 먹다 (to eat)|주말에;먹거나|먹든지;먹지만|먹다 -> 먹거나 (or).
 TASK|choice|Conjugate 보다 (to see/watch) into Whether/or (-든지):|보든지;보거나;보지만;보면|보든지|보다 -> 보든지 (whether/or).
-TASK|fill|주말에 ___. (Alternative 'or' (-거나)) [읽다 - to read]|읽거나;읽든지;읽지만;읽어서|읽거나|읽다 -> 읽거나 (or).
-ENTITY|l71_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 주말에 ___. (Alternative 'or' (-거나)) [읽다 - to read]|읽거나;읽든지;읽지만;읽어서|읽거나|읽다 -> 읽거나 (or).
+ENTITY|l71_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아, 커피 한 잔 마셔야 잠이 깰 것 같아요.
 TASK|build|Build (Whether/or (-든지)): 언제 + 듣다 (to listen (ㄷ-irreg))|언제;듣든지|듣거나;듣지만|듣다 -> 듣든지 (whether/or).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Alternative 'or' (-거나):|만들거나;만들든지;만들지만;만들어서|만들거나|만들다 -> 만들거나 (or).
-TASK|fill|언제 ___. (Whether/or (-든지)) [쓰다 - to write (ㅡ-irreg)]|쓰든지;쓰거나;쓰지만;쓰면|쓰든지|쓰다 -> 쓰든지 (whether/or).
+TASK|fill|주말에 시간 나면 언제 ___. (Whether/or (-든지)) [쓰다 - to write (ㅡ-irreg)]|쓰든지;쓰거나;쓰지만;쓰면|쓰든지|쓰다 -> 쓰든지 (whether/or).
 TASK|build|Build (Alternative 'or' (-거나)): 주말에 + 가다 (to go)|주말에;가거나|가든지;가지만|가다 -> 가거나 (or).
 TASK|choice|Conjugate 먹다 (to eat) into Whether/or (-든지):|먹든지;먹거나;먹지만;먹으면|먹든지|먹다 -> 먹든지 (whether/or).
-ENTITY|l71_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|주말에 ___. (Alternative 'or' (-거나)) [보다 - to see/watch]|보거나;보든지;보지만;봐서|보거나|보다 -> 보거나 (or).
+ENTITY|l71_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|방금 지하철 간신히 탔어요, 휴!
+TASK|fill|아침에 일어나서 주말에 ___. (Alternative 'or' (-거나)) [보다 - to see/watch]|보거나;보든지;보지만;봐서|보거나|보다 -> 보거나 (or).
 TASK|build|Build (Whether/or (-든지)): 언제 + 읽다 (to read)|언제;읽든지|읽거나;읽지만|읽다 -> 읽든지 (whether/or).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Alternative 'or' (-거나):|듣거나;듣든지;듣지만;들어서|듣거나|듣다 -> 듣거나 (or).
-TASK|fill|언제 ___. (Whether/or (-든지)) [만들다 - to make (ㄹ-irreg)]|만들든지;만들거나;만들지만;만들면|만들든지|만들다 -> 만들든지 (whether/or).
+TASK|fill|카페에서 쉬면서 언제 ___. (Whether/or (-든지)) [만들다 - to make (ㄹ-irreg)]|만들든지;만들거나;만들지만;만들면|만들든지|만들다 -> 만들든지 (whether/or).
 TASK|build|Build (Alternative 'or' (-거나)): 주말에 + 쓰다 (to write (ㅡ-irreg))|주말에;쓰거나|쓰든지;쓰지만|쓰다 -> 쓰거나 (or).
-ENTITY|l71_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l71_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|오늘 날씨 진짜 좋죠? 산책하기 딱이에요.
 TASK|choice|Conjugate 가다 (to go) into Whether/or (-든지):|가든지;가거나;가지만;가면|가든지|가다 -> 가든지 (whether/or).
-TASK|fill|주말에 ___. (Alternative 'or' (-거나)) [먹다 - to eat]|먹거나;먹든지;먹지만;먹어서|먹거나|먹다 -> 먹거나 (or).
+TASK|fill|지하철 타고 가다가 주말에 ___. (Alternative 'or' (-거나)) [먹다 - to eat]|먹거나;먹든지;먹지만;먹어서|먹거나|먹다 -> 먹거나 (or).
 TASK|build|Build (Whether/or (-든지)): 언제 + 보다 (to see/watch)|언제;보든지|보거나;보지만|보다 -> 보든지 (whether/or).
 TASK|choice|Conjugate 읽다 (to read) into Alternative 'or' (-거나):|읽거나;읽든지;읽지만;읽어서|읽거나|읽다 -> 읽거나 (or).
-TASK|fill|언제 ___. (Whether/or (-든지)) [듣다 - to listen (ㄷ-irreg)]|듣든지;듣거나;듣지만;들으면|듣든지|듣다 -> 듣든지 (whether/or).
-ENTITY|l71_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 언제 ___. (Whether/or (-든지)) [듣다 - to listen (ㄷ-irreg)]|듣든지;듣거나;듣지만;들으면|듣든지|듣다 -> 듣든지 (whether/or).
+ENTITY|l71_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|퇴근하고 친구랑 저녁 먹기로 했어요!
 TASK|build|Build (Alternative 'or' (-거나)): 주말에 + 만들다 (to make (ㄹ-irreg))|주말에;만들거나|만들든지;만들지만|만들다 -> 만들거나 (or).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Whether/or (-든지):|쓰든지;쓰거나;쓰지만;쓰면|쓰든지|쓰다 -> 쓰든지 (whether/or).
-TASK|fill|주말에 ___. (Alternative 'or' (-거나)) [가다 - to go]|가거나;가든지;가지만;가서|가거나|가다 -> 가거나 (or).
+TASK|fill|약속 시간 전에 주말에 ___. (Alternative 'or' (-거나)) [가다 - to go]|가거나;가든지;가지만;가서|가거나|가다 -> 가거나 (or).
 TASK|build|Build (Whether/or (-든지)): 언제 + 먹다 (to eat)|언제;먹든지|먹거나;먹지만|먹다 -> 먹든지 (whether/or).
 TASK|choice|Conjugate 보다 (to see/watch) into Alternative 'or' (-거나):|보거나;보든지;보지만;봐서|보거나|보다 -> 보거나 (or).
 ENDLEVEL
@@ -2595,34 +2595,34 @@ MAP|KSSSSSSLLLLSSSSSSK
 MAP|KNNNNKSSLLSSKNNNNK
 MAP|KSSSSSSLLLLSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l72_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|서울 중심가에 오신 걸 환영해요!
+ENTITY|l72_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|어제 늦게 자서 오늘 좀 피곤하네요.
 TASK|choice|Conjugate 가다 (to go) into Reported statement (-다고 했어요):|간다고 했어요;가냐고 했어요;가라고 했어요;갔어요|간다고 했어요|가다 -> 간다고 했어요 (said that).
-TASK|fill|친구가 ___. (Reported question (-냐고 했어요)) [먹다 - to eat]|먹냐고 했어요;먹는다고 했어요;먹으라고 했어요;먹었어요|먹냐고 했어요|먹다 -> 먹냐고 했어요 (asked if).
+TASK|fill|퇴근하고 친구랑 친구가 ___. (Reported question (-냐고 했어요)) [먹다 - to eat]|먹냐고 했어요;먹는다고 했어요;먹으라고 했어요;먹었어요|먹냐고 했어요|먹다 -> 먹냐고 했어요 (asked if).
 TASK|build|Build (Reported command (-(으)라고 했어요)): 선생님이 + 보다 (to see/watch)|선생님이;보라고;했어요|본다고 했어요;보냐고 했어요|보다 -> 보라고 했어요 (told to).
 TASK|choice|Conjugate 읽다 (to read) into Reported statement (-다고 했어요):|읽는다고 했어요;읽냐고 했어요;읽으라고 했어요;읽었어요|읽는다고 했어요|읽다 -> 읽는다고 했어요 (said that).
-TASK|fill|친구가 ___. (Reported question (-냐고 했어요)) [듣다 - to listen (ㄷ-irreg)]|듣냐고 했어요;듣는다고 했어요;들으라고 했어요;들었어요|듣냐고 했어요|듣다 -> 듣냐고 했어요 (asked if).
-ENTITY|l72_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 친구가 ___. (Reported question (-냐고 했어요)) [듣다 - to listen (ㄷ-irreg)]|듣냐고 했어요;듣는다고 했어요;들으라고 했어요;들었어요|듣냐고 했어요|듣다 -> 듣냐고 했어요 (asked if).
+ENTITY|l72_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|주말에 뭐 할 계획 있어요?
 TASK|build|Build (Reported command (-(으)라고 했어요)): 선생님이 + 만들다 (to make (ㄹ-irreg))|선생님이;만들라고;했어요|만든다고 했어요;만드냐고 했어요|만들다 -> 만들라고 했어요 (told to).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Reported statement (-다고 했어요):|쓴다고 했어요;쓰냐고 했어요;쓰라고 했어요;썼어요|쓴다고 했어요|쓰다 -> 쓴다고 했어요 (said that).
-TASK|fill|친구가 ___. (Reported question (-냐고 했어요)) [가다 - to go]|가냐고 했어요;간다고 했어요;가라고 했어요;갔어요|가냐고 했어요|가다 -> 가냐고 했어요 (asked if).
+TASK|fill|주말에 시간 나면 친구가 ___. (Reported question (-냐고 했어요)) [가다 - to go]|가냐고 했어요;간다고 했어요;가라고 했어요;갔어요|가냐고 했어요|가다 -> 가냐고 했어요 (asked if).
 TASK|build|Build (Reported command (-(으)라고 했어요)): 선생님이 + 먹다 (to eat)|선생님이;먹으라고;했어요|먹는다고 했어요;먹냐고 했어요|먹다 -> 먹으라고 했어요 (told to).
 TASK|choice|Conjugate 보다 (to see/watch) into Reported statement (-다고 했어요):|본다고 했어요;보냐고 했어요;보라고 했어요;봤어요|본다고 했어요|보다 -> 본다고 했어요 (said that).
-ENTITY|l72_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|친구가 ___. (Reported question (-냐고 했어요)) [읽다 - to read]|읽냐고 했어요;읽는다고 했어요;읽으라고 했어요;읽었어요|읽냐고 했어요|읽다 -> 읽냐고 했어요 (asked if).
+ENTITY|l72_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|여기 근처에 맛있는 카페 아세요?
+TASK|fill|아침에 일어나서 친구가 ___. (Reported question (-냐고 했어요)) [읽다 - to read]|읽냐고 했어요;읽는다고 했어요;읽으라고 했어요;읽었어요|읽냐고 했어요|읽다 -> 읽냐고 했어요 (asked if).
 TASK|build|Build (Reported command (-(으)라고 했어요)): 선생님이 + 듣다 (to listen (ㄷ-irreg))|선생님이;들으라고;했어요|듣는다고 했어요;듣냐고 했어요|듣다 -> 들으라고 했어요 (told to).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Reported statement (-다고 했어요):|만든다고 했어요;만드냐고 했어요;만들라고 했어요;만들었어요|만든다고 했어요|만들다 -> 만든다고 했어요 (said that).
-TASK|fill|친구가 ___. (Reported question (-냐고 했어요)) [쓰다 - to write (ㅡ-irreg)]|쓰냐고 했어요;쓴다고 했어요;쓰라고 했어요;썼어요|쓰냐고 했어요|쓰다 -> 쓰냐고 했어요 (asked if).
+TASK|fill|카페에서 쉬면서 친구가 ___. (Reported question (-냐고 했어요)) [쓰다 - to write (ㅡ-irreg)]|쓰냐고 했어요;쓴다고 했어요;쓰라고 했어요;썼어요|쓰냐고 했어요|쓰다 -> 쓰냐고 했어요 (asked if).
 TASK|build|Build (Reported command (-(으)라고 했어요)): 선생님이 + 가다 (to go)|선생님이;가라고;했어요|간다고 했어요;가냐고 했어요|가다 -> 가라고 했어요 (told to).
-ENTITY|l72_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l72_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|잠깐 시간 있으면 같이 이야기할래요?
 TASK|choice|Conjugate 먹다 (to eat) into Reported statement (-다고 했어요):|먹는다고 했어요;먹냐고 했어요;먹으라고 했어요;먹었어요|먹는다고 했어요|먹다 -> 먹는다고 했어요 (said that).
-TASK|fill|친구가 ___. (Reported question (-냐고 했어요)) [보다 - to see/watch]|보냐고 했어요;본다고 했어요;보라고 했어요;봤어요|보냐고 했어요|보다 -> 보냐고 했어요 (asked if).
+TASK|fill|지하철 타고 가다가 친구가 ___. (Reported question (-냐고 했어요)) [보다 - to see/watch]|보냐고 했어요;본다고 했어요;보라고 했어요;봤어요|보냐고 했어요|보다 -> 보냐고 했어요 (asked if).
 TASK|build|Build (Reported command (-(으)라고 했어요)): 선생님이 + 읽다 (to read)|선생님이;읽으라고;했어요|읽는다고 했어요;읽냐고 했어요|읽다 -> 읽으라고 했어요 (told to).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Reported statement (-다고 했어요):|듣는다고 했어요;듣냐고 했어요;들으라고 했어요;들었어요|듣는다고 했어요|듣다 -> 듣는다고 했어요 (said that).
-TASK|fill|친구가 ___. (Reported question (-냐고 했어요)) [만들다 - to make (ㄹ-irreg)]|만드냐고 했어요;만든다고 했어요;만들라고 했어요;만들었어요|만드냐고 했어요|만들다 -> 만드냐고 했어요 (asked if).
-ENTITY|l72_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 친구가 ___. (Reported question (-냐고 했어요)) [만들다 - to make (ㄹ-irreg)]|만드냐고 했어요;만든다고 했어요;만들라고 했어요;만들었어요|만드냐고 했어요|만들다 -> 만드냐고 했어요 (asked if).
+ENTITY|l72_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|요즘 한국어 공부 진짜 열심히 하시네요!
 TASK|build|Build (Reported command (-(으)라고 했어요)): 선생님이 + 쓰다 (to write (ㅡ-irreg))|선생님이;쓰라고;했어요|쓴다고 했어요;쓰냐고 했어요|쓰다 -> 쓰라고 했어요 (told to).
 TASK|choice|Conjugate 가다 (to go) into Reported statement (-다고 했어요):|간다고 했어요;가냐고 했어요;가라고 했어요;갔어요|간다고 했어요|가다 -> 간다고 했어요 (said that).
-TASK|fill|친구가 ___. (Reported question (-냐고 했어요)) [먹다 - to eat]|먹냐고 했어요;먹는다고 했어요;먹으라고 했어요;먹었어요|먹냐고 했어요|먹다 -> 먹냐고 했어요 (asked if).
+TASK|fill|약속 시간 전에 친구가 ___. (Reported question (-냐고 했어요)) [먹다 - to eat]|먹냐고 했어요;먹는다고 했어요;먹으라고 했어요;먹었어요|먹냐고 했어요|먹다 -> 먹냐고 했어요 (asked if).
 TASK|build|Build (Reported command (-(으)라고 했어요)): 선생님이 + 보다 (to see/watch)|선생님이;보라고;했어요|본다고 했어요;보냐고 했어요|보다 -> 보라고 했어요 (told to).
 TASK|choice|Conjugate 읽다 (to read) into Reported statement (-다고 했어요):|읽는다고 했어요;읽냐고 했어요;읽으라고 했어요;읽었어요|읽는다고 했어요|읽다 -> 읽는다고 했어요 (said that).
 ENDLEVEL
@@ -2644,34 +2644,34 @@ MAP|KSSLLSS.TT.SSLLSSK
 MAP|KNNNNSSSSSSSSNNNNK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l73_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l73_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|배고픈데 떡볶이 먹고 싶어요!
 TASK|choice|Conjugate 먹다 (to eat) into Noun form (-기):|먹기;먹는 것;먹음;먹어요|먹기|먹다 -> 먹기 (-기 nominalization).
-TASK|fill|혼자 ___. (Descriptive noun form (-는 것)) [보다 - to see/watch]|보는 것;보기;봄;본 것|보는 것|보다 -> 보는 것 (-는 것 nominalization).
+TASK|fill|퇴근하고 친구랑 혼자 ___. (Descriptive noun form (-는 것)) [보다 - to see/watch]|보는 것;보기;봄;본 것|보는 것|보다 -> 보는 것 (-는 것 nominalization).
 TASK|build|Build (Formal noun form (-(으)ㅁ/ㅁ)): 문서에 + 읽다 (to read)|문서에;읽음|읽기;읽는 것|읽다 -> 읽음 (formal -(으)ㅁ noun form).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Noun form (-기):|듣기;듣는 것;들음;들어요|듣기|듣다 -> 듣기 (-기 nominalization).
-TASK|fill|혼자 ___. (Descriptive noun form (-는 것)) [만들다 - to make (ㄹ-irreg)]|만드는 것;만들기;만듦;만든 것|만드는 것|만들다 -> 만드는 것 (-는 것 nominalization).
-ENTITY|l73_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 혼자 ___. (Descriptive noun form (-는 것)) [만들다 - to make (ㄹ-irreg)]|만드는 것;만들기;만듦;만든 것|만드는 것|만들다 -> 만드는 것 (-는 것 nominalization).
+ENTITY|l73_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|우산 챙기셨어요? 오후에 비 올 수도 있대요.
 TASK|build|Build (Formal noun form (-(으)ㅁ/ㅁ)): 문서에 + 쓰다 (to write (ㅡ-irreg))|문서에;씀|쓰기;쓰는 것|쓰다 -> 씀 (formal -(으)ㅁ noun form).
 TASK|choice|Conjugate 가다 (to go) into Noun form (-기):|가기;가는 것;감;가요|가기|가다 -> 가기 (-기 nominalization).
-TASK|fill|혼자 ___. (Descriptive noun form (-는 것)) [먹다 - to eat]|먹는 것;먹기;먹음;먹은 것|먹는 것|먹다 -> 먹는 것 (-는 것 nominalization).
+TASK|fill|주말에 시간 나면 혼자 ___. (Descriptive noun form (-는 것)) [먹다 - to eat]|먹는 것;먹기;먹음;먹은 것|먹는 것|먹다 -> 먹는 것 (-는 것 nominalization).
 TASK|build|Build (Formal noun form (-(으)ㅁ/ㅁ)): 문서에 + 보다 (to see/watch)|문서에;봄|보기;보는 것|보다 -> 봄 (formal -(으)ㅁ noun form).
 TASK|choice|Conjugate 읽다 (to read) into Noun form (-기):|읽기;읽는 것;읽음;읽어요|읽기|읽다 -> 읽기 (-기 nominalization).
-ENTITY|l73_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|혼자 ___. (Descriptive noun form (-는 것)) [듣다 - to listen (ㄷ-irreg)]|듣는 것;듣기;들음;들은 것|듣는 것|듣다 -> 듣는 것 (-는 것 nominalization).
+ENTITY|l73_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|강남역은 언제 와도 사람이 많네요!
+TASK|fill|아침에 일어나서 혼자 ___. (Descriptive noun form (-는 것)) [듣다 - to listen (ㄷ-irreg)]|듣는 것;듣기;들음;들은 것|듣는 것|듣다 -> 듣는 것 (-는 것 nominalization).
 TASK|build|Build (Formal noun form (-(으)ㅁ/ㅁ)): 문서에 + 만들다 (to make (ㄹ-irreg))|문서에;만듦|만들기;만드는 것|만들다 -> 만듦 (formal -(으)ㅁ noun form).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Noun form (-기):|쓰기;쓰는 것;씀;써요|쓰기|쓰다 -> 쓰기 (-기 nominalization).
-TASK|fill|혼자 ___. (Descriptive noun form (-는 것)) [가다 - to go]|가는 것;가기;감;간 것|가는 것|가다 -> 가는 것 (-는 것 nominalization).
+TASK|fill|카페에서 쉬면서 혼자 ___. (Descriptive noun form (-는 것)) [가다 - to go]|가는 것;가기;감;간 것|가는 것|가다 -> 가는 것 (-는 것 nominalization).
 TASK|build|Build (Formal noun form (-(으)ㅁ/ㅁ)): 문서에 + 먹다 (to eat)|문서에;먹음|먹기;먹는 것|먹다 -> 먹음 (formal -(으)ㅁ noun form).
-ENTITY|l73_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l73_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|오늘 일찍 끝나면 영화 보러 갈 거예요.
 TASK|choice|Conjugate 보다 (to see/watch) into Noun form (-기):|보기;보는 것;봄;봐요|보기|보다 -> 보기 (-기 nominalization).
-TASK|fill|혼자 ___. (Descriptive noun form (-는 것)) [읽다 - to read]|읽는 것;읽기;읽음;읽은 것|읽는 것|읽다 -> 읽는 것 (-는 것 nominalization).
+TASK|fill|지하철 타고 가다가 혼자 ___. (Descriptive noun form (-는 것)) [읽다 - to read]|읽는 것;읽기;읽음;읽은 것|읽는 것|읽다 -> 읽는 것 (-는 것 nominalization).
 TASK|build|Build (Formal noun form (-(으)ㅁ/ㅁ)): 문서에 + 듣다 (to listen (ㄷ-irreg))|문서에;들음|듣기;듣는 것|듣다 -> 들음 (formal -(으)ㅁ noun form).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Noun form (-기):|만들기;만드는 것;만듦;만들어요|만들기|만들다 -> 만들기 (-기 nominalization).
-TASK|fill|혼자 ___. (Descriptive noun form (-는 것)) [쓰다 - to write (ㅡ-irreg)]|쓰는 것;쓰기;씀;쓴 것|쓰는 것|쓰다 -> 쓰는 것 (-는 것 nominalization).
-ENTITY|l73_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 혼자 ___. (Descriptive noun form (-는 것)) [쓰다 - to write (ㅡ-irreg)]|쓰는 것;쓰기;씀;쓴 것|쓰는 것|쓰다 -> 쓰는 것 (-는 것 nominalization).
+ENTITY|l73_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|편의점에서 삼각김밥 하나 사 왔어요.
 TASK|build|Build (Formal noun form (-(으)ㅁ/ㅁ)): 문서에 + 가다 (to go)|문서에;감|가기;가는 것|가다 -> 감 (formal -(으)ㅁ noun form).
 TASK|choice|Conjugate 먹다 (to eat) into Noun form (-기):|먹기;먹는 것;먹음;먹어요|먹기|먹다 -> 먹기 (-기 nominalization).
-TASK|fill|혼자 ___. (Descriptive noun form (-는 것)) [보다 - to see/watch]|보는 것;보기;봄;본 것|보는 것|보다 -> 보는 것 (-는 것 nominalization).
+TASK|fill|약속 시간 전에 혼자 ___. (Descriptive noun form (-는 것)) [보다 - to see/watch]|보는 것;보기;봄;본 것|보는 것|보다 -> 보는 것 (-는 것 nominalization).
 TASK|build|Build (Formal noun form (-(으)ㅁ/ㅁ)): 문서에 + 읽다 (to read)|문서에;읽음|읽기;읽는 것|읽다 -> 읽음 (formal -(으)ㅁ noun form).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Noun form (-기):|듣기;듣는 것;들음;들어요|듣기|듣다 -> 듣기 (-기 nominalization).
 ENDLEVEL
@@ -2693,34 +2693,34 @@ MAP|KNNNK.SSLLSS.KNNNK
 MAP|KSSSSSSSLLSSSSSSSK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l74_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|서울 중심가에 오신 걸 환영해요!
+ENTITY|l74_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|방금 버스 놓쳐서 다음 차 기다리는 중이에요.
 TASK|choice|Conjugate 보다 (to see/watch) into Present modifier (-는 사람):|보는 사람;본 사람;볼 사람;봐요|보는 사람|보다 -> 보는 사람 (present modifier).
-TASK|fill|어제 ___. (Past modifier (-(으)ㄴ 사람)) [읽다 - to read]|읽은 사람;읽는 사람;읽을 사람;읽었어요|읽은 사람|읽다 -> 읽은 사람 (past modifier).
+TASK|fill|퇴근하고 친구랑 어제 ___. (Past modifier (-(으)ㄴ 사람)) [읽다 - to read]|읽은 사람;읽는 사람;읽을 사람;읽었어요|읽은 사람|읽다 -> 읽은 사람 (past modifier).
 TASK|build|Build (Future modifier (-(으)ㄹ 사람)): 내일 + 듣다 (to listen (ㄷ-irreg))|내일;들을;사람|듣는 사람;들은 사람|듣다 -> 들을 사람 (future modifier).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Present modifier (-는 사람):|만드는 사람;만든 사람;만들 사람;만들어요|만드는 사람|만들다 -> 만드는 사람 (present modifier).
-TASK|fill|어제 ___. (Past modifier (-(으)ㄴ 사람)) [쓰다 - to write (ㅡ-irreg)]|쓴 사람;쓰는 사람;쓸 사람;썼어요|쓴 사람|쓰다 -> 쓴 사람 (past modifier).
-ENTITY|l74_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 어제 ___. (Past modifier (-(으)ㄴ 사람)) [쓰다 - to write (ㅡ-irreg)]|쓴 사람;쓰는 사람;쓸 사람;썼어요|쓴 사람|쓰다 -> 쓴 사람 (past modifier).
+ENTITY|l74_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|이 동네 골목에 숨은 맛집이 진짜 많아요.
 TASK|build|Build (Future modifier (-(으)ㄹ 사람)): 내일 + 가다 (to go)|내일;갈;사람|가는 사람;간 사람|가다 -> 갈 사람 (future modifier).
 TASK|choice|Conjugate 먹다 (to eat) into Present modifier (-는 사람):|먹는 사람;먹은 사람;먹을 사람;먹어요|먹는 사람|먹다 -> 먹는 사람 (present modifier).
-TASK|fill|어제 ___. (Past modifier (-(으)ㄴ 사람)) [보다 - to see/watch]|본 사람;보는 사람;볼 사람;봤어요|본 사람|보다 -> 본 사람 (past modifier).
+TASK|fill|주말에 시간 나면 어제 ___. (Past modifier (-(으)ㄴ 사람)) [보다 - to see/watch]|본 사람;보는 사람;볼 사람;봤어요|본 사람|보다 -> 본 사람 (past modifier).
 TASK|build|Build (Future modifier (-(으)ㄹ 사람)): 내일 + 읽다 (to read)|내일;읽을;사람|읽는 사람;읽은 사람|읽다 -> 읽을 사람 (future modifier).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Present modifier (-는 사람):|듣는 사람;들은 사람;들을 사람;들어요|듣는 사람|듣다 -> 듣는 사람 (present modifier).
-ENTITY|l74_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|어제 ___. (Past modifier (-(으)ㄴ 사람)) [만들다 - to make (ㄹ-irreg)]|만든 사람;만드는 사람;만들 사람;만들었어요|만든 사람|만들다 -> 만든 사람 (past modifier).
+ENTITY|l74_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|시험 끝나면 푹 쉬고 싶어요!
+TASK|fill|아침에 일어나서 어제 ___. (Past modifier (-(으)ㄴ 사람)) [만들다 - to make (ㄹ-irreg)]|만든 사람;만드는 사람;만들 사람;만들었어요|만든 사람|만들다 -> 만든 사람 (past modifier).
 TASK|build|Build (Future modifier (-(으)ㄹ 사람)): 내일 + 쓰다 (to write (ㅡ-irreg))|내일;쓸;사람|쓰는 사람;쓴 사람|쓰다 -> 쓸 사람 (future modifier).
 TASK|choice|Conjugate 가다 (to go) into Present modifier (-는 사람):|가는 사람;간 사람;갈 사람;가요|가는 사람|가다 -> 가는 사람 (present modifier).
-TASK|fill|어제 ___. (Past modifier (-(으)ㄴ 사람)) [먹다 - to eat]|먹은 사람;먹는 사람;먹을 사람;먹었어요|먹은 사람|먹다 -> 먹은 사람 (past modifier).
+TASK|fill|카페에서 쉬면서 어제 ___. (Past modifier (-(으)ㄴ 사람)) [먹다 - to eat]|먹은 사람;먹는 사람;먹을 사람;먹었어요|먹은 사람|먹다 -> 먹은 사람 (past modifier).
 TASK|build|Build (Future modifier (-(으)ㄹ 사람)): 내일 + 보다 (to see/watch)|내일;볼;사람|보는 사람;본 사람|보다 -> 볼 사람 (future modifier).
-ENTITY|l74_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l74_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|커피 아이스로 드릴까요, 따뜻하게 드릴까요?
 TASK|choice|Conjugate 읽다 (to read) into Present modifier (-는 사람):|읽는 사람;읽은 사람;읽을 사람;읽어요|읽는 사람|읽다 -> 읽는 사람 (present modifier).
-TASK|fill|어제 ___. (Past modifier (-(으)ㄴ 사람)) [듣다 - to listen (ㄷ-irreg)]|들은 사람;듣는 사람;들을 사람;들었어요|들은 사람|듣다 -> 들은 사람 (past modifier).
+TASK|fill|지하철 타고 가다가 어제 ___. (Past modifier (-(으)ㄴ 사람)) [듣다 - to listen (ㄷ-irreg)]|들은 사람;듣는 사람;들을 사람;들었어요|들은 사람|듣다 -> 들은 사람 (past modifier).
 TASK|build|Build (Future modifier (-(으)ㄹ 사람)): 내일 + 만들다 (to make (ㄹ-irreg))|내일;만들;사람|만드는 사람;만든 사람|만들다 -> 만들 사람 (future modifier).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Present modifier (-는 사람):|쓰는 사람;쓴 사람;쓸 사람;써요|쓰는 사람|쓰다 -> 쓰는 사람 (present modifier).
-TASK|fill|어제 ___. (Past modifier (-(으)ㄴ 사람)) [가다 - to go]|간 사람;가는 사람;갈 사람;갔어요|간 사람|가다 -> 간 사람 (past modifier).
-ENTITY|l74_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 어제 ___. (Past modifier (-(으)ㄴ 사람)) [가다 - to go]|간 사람;가는 사람;갈 사람;갔어요|간 사람|가다 -> 간 사람 (past modifier).
+ENTITY|l74_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|오랜만이에요! 요즘 어떻게 지내요?
 TASK|build|Build (Future modifier (-(으)ㄹ 사람)): 내일 + 먹다 (to eat)|내일;먹을;사람|먹는 사람;먹은 사람|먹다 -> 먹을 사람 (future modifier).
 TASK|choice|Conjugate 보다 (to see/watch) into Present modifier (-는 사람):|보는 사람;본 사람;볼 사람;봐요|보는 사람|보다 -> 보는 사람 (present modifier).
-TASK|fill|어제 ___. (Past modifier (-(으)ㄴ 사람)) [읽다 - to read]|읽은 사람;읽는 사람;읽을 사람;읽었어요|읽은 사람|읽다 -> 읽은 사람 (past modifier).
+TASK|fill|약속 시간 전에 어제 ___. (Past modifier (-(으)ㄴ 사람)) [읽다 - to read]|읽은 사람;읽는 사람;읽을 사람;읽었어요|읽은 사람|읽다 -> 읽은 사람 (past modifier).
 TASK|build|Build (Future modifier (-(으)ㄹ 사람)): 내일 + 듣다 (to listen (ㄷ-irreg))|내일;들을;사람|듣는 사람;들은 사람|듣다 -> 들을 사람 (future modifier).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Present modifier (-는 사람):|만드는 사람;만든 사람;만들 사람;만들어요|만드는 사람|만들다 -> 만드는 사람 (present modifier).
 ENDLEVEL
@@ -2742,34 +2742,34 @@ MAP|KSSSSSSSAASSSSSSSK
 MAP|KNNNNK..AA..KNNNNK
 MAP|KSSSSS..XX..SSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l75_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l75_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|오늘 점심 뭐 먹을지 아직 못 정했어요!
 TASK|choice|Conjugate 읽다 (to read) into Also / Even (-기도 해요):|읽기도 해요;읽기는 해요;읽는데도;읽어요|읽기도 해요|읽다 -> 읽기도 해요 (also/even).
-TASK|fill|매일 ___. (Do, but... (-기는 해요)) [듣다 - to listen (ㄷ-irreg)]|듣기는 해요;듣기도 해요;듣는데도;듣지만|듣기는 해요|듣다 -> 듣기는 해요 (admit doing, but...).
+TASK|fill|퇴근하고 친구랑 매일 ___. (Do, but... (-기는 해요)) [듣다 - to listen (ㄷ-irreg)]|듣기는 해요;듣기도 해요;듣는데도;듣지만|듣기는 해요|듣다 -> 듣기는 해요 (admit doing, but...).
 TASK|build|Build (Even though (-는데도)): 열심히 + 만들다 (to make (ㄹ-irreg))|열심히;만드는데도|만들기도 해요;만들기는 해요|만들다 -> 만드는데도 (even though).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Also / Even (-기도 해요):|쓰기도 해요;쓰기는 해요;쓰는데도;써요|쓰기도 해요|쓰다 -> 쓰기도 해요 (also/even).
-TASK|fill|매일 ___. (Do, but... (-기는 해요)) [가다 - to go]|가기는 해요;가기도 해요;가는데도;가지만|가기는 해요|가다 -> 가기는 해요 (admit doing, but...).
-ENTITY|l75_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 매일 ___. (Do, but... (-기는 해요)) [가다 - to go]|가기는 해요;가기도 해요;가는데도;가지만|가기는 해요|가다 -> 가기는 해요 (admit doing, but...).
+ENTITY|l75_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아, 커피 한 잔 마셔야 잠이 깰 것 같아요.
 TASK|build|Build (Even though (-는데도)): 열심히 + 먹다 (to eat)|열심히;먹는데도|먹기도 해요;먹기는 해요|먹다 -> 먹는데도 (even though).
 TASK|choice|Conjugate 보다 (to see/watch) into Also / Even (-기도 해요):|보기도 해요;보기는 해요;보는데도;봐요|보기도 해요|보다 -> 보기도 해요 (also/even).
-TASK|fill|매일 ___. (Do, but... (-기는 해요)) [읽다 - to read]|읽기는 해요;읽기도 해요;읽는데도;읽지만|읽기는 해요|읽다 -> 읽기는 해요 (admit doing, but...).
+TASK|fill|주말에 시간 나면 매일 ___. (Do, but... (-기는 해요)) [읽다 - to read]|읽기는 해요;읽기도 해요;읽는데도;읽지만|읽기는 해요|읽다 -> 읽기는 해요 (admit doing, but...).
 TASK|build|Build (Even though (-는데도)): 열심히 + 듣다 (to listen (ㄷ-irreg))|열심히;듣는데도|듣기도 해요;듣기는 해요|듣다 -> 듣는데도 (even though).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Also / Even (-기도 해요):|만들기도 해요;만들기는 해요;만드는데도;만들어요|만들기도 해요|만들다 -> 만들기도 해요 (also/even).
-ENTITY|l75_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|매일 ___. (Do, but... (-기는 해요)) [쓰다 - to write (ㅡ-irreg)]|쓰기는 해요;쓰기도 해요;쓰는데도;쓰지만|쓰기는 해요|쓰다 -> 쓰기는 해요 (admit doing, but...).
+ENTITY|l75_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|방금 지하철 간신히 탔어요, 휴!
+TASK|fill|아침에 일어나서 매일 ___. (Do, but... (-기는 해요)) [쓰다 - to write (ㅡ-irreg)]|쓰기는 해요;쓰기도 해요;쓰는데도;쓰지만|쓰기는 해요|쓰다 -> 쓰기는 해요 (admit doing, but...).
 TASK|build|Build (Even though (-는데도)): 열심히 + 가다 (to go)|열심히;가는데도|가기도 해요;가기는 해요|가다 -> 가는데도 (even though).
 TASK|choice|Conjugate 먹다 (to eat) into Also / Even (-기도 해요):|먹기도 해요;먹기는 해요;먹는데도;먹어요|먹기도 해요|먹다 -> 먹기도 해요 (also/even).
-TASK|fill|매일 ___. (Do, but... (-기는 해요)) [보다 - to see/watch]|보기는 해요;보기도 해요;보는데도;보지만|보기는 해요|보다 -> 보기는 해요 (admit doing, but...).
+TASK|fill|카페에서 쉬면서 매일 ___. (Do, but... (-기는 해요)) [보다 - to see/watch]|보기는 해요;보기도 해요;보는데도;보지만|보기는 해요|보다 -> 보기는 해요 (admit doing, but...).
 TASK|build|Build (Even though (-는데도)): 열심히 + 읽다 (to read)|열심히;읽는데도|읽기도 해요;읽기는 해요|읽다 -> 읽는데도 (even though).
-ENTITY|l75_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l75_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|오늘 날씨 진짜 좋죠? 산책하기 딱이에요.
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Also / Even (-기도 해요):|듣기도 해요;듣기는 해요;듣는데도;들어요|듣기도 해요|듣다 -> 듣기도 해요 (also/even).
-TASK|fill|매일 ___. (Do, but... (-기는 해요)) [만들다 - to make (ㄹ-irreg)]|만들기는 해요;만들기도 해요;만드는데도;만들지만|만들기는 해요|만들다 -> 만들기는 해요 (admit doing, but...).
+TASK|fill|지하철 타고 가다가 매일 ___. (Do, but... (-기는 해요)) [만들다 - to make (ㄹ-irreg)]|만들기는 해요;만들기도 해요;만드는데도;만들지만|만들기는 해요|만들다 -> 만들기는 해요 (admit doing, but...).
 TASK|build|Build (Even though (-는데도)): 열심히 + 쓰다 (to write (ㅡ-irreg))|열심히;쓰는데도|쓰기도 해요;쓰기는 해요|쓰다 -> 쓰는데도 (even though).
 TASK|choice|Conjugate 가다 (to go) into Also / Even (-기도 해요):|가기도 해요;가기는 해요;가는데도;가요|가기도 해요|가다 -> 가기도 해요 (also/even).
-TASK|fill|매일 ___. (Do, but... (-기는 해요)) [먹다 - to eat]|먹기는 해요;먹기도 해요;먹는데도;먹지만|먹기는 해요|먹다 -> 먹기는 해요 (admit doing, but...).
-ENTITY|l75_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 매일 ___. (Do, but... (-기는 해요)) [먹다 - to eat]|먹기는 해요;먹기도 해요;먹는데도;먹지만|먹기는 해요|먹다 -> 먹기는 해요 (admit doing, but...).
+ENTITY|l75_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|퇴근하고 친구랑 저녁 먹기로 했어요!
 TASK|build|Build (Even though (-는데도)): 열심히 + 보다 (to see/watch)|열심히;보는데도|보기도 해요;보기는 해요|보다 -> 보는데도 (even though).
 TASK|choice|Conjugate 읽다 (to read) into Also / Even (-기도 해요):|읽기도 해요;읽기는 해요;읽는데도;읽어요|읽기도 해요|읽다 -> 읽기도 해요 (also/even).
-TASK|fill|매일 ___. (Do, but... (-기는 해요)) [듣다 - to listen (ㄷ-irreg)]|듣기는 해요;듣기도 해요;듣는데도;듣지만|듣기는 해요|듣다 -> 듣기는 해요 (admit doing, but...).
+TASK|fill|약속 시간 전에 매일 ___. (Do, but... (-기는 해요)) [듣다 - to listen (ㄷ-irreg)]|듣기는 해요;듣기도 해요;듣는데도;듣지만|듣기는 해요|듣다 -> 듣기는 해요 (admit doing, but...).
 TASK|build|Build (Even though (-는데도)): 열심히 + 만들다 (to make (ㄹ-irreg))|열심히;만드는데도|만들기도 해요;만들기는 해요|만들다 -> 만드는데도 (even though).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Also / Even (-기도 해요):|쓰기도 해요;쓰기는 해요;쓰는데도;써요|쓰기도 해요|쓰다 -> 쓰기도 해요 (also/even).
 ENDLEVEL
@@ -2791,34 +2791,34 @@ MAP|KSSSSSSLLLLSSSSSSK
 MAP|KNNNNKSSLLSSKNNNNK
 MAP|KSSSSSSLLLLSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l76_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|서울 중심가에 오신 걸 환영해요!
+ENTITY|l76_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|3|어제 늦게 자서 오늘 좀 피곤하네요.
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Seems like (-는 것 같아요):|듣는 것 같아요;들을 것 같아요;들은가 봐요;들어요|듣는 것 같아요|듣다 -> 듣는 것 같아요 (seems like).
-TASK|fill|아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [만들다 - to make (ㄹ-irreg)]|만들 것 같아요;만드는 것 같아요;만든가 봐요;만들었어요|만들 것 같아요|만들다 -> 만들 것 같아요 (will probably).
+TASK|fill|퇴근하고 친구랑 아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [만들다 - to make (ㄹ-irreg)]|만들 것 같아요;만드는 것 같아요;만든가 봐요;만들었어요|만들 것 같아요|만들다 -> 만들 것 같아요 (will probably).
 TASK|build|Build (Appears/seems (-(으)ㄴ가 봐요)): 벌써 + 쓰다 (to write (ㅡ-irreg))|벌써;쓴가;봐요|쓰는 것 같아요;쓸 것 같아요|쓰다 -> 쓴가 봐요 (appears based on evidence).
 TASK|choice|Conjugate 가다 (to go) into Seems like (-는 것 같아요):|가는 것 같아요;갈 것 같아요;간가 봐요;가요|가는 것 같아요|가다 -> 가는 것 같아요 (seems like).
-TASK|fill|아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [먹다 - to eat]|먹을 것 같아요;먹는 것 같아요;먹은가 봐요;먹었어요|먹을 것 같아요|먹다 -> 먹을 것 같아요 (will probably).
-ENTITY|l76_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [먹다 - to eat]|먹을 것 같아요;먹는 것 같아요;먹은가 봐요;먹었어요|먹을 것 같아요|먹다 -> 먹을 것 같아요 (will probably).
+ENTITY|l76_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|3|주말에 뭐 할 계획 있어요?
 TASK|build|Build (Appears/seems (-(으)ㄴ가 봐요)): 벌써 + 보다 (to see/watch)|벌써;본가;봐요|보는 것 같아요;볼 것 같아요|보다 -> 본가 봐요 (appears based on evidence).
 TASK|choice|Conjugate 읽다 (to read) into Seems like (-는 것 같아요):|읽는 것 같아요;읽을 것 같아요;읽은가 봐요;읽어요|읽는 것 같아요|읽다 -> 읽는 것 같아요 (seems like).
-TASK|fill|아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [듣다 - to listen (ㄷ-irreg)]|들을 것 같아요;듣는 것 같아요;들은가 봐요;들었어요|들을 것 같아요|듣다 -> 들을 것 같아요 (will probably).
+TASK|fill|주말에 시간 나면 아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [듣다 - to listen (ㄷ-irreg)]|들을 것 같아요;듣는 것 같아요;들은가 봐요;들었어요|들을 것 같아요|듣다 -> 들을 것 같아요 (will probably).
 TASK|build|Build (Appears/seems (-(으)ㄴ가 봐요)): 벌써 + 만들다 (to make (ㄹ-irreg))|벌써;만든가;봐요|만드는 것 같아요;만들 것 같아요|만들다 -> 만든가 봐요 (appears based on evidence).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Seems like (-는 것 같아요):|쓰는 것 같아요;쓸 것 같아요;쓴가 봐요;써요|쓰는 것 같아요|쓰다 -> 쓰는 것 같아요 (seems like).
-ENTITY|l76_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [가다 - to go]|갈 것 같아요;가는 것 같아요;간가 봐요;갔어요|갈 것 같아요|가다 -> 갈 것 같아요 (will probably).
+ENTITY|l76_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|여기 근처에 맛있는 카페 아세요?
+TASK|fill|아침에 일어나서 아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [가다 - to go]|갈 것 같아요;가는 것 같아요;간가 봐요;갔어요|갈 것 같아요|가다 -> 갈 것 같아요 (will probably).
 TASK|build|Build (Appears/seems (-(으)ㄴ가 봐요)): 벌써 + 먹다 (to eat)|벌써;먹은가;봐요|먹는 것 같아요;먹을 것 같아요|먹다 -> 먹은가 봐요 (appears based on evidence).
 TASK|choice|Conjugate 보다 (to see/watch) into Seems like (-는 것 같아요):|보는 것 같아요;볼 것 같아요;본가 봐요;봐요|보는 것 같아요|보다 -> 보는 것 같아요 (seems like).
-TASK|fill|아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [읽다 - to read]|읽을 것 같아요;읽는 것 같아요;읽은가 봐요;읽었어요|읽을 것 같아요|읽다 -> 읽을 것 같아요 (will probably).
+TASK|fill|카페에서 쉬면서 아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [읽다 - to read]|읽을 것 같아요;읽는 것 같아요;읽은가 봐요;읽었어요|읽을 것 같아요|읽다 -> 읽을 것 같아요 (will probably).
 TASK|build|Build (Appears/seems (-(으)ㄴ가 봐요)): 벌써 + 듣다 (to listen (ㄷ-irreg))|벌써;들은가;봐요|듣는 것 같아요;들을 것 같아요|듣다 -> 들은가 봐요 (appears based on evidence).
-ENTITY|l76_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l76_e4|City Guide (서울 안내원)|sprites/npc_guide|3|8|잠깐 시간 있으면 같이 이야기할래요?
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Seems like (-는 것 같아요):|만드는 것 같아요;만들 것 같아요;만든가 봐요;만들어요|만드는 것 같아요|만들다 -> 만드는 것 같아요 (seems like).
-TASK|fill|아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [쓰다 - to write (ㅡ-irreg)]|쓸 것 같아요;쓰는 것 같아요;쓴가 봐요;썼어요|쓸 것 같아요|쓰다 -> 쓸 것 같아요 (will probably).
+TASK|fill|지하철 타고 가다가 아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [쓰다 - to write (ㅡ-irreg)]|쓸 것 같아요;쓰는 것 같아요;쓴가 봐요;썼어요|쓸 것 같아요|쓰다 -> 쓸 것 같아요 (will probably).
 TASK|build|Build (Appears/seems (-(으)ㄴ가 봐요)): 벌써 + 가다 (to go)|벌써;간가;봐요|가는 것 같아요;갈 것 같아요|가다 -> 간가 봐요 (appears based on evidence).
 TASK|choice|Conjugate 먹다 (to eat) into Seems like (-는 것 같아요):|먹는 것 같아요;먹을 것 같아요;먹은가 봐요;먹어요|먹는 것 같아요|먹다 -> 먹는 것 같아요 (seems like).
-TASK|fill|아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [보다 - to see/watch]|볼 것 같아요;보는 것 같아요;본가 봐요;봤어요|볼 것 같아요|보다 -> 볼 것 같아요 (will probably).
-ENTITY|l76_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [보다 - to see/watch]|볼 것 같아요;보는 것 같아요;본가 봐요;봤어요|볼 것 같아요|보다 -> 볼 것 같아요 (will probably).
+ENTITY|l76_e5|Downtown Chef (셰프)|sprites/npc_chef|14|8|요즘 한국어 공부 진짜 열심히 하시네요!
 TASK|build|Build (Appears/seems (-(으)ㄴ가 봐요)): 벌써 + 읽다 (to read)|벌써;읽은가;봐요|읽는 것 같아요;읽을 것 같아요|읽다 -> 읽은가 봐요 (appears based on evidence).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Seems like (-는 것 같아요):|듣는 것 같아요;들을 것 같아요;들은가 봐요;들어요|듣는 것 같아요|듣다 -> 듣는 것 같아요 (seems like).
-TASK|fill|아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [만들다 - to make (ㄹ-irreg)]|만들 것 같아요;만드는 것 같아요;만든가 봐요;만들었어요|만들 것 같아요|만들다 -> 만들 것 같아요 (will probably).
+TASK|fill|약속 시간 전에 아마 ___. (Will probably (-(으)ㄹ 것 같아요)) [만들다 - to make (ㄹ-irreg)]|만들 것 같아요;만드는 것 같아요;만든가 봐요;만들었어요|만들 것 같아요|만들다 -> 만들 것 같아요 (will probably).
 TASK|build|Build (Appears/seems (-(으)ㄴ가 봐요)): 벌써 + 쓰다 (to write (ㅡ-irreg))|벌써;쓴가;봐요|쓰는 것 같아요;쓸 것 같아요|쓰다 -> 쓴가 봐요 (appears based on evidence).
 TASK|choice|Conjugate 가다 (to go) into Seems like (-는 것 같아요):|가는 것 같아요;갈 것 같아요;간가 봐요;가요|가는 것 같아요|가다 -> 가는 것 같아요 (seems like).
 ENDLEVEL
@@ -2840,34 +2840,34 @@ MAP|KSSLLSS.TT.SSLLSSK
 MAP|KNNNNSSSSSSSSNNNNK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l77_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l77_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|배고픈데 떡볶이 먹고 싶어요!
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Neutral cause (-아/어서):|만들어서;만드니까;만드느라고;만들지만|만들어서|만들다 -> 만들어서 (neutral cause).
-TASK|fill|지금 ___. (Because/Since (-(으)니까)) [쓰다 - to write (ㅡ-irreg)]|쓰니까;써서;쓰느라고;쓰면|쓰니까|쓰다 -> 쓰니까 (because/since).
+TASK|fill|퇴근하고 친구랑 지금 ___. (Because/Since (-(으)니까)) [쓰다 - to write (ㅡ-irreg)]|쓰니까;써서;쓰느라고;쓰면|쓰니까|쓰다 -> 쓰니까 (because/since).
 TASK|build|Build (Busy doing (-느라고)): 계속 + 가다 (to go)|계속;가느라고|가서;가니까|가다 -> 가느라고 (because preoccupied with).
 TASK|choice|Conjugate 먹다 (to eat) into Neutral cause (-아/어서):|먹어서;먹으니까;먹느라고;먹지만|먹어서|먹다 -> 먹어서 (neutral cause).
-TASK|fill|지금 ___. (Because/Since (-(으)니까)) [보다 - to see/watch]|보니까;봐서;보느라고;보면|보니까|보다 -> 보니까 (because/since).
-ENTITY|l77_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 지금 ___. (Because/Since (-(으)니까)) [보다 - to see/watch]|보니까;봐서;보느라고;보면|보니까|보다 -> 보니까 (because/since).
+ENTITY|l77_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|우산 챙기셨어요? 오후에 비 올 수도 있대요.
 TASK|build|Build (Busy doing (-느라고)): 계속 + 읽다 (to read)|계속;읽느라고|읽어서;읽으니까|읽다 -> 읽느라고 (because preoccupied with).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Neutral cause (-아/어서):|들어서;들으니까;듣느라고;듣지만|들어서|듣다 -> 들어서 (neutral cause).
-TASK|fill|지금 ___. (Because/Since (-(으)니까)) [만들다 - to make (ㄹ-irreg)]|만드니까;만들어서;만드느라고;만들면|만드니까|만들다 -> 만드니까 (because/since).
+TASK|fill|주말에 시간 나면 지금 ___. (Because/Since (-(으)니까)) [만들다 - to make (ㄹ-irreg)]|만드니까;만들어서;만드느라고;만들면|만드니까|만들다 -> 만드니까 (because/since).
 TASK|build|Build (Busy doing (-느라고)): 계속 + 쓰다 (to write (ㅡ-irreg))|계속;쓰느라고|써서;쓰니까|쓰다 -> 쓰느라고 (because preoccupied with).
 TASK|choice|Conjugate 가다 (to go) into Neutral cause (-아/어서):|가서;가니까;가느라고;가지만|가서|가다 -> 가서 (neutral cause).
-ENTITY|l77_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|지금 ___. (Because/Since (-(으)니까)) [먹다 - to eat]|먹으니까;먹어서;먹느라고;먹으면|먹으니까|먹다 -> 먹으니까 (because/since).
+ENTITY|l77_e3|K-Tech Student (대학생)|sprites/npc_student|8|3|강남역은 언제 와도 사람이 많네요!
+TASK|fill|아침에 일어나서 지금 ___. (Because/Since (-(으)니까)) [먹다 - to eat]|먹으니까;먹어서;먹느라고;먹으면|먹으니까|먹다 -> 먹으니까 (because/since).
 TASK|build|Build (Busy doing (-느라고)): 계속 + 보다 (to see/watch)|계속;보느라고|봐서;보니까|보다 -> 보느라고 (because preoccupied with).
 TASK|choice|Conjugate 읽다 (to read) into Neutral cause (-아/어서):|읽어서;읽으니까;읽느라고;읽지만|읽어서|읽다 -> 읽어서 (neutral cause).
-TASK|fill|지금 ___. (Because/Since (-(으)니까)) [듣다 - to listen (ㄷ-irreg)]|들으니까;들어서;듣느라고;들으면|들으니까|듣다 -> 들으니까 (because/since).
+TASK|fill|카페에서 쉬면서 지금 ___. (Because/Since (-(으)니까)) [듣다 - to listen (ㄷ-irreg)]|들으니까;들어서;듣느라고;들으면|들으니까|듣다 -> 들으니까 (because/since).
 TASK|build|Build (Busy doing (-느라고)): 계속 + 만들다 (to make (ㄹ-irreg))|계속;만드느라고|만들어서;만드니까|만들다 -> 만드느라고 (because preoccupied with).
-ENTITY|l77_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l77_e4|City Guide (서울 안내원)|sprites/npc_guide|3|7|오늘 일찍 끝나면 영화 보러 갈 거예요.
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Neutral cause (-아/어서):|써서;쓰니까;쓰느라고;쓰지만|써서|쓰다 -> 써서 (neutral cause).
-TASK|fill|지금 ___. (Because/Since (-(으)니까)) [가다 - to go]|가니까;가서;가느라고;가면|가니까|가다 -> 가니까 (because/since).
+TASK|fill|지하철 타고 가다가 지금 ___. (Because/Since (-(으)니까)) [가다 - to go]|가니까;가서;가느라고;가면|가니까|가다 -> 가니까 (because/since).
 TASK|build|Build (Busy doing (-느라고)): 계속 + 먹다 (to eat)|계속;먹느라고|먹어서;먹으니까|먹다 -> 먹느라고 (because preoccupied with).
 TASK|choice|Conjugate 보다 (to see/watch) into Neutral cause (-아/어서):|봐서;보니까;보느라고;보지만|봐서|보다 -> 봐서 (neutral cause).
-TASK|fill|지금 ___. (Because/Since (-(으)니까)) [읽다 - to read]|읽으니까;읽어서;읽느라고;읽으면|읽으니까|읽다 -> 읽으니까 (because/since).
-ENTITY|l77_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 지금 ___. (Because/Since (-(으)니까)) [읽다 - to read]|읽으니까;읽어서;읽느라고;읽으면|읽으니까|읽다 -> 읽으니까 (because/since).
+ENTITY|l77_e5|Downtown Chef (셰프)|sprites/npc_chef|14|7|편의점에서 삼각김밥 하나 사 왔어요.
 TASK|build|Build (Busy doing (-느라고)): 계속 + 듣다 (to listen (ㄷ-irreg))|계속;듣느라고|들어서;들으니까|듣다 -> 듣느라고 (because preoccupied with).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Neutral cause (-아/어서):|만들어서;만드니까;만드느라고;만들지만|만들어서|만들다 -> 만들어서 (neutral cause).
-TASK|fill|지금 ___. (Because/Since (-(으)니까)) [쓰다 - to write (ㅡ-irreg)]|쓰니까;써서;쓰느라고;쓰면|쓰니까|쓰다 -> 쓰니까 (because/since).
+TASK|fill|약속 시간 전에 지금 ___. (Because/Since (-(으)니까)) [쓰다 - to write (ㅡ-irreg)]|쓰니까;써서;쓰느라고;쓰면|쓰니까|쓰다 -> 쓰니까 (because/since).
 TASK|build|Build (Busy doing (-느라고)): 계속 + 가다 (to go)|계속;가느라고|가서;가니까|가다 -> 가느라고 (because preoccupied with).
 TASK|choice|Conjugate 먹다 (to eat) into Neutral cause (-아/어서):|먹어서;먹으니까;먹느라고;먹지만|먹어서|먹다 -> 먹어서 (neutral cause).
 ENDLEVEL
@@ -2889,34 +2889,34 @@ MAP|KNNNK.SSLLSS.KNNNK
 MAP|KSSSSSSSLLSSSSSSSK
 MAP|KSSSSSSSSSSSSSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l78_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|서울 중심가에 오신 걸 환영해요!
+ENTITY|l78_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|2|방금 버스 놓쳐서 다음 차 기다리는 중이에요.
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into In a manner (-게):|쓰게;쓰도록;쓸 만큼;써서|쓰게|쓰다 -> 쓰게 (in a manner).
-TASK|fill|모두 ___. (To the extent that (-도록)) [가다 - to go]|가도록;가게;갈 만큼;가려고|가도록|가다 -> 가도록 (to the extent that).
+TASK|fill|퇴근하고 친구랑 모두 ___. (To the extent that (-도록)) [가다 - to go]|가도록;가게;갈 만큼;가려고|가도록|가다 -> 가도록 (to the extent that).
 TASK|build|Build (Enough to (-(으)ㄹ 만큼)): 충분히 + 먹다 (to eat)|충분히;먹을;만큼|먹게;먹도록|먹다 -> 먹을 만큼 (enough to).
 TASK|choice|Conjugate 보다 (to see/watch) into In a manner (-게):|보게;보도록;볼 만큼;봐서|보게|보다 -> 보게 (in a manner).
-TASK|fill|모두 ___. (To the extent that (-도록)) [읽다 - to read]|읽도록;읽게;읽을 만큼;읽으려고|읽도록|읽다 -> 읽도록 (to the extent that).
-ENTITY|l78_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 모두 ___. (To the extent that (-도록)) [읽다 - to read]|읽도록;읽게;읽을 만큼;읽으려고|읽도록|읽다 -> 읽도록 (to the extent that).
+ENTITY|l78_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|2|이 동네 골목에 숨은 맛집이 진짜 많아요.
 TASK|build|Build (Enough to (-(으)ㄹ 만큼)): 충분히 + 듣다 (to listen (ㄷ-irreg))|충분히;들을;만큼|듣게;듣도록|듣다 -> 들을 만큼 (enough to).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into In a manner (-게):|만들게;만들도록;만들 만큼;만들어서|만들게|만들다 -> 만들게 (in a manner).
-TASK|fill|모두 ___. (To the extent that (-도록)) [쓰다 - to write (ㅡ-irreg)]|쓰도록;쓰게;쓸 만큼;쓰려고|쓰도록|쓰다 -> 쓰도록 (to the extent that).
+TASK|fill|주말에 시간 나면 모두 ___. (To the extent that (-도록)) [쓰다 - to write (ㅡ-irreg)]|쓰도록;쓰게;쓸 만큼;쓰려고|쓰도록|쓰다 -> 쓰도록 (to the extent that).
 TASK|build|Build (Enough to (-(으)ㄹ 만큼)): 충분히 + 가다 (to go)|충분히;갈;만큼|가게;가도록|가다 -> 갈 만큼 (enough to).
 TASK|choice|Conjugate 먹다 (to eat) into In a manner (-게):|먹게;먹도록;먹을 만큼;먹어서|먹게|먹다 -> 먹게 (in a manner).
-ENTITY|l78_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|모두 ___. (To the extent that (-도록)) [보다 - to see/watch]|보도록;보게;볼 만큼;보려고|보도록|보다 -> 보도록 (to the extent that).
+ENTITY|l78_e3|K-Tech Student (대학생)|sprites/npc_student|3|5|시험 끝나면 푹 쉬고 싶어요!
+TASK|fill|아침에 일어나서 모두 ___. (To the extent that (-도록)) [보다 - to see/watch]|보도록;보게;볼 만큼;보려고|보도록|보다 -> 보도록 (to the extent that).
 TASK|build|Build (Enough to (-(으)ㄹ 만큼)): 충분히 + 읽다 (to read)|충분히;읽을;만큼|읽게;읽도록|읽다 -> 읽을 만큼 (enough to).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into In a manner (-게):|듣게;듣도록;들을 만큼;들어서|듣게|듣다 -> 듣게 (in a manner).
-TASK|fill|모두 ___. (To the extent that (-도록)) [만들다 - to make (ㄹ-irreg)]|만들도록;만들게;만들 만큼;만들려고|만들도록|만들다 -> 만들도록 (to the extent that).
+TASK|fill|카페에서 쉬면서 모두 ___. (To the extent that (-도록)) [만들다 - to make (ㄹ-irreg)]|만들도록;만들게;만들 만큼;만들려고|만들도록|만들다 -> 만들도록 (to the extent that).
 TASK|build|Build (Enough to (-(으)ㄹ 만큼)): 충분히 + 쓰다 (to write (ㅡ-irreg))|충분히;쓸;만큼|쓰게;쓰도록|쓰다 -> 쓸 만큼 (enough to).
-ENTITY|l78_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l78_e4|City Guide (서울 안내원)|sprites/npc_guide|14|5|커피 아이스로 드릴까요, 따뜻하게 드릴까요?
 TASK|choice|Conjugate 가다 (to go) into In a manner (-게):|가게;가도록;갈 만큼;가서|가게|가다 -> 가게 (in a manner).
-TASK|fill|모두 ___. (To the extent that (-도록)) [먹다 - to eat]|먹도록;먹게;먹을 만큼;먹으려고|먹도록|먹다 -> 먹도록 (to the extent that).
+TASK|fill|지하철 타고 가다가 모두 ___. (To the extent that (-도록)) [먹다 - to eat]|먹도록;먹게;먹을 만큼;먹으려고|먹도록|먹다 -> 먹도록 (to the extent that).
 TASK|build|Build (Enough to (-(으)ㄹ 만큼)): 충분히 + 보다 (to see/watch)|충분히;볼;만큼|보게;보도록|보다 -> 볼 만큼 (enough to).
 TASK|choice|Conjugate 읽다 (to read) into In a manner (-게):|읽게;읽도록;읽을 만큼;읽어서|읽게|읽다 -> 읽게 (in a manner).
-TASK|fill|모두 ___. (To the extent that (-도록)) [듣다 - to listen (ㄷ-irreg)]|듣도록;듣게;들을 만큼;들으려고|듣도록|듣다 -> 듣도록 (to the extent that).
-ENTITY|l78_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 모두 ___. (To the extent that (-도록)) [듣다 - to listen (ㄷ-irreg)]|듣도록;듣게;들을 만큼;들으려고|듣도록|듣다 -> 듣도록 (to the extent that).
+ENTITY|l78_e5|Downtown Chef (셰프)|sprites/npc_chef|9|9|오랜만이에요! 요즘 어떻게 지내요?
 TASK|build|Build (Enough to (-(으)ㄹ 만큼)): 충분히 + 만들다 (to make (ㄹ-irreg))|충분히;만들;만큼|만들게;만들도록|만들다 -> 만들 만큼 (enough to).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into In a manner (-게):|쓰게;쓰도록;쓸 만큼;써서|쓰게|쓰다 -> 쓰게 (in a manner).
-TASK|fill|모두 ___. (To the extent that (-도록)) [가다 - to go]|가도록;가게;갈 만큼;가려고|가도록|가다 -> 가도록 (to the extent that).
+TASK|fill|약속 시간 전에 모두 ___. (To the extent that (-도록)) [가다 - to go]|가도록;가게;갈 만큼;가려고|가도록|가다 -> 가도록 (to the extent that).
 TASK|build|Build (Enough to (-(으)ㄹ 만큼)): 충분히 + 먹다 (to eat)|충분히;먹을;만큼|먹게;먹도록|먹다 -> 먹을 만큼 (enough to).
 TASK|choice|Conjugate 보다 (to see/watch) into In a manner (-게):|보게;보도록;볼 만큼;봐서|보게|보다 -> 보게 (in a manner).
 ENDLEVEL
@@ -2938,34 +2938,53 @@ MAP|KSSSSSSSAASSSSSSSK
 MAP|KNNNNK..AA..KNNNNK
 MAP|KSSSSS..XX..SSSSSK
 MAP|KKKKKKKKKKKKKKKKKK
-ENTITY|l79_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|서울 중심가에 오신 걸 환영해요!
+ENTITY|l79_e1|Gangnam Commuter (직장인)|sprites/npc_vendor|3|4|오늘 점심 뭐 먹을지 아직 못 정했어요!
 TASK|choice|Conjugate 가다 (to go) into Conversational context (-는데):|가는데;가거든요;가지만;가서|가는데|가다 -> 가는데 (conversational context).
-TASK|fill|사실 ___. (Explanatory 'you see' (-거든요)) [먹다 - to eat]|먹거든요;먹는데;먹지만;먹으니까|먹거든요|먹다 -> 먹거든요 (you see / because).
+TASK|fill|퇴근하고 친구랑 사실 ___. (Explanatory 'you see' (-거든요)) [먹다 - to eat]|먹거든요;먹는데;먹지만;먹으니까|먹거든요|먹다 -> 먹거든요 (you see / because).
 TASK|build|Build (Conversational context (-는데)): 지금 + 보다 (to see/watch)|지금;보는데|보거든요;보지만|보다 -> 보는데 (conversational context).
 TASK|choice|Conjugate 읽다 (to read) into Explanatory 'you see' (-거든요):|읽거든요;읽는데;읽지만;읽으니까|읽거든요|읽다 -> 읽거든요 (you see / because).
-TASK|fill|지금 ___. (Conversational context (-는데)) [듣다 - to listen (ㄷ-irreg)]|듣는데;듣거든요;듣지만;들어서|듣는데|듣다 -> 듣는데 (conversational context).
-ENTITY|l79_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아이스 아메리카노 한 잔 하실래요?
+TASK|fill|오늘 점심시간에 지금 ___. (Conversational context (-는데)) [듣다 - to listen (ㄷ-irreg)]|듣는데;듣거든요;듣지만;들어서|듣는데|듣다 -> 듣는데 (conversational context).
+ENTITY|l79_e2|Seoul Barista (바리스타)|sprites/npc_barista|14|4|아, 커피 한 잔 마셔야 잠이 깰 것 같아요.
 TASK|build|Build (Explanatory 'you see' (-거든요)): 사실 + 만들다 (to make (ㄹ-irreg))|사실;만들거든요|만드는데;만들지만|만들다 -> 만들거든요 (you see / because).
 TASK|choice|Conjugate 쓰다 (to write (ㅡ-irreg)) into Conversational context (-는데):|쓰는데;쓰거든요;쓰지만;써서|쓰는데|쓰다 -> 쓰는데 (conversational context).
-TASK|fill|사실 ___. (Explanatory 'you see' (-거든요)) [가다 - to go]|가거든요;가는데;가지만;가니까|가거든요|가다 -> 가거든요 (you see / because).
+TASK|fill|주말에 시간 나면 사실 ___. (Explanatory 'you see' (-거든요)) [가다 - to go]|가거든요;가는데;가지만;가니까|가거든요|가다 -> 가거든요 (you see / because).
 TASK|build|Build (Conversational context (-는데)): 지금 + 먹다 (to eat)|지금;먹는데|먹거든요;먹지만|먹다 -> 먹는데 (conversational context).
 TASK|choice|Conjugate 보다 (to see/watch) into Explanatory 'you see' (-거든요):|보거든요;보는데;보지만;보니까|보거든요|보다 -> 보거든요 (you see / because).
-ENTITY|l79_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|오늘 문법 패턴 같이 연습해 봐요!
-TASK|fill|지금 ___. (Conversational context (-는데)) [읽다 - to read]|읽는데;읽거든요;읽지만;읽어서|읽는데|읽다 -> 읽는데 (conversational context).
+ENTITY|l79_e3|K-Tech Student (대학생)|sprites/npc_student|3|7|방금 지하철 간신히 탔어요, 휴!
+TASK|fill|아침에 일어나서 지금 ___. (Conversational context (-는데)) [읽다 - to read]|읽는데;읽거든요;읽지만;읽어서|읽는데|읽다 -> 읽는데 (conversational context).
 TASK|build|Build (Explanatory 'you see' (-거든요)): 사실 + 듣다 (to listen (ㄷ-irreg))|사실;듣거든요|듣는데;듣지만|듣다 -> 듣거든요 (you see / because).
 TASK|choice|Conjugate 만들다 (to make (ㄹ-irreg)) into Conversational context (-는데):|만드는데;만들거든요;만들지만;만들어서|만드는데|만들다 -> 만드는데 (conversational context).
-TASK|fill|사실 ___. (Explanatory 'you see' (-거든요)) [쓰다 - to write (ㅡ-irreg)]|쓰거든요;쓰는데;쓰지만;쓰니까|쓰거든요|쓰다 -> 쓰거든요 (you see / because).
+TASK|fill|카페에서 쉬면서 사실 ___. (Explanatory 'you see' (-거든요)) [쓰다 - to write (ㅡ-irreg)]|쓰거든요;쓰는데;쓰지만;쓰니까|쓰거든요|쓰다 -> 쓰거든요 (you see / because).
 TASK|build|Build (Conversational context (-는데)): 지금 + 가다 (to go)|지금;가는데|가거든요;가지만|가다 -> 가는데 (conversational context).
-ENTITY|l79_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|이 구역의 핵심 어미를 마스터해 보세요.
+ENTITY|l79_e4|City Guide (서울 안내원)|sprites/npc_guide|14|7|오늘 날씨 진짜 좋죠? 산책하기 딱이에요.
 TASK|choice|Conjugate 먹다 (to eat) into Explanatory 'you see' (-거든요):|먹거든요;먹는데;먹지만;먹으니까|먹거든요|먹다 -> 먹거든요 (you see / because).
-TASK|fill|지금 ___. (Conversational context (-는데)) [보다 - to see/watch]|보는데;보거든요;보지만;봐서|보는데|보다 -> 보는데 (conversational context).
+TASK|fill|지하철 타고 가다가 지금 ___. (Conversational context (-는데)) [보다 - to see/watch]|보는데;보거든요;보지만;봐서|보는데|보다 -> 보는데 (conversational context).
 TASK|build|Build (Explanatory 'you see' (-거든요)): 사실 + 읽다 (to read)|사실;읽거든요|읽는데;읽지만|읽다 -> 읽거든요 (you see / because).
 TASK|choice|Conjugate 듣다 (to listen (ㄷ-irreg)) into Conversational context (-는데):|듣는데;듣거든요;듣지만;들어서|듣는데|듣다 -> 듣는데 (conversational context).
-TASK|fill|사실 ___. (Explanatory 'you see' (-거든요)) [만들다 - to make (ㄹ-irreg)]|만들거든요;만드는데;만들지만;만드니까|만들거든요|만들다 -> 만들거든요 (you see / because).
-ENTITY|l79_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|바쁜 서울 한복판에서도 밥은 꼭 챙겨 드세요!
+TASK|fill|저녁에 집에서 사실 ___. (Explanatory 'you see' (-거든요)) [만들다 - to make (ㄹ-irreg)]|만들거든요;만드는데;만들지만;만드니까|만들거든요|만들다 -> 만들거든요 (you see / because).
+ENTITY|l79_e5|Downtown Chef (셰프)|sprites/npc_chef|3|10|퇴근하고 친구랑 저녁 먹기로 했어요!
 TASK|build|Build (Conversational context (-는데)): 지금 + 쓰다 (to write (ㅡ-irreg))|지금;쓰는데|쓰거든요;쓰지만|쓰다 -> 쓰는데 (conversational context).
 TASK|choice|Conjugate 가다 (to go) into Explanatory 'you see' (-거든요):|가거든요;가는데;가지만;가니까|가거든요|가다 -> 가거든요 (you see / because).
-TASK|fill|지금 ___. (Conversational context (-는데)) [먹다 - to eat]|먹는데;먹거든요;먹지만;먹어서|먹는데|먹다 -> 먹는데 (conversational context).
+TASK|fill|약속 시간 전에 지금 ___. (Conversational context (-는데)) [먹다 - to eat]|먹는데;먹거든요;먹지만;먹어서|먹는데|먹다 -> 먹는데 (conversational context).
 TASK|build|Build (Explanatory 'you see' (-거든요)): 사실 + 보다 (to see/watch)|사실;보거든요|보는데;보지만|보다 -> 보거든요 (you see / because).
 TASK|choice|Conjugate 읽다 (to read) into Conversational context (-는데):|읽는데;읽거든요;읽지만;읽어서|읽는데|읽다 -> 읽는데 (conversational context).
+ENDLEVEL
+LEVEL|80|Grand Final Exam: Word Masters Trial|광화문 최종 시험장 (Grand Exam Hall)|9|10
+SUMMARY|Welcome to the Grand Exam Hall! Prove your mastery across all 79 levels in the ultimate 100-question Korean Final Exam covering sentence building, conversations, and vocabulary.
+TIP|Walk up to the Grand Final Exam pedestal in the center of the hall (or click it) to begin the 100-question test.
+TIP|Every question draws randomly from Chapters 1 & 2, mixing sentence building, conversation fill-in-the-blanks, and vocabulary.
+TIP|Review the full Answer Sheet with explanations at the end to see every right and wrong answer.
+VOCAB|시험=exam;합격=pass;마스터=master;복습=review;실력=skill;성공=success
+MAP|KKKKKKKKKKKKKKKKKK
+MAP|KGGGGKLLLLLLKGGGGK
+MAP|KNNNNKLLLLLLKNNNNK
+MAP|KSSSSSLLLLLLSSSSSK
+MAP|KSSLLLLLLLLLLLLSSK
+MAP|KSSLLLLLLLLLLLLSSK
+MAP|KSSLLLLLLLLLLLLSSK
+MAP|KSSSSSSLLLLSSSSSSK
+MAP|K..T..SSLLSS..T..K
+MAP|KSSSSSSSLLSSSSSSSK
+MAP|KSSSSSSSLLSSSSSSSK
+MAP|KKKKKKKKKKKKKKKKKK
 ENDLEVEL

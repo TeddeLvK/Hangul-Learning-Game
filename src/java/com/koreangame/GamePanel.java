@@ -16,6 +16,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JPanel;
 import javax.swing.Timer;
@@ -30,10 +31,12 @@ public class GamePanel extends JPanel {
     private final Runnable onToggleFullscreen;
 
     private Level currentLevel;
+    private final List<ExamSpec> activeExams = new ArrayList<>();
     private MainMenuOverlay mainMenuOverlay;
     private IntroOverlay introOverlay;
     private LevelSelectOverlay levelSelectOverlay;
     private TaskOverlay taskOverlay;
+    private ExamOverlay examOverlay;
 
     private boolean keyUp;
     private boolean keyDown;
@@ -131,6 +134,242 @@ public class GamePanel extends JPanel {
         return levels.get(0);
     }
 
+    private boolean isWalkableChar(char ch) {
+        return ch != 'T' && ch != 'W' && ch != 'R' && ch != 'B'
+            && ch != '~' && ch != 'C' && ch != 'G' && ch != 'N' && ch != 'K';
+    }
+
+    private List<int[]> findOpenExamTiles(int needed) {
+        List<int[]> chosen = new ArrayList<>();
+        int[][] preferred = {
+            {9, 6}, {7, 6}, {11, 6}, {9, 5}, {7, 5}, {11, 5},
+            {9, 7}, {6, 6}, {12, 6}, {8, 6}, {10, 6}, {8, 5}, {10, 5},
+            {8, 7}, {10, 7}, {9, 4}, {7, 7}, {11, 7}, {6, 7}, {12, 7}
+        };
+        for (int[] cand : preferred) {
+            if (chosen.size() >= needed) {
+                break;
+            }
+            int tx = cand[0];
+            int ty = cand[1];
+            if (isTileFreeForExam(tx, ty, chosen)) {
+                chosen.add(new int[]{tx, ty});
+            }
+        }
+        for (int r = 2; r < UIUtils.MAP_ROWS - 2 && chosen.size() < needed; r++) {
+            for (int c = 2; c < UIUtils.MAP_COLS - 2 && chosen.size() < needed; c++) {
+                if (isTileFreeForExam(c, r, chosen)) {
+                    chosen.add(new int[]{c, r});
+                }
+            }
+        }
+        return chosen;
+    }
+
+    private boolean isTileFreeForExam(int tx, int ty, List<int[]> already) {
+        if (ty < 0 || ty >= currentLevel.mapRows.size()) {
+            return false;
+        }
+        String row = currentLevel.mapRows.get(ty);
+        if (tx < 0 || tx >= row.length()) {
+            return false;
+        }
+        if (!isWalkableChar(row.charAt(tx))) {
+            return false;
+        }
+        if (tx == currentLevel.spawnX && ty == currentLevel.spawnY) {
+            return false;
+        }
+        for (Entity e : currentLevel.entities) {
+            if (e.tx == tx && e.ty == ty) {
+                return false;
+            }
+        }
+        for (int[] p : already) {
+            if (Math.abs(p[0] - tx) + Math.abs(p[1] - ty) < 2) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private void rebuildActiveExams() {
+        activeExams.clear();
+        if (currentLevel == null) {
+            return;
+        }
+        if (currentLevel.id == 80) {
+            activeExams.add(new ExamSpec(
+                "final_exam_80",
+                "Grand Final Exam (All 79 Levels)",
+                "FINAL 100",
+                "objects/big_exam_icon",
+                9,
+                5,
+                1,
+                79,
+                100,
+                true
+            ));
+            return;
+        }
+
+        if (countLevelDone() < currentLevel.entities.size()) {
+            return;
+        }
+
+        int lvId = currentLevel.id;
+        boolean hasMilestone = (lvId % 10 == 0 && lvId <= 70);
+        boolean hasCh1 = (lvId == 50);
+        boolean hasCh2 = (lvId == 79);
+        int count = 1 + (hasMilestone ? 1 : 0) + (hasCh1 ? 1 : 0) + (hasCh2 ? 1 : 0);
+        List<int[]> tiles = findOpenExamTiles(count);
+        int ti = 0;
+
+        if (ti < tiles.size()) {
+            int[] pos = tiles.get(ti++);
+            activeExams.add(new ExamSpec(
+                "exam_lv" + lvId,
+                "Level " + lvId + " Revision Exam (10 Qs)",
+                "EXAM",
+                "objects/exam_icon",
+                pos[0],
+                pos[1],
+                lvId,
+                lvId,
+                10,
+                false
+            ));
+        }
+        if (hasMilestone && ti < tiles.size()) {
+            int[] pos = tiles.get(ti++);
+            int fromLv = lvId - 9;
+            activeExams.add(new ExamSpec(
+                "big_exam_" + lvId,
+                "Big Exam: Levels " + fromLv + "–" + lvId + " (25 Qs)",
+                "BIG EXAM",
+                "objects/big_exam_icon",
+                pos[0],
+                pos[1],
+                fromLv,
+                lvId,
+                25,
+                true
+            ));
+        }
+        if (hasCh1 && ti < tiles.size()) {
+            int[] pos = tiles.get(ti++);
+            activeExams.add(new ExamSpec(
+                "chapter1_test",
+                "Chapter 1 Test: Levels 1–50 (40 Qs)",
+                "CH.1 TEST",
+                "objects/big_exam_icon",
+                pos[0],
+                pos[1],
+                1,
+                50,
+                40,
+                true
+            ));
+        }
+        if (hasCh2 && ti < tiles.size()) {
+            int[] pos = tiles.get(ti++);
+            activeExams.add(new ExamSpec(
+                "chapter2_test",
+                "Chapter 2 Test: Levels 51–79 (40 Qs)",
+                "CH.2 TEST",
+                "objects/big_exam_icon",
+                pos[0],
+                pos[1],
+                51,
+                79,
+                40,
+                true
+            ));
+        }
+    }
+
+    private ExamSpec findNearbyExam() {
+        float px = NativeEngine.nativeGetPlayerX();
+        float py = NativeEngine.nativeGetPlayerY();
+        ExamSpec best = null;
+        double bestDist = 78.0;
+        for (ExamSpec ex : activeExams) {
+            double cx = ex.tx * UIUtils.TILE_SIZE + UIUtils.TILE_SIZE * 0.5;
+            double cy = ex.ty * UIUtils.TILE_SIZE + UIUtils.TILE_SIZE * 0.5;
+            double d = Math.hypot(px - cx, py - cy);
+            if (d < bestDist) {
+                bestDist = d;
+                best = ex;
+            }
+        }
+        return best;
+    }
+
+    private ExamSpec pickExamAt(int vx, int vy) {
+        int wy = vy - UIUtils.HUD_HEIGHT;
+        if (wy < 0) {
+            return null;
+        }
+        int tx = vx / UIUtils.TILE_SIZE;
+        int ty = wy / UIUtils.TILE_SIZE;
+        for (ExamSpec ex : activeExams) {
+            if (ex.tx == tx && ex.ty == ty) {
+                return ex;
+            }
+        }
+        return null;
+    }
+
+    private void startExam(ExamSpec spec) {
+        clearMovementKeys();
+        List<Task> qs = ExamGenerator.generate(levels, glossary, spec);
+        examOverlay = new ExamOverlay(spec, qs, assets, glossary);
+    }
+
+    private void checkAchievements(String fallbackToast) {
+        List<Achievement> unlocked = AchievementManager.evaluate(save, levels);
+        if (!unlocked.isEmpty()) {
+            Achievement last = unlocked.get(unlocked.size() - 1);
+            showToast("Achievement Unlocked: " + last.title + " (" + last.koreanTitle + ")!", 4.5f);
+        } else if (fallbackToast != null) {
+            showToast(fallbackToast, 3.5f);
+        }
+    }
+
+    private void onExamFinished(ExamOverlay overlay) {
+        ExamSpec spec = overlay.spec;
+        int gained = overlay.getScore() * 10;
+        save.xp += gained;
+        boolean perfectFinal = "final_exam_80".equals(spec.id)
+            && overlay.getTotal() > 0
+            && overlay.getScore() == overlay.getTotal();
+
+        String msg;
+        if (overlay.isPassed()) {
+            boolean firstPass = save.passedExams.add(spec.id);
+            if (firstPass) {
+                save.xp += spec.isBig ? 150 : 50;
+            }
+            msg = spec.badgeLabel + " Passed! (" + overlay.getScore() + "/" + overlay.getTotal() + ")";
+        } else {
+            msg = spec.badgeLabel + " Score: " + overlay.getScore() + "/" + overlay.getTotal() + " — Try again anytime!";
+        }
+
+        if (perfectFinal) {
+            Achievement hg = AchievementManager.unlockExplicit(AchievementManager.HUNGER_GOD_ID, save);
+            AchievementManager.evaluate(save, levels);
+            if (hg != null) {
+                showToast("100% PERFECT! Unlocked Badge: HUNGER GOD!", 6.0f);
+            } else {
+                showToast("100% PERFECT on the Grand Final! (HUNGER GOD)", 5.0f);
+            }
+        } else {
+            checkAchievements(msg);
+        }
+        persist();
+    }
+
     private void loadLevel(int id, boolean useSavedPos, boolean showIntroIfNew) {
         currentLevel = findLevel(id);
         save.currentLevel = currentLevel.id;
@@ -144,6 +383,7 @@ public class GamePanel extends JPanel {
         if (useSavedPos && save.hasSavedPos) {
             NativeEngine.nativeSetPlayerPos(save.playerX, save.playerY);
         }
+        rebuildActiveExams();
         if (showIntroIfNew && !save.seenIntros.contains(currentLevel.id)) {
             introOverlay = new IntroOverlay(currentLevel, assets);
             save.seenIntros.add(currentLevel.id);
@@ -164,7 +404,11 @@ public class GamePanel extends JPanel {
     }
 
     private boolean hasOverlay() {
-        return mainMenuOverlay != null || introOverlay != null || levelSelectOverlay != null || taskOverlay != null;
+        return mainMenuOverlay != null
+            || introOverlay != null
+            || levelSelectOverlay != null
+            || taskOverlay != null
+            || examOverlay != null;
     }
 
     private void clearMovementKeys() {
@@ -226,13 +470,25 @@ public class GamePanel extends JPanel {
 
         int done = countLevelDone();
         if (done == currentLevel.entities.size()) {
+            rebuildActiveExams();
             int nextId = currentLevel.id + 1;
             if (nextId <= levels.size() && save.unlockedLevel < nextId) {
                 save.unlockedLevel = nextId;
-                showToast(currentLevel.id == 50 ? "Chapter 1 Complete! Chapter 2: Downtown Seoul unlocked — press [L]!" : "Level " + currentLevel.id + " Complete! Level " + nextId + " unlocked — press [L]!", 5.0f);
-            } else if (nextId > levels.size()) {
-                showToast("All 79 levels across Chapters 1 & 2 mastered!", 5.0f);
+                if (currentLevel.id == 50) {
+                    showToast("Chapter 1 Complete! Chapter 1 Test & Chapter 2 unlocked!", 5.0f);
+                } else if (currentLevel.id == 79) {
+                    showToast("Chapter 2 Complete! Chapter 2 Test & Level 80 Final Exam unlocked!", 5.0f);
+                } else {
+                    showToast("Level " + currentLevel.id + " Complete! EXAM icon spawned & Lv." + nextId + " unlocked!", 5.0f);
+                }
+            } else {
+                showToast("Level " + currentLevel.id + " tasks done! Click the EXAM icon to revise!", 4.0f);
             }
+        }
+        List<Achievement> newly = AchievementManager.evaluate(save, levels);
+        if (!newly.isEmpty()) {
+            Achievement last = newly.get(newly.size() - 1);
+            showToast("Achievement Unlocked: " + last.title + " (" + last.koreanTitle + ")!", 4.5f);
         }
         persist();
     }
@@ -241,6 +497,9 @@ public class GamePanel extends JPanel {
         boolean ch1Done = true;
         boolean ch2Done = true;
         for (Level lv : levels) {
+            if (lv.id == 80) {
+                continue;
+            }
             for (Entity e : lv.entities) {
                 if (!save.completedEntities.contains(e.id)) {
                     if (lv.id <= 50) {
@@ -293,6 +552,17 @@ public class GamePanel extends JPanel {
             }
             return;
         }
+        if (examOverlay != null) {
+            String res = examOverlay.onKeyPressed(code);
+            if ("close".equals(res)) {
+                examOverlay = null;
+            } else if ("finished".equals(res)) {
+                ExamOverlay doneOv = examOverlay;
+                examOverlay = null;
+                onExamFinished(doneOv);
+            }
+            return;
+        }
         if (taskOverlay != null) {
             String res = taskOverlay.onKeyPressed(code);
             if ("close".equals(res)) {
@@ -320,9 +590,14 @@ public class GamePanel extends JPanel {
         } else if (code == KeyEvent.VK_L) {
             clearMovementKeys();
             levelSelectOverlay = new LevelSelectOverlay(
-                levels, currentLevel.id, save.unlockedLevel, save.completedEntities, assets
+                levels, currentLevel.id, save.unlockedLevel, save.completedEntities, save.passedExams, assets
             );
         } else if (code == KeyEvent.VK_E || code == KeyEvent.VK_SPACE || code == KeyEvent.VK_ENTER) {
+            ExamSpec nearExam = findNearbyExam();
+            if (nearExam != null) {
+                startExam(nearExam);
+                return;
+            }
             int nearby = NativeEngine.nativeGetNearbyEntity();
             if (nearby >= 0 && nearby < currentLevel.entities.size()) {
                 clearMovementKeys();
@@ -361,6 +636,21 @@ public class GamePanel extends JPanel {
             }
             return;
         }
+        if (examOverlay != null) {
+            String res = examOverlay.onMouseClicked(p);
+            if ("close".equals(res)) {
+                examOverlay = null;
+            } else if ("finished".equals(res)) {
+                ExamOverlay doneOv = examOverlay;
+                examOverlay = null;
+                onExamFinished(doneOv);
+            } else if ("retake".equals(res)) {
+                ExamSpec sp = examOverlay.spec;
+                onExamFinished(examOverlay);
+                startExam(sp);
+            }
+            return;
+        }
         if (taskOverlay != null) {
             String res = taskOverlay.onMouseClicked(p);
             if ("close".equals(res)) {
@@ -390,11 +680,16 @@ public class GamePanel extends JPanel {
         if (levelsBtn.contains(p)) {
             clearMovementKeys();
             levelSelectOverlay = new LevelSelectOverlay(
-                levels, currentLevel.id, save.unlockedLevel, save.completedEntities, assets
+                levels, currentLevel.id, save.unlockedLevel, save.completedEntities, save.passedExams, assets
             );
             return;
         }
         if (p.y >= UIUtils.HUD_HEIGHT && p.x >= 0 && p.x < UIUtils.SCREEN_WIDTH && p.y < UIUtils.SCREEN_HEIGHT) {
+            ExamSpec clickedExam = pickExamAt(p.x, p.y);
+            if (clickedExam != null) {
+                startExam(clickedExam);
+                return;
+            }
             int picked = NativeEngine.nativePickEntity(p.x, p.y - UIUtils.HUD_HEIGHT);
             if (picked >= 0 && picked < currentLevel.entities.size()) {
                 clearMovementKeys();
@@ -474,8 +769,53 @@ public class GamePanel extends JPanel {
         float anim = NativeEngine.nativeGetAnimTime();
         int bob = (int) Math.round(Math.sin(anim * 5.0) * 3.0);
         int nearbyIdx = NativeEngine.nativeGetNearbyEntity();
+        ExamSpec nearbyExam = findNearbyExam();
         Font fBadge = assets.getFont(14, true);
+        Font fExamTag = assets.getFont(10, true);
         Font fPrompt = assets.getFont(12, true);
+
+        for (ExamSpec ex : activeExams) {
+            int exX = ex.tx * s;
+            int exY = UIUtils.HUD_HEIGHT + ex.ty * s;
+            BufferedImage eImg = assets.getImage(ex.spriteKey);
+            if (eImg != null) {
+                g.drawImage(eImg, exX, exY, s, s, null);
+            }
+            boolean passed = save.passedExams.contains(ex.id);
+            String tag = passed ? ex.badgeLabel + " ✓" : ex.badgeLabel;
+            g.setFont(fExamTag);
+            FontMetrics fmE = g.getFontMetrics();
+            int tw = fmE.stringWidth(tag);
+            int cx = exX + s / 2;
+            int ty = exY - 14 + (passed ? 0 : bob);
+            Rectangle pill = new Rectangle(cx - tw / 2 - 6, ty - 6, tw + 12, 16);
+            g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+            g.setColor(passed ? UIUtils.SUCCESS : (ex.isBig ? new Color(156, 78, 232) : UIUtils.GOLD));
+            g.fillRoundRect(pill.x, pill.y, pill.width, pill.height, 8, 8);
+            g.setColor(new Color(18, 22, 32));
+            g.drawRoundRect(pill.x, pill.y, pill.width, pill.height, 8, 8);
+            g.setColor(ex.isBig && !passed ? UIUtils.TEXT : new Color(18, 22, 30));
+            g.drawString(tag, pill.x + 6, pill.y + fmE.getAscent() + 1);
+            g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_OFF);
+
+            if (nearbyExam == ex && !hasOverlay()) {
+                String label = "[E] " + ex.title;
+                g.setFont(fPrompt);
+                FontMetrics fmP = g.getFontMetrics();
+                int pw = fmP.stringWidth(label);
+                int ph = fmP.getHeight();
+                Rectangle box = new Rectangle(cx - pw / 2 - 8, exY + s + 2, pw + 16, ph + 6);
+                g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+                g.setColor(UIUtils.PANEL);
+                g.fillRoundRect(box.x, box.y, box.width, box.height, 8, 8);
+                g.setColor(UIUtils.GOLD);
+                g.setStroke(new BasicStroke(1.5f));
+                g.drawRoundRect(box.x, box.y, box.width, box.height, 8, 8);
+                g.setColor(UIUtils.TEXT);
+                g.drawString(label, box.x + 8, box.y + fmP.getAscent() + 3);
+                g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_OFF);
+            }
+        }
 
         for (int i = 0; i < currentLevel.entities.size(); i++) {
             Entity ent = currentLevel.entities.get(i);
@@ -502,7 +842,7 @@ public class GamePanel extends JPanel {
             g.drawString(bTxt, cx - fmB.stringWidth(bTxt) / 2, cy + fmB.getAscent() / 2 - 2);
             g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_OFF);
 
-            if (i == nearbyIdx && mainMenuOverlay == null) {
+            if (i == nearbyIdx && nearbyExam == null && !hasOverlay()) {
                 String label = "[E] " + ent.name;
                 g.setFont(fPrompt);
                 FontMetrics fmP = g.getFontMetrics();
@@ -529,6 +869,25 @@ public class GamePanel extends JPanel {
         if (pImg != null) {
             g.drawImage(pImg, pDrawX, pDrawY, s, s, null);
         }
+        if (save.unlockedAchievements.contains(AchievementManager.HUNGER_GOD_ID)) {
+            BufferedImage hgBadge = assets.getImage("objects/hunger_god_badge");
+            if (hgBadge != null) {
+                g.drawImage(hgBadge, pDrawX + s - 14, pDrawY - 6, 20, 20, null);
+            }
+            g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+            g.setFont(fExamTag);
+            String hgTxt = "HUNGER GOD";
+            FontMetrics fmHg = g.getFontMetrics();
+            int hgw = fmHg.stringWidth(hgTxt);
+            int hgx = Math.round(px) - hgw / 2 - 5;
+            int hgy = pDrawY + s + 1;
+            g.setColor(new Color(42, 20, 26, 225));
+            g.fillRoundRect(hgx, hgy, hgw + 10, 14, 6, 6);
+            g.setColor(UIUtils.GOLD);
+            g.drawRoundRect(hgx, hgy, hgw + 10, 14, 6, 6);
+            g.drawString(hgTxt, hgx + 5, hgy + fmHg.getAscent() + 1);
+            g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_OFF);
+        }
 
         g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         drawHud(g);
@@ -554,6 +913,8 @@ public class GamePanel extends JPanel {
             introOverlay.draw(g, mousePos);
         } else if (levelSelectOverlay != null) {
             levelSelectOverlay.draw(g, mousePos);
+        } else if (examOverlay != null) {
+            examOverlay.draw(g, mousePos);
         } else if (taskOverlay != null) {
             taskOverlay.draw(g, mousePos);
         }
@@ -570,15 +931,23 @@ public class GamePanel extends JPanel {
 
         g.setFont(assets.getFont(17, true));
         g.setColor(UIUtils.TEXT);
-        String chTag = currentLevel.id <= 50 ? "Ch.1 Lv." + currentLevel.id + "/50" : "Ch.2 Lv." + (currentLevel.id - 50) + "/29";
+        String chTag;
+        if (currentLevel.id == 80) {
+            chTag = "Lv.80 FINAL";
+        } else if (currentLevel.id <= 50) {
+            chTag = "Ch.1 Lv." + currentLevel.id + "/50";
+        } else {
+            chTag = "Ch.2 Lv." + (currentLevel.id - 50) + "/29";
+        }
         g.drawString(chTag + "  " + currentLevel.zoneName, 16, 26);
 
         g.setFont(assets.getFont(13, false));
         g.setColor(UIUtils.MUTED);
+        String taskInfo = currentLevel.id == 80
+            ? "Grand Final Exam: 100 Qs"
+            : "Tasks: " + countLevelDone() + "/" + currentLevel.entities.size();
         g.drawString(
-            "Tasks: " + countLevelDone() + "/" + currentLevel.entities.size()
-                + "   |   XP: " + save.xp
-                + "   |   WASD: Move   |   E/Click: Talk",
+            taskInfo + "   |   XP: " + save.xp + "   |   Exams: " + save.passedExams.size() + "   |   E/Click: Talk",
             16,
             49
         );

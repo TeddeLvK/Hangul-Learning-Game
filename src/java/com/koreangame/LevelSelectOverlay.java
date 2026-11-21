@@ -18,6 +18,7 @@ public class LevelSelectOverlay {
     private final int currentLevelId;
     private final int unlockedLevelId;
     private final Set<String> completed;
+    private final Set<String> passedExams;
     private final AssetLoader assets;
     private int page;
     private final int totalPages;
@@ -28,11 +29,19 @@ public class LevelSelectOverlay {
     private final Rectangle nextBtn = new Rectangle(UIUtils.SCREEN_WIDTH - 206, UIUtils.SCREEN_HEIGHT - 86, 110, 38);
     private final Rectangle closeBtn = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 75, UIUtils.SCREEN_HEIGHT - 86, 150, 38);
 
-    public LevelSelectOverlay(List<Level> levels, int currentLevelId, int unlockedLevelId, Set<String> completed, AssetLoader assets) {
+    public LevelSelectOverlay(
+        List<Level> levels,
+        int currentLevelId,
+        int unlockedLevelId,
+        Set<String> completed,
+        Set<String> passedExams,
+        AssetLoader assets
+    ) {
         this.levels = levels;
         this.currentLevelId = currentLevelId;
         this.unlockedLevelId = unlockedLevelId;
         this.completed = completed;
+        this.passedExams = passedExams;
         this.assets = assets;
         this.totalPages = (levels.size() + PER_PAGE - 1) / PER_PAGE;
         this.page = Math.max(0, Math.min(totalPages - 1, (currentLevelId - 1) / PER_PAGE));
@@ -92,7 +101,7 @@ public class LevelSelectOverlay {
 
         g.setFont(fHead);
         g.setColor(UIUtils.GOLD);
-        String chBanner = (start + 1) <= 50 ? "Chapter 1: Foundations" : "Chapter 2: Downtown Seoul";
+        String chBanner = (start + 1) <= 50 ? "Chapter 1: Foundations" : "Chapter 2: Downtown Seoul & Final";
         g.drawString(chBanner + "  (" + (start + 1) + "–" + end + " of " + levels.size() + ")", panel.x + 24, panel.y + 38);
 
         cardRects.clear();
@@ -124,12 +133,12 @@ public class LevelSelectOverlay {
 
             g.setColor(bg);
             g.fillRoundRect(r.x, r.y, r.width, r.height, 12, 12);
-            g.setColor(UIUtils.HUD_BORDER);
-            g.setStroke(new BasicStroke(1.5f));
+            g.setColor(lv.id == 80 && !locked ? UIUtils.GOLD : UIUtils.HUD_BORDER);
+            g.setStroke(new BasicStroke(lv.id == 80 && !locked ? 2f : 1.5f));
             g.drawRoundRect(r.x, r.y, r.width, r.height, 12, 12);
 
             g.setFont(fTitle);
-            g.setColor(locked ? UIUtils.MUTED : UIUtils.TEXT);
+            g.setColor(locked ? UIUtils.MUTED : (lv.id == 80 ? UIUtils.GOLD : UIUtils.TEXT));
             String label = "Lv." + lv.id + "  " + lv.title;
             if (label.length() > 36) {
                 label = label.substring(0, 35) + "…";
@@ -137,8 +146,21 @@ public class LevelSelectOverlay {
             g.drawString(label, r.x + 12, r.y + 26);
 
             g.setFont(fSub);
-            g.setColor(locked ? UIUtils.MUTED : (done == lv.entities.size() ? UIUtils.GOLD : UIUtils.MUTED));
-            String status = locked ? "LOCKED" : (done + "/" + lv.entities.size() + " Done  •  " + lv.zoneName);
+            String status;
+            boolean highlightGold = false;
+            if (locked) {
+                status = "LOCKED";
+            } else if (lv.id == 80) {
+                boolean finPassed = passedExams.contains("final_exam_80");
+                status = finPassed ? "100-Q FINAL PASSED ✓" : "100-Question Grand Final Exam";
+                highlightGold = finPassed;
+            } else {
+                boolean examPassed = passedExams.contains("exam_lv" + lv.id);
+                String examTag = examPassed ? "  •  EXAM ✓" : (done == lv.entities.size() ? "  •  EXAM READY" : "");
+                status = done + "/" + lv.entities.size() + " Done" + examTag;
+                highlightGold = (done == lv.entities.size());
+            }
+            g.setColor(locked ? UIUtils.MUTED : (highlightGold ? UIUtils.GOLD : UIUtils.MUTED));
             g.drawString(status, r.x + 12, r.y + 52);
         }
 

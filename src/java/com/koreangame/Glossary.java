@@ -2,9 +2,12 @@ package com.koreangame;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,18 +22,29 @@ public class Glossary {
     private final Map<String, String> entries = new HashMap<>();
 
     public void load(Path path) throws IOException {
-        if (!Files.exists(path)) {
-            return;
+        BufferedReader br;
+        if (Files.exists(path)) {
+            br = Files.newBufferedReader(path, StandardCharsets.UTF_8);
+        } else {
+            InputStream in = Glossary.class.getResourceAsStream("/data/glossary.txt");
+            if (in == null) {
+                return;
+            }
+            br = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8));
         }
-        try (BufferedReader br = Files.newBufferedReader(path, StandardCharsets.UTF_8)) {
+        try (BufferedReader reader = br) {
             String line;
-            while ((line = br.readLine()) != null) {
+            while ((line = reader.readLine()) != null) {
                 int eq = line.indexOf('=');
                 if (eq > 0) {
                     entries.put(line.substring(0, eq).trim(), line.substring(eq + 1).trim());
                 }
             }
         }
+    }
+
+    public Map<String, String> getAllEntries() {
+        return Collections.unmodifiableMap(entries);
     }
 
     public String lookupWord(String rawWord) {
@@ -62,7 +76,7 @@ public class Glossary {
             return null;
         }
         StringBuilder sb = new StringBuilder();
-        String[] words = phrase.split("\s+");
+        String[] words = phrase.split("\\s+");
         for (String w : words) {
             String hit = lookupWord(w);
             if (hit != null && sb.indexOf(hit) < 0) {
