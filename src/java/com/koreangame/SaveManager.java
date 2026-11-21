@@ -6,12 +6,14 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
 public class SaveManager {
+    public final int slotNumber;
     public int currentLevel = 1;
     public int unlockedLevel = 1;
     public int xp = 0;
@@ -23,8 +25,46 @@ public class SaveManager {
 
     private final Path savePath;
 
-    public SaveManager(Path savePath) {
+    public SaveManager(int slotNumber, Path savePath) {
+        this.slotNumber = slotNumber;
         this.savePath = savePath;
+    }
+
+    public static SaveManager[] loadAllSlots() {
+        Path legacy = Paths.get("save_data.txt");
+        Path slot1 = Paths.get("save_slot_1.txt");
+        if (Files.exists(legacy) && !Files.exists(slot1)) {
+            try {
+                Files.copy(legacy, slot1, StandardCopyOption.REPLACE_EXISTING);
+            } catch (IOException ignored) {
+            }
+        }
+        SaveManager[] slots = new SaveManager[3];
+        for (int i = 0; i < 3; i++) {
+            slots[i] = new SaveManager(i + 1, Paths.get("save_slot_" + (i + 1) + ".txt"));
+            slots[i].load();
+        }
+        return slots;
+    }
+
+    public boolean hasProgress() {
+        return Files.exists(savePath)
+            && (xp > 0 || currentLevel > 1 || unlockedLevel > 1 || !completedEntities.isEmpty() || !seenIntros.isEmpty());
+    }
+
+    public void reset() {
+        currentLevel = 1;
+        unlockedLevel = 1;
+        xp = 0;
+        playerX = 0.0f;
+        playerY = 0.0f;
+        hasSavedPos = false;
+        completedEntities.clear();
+        seenIntros.clear();
+        try {
+            Files.deleteIfExists(savePath);
+        } catch (IOException ignored) {
+        }
     }
 
     public void load() {

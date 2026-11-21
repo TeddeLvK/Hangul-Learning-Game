@@ -11,9 +11,9 @@ public class GameWindow extends JFrame {
     private final GamePanel panel;
     private boolean fullscreen = false;
 
-    public GameWindow(List<Level> levels, SaveManager save, Glossary glossary) {
+    public GameWindow(List<Level> levels, SaveManager[] saveSlots, Glossary glossary) {
         super("한글몬 — Hangeulmon: Rise of the Word Masters");
-        this.panel = new GamePanel(levels, save, glossary, this::toggleFullscreen);
+        this.panel = new GamePanel(levels, saveSlots, glossary, this::toggleFullscreen);
         setContentPane(panel);
         setResizable(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

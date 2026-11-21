@@ -11,10 +11,9 @@ public final class Main {
         List<Level> levels = CurriculumLoader.load(Paths.get("src/data/levels.txt"));
         Glossary glossary = new Glossary();
         glossary.load(Paths.get("src/data/glossary.txt"));
-        SaveManager save = new SaveManager(Paths.get("save_data.txt"));
-        save.load();
+        SaveManager[] saveSlots = SaveManager.loadAllSlots();
         SwingUtilities.invokeLater(() -> {
-            GameWindow win = new GameWindow(levels, save, glossary);
+            GameWindow win = new GameWindow(levels, saveSlots, glossary);
             win.setFullscreen(true);
         });
     }

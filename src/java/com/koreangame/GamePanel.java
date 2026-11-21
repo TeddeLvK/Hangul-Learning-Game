@@ -23,7 +23,9 @@ import javax.swing.Timer;
 public class GamePanel extends JPanel {
     private final List<Level> levels;
     private final AssetLoader assets;
-    private final SaveManager save;
+    private final SaveManager[] saveSlots;
+    private int activeSlot = 0;
+    private SaveManager save;
     private final Glossary glossary;
     private final Runnable onToggleFullscreen;
 
@@ -52,9 +54,11 @@ public class GamePanel extends JPanel {
     private final Rectangle guideBtn = new Rectangle(UIUtils.SCREEN_WIDTH - 198, 14, 92, 36);
     private final Rectangle levelsBtn = new Rectangle(UIUtils.SCREEN_WIDTH - 98, 14, 86, 36);
 
-    public GamePanel(List<Level> levels, SaveManager save, Glossary glossary, Runnable onToggleFullscreen) {
+    public GamePanel(List<Level> levels, SaveManager[] saveSlots, Glossary glossary, Runnable onToggleFullscreen) {
         this.levels = levels;
-        this.save = save;
+        this.saveSlots = saveSlots;
+        this.activeSlot = 0;
+        this.save = saveSlots[0];
         this.glossary = glossary;
         this.onToggleFullscreen = onToggleFullscreen;
         this.assets = new AssetLoader(Paths.get("Assets"));
@@ -66,7 +70,7 @@ public class GamePanel extends JPanel {
 
         NativeEngine.nativeInit();
         loadLevel(save.currentLevel, save.hasSavedPos, false);
-        mainMenuOverlay = new MainMenuOverlay(assets, save, false);
+        mainMenuOverlay = new MainMenuOverlay(assets, saveSlots, activeSlot, false);
 
         addKeyListener(new KeyAdapter() {
             @Override
@@ -173,16 +177,36 @@ public class GamePanel extends JPanel {
     private void openMainMenu() {
         clearMovementKeys();
         persist();
-        mainMenuOverlay = new MainMenuOverlay(assets, save, true);
+        mainMenuOverlay = new MainMenuOverlay(assets, saveSlots, activeSlot, true);
     }
 
     private void handleMenuAction(String action) {
+        if (action == null) {
+            return;
+        }
         if ("start".equals(action)) {
             mainMenuOverlay = null;
             if (!save.seenIntros.contains(currentLevel.id)) {
                 introOverlay = new IntroOverlay(currentLevel, assets);
                 save.seenIntros.add(currentLevel.id);
                 persist();
+            }
+        } else if (action.startsWith("load:")) {
+            int idx = Integer.parseInt(action.substring(5));
+            if (idx >= 0 && idx < saveSlots.length) {
+                activeSlot = idx;
+                save = saveSlots[activeSlot];
+                mainMenuOverlay = null;
+                loadLevel(save.currentLevel, save.hasSavedPos, true);
+                showToast("Loaded Save Slot " + save.slotNumber + "!", 2.5f);
+            }
+        } else if (action.startsWith("reset:")) {
+            int idx = Integer.parseInt(action.substring(6));
+            if (idx >= 0 && idx < saveSlots.length) {
+                saveSlots[idx].reset();
+                if (idx == activeSlot) {
+                    loadLevel(1, false, false);
+                }
             }
         } else if ("quit".equals(action)) {
             persist();
