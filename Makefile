@@ -39,3 +39,6 @@ run: all
 
 clean:
 	rm -rf $(BUILD_DIR)
+
+run: all
+	java --enable-native-access=ALL-UNNAMED -Djava.library.path=$(BUILD_DIR) -cp $(CLASSES_DIR) com.koreangame.Main

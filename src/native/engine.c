@@ -3,7 +3,7 @@
 #include <string.h>
 
 static int is_solid_char(char ch) {
-    return ch == 'T' || ch == 'W' || ch == 'R' || ch == 'B' || ch == '~' || ch == 'C';
+    return ch == 'T' || ch == 'W' || ch == 'R' || ch == 'B' || ch == '~' || ch == 'C' || ch == 'G' || ch == 'N' || ch == 'K';
 }
 
 static int is_solid_tile(const EngineState *st, int tx, int ty) {

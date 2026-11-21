@@ -92,7 +92,8 @@ public class LevelSelectOverlay {
 
         g.setFont(fHead);
         g.setColor(UIUtils.GOLD);
-        g.drawString("Select Level  (" + (start + 1) + "–" + end + " of " + levels.size() + ")", panel.x + 24, panel.y + 38);
+        String chBanner = (start + 1) <= 50 ? "Chapter 1: Foundations" : "Chapter 2: Downtown Seoul";
+        g.drawString(chBanner + "  (" + (start + 1) + "–" + end + " of " + levels.size() + ")", panel.x + 24, panel.y + 38);
 
         cardRects.clear();
         cardLevelIds.clear();

@@ -136,7 +136,8 @@ public class MainMenuOverlay {
 
         g.setFont(fSub);
         g.setColor(UIUtils.TEXT);
-        String stats = "Level " + save.currentLevel + " / 50   •   " + save.xp + " XP   •   " + save.completedEntities.size() + " / 200 Quests";
+        String chName = save.currentLevel <= 50 ? "Ch.1" : "Ch.2";
+        String stats = chName + " Lv." + save.currentLevel + " / 79   •   " + save.xp + " XP   •   " + save.completedEntities.size() + " / 345 Quests";
         FontMetrics fmStat = g.getFontMetrics();
         g.drawString(stats, statBox.x + (statBox.width - fmStat.stringWidth(stats)) / 2, statBox.y + 26);
 

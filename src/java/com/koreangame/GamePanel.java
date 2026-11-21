@@ -205,9 +205,9 @@ public class GamePanel extends JPanel {
             int nextId = currentLevel.id + 1;
             if (nextId <= levels.size() && save.unlockedLevel < nextId) {
                 save.unlockedLevel = nextId;
-                showToast("Level " + currentLevel.id + " Complete! Level " + nextId + " unlocked — press [L]!", 5.0f);
+                showToast(currentLevel.id == 50 ? "Chapter 1 Complete! Chapter 2: Downtown Seoul unlocked — press [L]!" : "Level " + currentLevel.id + " Complete! Level " + nextId + " unlocked — press [L]!", 5.0f);
             } else if (nextId > levels.size()) {
-                showToast("All 50 levels mastered! Replay any zone anytime.", 5.0f);
+                showToast("All 79 levels across Chapters 1 & 2 mastered!", 5.0f);
             }
         }
         persist();
@@ -381,6 +381,13 @@ public class GamePanel extends JPanel {
             case 'T': return "tiles/tree";
             case 'f': return "tiles/flower";
             case 'C': return "tiles/counter";
+            case 'A': return "tiles/road";
+            case 'X': return "tiles/crosswalk";
+            case 'S': return "tiles/sidewalk";
+            case 'L': return "tiles/plaza";
+            case 'G': return "tiles/skyscraper";
+            case 'N': return "tiles/neon_shop";
+            case 'K': return "tiles/tower_roof";
             default: return "tiles/grass";
         }
     }
@@ -516,7 +523,8 @@ public class GamePanel extends JPanel {
 
         g.setFont(assets.getFont(17, true));
         g.setColor(UIUtils.TEXT);
-        g.drawString("Lv." + currentLevel.id + "/50  " + currentLevel.zoneName, 16, 26);
+        String chTag = currentLevel.id <= 50 ? "Ch.1 Lv." + currentLevel.id + "/50" : "Ch.2 Lv." + (currentLevel.id - 50) + "/29";
+        g.drawString(chTag + "  " + currentLevel.zoneName, 16, 26);
 
         g.setFont(assets.getFont(13, false));
         g.setColor(UIUtils.MUTED);
