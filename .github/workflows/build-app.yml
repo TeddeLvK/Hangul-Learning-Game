@@ -1,0 +1,43 @@
+name: Build Hangeulmon Apps
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 24
+      - run: make dmg
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Hangeulmon-macOS
+          path: dist/*.dmg
+
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 24
+      - shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path build/classes, build/jar_stage/data, build/jpackage_in, dist | Out-Null
+          $files = Get-ChildItem -Path src/java/com/koreangame -Filter *.java | ForEach-Object { $_.FullName }
+          javac -encoding UTF-8 -d build/classes $files
+          Copy-Item -Recurse build/classes/* build/jar_stage/
+          Copy-Item -Recurse Assets build/jar_stage/
+          Copy-Item src/data/levels.txt, src/data/glossary.txt build/jar_stage/data/
+          jar --create --file build/jpackage_in/Hangeulmon.jar --main-class com.koreangame.Main -C build/jar_stage .
+          jpackage --type app-image --name Hangeulmon --app-version 1.0.0 --input build/jpackage_in --main-jar Hangeulmon.jar --main-class com.koreangame.Main --dest dist --java-options "--enable-native-access=ALL-UNNAMED"
+          Compress-Archive -Path dist/Hangeulmon -DestinationPath dist/Hangeulmon-Windows.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Hangeulmon-Windows
+          path: dist/Hangeulmon-Windows.zip
