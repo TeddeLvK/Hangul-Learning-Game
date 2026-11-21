@@ -1,5 +1,0 @@
-currentLevel=1
-unlockedLevel=1
-xp=0
-completed=
-seenIntros=
