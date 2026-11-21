@@ -1,0 +1,1550 @@
+LEVEL|1|Everyday Nouns & Copula (-이에요/-예요)|마을 광장 (Town Square)|9|9
+SUMMARY|Inspect everyday objects and meet locals to practice core nouns and stating what things are.
+TIP|Attach -이에요 after a consonant (받침): 책이에요.
+TIP|Attach -예요 after a vowel: 커피예요.
+TIP|Korean places the verb/copula at the very end.
+VOCAB|커피=coffee;책=book;사과=apple;우산=umbrella;학생=student;친구=friend
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBTT....TTRRRRT
+MAP|TWWWWTT....TTWWWWT
+MAP|TFFFF..PPPP..FFFFT
+MAP|TFCFF..PPPP..FFCRT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TPPPPPPPPPPPPPPPPT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|T~~....PPPP....~~T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l1_e1|Table Item|objects/coffee|3|3|A warm cup sits on the cafe counter.
+TASK|choice|이거 뭐예요? (What is this?)|커피예요;책이에요;우산이에요;사과예요|커피예요|커피 ends in a vowel, so it takes -예요.
+TASK|fill|이거는 커피___.|예요;이에요;은;을|예요|No 받침 on 커피 -> -예요.
+ENTITY|l1_e2|Blue Item|objects/book|14|3|Someone left a book on the bench.
+TASK|choice|이거 뭐예요? (What is this?)|책이에요;책예요;물이에요;사과예요|책이에요|책 ends in ㄱ (받침) -> -이에요.
+TASK|build|Build: This is a book.|이거는;책이에요|커피예요;책예요|Topic 이거는 + noun + copula 책이에요.
+ENTITY|l1_e3|Minji (민지)|sprites/npc_barista|5|8|안녕하세요! 카페에 오신 것을 환영해요.
+TASK|fill|저는 학생___. (I am a student.)|이에요;예요;가;를|이에요|학생 ends in ㅇ -> -이에요.
+TASK|build|Build: That person is a friend.|그;사람은;친구예요|친구이에요;책이에요|그 사람 + 은 + 친구예요.
+ENTITY|l1_e4|Lost Umbrella|objects/umbrella|12|8|A pink umbrella leans by the path.
+TASK|choice|저거 뭐예요?|우산이에요;우산예요;사과예요;커피예요|우산이에요|우산 ends in ㄴ -> -이에요.
+TASK|build|Build: That over there is an umbrella. [이다]|저거는;우산이에요|우산예요;사과예요|우산 ends in ㄴ -> -이에요.
+ENDLEVEL
+LEVEL|2|Demonstratives (이/그/저) & Questions|동네 골목 (Neighborhood Alley)|9|10
+SUMMARY|Point out items near you, near the listener, or far away using 이, 그, 저.
+TIP|이 = this (near speaker), 그 = that (near listener), 저 = that over there (far from both).
+TIP|이것/이거 = this thing, 여기/거기/저기 = here/there/over there.
+TIP|누구예요? = Who is it? 어디예요? = Where is it?
+VOCAB|이거=this thing;그거=that thing;저거=that over there;여기=here;어디=where;누구=who
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T..f...~~~~...f..T
+MAP|T......~~~~......T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|TRRP..........PBPT
+MAP|TWWP..........PWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l2_e1|Fruit Stall|objects/apple|2|7|Fresh red apples are stacked neatly.
+TASK|choice|Which means 'that thing over there'?|저거;이거;그거;여기|저거|저 refers to things far from both speaker and listener.
+TASK|build|Build: What is this?|이거는;뭐예요?|저거는;어디예요?|이거는 뭐예요? asks what something near you is.
+ENTITY|l2_e2|Jisu (지수)|sprites/npc_student|15|7|여기가 우리 동네예요!
+TASK|fill|___는 어디예요? (Where is here?)|여기;누구;뭐;책|여기|여기 means 'here'.
+TASK|build|Build: Who is that person?|저;사람은;누구예요?|뭐예요?;여기예요?|저 사람 (that person) + 은 + 누구예요?
+ENTITY|l2_e3|Guide (안내원)|sprites/npc_guide|9|4|지도를 보고 계세요?
+TASK|choice|How do you ask 'Where is the cafe?'|카페가 어디예요?;카페가 누구예요?;카페가 뭐예요?;카페는 책이에요?|카페가 어디예요?|어디예요? asks where a place is.
+TASK|build|Build: Where is the library? [이다]|도서관이;어디예요?|누구예요?;뭐예요?|도서관 + 이 + 어디예요?
+ENTITY|l2_e4|Cafe Sign|objects/coffee|5|9|A wooden sign points toward a cozy cafe.
+TASK|fill|___ 사람이에요? (Who is that person near you?) [이다]|누구;어디;뭐;여기|누구|누구 asks 'who'.
+TASK|choice|Which means 'over there' (far from both)?|저기;여기;거기;이거|저기|저기 = over there.
+ENDLEVEL
+LEVEL|3|Existence & Possession (있다 / 없다)|편의점 앞 (Convenience Store)|9|10
+SUMMARY|Learn to say what exists, what you have, and what is missing using 있어요 and 없어요.
+TIP|있어요 means 'exists / has'; 없어요 means 'does not exist / does not have'.
+TIP|Always pair 있다/없다 with the subject particle 이/가 (시간이 있어요).
+TIP|Location of existence uses 에 (집에 있어요 = is at home).
+VOCAB|있다=to exist/have;없다=to not exist/have;시간=time;돈=money;가방=bag;집=home
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRRRTT..TTBBBBBT
+MAP|TWWWWWTT..TTWWWWWT
+MAP|TFFFFF..PP..FFFFFT
+MAP|TFCCFF..PP..FFCCFT
+MAP|TFFFFF..PP..FFFFFT
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..........P..T
+MAP|T..P..f....f..P..T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T.......PP.......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l3_e1|Clerk (직원)|sprites/npc_barista|3|3|찾으시는 물건 있어요?
+TASK|fill|우산___ 있어요? (Do you have an umbrella?) [있다 / 사다]|이;가;을;를|이|우산 ends in ㄴ -> subject particle 이.
+TASK|build|Build: I have time. [있다 / 가다]|저는;시간이;있어요|시간을;없어요|Use 이/가 with 있어요: 시간이 있어요.
+ENTITY|l3_e2|Traveler (여행객)|sprites/npc_vendor|14|3|지갑을 찾고 있어요...
+TASK|choice|How do you say 'I have no money'?|돈이 없어요;돈을 없어요;돈이 있어요;돈가 없어요|돈이 없어요|돈 ends in ㄴ -> 이, plus 없어요.
+TASK|build|Build: The book is in the bag. [있다]|책이;가방에;있어요|가방에서;없어요|Static location uses 에: 가방에 있어요.
+ENTITY|l3_e3|Bench Item|objects/book|5|5|A notebook rests on the table.
+TASK|fill|지금 집___ 있어요. (I am at home now.) [있다]|에;에서;을;가|에|있다 takes location particle 에.
+TASK|build|Build: There is no coffee. [없다]|커피가;없어요|커피이;있어요|커피 ends in vowel -> 가 + 없어요.
+ENTITY|l3_e4|Lost Bag|objects/umbrella|13|5|A backpack sits beside the store.
+TASK|fill|가방에 우산이 ___. (There is no umbrella in the bag.) [없다]|없어요;있어요;아니에요;해요|없어요|없다 -> 없어요.
+TASK|choice|Correct particle with 있어요: 친구___ 있어요. [있다]|가;이;를;에|가|친구 ends in vowel -> 가.
+ENDLEVEL
+LEVEL|4|Topic (은/는) vs Subject (이/가)|중앙 공원 (Central Park)|9|10
+SUMMARY|Master the difference between topic markers 은/는 and subject markers 이/가.
+TIP|Consonant ending (받침): 은 / 이. Vowel ending: 는 / 가.
+TIP|은/는 introduces a topic or shows contrast (사과는 싸요 = As for apples, they're cheap).
+TIP|이/가 spotlights new information or answers 'who/what'.
+VOCAB|날씨=weather;오늘=today;이름=name;한국=Korea;공원=park;음식=food
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBBBBBBBBBBBBBT
+MAP|TWWWWWWWWWWWWWWWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T..P..........P..T
+MAP|T..P..PPPPPP..P..T
+MAP|T..P..P....P..P..T
+MAP|T..PPPP....PPPP..T
+MAP|T..f..........f..T
+MAP|T......PPPP......T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l4_e1|Park Guide (안내원)|sprites/npc_guide|9|3|오늘 공원이 참 한가해요.
+TASK|fill|오늘 날씨___ 정말 좋아요.|가;이;을;에서|가|날씨 ends in a vowel -> 가.
+TASK|fill|한국 음식___ 맛있어요. [맛있다 / 있다]|은;는;가;를|은|음식 ends in ㄱ -> topic particle 은.
+ENTITY|l4_e2|Sora (소라)|sprites/npc_student|4|5|만나서 반가워요!
+TASK|build|Build: My name is Sora.|제;이름은;소라예요|이름는;소라이에요|이름 ends in ㅁ -> 은; 소라 ends in vowel -> 예요.
+TASK|choice|Which particle fits: 책___ 여기 있어요? [있다]|이;가;는;를|이|책 ends in ㄱ -> 이.
+ENTITY|l4_e3|Hot Bowl|objects/bibimbap|13|5|A warm bowl of bibimbap.
+TASK|build|Build: Bibimbap is delicious. [맛있다 / 있다]|비빔밥이;맛있어요|비빔밥가;맛있아요|비빔밥 ends in ㅂ -> 이.
+TASK|fill|사과___ 싸요. (As for apples, they are cheap.) [싸다]|는;은;이;을|는|사과 ends in a vowel -> topic particle 는.
+ENTITY|l4_e4|Park Bench|objects/book|9|8|A quiet bench under a shade tree.
+TASK|fill|오늘___ 날씨가 좋아요. (As for today, the weather is nice.) [좋다]|은;는;이;가|은|오늘 ends in ㄹ -> topic particle 은.
+TASK|choice|Which particle fits: 공원___ 넓어요. [넓다 - spacious]|이;가;는;를|이|공원 ends in ㄴ -> 이.
+ENDLEVEL
+LEVEL|5|Polite Present Adjectives (-아요/-어요)|과일 시장 (Fruit Market)|9|10
+SUMMARY|Conjugate descriptive verbs (adjectives) into polite present tense using vowel harmony.
+TIP|Stem last vowel ㅏ or ㅗ -> add -아요 (좋다 -> 좋아요, 싸다 -> 싸요).
+TIP|All other vowels -> add -어요 (맛있다 -> 맛있어요, 넓다 -> 넓어요).
+TIP|하다 adjectives always become 해요 (조용하다 -> 조용해요).
+VOCAB|맛있다=delicious;비싸다=expensive;싸다=cheap;작다=small;좋다=good;조용하다=quiet
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRT..PPPP..TBBBT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T...PPPPPPPPPP...T
+MAP|T...P..f..f..P...T
+MAP|T...PPPPPPPPPP...T
+MAP|TBBBT..PPPP..TRRRT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l5_e1|Vendor (아저씨)|sprites/npc_vendor|2|3|신선한 과일 보고 가세요!
+TASK|choice|Conjugate 비싸다 (expensive):|비싸요;비싸어요;비싸아요;비싸해요|비싸요|싸 already ends in ㅏ, so -아요 merges -> 비싸요.
+TASK|build|Build: Apples are cheap. [싸다]|사과가;싸요|사과이;싸어요|사과 + 가 + 싸요.
+ENTITY|l5_e2|Chef Park (박 셰프)|sprites/npc_chef|15|3|이 식당 음식이 어때요?
+TASK|fill|여기는 정말 조용___. (It is really quiet here.) [조용하다]|해요;하아요;하어요;이에요|해요|조용하다 -> 조용해요.
+TASK|build|Build: The book is small. [작다]|책이;작아요|작어요;책가|작다 has vowel ㅏ -> 작아요.
+ENTITY|l5_e3|Market Stall|objects/apple|9|5|A basket of crisp apples.
+TASK|choice|Conjugate 맛있다 (delicious):|맛있어요;맛있아요;맛있해요;맛있예요|맛있어요|Last stem vowel is ㅣ -> -어요.
+TASK|build|Build: The weather is good. [좋다]|날씨가;좋아요|날씨이;좋어요|좋다 has vowel ㅗ -> 좋아요.
+ENTITY|l5_e4|Tea Stand|objects/coffee|15|9|Warm barley tea is served here.
+TASK|choice|Conjugate 넓다 (spacious) into polite present:|넓어요;넓아요;넓해요;넓예요|넓어요|넓다 has vowel ㅓ -> 넓어요.
+TASK|fill|커피가 너무 ___. (The coffee is too expensive.) [비싸다]|비싸요;비싸어요;싸어요;비싸해요|비싸요|비싸다 -> 비싸요.
+ENDLEVEL
+LEVEL|6|Action Verbs & Object Particle (을/를)|한식당 (Korean Restaurant)|9|10
+SUMMARY|Describe everyday actions and mark direct objects properly with 을 and 를.
+TIP|Consonant ending -> 을 (밥을 먹어요). Vowel ending -> 를 (커피를 마셔요).
+TIP|Vowel contractions: 보 + 아요 -> 봐요, 마시 + 어요 -> 마셔요, 가 + 아요 -> 가요.
+TIP|Word order: Subject + Object + Verb.
+VOCAB|먹다=to eat;마시다=to drink;읽다=to read;보다=to watch/see;사다=to buy;밥=rice/meal
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T~~..TTRRRRTT..~~T
+MAP|T~~..TTWWWWTT..~~T
+MAP|T....TFFFFFFT....T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|T..P..........P..T
+MAP|T..PPPP....PPPP..T
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l6_e1|Chef (셰프)|sprites/npc_chef|9|3|무엇을 드시고 싶으세요?
+TASK|fill|비빔밥___ 먹어요. [먹다]|을;를;이;에|을|비빔밥 ends in ㅂ -> 을.
+TASK|build|Build: I eat a meal. [먹다]|저는;밥을;먹어요|밥를;먹아요|밥 + 을 + 먹어요.
+ENTITY|l6_e2|Barista (바리스타)|sprites/npc_barista|4|6|따뜻한 커피 준비해 드릴까요?
+TASK|choice|Conjugate 마시다 (to drink):|마셔요;마시아요;마사요;마시요|마셔요|시 + 어요 contracts to 셔요.
+TASK|build|Build: I drink coffee. [마시다]|저는;커피를;마셔요|커피을;마시아요|커피 ends in vowel -> 를.
+ENTITY|l6_e3|Reader (독자)|sprites/npc_student|13|6|재미있는 소설을 읽고 있어요.
+TASK|build|Build: I watch a movie. [보다]|저는;영화를;봐요|영화을;보어요|보다 + 아요 -> 봐요.
+TASK|fill|도서관에서 책을 ___. [읽다 - to read]|읽어요;읽아요;읽해요;읽예요|읽어요|읽다 has vowel ㅣ -> 읽어요.
+ENTITY|l6_e4|Bookstore Corner|objects/book|5|9|A stack of Korean magazines.
+TASK|fill|친구가 사과___ 사요. [사다 - to buy]|를;을;가;에|를|사과 ends in vowel -> 를.
+TASK|choice|Conjugate 읽다 (to read) into polite present:|읽어요;읽아요;읽해요;읽요|읽어요|읽다 has vowel ㅣ -> 읽어요.
+ENDLEVEL
+LEVEL|7|하다 Verbs & Daily Routines|대학교 캠퍼스 (University Campus)|9|9
+SUMMARY|Master noun+하다 action verbs to talk about studying, working, and exercising.
+TIP|Many Korean verbs are [Noun] + 하다: 공부하다 (study), 운동하다 (exercise), 일하다 (work).
+TIP|하다 always conjugates to 해요 in polite present tense.
+TIP|You can split them with 을/를: 한국어를 공부해요 or 공부를 해요.
+VOCAB|공부하다=to study;운동하다=to exercise;일하다=to work;요리하다=to cook;전화하다=to call;한국어=Korean
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBTT....TTRRRRT
+MAP|TWWWWTT....TTWWWWT
+MAP|TFFFF..PPPP..FFFFT
+MAP|TFCFF..PPPP..FFCRT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TPPPPPPPPPPPPPPPPT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|T~~....PPPP....~~T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l7_e1|Hyunwoo (현우)|sprites/npc_student|3|3|시험 기간이라 바빠요!
+TASK|fill|매일 한국어를 공부___. [공부하다]|해요;하아요;하어요;이에요|해요|하다 -> 해요.
+TASK|build|Build: I study Korean. [공부하다]|저는;한국어를;공부해요|한국어을;공부하요|한국어 + 를 + 공부해요.
+ENTITY|l7_e2|Coach (코치)|sprites/npc_guide|14|3|건강을 위해 매일 움직여야 해요!
+TASK|choice|Which means 'I exercise'?|운동해요;요리해요;일해요;전화해요|운동해요|운동하다 = to exercise.
+TASK|build|Build: My friend cooks. [요리하다]|친구가;요리해요|친구이;요리하요|친구 + 가 + 요리해요.
+ENTITY|l7_e3|Study Desk|objects/book|5|8|Notes and textbooks cover the desk.
+TASK|choice|Which means 'I call a friend'?|친구에게 전화해요;친구에게 공부해요;친구에게 요리해요;친구에게 운동해요|친구에게 전화해요|전화하다 = to make a phone call.
+TASK|build|Build: I work at a company. [일하다 - to work]|회사에서;일해요|회사에;일하요|일하다 -> 일해요.
+ENTITY|l7_e4|Campus Cafe|objects/coffee|12|8|Students chat between lectures.
+TASK|choice|Conjugate 요리하다 (to cook) into polite present:|요리해요;요리하아요;요리하어요;요리이에요|요리해요|All 하다 verbs become 해요.
+TASK|fill|매일 아침 공원에서 ___. [운동하다 - to exercise]|운동해요;운동하요;공부해요;일해요|운동해요|운동하다 -> 운동해요.
+ENDLEVEL
+LEVEL|8|Locations: 에 (Destination) vs 에서 (Action)|도서관 거리 (Library Street)|9|10
+SUMMARY|Stop mixing up 에 and 에서! Learn when to use each location particle.
+TIP|Use 에 for destinations (가다/오다) and static existence (있다/없다): 학교에 가요.
+TIP|Use 에서 where an active action takes place: 도서관에서 책을 읽어요.
+TIP|에서 also means 'from' when paired with 오다: 스웨덴에서 왔어요.
+VOCAB|도서관=library;학교=school;카페=cafe;식당=restaurant;가다=to go;오다=to come
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T..f...~~~~...f..T
+MAP|T......~~~~......T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|TRRP..........PBPT
+MAP|TWWP..........PWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l8_e1|Librarian (사서)|sprites/npc_elder|2|7|도서관에서는 조용히 해 주세요.
+TASK|fill|도서관___ 책을 읽어요. [읽다]|에서;에;을;가|에서|Reading is an action happening at the library -> 에서.
+TASK|fill|지금 학교___ 가요. [가다]|에;에서;를;은|에|가다 (to go) takes destination particle 에.
+ENTITY|l8_e2|Minji (민지)|sprites/npc_barista|15|7|카페에서 공부하는 걸 좋아해요.
+TASK|build|Build: I drink coffee at the cafe. [마시다]|카페에서;커피를;마셔요|카페에;커피을|Drinking is an action -> 카페에서.
+TASK|build|Build: I go to the restaurant. [가다]|식당에;가요|식당에서;가어요|Destination with 가다 -> 식당에.
+ENTITY|l8_e3|Study Book|objects/book|9|4|A grammar guide is bookmarked.
+TASK|choice|Which sentence is grammatically correct?|집에서 요리해요;집에 요리해요;학교에서 가요;도서관에 공부해요|집에서 요리해요|Cooking is an action -> 에서.
+TASK|build|Build: I study at the library. [공부하다 - to study]|도서관에서;공부해요|도서관에;공부하요|Action location uses 에서.
+ENTITY|l8_e4|Subway Map|objects/subway|5|9|A route map of Seoul.
+TASK|fill|친구와 식당___ 밥을 먹어요. [먹다 - to eat]|에서;에;을;가|에서|Eating is an action happening at the restaurant -> 에서.
+TASK|choice|Which sentence uses 에 correctly? [가다 - to go]|도서관에 가요;도서관에서 가요;집에 밥을 먹어요;카페에 공부해요|도서관에 가요|Destination with 가다 uses 에.
+ENDLEVEL
+LEVEL|9|Native Korean Numbers & Counters|베이커리 카페 (Bakery Cafe)|9|10
+SUMMARY|Count objects, cups, and people using native Korean numbers (하나, 둘, 셋, 넷).
+TIP|Before a counter, 1-4 shorten: 하나->한, 둘->두, 셋->세, 넷->네 (스물->스무).
+TIP|Common counters: 개 (items), 잔 (cups), 명 (people), 권 (books).
+TIP|Order: [Noun] + [Number] + [Counter]: 커피 두 잔 (two cups of coffee).
+VOCAB|한=1;두=2;세=3;네=4;개=item counter;잔=cup counter;명=person counter
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRRRTT..TTBBBBBT
+MAP|TWWWWWTT..TTWWWWWT
+MAP|TFFFFF..PP..FFFFFT
+MAP|TFCCFF..PP..FFCCFT
+MAP|TFFFFF..PP..FFFFFT
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..........P..T
+MAP|T..P..f....f..P..T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T.......PP.......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l9_e1|Barista (바리스타)|sprites/npc_barista|3|3|몇 잔 주문하시겠어요?
+TASK|choice|How do you say 'two cups of coffee'?|커피 두 잔;커피 둘 잔;커피 이 잔;커피 두 명|커피 두 잔|둘 shortens to 두 before counter 잔.
+TASK|build|Build: Three apples.|사과;세;개|셋;잔|셋 shortens to 세 before 개.
+ENTITY|l9_e2|Student (학생)|sprites/npc_student|14|3|친구들이랑 같이 왔어요.
+TASK|fill|학생이 네 ___ 있어요. (There are four students.) [있다]|명;잔;개;권|명|명 is the counter for people.
+TASK|build|Build: One book.|책;한;권|하나;명|하나 -> 한, book counter -> 권.
+ENTITY|l9_e3|Coffee Cup|objects/coffee|5|5|Freshly brewed Americano.
+TASK|fill|커피 ___ 잔 주세요. (One cup of coffee, please.) [주다]|한;하나;일;두|한|하나 becomes 한 before 잔.
+TASK|build|Build: Two friends. [있다]|친구;두;명|둘;개|둘 shortens to 두 before 명.
+ENTITY|l9_e4|Fruit Basket|objects/apple|13|5|Freshly picked orchard apples.
+TASK|fill|책이 세 ___ 있어요. (There are three books.) [있다]|권;잔;명;개|권|권 is the counter for books.
+TASK|choice|How do you say 'four items'?|네 개;넷 개;사 개;네 명|네 개|넷 shortens to 네 before 개.
+ENDLEVEL
+LEVEL|10|Sino-Korean Numbers, Prices & Time|전통 시장 (Traditional Market)|9|10
+SUMMARY|Ask prices and tell time using Sino-Korean numbers (일, 이, 삼, 천, 만) and mixed time.
+TIP|Prices use Sino-Korean numbers + 원: 삼천 원 (3,000 won), 만 원 (10,000 won).
+TIP|Time mixes both systems: Native for hours (시), Sino-Korean for minutes (분) -> 세 시 삼십 분 (3:30).
+TIP|얼마예요? = How much is it? 몇 시예요? = What time is it?
+VOCAB|얼마예요?=how much?;원=won;천=1,000;만=10,000;시=hour;분=minute;지금=now
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBBBBBBBBBBBBBT
+MAP|TWWWWWWWWWWWWWWWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T..P..........P..T
+MAP|T..P..PPPPPP..P..T
+MAP|T..P..P....P..P..T
+MAP|T..PPPP....PPPP..T
+MAP|T..f..........f..T
+MAP|T......PPPP......T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l10_e1|Vendor (상인)|sprites/npc_vendor|9|3|이거 아주 싸게 드릴게요!
+TASK|choice|How do you ask 'How much is this?'|이거 얼마예요?;이거 몇 시예요?;이거 누구예요?;이거 어디예요?|이거 얼마예요?|얼마예요? asks for the price.
+TASK|fill|사과가 오천 ___이에요. (Apples are 5,000 won.)|원;시;분;명|원|Korean currency is 원.
+ENTITY|l10_e2|Station Guide (안내원)|sprites/npc_guide|4|5|기차 출발 시간을 확인하세요.
+TASK|choice|How do you say '2:10'?|두 시 십 분;이 시 열 분;두 시 열 분;이 시 십 분|두 시 십 분|Hours use native (두 시), minutes use Sino-Korean (십 분).
+TASK|build|Build: What time is it now?|지금;몇;시예요?|얼마예요?;분이에요?|지금 몇 시예요?
+ENTITY|l10_e3|Subway Sign|objects/subway|13|5|Next train arrives in 3 minutes.
+TASK|choice|What is 삼천 원?|3,000 won;300 won;30,000 won;30 won|3,000 won|삼 (3) + 천 (1,000) = 3,000.
+TASK|build|Build: It is 3 o'clock now. [이다]|지금;세;시예요|삼;분이에요|Hours use native Korean: 세 시.
+ENTITY|l10_e4|Clock Tower|objects/book|9|8|A market square clock.
+TASK|choice|How do you say '4:30'?|네 시 삼십 분;사 시 서른 분;네 시 서른 분;사 시 삼십 분|네 시 삼십 분|Native hour (네 시) + Sino-Korean minute (삼십 분).
+TASK|fill|커피가 사천 ___이에요. (Coffee is 4,000 won.) [이다]|원;시;분;개|원|Currency counter is 원.
+ENDLEVEL
+LEVEL|11|Negation: 안 & -지 않아요|카페 테라스 (Cafe Terrace)|9|10
+SUMMARY|Say what you do not do or what something is not like using 안 and -지 않아요.
+TIP|Short negation: put 안 right before the verb/adjective (안 먹어요, 안 비싸요).
+TIP|With noun+하다 verbs, 안 goes before 하다: 공부 안 해요 (NOT 안 공부해요).
+TIP|Long negation: stem + -지 않아요 (먹지 않아요, 비싸지 않아요).
+VOCAB|안=not;않다=to not do/be;비싸다=expensive;맵다=spicy;마시다=to drink;바쁘다=busy
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRT..PPPP..TBBBT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T...PPPPPPPPPP...T
+MAP|T...P..f..f..P...T
+MAP|T...PPPPPPPPPP...T
+MAP|TBBBT..PPPP..TRRRT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l11_e1|Barista (바리스타)|sprites/npc_barista|2|3|디카페인도 있어요!
+TASK|choice|How do you say 'I do not drink coffee'?|커피를 안 마셔요;커피를 마셔요 안;안 커피를 마셔요;커피를 못 마셔요|커피를 안 마셔요|안 goes directly before the verb 마셔요.
+TASK|build|Build: Today I do not study. [공부하다]|오늘은;공부;안;해요|안 공부;못|Split noun+하다: 공부 안 해요.
+ENTITY|l11_e2|Chef (셰프)|sprites/npc_chef|15|3|매운 음식 잘 드세요?
+TASK|fill|이 음식은 맵지 ___. (This food is not spicy.) [맵다 / 않다]|않아요;안아요;없어요;아니에요|않아요|Long negation is stem + -지 않아요.
+TASK|build|Build: It is not expensive. [비싸다 / 않다]|비싸지;않아요|안 비싸지;없어요|비싸다 stem + 지 않아요.
+ENTITY|l11_e3|Coffee Cup|objects/coffee|9|5|Iced Americano on the table.
+TASK|choice|Correct short negation of 운동해요:|운동 안 해요;안 운동해요;운동 해요 안;운동 지 않아요|운동 안 해요|안 goes right before 해요.
+TASK|build|Build: Today I am not busy. [바쁘다 - busy]|오늘은;안;바빠요|못;바쁘어요|바쁘다 -> 바빠요 with 안 before it.
+ENTITY|l11_e4|Menu Board|objects/bibimbap|15|9|Daily specials are chalked on the board.
+TASK|choice|Long negation of 좋다 (to be good):|좋지 않아요;안 좋지 않아요;좋지 안아요;좋지 못해요|좋지 않아요|Stem + -지 않아요 -> 좋지 않아요.
+TASK|fill|저는 오늘 회사에 ___ 가요. (I am not going to work today.) [가다]|안;않;없;아니|안|Short negation places 안 before 가요.
+ENDLEVEL
+LEVEL|12|Inability: 못 & -지 못해요|체육관 앞 (Gym Entrance)|9|10
+SUMMARY|Distinguish 'don't' (안) from 'can't' (못 / -지 못해요) when expressing inability.
+TIP|못 before a verb means 'cannot' due to lack of ability or circumstance (못 가요 = can't go).
+TIP|With noun+하다 verbs: 수영 못 해요 (cannot swim).
+TIP|Long form: stem + -지 못해요 (먹지 못해요). Note: 못 is not used with pure adjectives!
+VOCAB|못=cannot;수영하다=to swim;운전하다=to drive;자다=to sleep;가다=to go;매운 음식=spicy food
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T~~..TTRRRRTT..~~T
+MAP|T~~..TTWWWWTT..~~T
+MAP|T....TFFFFFFT....T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|T..P..........P..T
+MAP|T..PPPP....PPPP..T
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l12_e1|Trainer (트레이너)|sprites/npc_guide|9|3|수영장에 자주 오세요?
+TASK|choice|How do you say 'I cannot swim'?|수영 못 해요;못 수영해요;수영 안 해요;수영 없어요|수영 못 해요|Split noun+하다: 수영 못 해요.
+TASK|build|Build: Today I cannot go. [가다]|오늘은;못;가요|안;가어요|못 goes directly before 가요.
+ENTITY|l12_e2|Chef (셰프)|sprites/npc_chef|4|6|고추장을 조금만 넣을까요?
+TASK|fill|매운 음식을 먹지 ___. (I cannot eat spicy food.) [못하다 / 맵다]|못해요;않아요;없어요;안해요|못해요|Long inability form is -지 못해요.
+TASK|build|Build: I cannot drive.|저는;운전;못;해요|못 운전;안|운전하다 splits into 운전 못 해요.
+ENTITY|l12_e3|Student (학생)|sprites/npc_student|13|6|어젯밤에 잠을 설쳤어요.
+TASK|choice|Difference between 안 먹어요 and 못 먹어요:|안 = choose not to, 못 = unable to;안 = past, 못 = future;They are identical;못 is for adjectives|안 = choose not to, 못 = unable to|안 expresses intention/fact; 못 expresses inability.
+TASK|build|Build: I cannot sleep. [자다 - to sleep]|잠을;못;자요|안;자어요|못 goes before 자요.
+ENTITY|l12_e4|Pool Notice|objects/umbrella|5|9|Swimming lesson hours are posted.
+TASK|choice|Long inability form of 읽다 (to read):|읽지 못해요;읽지 않아요;못 읽지 해요;읽 못해요|읽지 못해요|Stem + -지 못해요 -> 읽지 못해요.
+TASK|fill|너무 피곤해서 공부를 ___ 해요. (I cannot study.) [공부하다]|못;안;않;없|못|Inability before 하다 -> 공부 못 해요.
+ENDLEVEL
+LEVEL|13|Past Tense (-았어요/-었어요/-했어요)|서울역 광장 (Seoul Station Plaza)|9|9
+SUMMARY|Talk about what happened yesterday and last weekend using polite past tense.
+TIP|Stem last vowel ㅏ/ㅗ -> -았어요 (가다 -> 갔어요, 보다 -> 봤어요).
+TIP|Other vowels -> -었어요 (먹다 -> 먹었어요, 읽다 -> 읽었어요).
+TIP|하다 verbs -> 했어요 (공부하다 -> 공부했어요).
+VOCAB|어제=yesterday;주말=weekend;만나다=to meet;타다=to ride;보다=to watch;사다=to buy
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBTT....TTRRRRT
+MAP|TWWWWTT....TTWWWWT
+MAP|TFFFF..PPPP..FFFFT
+MAP|TFCFF..PPPP..FFCRT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TPPPPPPPPPPPPPPPPT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|T~~....PPPP....~~T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l13_e1|Subway Gate|objects/subway|3|3|Trains depart every 4 minutes.
+TASK|choice|Past tense of 타다 (to ride):|탔어요;타었어요;타았어요;탈 거예요|탔어요|타 + 았어요 contracts to 탔어요.
+TASK|build|Build: Yesterday I rode the subway. [타다]|어제;지하철을;탔어요|탈 거예요;타요|어제 + 지하철을 + 탔어요.
+ENTITY|l13_e2|Sora (소라)|sprites/npc_student|14|3|주말 잘 보냈어요?
+TASK|fill|어제 친구를 ___. (Yesterday I met a friend.) [만나다]|만났어요;만나요;만날 거예요;만나어요|만났어요|만나 + 았어요 -> 만났어요.
+TASK|build|Build: Yesterday I watched a movie. [보다]|어제;영화를;봤어요|보어요;볼 거예요|보 + 았어요 -> 봤어요.
+ENTITY|l13_e3|Traveler (여행객)|sprites/npc_vendor|5|8|어제 도서관에 있었어요.
+TASK|fill|어제 한국어를 열심히 ___. [공부하다]|공부했어요;공부해요;공부하었어요;공부할 거예요|공부했어요|하다 past tense is always 했어요.
+TASK|build|Build: Yesterday I bought an apple. [사다 - to buy]|어제;사과를;샀어요|사었어요;살 거예요|사다 + 았어요 -> 샀어요.
+ENTITY|l13_e4|Ticket Kiosk|objects/coffee|12|8|Receipts from yesterday's trip.
+TASK|choice|Past tense of 먹다 (to eat):|먹었어요;먹았어요;먹해요;먹을 거예요|먹었어요|먹다 has vowel ㅓ -> 먹었어요.
+TASK|fill|어제 카페에서 커피를 ___. [마시다 - to drink]|마셨어요;마시었어요;마실 거예요;마셔요|마셨어요|마시 + 었어요 -> 마셨어요.
+ENDLEVEL
+LEVEL|14|Future Tense (-(으)ㄹ 거예요)|공항 버스 정류장 (Airport Bus Stop)|9|10
+SUMMARY|Share your upcoming plans and predictions using -(으)ㄹ 거예요.
+TIP|Vowel or ㄹ stem -> -ㄹ 거예요 (가다 -> 갈 거예요, 살다 -> 살 거예요).
+TIP|Consonant stem -> -을 거예요 (먹다 -> 먹을 거예요, 읽다 -> 읽을 거예요).
+TIP|Time words like 내일 (tomorrow) or 다음 주 (next week) go near the start.
+VOCAB|내일=tomorrow;다음 주=next week;여행하다=to travel;부산=Busan;쉬다=to rest;만나다=to meet
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T..f...~~~~...f..T
+MAP|T......~~~~......T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|TRRP..........PBPT
+MAP|TWWP..........PWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l14_e1|Guide (역무원)|sprites/npc_guide|2|7|어디로 여행 가세요?
+TASK|fill|내일 부산에 ___ 거예요. [가다 / 사다]|갈;갔;가을;가요|갈|가다 ends in a vowel -> 갈 거예요.
+TASK|build|Build: Tomorrow I will eat bibimbap. [먹다]|내일;비빔밥을;먹을;거예요|먹었어요;먹ㄹ|먹다 ends in ㄱ -> 먹을 거예요.
+ENTITY|l14_e2|Student (학생)|sprites/npc_student|15|7|시험 끝나면 푹 쉬고 싶어요!
+TASK|choice|Future tense of 읽다 (to read):|읽을 거예요;읽ㄹ 거예요;읽었어요;읽고 있어요|읽을 거예요|읽다 ends in consonant -> -을 거예요.
+TASK|build|Build: Next week I will travel. [여행하다 / 하다]|다음;주에;여행할;거예요|여행했어요;여행하을|여행하다 -> 여행할 거예요.
+ENTITY|l14_e3|Subway Sign|objects/subway|9|4|Express train to Busan.
+TASK|choice|Future tense of 쉬다 (to rest):|쉴 거예요;쉬을 거예요;쉬었어요;쉬고 있어요|쉴 거예요|쉬다 ends in vowel ㅟ -> 쉴 거예요.
+TASK|build|Build: Tomorrow I will meet a friend. [만나다 - to meet]|내일;친구를;만날;거예요|만났어요;만나을|만나다 -> 만날 거예요.
+ENTITY|l14_e4|Travel Brochure|objects/book|5|9|Guides for Busan and Jeju.
+TASK|choice|Future tense of 사다 (to buy):|살 거예요;사을 거예요;샀어요;사고 있어요|살 거예요|사다 ends in vowel -> 살 거예요.
+TASK|fill|내일 도서관에서 책을 ___ 거예요. [읽다 - to read]|읽을;읽ㄹ;읽었;읽는|읽을|읽다 ends in consonant -> 읽을 거예요.
+ENDLEVEL
+LEVEL|15|Progressive Tense (-고 있어요)|홍대 거리 (Hongdae Street)|9|10
+SUMMARY|Describe actions happening right now using -고 있어요 (am/is/are -ing).
+TIP|Attach -고 있어요 directly to the verb stem (no vowel harmony needed!): 먹다 -> 먹고 있어요.
+TIP|Past progressive uses -고 있었어요 (공부하고 있었어요 = was studying).
+TIP|Often paired with 지금 (now).
+VOCAB|지금=now;기다리다=to wait;듣다=to listen;음악=music;걷다=to walk;일하다=to work
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRRRTT..TTBBBBBT
+MAP|TWWWWWTT..TTWWWWWT
+MAP|TFFFFF..PP..FFFFFT
+MAP|TFCCFF..PP..FFCCFT
+MAP|TFFFFF..PP..FFFFFT
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..........P..T
+MAP|T..P..f....f..P..T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T.......PP.......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l15_e1|Busker (뮤지션)|sprites/npc_student|3|3|신나는 노래 듣고 가세요!
+TASK|fill|지금 음악을 듣고 ___. (I am listening to music now.) [있다 / 듣다]|있어요;가요;해요;예요|있어요|Stem + -고 있어요 = progressive tense.
+TASK|build|Build: I am waiting for a friend now. [있다 / 기다리다]|지금;친구를;기다리고;있어요|기다렸어요;기다릴|기다리다 + 고 있어요.
+ENTITY|l15_e2|Barista (바리스타)|sprites/npc_barista|14|3|잠시만요, 커피 만들고 있어요!
+TASK|choice|How do you say 'I am drinking coffee'?|커피를 마시고 있어요;커피를 마셔 있어요;커피를 마신 있어요;커피를 마실 있어요|커피를 마시고 있어요|Attach -고 있어요 directly to stem 마시-.
+TASK|build|Build: I am studying Korean now. [공부하다 / 있다]|지금;한국어를;공부하고;있어요|공부했어요;공부할|공부하다 -> 공부하고 있어요.
+ENTITY|l15_e3|Coffee Cup|objects/coffee|5|5|Steam rises from the mug.
+TASK|choice|What does '걷고 있어요' mean?|I am walking;I walked;I will walk;I want to walk|I am walking|걷다 (walk) + 고 있어요.
+TASK|build|Build: I am eating rice now. [먹다 - to eat]|지금;밥을;먹고;있어요|먹었어요;먹을|먹다 + 고 있어요.
+ENTITY|l15_e4|Street Bench|objects/umbrella|13|5|A musician packs up a guitar case.
+TASK|choice|Progressive tense of 읽다 (to read):|읽고 있어요;읽어 있어요;읽은 있어요;읽을 있어요|읽고 있어요|Stem + -고 있어요 -> 읽고 있어요.
+TASK|fill|지금 집에서 요리___ 있어요. [요리하다 - to cook]|하고;해서;할;한|하고|요리하다 + 고 있어요 -> 요리하고 있어요.
+ENDLEVEL
+LEVEL|16|Wanting to Do (-고 싶어요)|명동 쇼핑 거리 (Myeongdong Street)|9|10
+SUMMARY|Express your desires and wishes using -고 싶어요 (want to).
+TIP|Attach -고 싶어요 directly to any action verb stem: 가고 싶어요 (want to go).
+TIP|For third person (he/she wants to), use -고 싶어해요.
+TIP|Negation: -고 싶지 않아요 or 안 -고 싶어요.
+VOCAB|사고 싶다=want to buy;가고 싶다=want to go;먹고 싶다=want to eat;쉬다=to rest;자다=to sleep;한국=Korea
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBBBBBBBBBBBBBT
+MAP|TWWWWWWWWWWWWWWWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T..P..........P..T
+MAP|T..P..PPPPPP..P..T
+MAP|T..P..P....P..P..T
+MAP|T..PPPP....PPPP..T
+MAP|T..f..........f..T
+MAP|T......PPPP......T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l16_e1|Shop Owner (주인)|sprites/npc_barista|9|3|어떤 물건을 찾으세요?
+TASK|build|Build: I want to buy an umbrella. [사다]|우산을;사고;싶어요|사서;사지만|사다 + 고 싶어요.
+TASK|fill|집에서 쉬고 ___. (I want to rest at home.) [쉬다]|싶어요;있어요;해요;가요|싶어요|쉬다 + 고 싶어요.
+ENTITY|l16_e2|Traveler (여행객)|sprites/npc_vendor|4|5|한국 여행 버킷리스트가 많아요!
+TASK|choice|How do you say 'I want to go to Korea'?|한국에 가고 싶어요;한국에 가서 싶어요;한국에 갈 싶어요;한국에서 가고 싶어요|한국에 가고 싶어요|Destination 에 + 가고 싶어요.
+TASK|build|Build: I want to eat bibimbap.|비빔밥을;먹고;싶어요|먹어서;먹지만|먹다 + 고 싶어요.
+ENTITY|l16_e3|Umbrella|objects/umbrella|13|5|A stylish folding umbrella.
+TASK|choice|How do you say 'Minji wants to travel'?|민지 씨는 여행하고 싶어해요;민지 씨는 여행하고 싶어요;민지 씨는 여행해서 싶어요;민지 씨는 여행할 싶어요|민지 씨는 여행하고 싶어해요|Third-person desire uses -고 싶어해요.
+TASK|build|Build: I want to sleep. [자다 - to sleep]|자고;싶어요|자서;자지만|자다 + 고 싶어요.
+ENTITY|l16_e4|Souvenir Stall|objects/apple|9|8|Colorful Korean crafts and snacks.
+TASK|choice|Conjugate 만나다 (to meet) + want to:|만나고 싶어요;만나서 싶어요;만날 싶어요;만난 싶어요|만나고 싶어요|Stem + -고 싶어요 -> 만나고 싶어요.
+TASK|fill|한국 영화를 보___ 싶어요. [보다 - to watch]|고;서;면;러|고|보다 + 고 싶어요.
+ENDLEVEL
+LEVEL|17|Polite Requests (-(으)세요) & Don't (-지 마세요)|안내 데스크 (Information Desk)|9|10
+SUMMARY|Make polite requests with -(으)세요 and tell someone politely not to do something with -지 마세요.
+TIP|Vowel or ㄹ stem -> -세요 (주세요, 오세요, 사세요). Consonant stem -> -으세요 (읽으세요, 앉으세요).
+TIP|Prohibition ('Please don't'): stem + -지 마세요 (걱정하지 마세요 = Please don't worry).
+TIP|주세요 = Please give me.
+VOCAB|주다=to give;앉다=to sit;읽다=to read;쓰다=to write;걱정하다=to worry;사진=photo
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRT..PPPP..TBBBT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T...PPPPPPPPPP...T
+MAP|T...P..f..f..P...T
+MAP|T...PPPPPPPPPP...T
+MAP|TBBBT..PPPP..TRRRT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l17_e1|Guide (안내원)|sprites/npc_guide|2|3|여기에 잠시 앉으세요.
+TASK|fill|여기에 이름을 ___. (Please write your name here.) [쓰다]|쓰세요;쓰으세요;쓰고;써서|쓰세요|쓰다 ends in vowel ㅡ -> -세요.
+TASK|build|Build: Please give me one coffee. [주다]|커피;한;잔;주세요|주어요;싶어요|주다 + 세요 = 주세요.
+ENTITY|l17_e2|Guard (경비원)|sprites/npc_elder|15|3|전시실 안에서는 규칙을 지켜 주세요.
+TASK|choice|How do you say 'Please do not take photos'?|사진을 찍지 마세요;사진을 안 찍으세요;사진을 찍으세요;사진을 못 찍어요|사진을 찍지 마세요|Stem + -지 마세요 means 'Please don't'.
+TASK|build|Build: Please do not worry. [걱정하다]|걱정하지;마세요|안 걱정하세요;없어요|걱정하다 -> 걱정하지 마세요.
+ENTITY|l17_e3|Book|objects/book|9|5|A museum brochure.
+TASK|fill|이 책을 ___. (Please read this book.) [읽다]|읽으세요;읽세요;읽지 마세요;읽었어요|읽으세요|읽다 ends in consonant -> -으세요.
+TASK|build|Build: Please sit here. [앉다 - to sit]|여기에;앉으세요|앉세요;앉지 마세요|앉다 ends in consonant -> 앉으세요.
+ENTITY|l17_e4|Info Kiosk|objects/subway|15|9|Station etiquette posters.
+TASK|choice|Polite request of 오다 (to come):|오세요;오으세요;오지 마세요;왔어요|오세요|오다 ends in vowel -> 오세요.
+TASK|fill|늦지 ___. (Please do not be late.) [늦다 - to be late]|마세요;않아요;못해요;으세요|마세요|Stem + -지 마세요 = Please don't.
+ENDLEVEL
+LEVEL|18|Connectors: And (-고) & But (-지만)|분식집 골목 (Snack Alley)|9|10
+SUMMARY|Link two clauses together smoothly using -고 (and) and -지만 (but).
+TIP|-고 attaches directly to the verb/adjective stem to mean 'and' or sequential 'and then': 싸고 좋아요.
+TIP|-지만 attaches directly to the stem to mean 'but / although': 비싸지만 맛있어요.
+TIP|With past tense, -지만 can attach to past stem: 갔지만 (went, but...).
+VOCAB|맵다=spicy;달다=sweet;싸다=cheap;비싸다=expensive;떡볶이=tteokbokki;크다=big
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T~~..TTRRRRTT..~~T
+MAP|T~~..TTWWWWTT..~~T
+MAP|T....TFFFFFFT....T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|T..P..........P..T
+MAP|T..PPPP....PPPP..T
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l18_e1|Street Chef (사장님)|sprites/npc_chef|9|3|떡볶이 맵지만 정말 맛있어요!
+TASK|fill|떡볶이가 맵___ 맛있어요. [맛있다 / 있다]|지만;고;아서;세요|지만|Contrasting ideas -> -지만 (but).
+TASK|choice|How do you say 'It is cheap and delicious'?|싸고 맛있어요;싸지만 맛있어요;싸서 맛있어요;싸고 싶어요|싸고 맛있어요|Two positive traits joined by -고.
+ENTITY|l18_e2|Doyun (도윤)|sprites/npc_student|4|6|저는 카페에서 일하고 공부해요.
+TASK|build|Build: It is expensive, but good. [비싸다]|비싸지만;좋아요|비싸고;비싸서|비싸다 + 지만 -> 비싸지만.
+TASK|build|Build: I eat rice and drink water. [마시다]|밥을;먹고;물을;마셔요|먹지만;먹어서|Sequential action with -고.
+ENTITY|l18_e3|Hot Bowl|objects/bibimbap|13|6|A colorful bowl of food.
+TASK|choice|Which connects 'big and quiet'?|크고 조용해요;크지만 조용해요;커서 조용해요;크면 조용해요|크고 조용해요|크다 + 고 = 크고.
+TASK|build|Build: The apple is sweet and delicious. [달다 / 맛있다]|사과가;달고;맛있어요|달지만;달아서|달다 + 고 = 달고.
+ENTITY|l18_e4|Snack Cart|objects/coffee|5|9|Sweet hotteok and warm tea.
+TASK|choice|Connect 작다 (small) + 'but' + 좋다 (good):|작지만 좋아요;작고 좋아요;작아서 좋아요;작으면 좋아요|작지만 좋아요|Contrast uses -지만.
+TASK|fill|커피를 마시___ 책을 읽어요. [마시다 - to drink]|고;지만;아서;세요|고|Sequential/and uses -고.
+ENDLEVEL
+LEVEL|19|Cause & Reason (-아서 / -어서)|비 오는 거리 (Rainy Street)|9|9
+SUMMARY|Explain why something happens using -아서/어서 (because / so).
+TIP|Uses the same vowel harmony as -아요/-어요: 바쁘다 -> 바빠서, 피곤하다 -> 피곤해서.
+TIP|Do NOT put past tense (-았/었-) before -아서/어서 (say 비가 와서 갔어요, NOT 왔어서).
+TIP|Do NOT use -아서/어서 with commands (-(으)세요) or suggestions (-(으)ㅂ시다).
+VOCAB|피곤하다=tired;바쁘다=busy;비가 오다=to rain;늦다=to be late;배고프다=hungry;감기=cold
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBTT....TTRRRRT
+MAP|TWWWWTT....TTWWWWT
+MAP|TFFFF..PPPP..FFFFT
+MAP|TFCFF..PPPP..FFCRT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TPPPPPPPPPPPPPPPPT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|T~~....PPPP....~~T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l19_e1|Doyun (도윤)|sprites/npc_student|3|3|오늘 너무 많이 걸었어요...
+TASK|fill|피곤___ 집에서 쉬고 싶어요. [쉬다 / 피곤하다]|해서;하고;하지만;하세요|해서|피곤하다 + 아서/어서 -> 피곤해서.
+TASK|build|Build: Because I am busy, I cannot go. [가다 / 바쁘다]|바빠서;못;가요|바쁘고;바쁘지만|바쁘다 drops ㅡ -> 바빠서.
+ENTITY|l19_e2|Umbrella|objects/umbrella|14|3|Raindrops tap on the umbrella.
+TASK|choice|How do you say 'Because it rains, I take an umbrella'?|비가 와서 우산을 써요;비가 왔어서 우산을 써요;비가 오고 우산을 써요;비가 오지만 우산을 써요|비가 와서 우산을 써요|오다 + 아서 -> 와서 (never past tense before -아서).
+TASK|build|Build: Because I am hungry, I eat rice. [먹다 / 배고프다]|배고파서;밥을;먹어요|배고프고;배고프지만|배고프다 -> 배고파서.
+ENTITY|l19_e3|Guide (안내원)|sprites/npc_guide|5|8|길이 막혀서 늦었어요.
+TASK|choice|Correct form of 맛있다 + -아서/어서:|맛있어서;맛있아서;맛있고;맛있지만|맛있어서|Last stem vowel is ㅣ -> -어서.
+TASK|build|Build: Because I am late, I run. [늦다 / 뛰다]|늦어서;뛰어요|늦고;늦지만|늦다 + 어서 -> 늦어서.
+ENTITY|l19_e4|Bus Shelter|objects/subway|12|8|People wait out the rain.
+TASK|choice|Cause form of 먹다 (to eat) + -아서/어서:|먹어서;먹아서;먹었어서;먹고|먹어서|먹다 has vowel ㅓ -> 먹어서.
+TASK|fill|시간이 없___ 택시를 탔어요. [없다 - to not have]|어서;아서;고;지만|어서|없다 has vowel ㅓ -> 없어서.
+ENDLEVEL
+LEVEL|20|Irregular Verbs I: ㅂ & ㅡ Irregulars|계절 공원 (Seasons Park)|9|10
+SUMMARY|Conquer the two most common Korean irregular patterns: ㅂ and ㅡ stems.
+TIP|ㅂ irregular: drop ㅂ, add 우 + 어요 -> 워요 (덥다 -> 더워요, 춥다 -> 추워요, 쉽다 -> 쉬워요). Exception: 돕다 -> 도와요.
+TIP|ㅡ irregular: drop ㅡ and look at the vowel before it (바쁘다 -> 바빠요, 예쁘다 -> 예뻐요, 쓰다 -> 써요).
+TIP|Regular ㅂ verbs like 입다 (wear) and 잡다 (catch) do NOT change (입어요).
+VOCAB|덥다=hot;춥다=cold;어렵다=difficult;쉽다=easy;예쁘다=pretty;쓰다=to write/use
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T..f...~~~~...f..T
+MAP|T......~~~~......T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|TRRP..........PBPT
+MAP|TWWP..........PWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l20_e1|Jisu (지수)|sprites/npc_student|2|7|여름에는 정말 더워요!
+TASK|choice|Conjugate 덥다 (hot) into polite present:|더워요;덥어요;덥아요;더와요|더워요|ㅂ changes to 우 + 어요 -> 더워요.
+TASK|build|Build: Today is a little cold. [춥다]|오늘은;조금;추워요|춥어요;더워요|춥다 -> 추워요.
+ENTITY|l20_e2|Teacher (선생님)|sprites/npc_elder|15|7|한국어 문법이 어때요?
+TASK|fill|한국어가 조금 ___. (Korean is a little difficult.) [어렵다]|어려워요;어렵어요;어렵아요;어려와요|어려워요|어렵다 -> 어려워요.
+TASK|build|Build: The flower is really pretty. [예쁘다]|꽃이;정말;예뻐요|예쁘어요;예빠요|예쁘다 drops ㅡ (preceding vowel ㅖ) -> 예뻐요.
+ENTITY|l20_e3|Book|objects/book|9|4|A diary with neat handwriting.
+TASK|choice|Conjugate 쓰다 (to write) into polite present:|써요;쓰어요;쓰아요;싸요|써요|Single-syllable ㅡ stem drops ㅡ + 어요 -> 써요.
+TASK|build|Build: Korean is easy. [쉽다 - easy]|한국어가;쉬워요|쉽어요;어려워요|쉽다 is ㅂ-irregular -> 쉬워요.
+ENTITY|l20_e4|Weather Board|objects/umbrella|5|9|Four seasons forecast.
+TASK|choice|Conjugate 바쁘다 (busy) into polite present:|바빠요;바쁘어요;바뻐요;바쁘아요|바빠요|Drop ㅡ; preceding vowel is ㅏ -> 바빠요.
+TASK|fill|오늘 날씨가 너무 ___. [춥다 - cold]|추워요;춥어요;춥아요;추와요|추워요|춥다 is ㅂ-irregular -> 추워요.
+ENDLEVEL
+LEVEL|21|Irregular Verbs II: ㄷ & ㄹ Irregulars|음악 거리 (Music Street)|9|10
+SUMMARY|Master ㄷ-irregular verbs (듣다, 걷다, 묻다) and ㄹ-dropping verbs (살다, 알다, 만들다).
+TIP|ㄷ irregular: before a vowel, ㄷ turns into ㄹ (듣다 -> 들어요, 걷다 -> 걸어요, 묻다 -> 물어요).
+TIP|Regular ㄷ verbs like 닫다 (close) and 받다 (receive) stay ㄷ (닫아요, 받아요).
+TIP|ㄹ irregular: ㄹ drops before ㄴ, ㅂ, ㅅ (살다 -> 사세요, 만들다 -> 만드세요, 알다 -> 아세요).
+VOCAB|듣다=to listen;걷다=to walk;묻다=to ask;살다=to live;만들다=to make;알다=to know
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRRRTT..TTBBBBBT
+MAP|TWWWWWTT..TTWWWWWT
+MAP|TFFFFF..PP..FFFFFT
+MAP|TFCCFF..PP..FFCCFT
+MAP|TFFFFF..PP..FFFFFT
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..........P..T
+MAP|T..P..f....f..P..T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T.......PP.......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l21_e1|Musician (음악가)|sprites/npc_student|3|3|매일 아침 음악을 들어요.
+TASK|choice|Conjugate 듣다 (to listen) into polite present:|들어요;듣어요;듣아요;들아요|들어요|ㄷ turns to ㄹ before -어요 -> 들어요.
+TASK|build|Build: I walk in the park. [걷다]|공원에서;걸어요|걷어요;공원에|걷다 -> 걸어요.
+ENTITY|l21_e2|Elder (어르신)|sprites/npc_elder|14|3|어디에 사세요?
+TASK|fill|서울에 ___? (Do you live in Seoul? [Honorific]) [살다]|사세요;살세요;살으세요;사어요|사세요|ㄹ drops before ㅅ in -(으)세요 -> 사세요.
+TASK|build|Build: I make Korean food. [듣다 / 만들다]|한국;음식을;만들어요|만드어요;만들아요|Before -어요, ㄹ stays: 만들어요.
+ENTITY|l21_e3|Guide (안내원)|sprites/npc_guide|5|5|모르면 저한테 물어보세요.
+TASK|choice|Past tense of 듣다 (listened):|들었어요;듣었어요;들았어요;듣았어요|들었어요|ㄷ -> ㄹ before -었어요: 들었어요.
+TASK|build|Build: I ask a friend. [묻다 - to ask]|친구에게;물어요|묻어요;물아요|묻다 is ㄷ-irregular -> 물어요.
+ENTITY|l21_e4|Record Shop|objects/book|13|5|Vinyl records line the wall.
+TASK|choice|Conjugate 걷다 (to walk) into polite present:|걸어요;걷어요;걸아요;걷아요|걸어요|걷다 is ㄷ-irregular -> 걸어요.
+TASK|fill|어머니께서 음식을 ___. [만들다 - to make (hon.)]|만드세요;만들세요;만들으세요;만드어요|만드세요|ㄹ drops before ㅅ in -(으)세요 -> 만드세요.
+ENDLEVEL
+LEVEL|22|Irregular Verbs III: 르 & ㅅ Irregulars|한강 공원 (Han River Park)|9|10
+SUMMARY|Learn how 르 stems double ㄹ (모르다 -> 몰라요) and ㅅ stems drop ㅅ (낫다 -> 나아요).
+TIP|르 irregular: drop ㅡ, add an extra ㄹ to the previous syllable + 아/어요 (모르다 -> 몰라요, 빠르다 -> 빨라요, 부르다 -> 불러요).
+TIP|ㅅ irregular: drop ㅅ before a vowel, do NOT contract the vowels (낫다 -> 나아요, 짓다 -> 지어요).
+TIP|Regular ㅅ verbs like 웃다 (laugh) and 씻다 (wash) keep ㅅ (웃어요, 씻어요).
+VOCAB|모르다=to not know;빠르다=fast;다르다=different;부르다=to sing/call;낫다=to recover/better;짓다=to build
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBBBBBBBBBBBBBT
+MAP|TWWWWWWWWWWWWWWWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T..P..........P..T
+MAP|T..P..PPPPPP..P..T
+MAP|T..P..P....P..P..T
+MAP|T..PPPP....PPPP..T
+MAP|T..f..........f..T
+MAP|T......PPPP......T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l22_e1|Runner (러너)|sprites/npc_guide|9|3|지하철이 버스보다 훨씬 빨라요!
+TASK|choice|Conjugate 빠르다 (fast) into polite present:|빨라요;빠르어요;빠라요;빨러요|빨라요|르 irregular with ㅏ -> 빨라요.
+TASK|build|Build: I do not know. [모르다]|저는;잘;몰라요|모르어요;몰러요|모르다 -> 몰라요.
+ENTITY|l22_e2|Singer (가수)|sprites/npc_student|4|5|노래 부르는 걸 좋아해요!
+TASK|fill|친구가 노래를 ___. (My friend sings a song.) [부르다]|불러요;부르어요;불라요;부러요|불러요|부르다 has ㅜ -> 불러요.
+TASK|choice|Conjugate 다르다 (different):|달라요;다르어요;달러요;다라요|달라요|다르다 has ㅏ -> 달라요.
+ENTITY|l22_e3|Doctor (의사)|sprites/npc_elder|13|5|푹 쉬면 금방 나을 거예요.
+TASK|choice|Conjugate 낫다 (to get better) into polite present:|나아요;낫아요;나요;나어요|나아요|ㅅ drops and vowels stay separate -> 나아요.
+TASK|build|Build: The train is fast. [빠르다 - fast]|기차가;빨라요|빠르어요;빠라요|빠르다 is 르-irregular -> 빨라요.
+ENTITY|l22_e4|River Trail|objects/coffee|9|8|Cyclists cruise by the river.
+TASK|choice|Conjugate 모르다 (to not know) into polite present:|몰라요;모르어요;몰러요;모라요|몰라요|르 irregular with ㅗ -> 몰라요.
+TASK|fill|그 집은 정말 잘 ___. [짓다 - to build]|지어요;짓어요;져요;지아요|지어요|짓다 is ㅅ-irregular -> 지어요 (no vowel contraction).
+ENDLEVEL
+LEVEL|23|Ability & Possibility (-(으)ㄹ 수 있다/없다)|언어 교환 카페 (Language Exchange Cafe)|9|10
+SUMMARY|Talk about skills and possibilities using -(으)ㄹ 수 있어요 (can) and -(으)ㄹ 수 없어요 (cannot).
+TIP|Vowel/ㄹ stem -> -ㄹ 수 있다 (할 수 있어요, 만들 수 있어요).
+TIP|Consonant stem -> -을 수 있다 (읽을 수 있어요, 먹을 수 있어요).
+TIP|More formal/versatile than 못; works for both skill and situational possibility.
+VOCAB|말하다=to speak;읽다=to read;요리하다=to cook;운전하다=to drive;만들다=to make;사진 찍다=take a photo
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRT..PPPP..TBBBT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T...PPPPPPPPPP...T
+MAP|T...P..f..f..P...T
+MAP|T...PPPPPPPPPP...T
+MAP|TBBBT..PPPP..TRRRT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l23_e1|Host (호스트)|sprites/npc_barista|2|3|한국어 정말 잘하시네요!
+TASK|build|Build: I can speak Korean a little. [있다 / 하다]|한국어를;조금;할;수;있어요|하을;없어요|하다 -> 할 수 있어요.
+TASK|fill|한글을 읽___ 수 있어요. [있다]|을;ㄹ;는;은|을|읽다 ends in consonant -> 읽을 수 있어요.
+ENTITY|l23_e2|Photographer (작가)|sprites/npc_student|15|3|여기서 사진 찍어도 돼요?
+TASK|build|Build: I can take a photo here. [있다 / 찍다]|여기서;사진을;찍을;수;있어요|찍ㄹ;찍는|찍다 ends in ㄱ -> 찍을 수 있어요.
+TASK|choice|How do you say 'I cannot go today'?|오늘 갈 수 없어요;오늘 가을 수 없어요;오늘 가는 수 없어요;오늘 간 수 없어요|오늘 갈 수 없어요|가다 -> 갈 수 없어요.
+ENTITY|l23_e3|Chef (셰프)|sprites/npc_chef|9|5|김치찌개 만들 수 있어요?
+TASK|choice|Correct form for 만들다 (to make):|만들 수 있어요;만들을 수 있어요;만드 수 있어요;만든 수 있어요|만들 수 있어요|ㄹ stems attach 수 있어요 directly without extra 을.
+TASK|build|Build: I can cook. [요리하다 - to cook]|요리할;수;있어요|요리하을;없어요|요리하다 -> 요리할 수 있어요.
+ENTITY|l23_e4|Notice Board|objects/book|15|9|Language exchange meetup flyers.
+TASK|choice|Ability form of 가다 (to go) + 'can':|갈 수 있어요;가을 수 있어요;가는 수 있어요;간 수 있어요|갈 수 있어요|Vowel stem -> -ㄹ 수 있어요.
+TASK|fill|매운 음식을 먹___ 수 있어요. [먹다 - to eat]|을;ㄹ;는;은|을|Consonant stem -> 먹을 수 있어요.
+ENDLEVEL
+LEVEL|24|Obligation & Necessity (-아야/어야 되다/하다)|회사 앞 광장 (Office Plaza)|9|10
+SUMMARY|Express what you must or have to do using -아야/어야 돼요 or -아야/어야 해요.
+TIP|Follows -아요/-어요 vowel harmony: 가다 -> 가야 돼요, 먹다 -> 먹어야 해요, 공부하다 -> 공부해야 돼요.
+TIP|되다 (돼요) is slightly more conversational; 하다 (해요) is slightly more formal.
+TIP|Past obligation: -아야/어야 했어요 (had to).
+VOCAB|일찍=early;일어나다=to wake up;출근하다=to go to work;숙제=homework;끝내다=to finish;가다=to go
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T~~..TTRRRRTT..~~T
+MAP|T~~..TTWWWWTT..~~T
+MAP|T....TFFFFFFT....T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|T..P..........P..T
+MAP|T..PPPP....PPPP..T
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l24_e1|Office Worker (직장인)|sprites/npc_vendor|9|3|내일 중요한 회의가 있어요!
+TASK|fill|내일 일찍 일어나___ 돼요. [일어나다]|야;어야;해야;면|야|일어나다 ends in ㅏ -> 일어나야 돼요.
+TASK|build|Build: I have to go home now. [가다]|지금;집에;가야;돼요|가어야;가고|가다 -> 가야 돼요.
+ENTITY|l24_e2|Student (학생)|sprites/npc_student|4|6|오늘까지 과제를 내야 해요.
+TASK|choice|How do you say 'I have to study Korean'?|한국어를 공부해야 해요;한국어를 공부하야 해요;한국어를 공부하고 해요;한국어를 공부할 해요|한국어를 공부해야 해요|하다 -> 해야 해요.
+TASK|build|Build: I have to eat medicine. [먹다]|약을;먹어야;해요|먹아야;먹고|먹다 has vowel ㅓ -> 먹어야 해요.
+ENTITY|l24_e3|Subway Sign|objects/subway|13|6|Last train leaves at 11:50 PM.
+TASK|choice|What does '지금 출발해야 돼요' mean?|We have to depart now;We departed now;We can depart now;We want to depart now|We have to depart now|-아야/어야 돼요 expresses necessity.
+TASK|build|Build: I have to finish homework. [끝내다 - to finish]|숙제를;끝내야;해요|끝내어야;끝내고|끝내다 -> 끝내야 해요.
+ENTITY|l24_e4|Office Desk|objects/coffee|5|9|A planner filled with deadlines.
+TASK|choice|Obligation form of 읽다 (to read) + 'have to':|읽어야 해요;읽아야 해요;읽고 해요;읽을 해요|읽어야 해요|읽다 has vowel ㅣ -> 읽어야 해요.
+TASK|fill|내일 일찍 출근___ 돼요. [출근하다 - to go to work]|해야;하야;하고;할|해야|하다 -> 해야 돼요.
+ENDLEVEL
+LEVEL|25|Suggestions & Plans (-(으)ㄹ까요? / -(으)ㅂ시다)|대학로 극장가 (Daehangno Theater District)|9|9
+SUMMARY|Suggest activities and make plans with friends using -(으)ㄹ까요? (Shall we?) and -(으)ㅂ시다 (Let's).
+TIP|-(으)ㄹ까요? asks 'Shall we...?' or 'Should I...?': 같이 먹을까요? (Shall we eat together?).
+TIP|-(으)ㅂ시다 means 'Let's...' (polite formal): 갑시다 (Let's go), 먹읍시다 (Let's eat).
+TIP|For friends/peers, 같이 가요! (present tense) is also very natural.
+VOCAB|같이=together;만나다=to meet;먹다=to eat;보다=to watch;산책하다=to stroll;주말=weekend
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBTT....TTRRRRT
+MAP|TWWWWTT....TTWWWWT
+MAP|TFFFF..PPPP..FFFFT
+MAP|TFCFF..PPPP..FFCRT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TPPPPPPPPPPPPPPPPT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|T~~....PPPP....~~T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l25_e1|Friend (친구)|sprites/npc_student|3|3|주말에 뭐 할까요?
+TASK|fill|같이 영화를 ___? (Shall we watch a movie together?) [보다]|볼까요;보을까요;봤을까요;봐요|볼까요|보다 ends in vowel -> 볼까요?
+TASK|build|Build: Shall we eat bibimbap? [먹다]|비빔밥을;먹을까요?|먹ㄹ까요?;먹었어요?|먹다 ends in consonant -> 먹을까요?
+ENTITY|l25_e2|Guide (안내원)|sprites/npc_guide|14|3|모두 모였으면 출발합시다!
+TASK|choice|How do you say 'Let's go together' with -(으)ㅂ시다?|같이 갑시다;같이 가읍시다;같이 갈까요;같이 갔어요|같이 갑시다|가다 ends in vowel -> 갑시다.
+TASK|build|Build: Let's meet at 3 o'clock. [만나다]|세;시에;만납시다|만나읍시다;만났어요|만나다 -> 만납시다.
+ENTITY|l25_e3|Coffee Cup|objects/coffee|5|8|Two cups on a cozy table.
+TASK|choice|Correct form of 읽다 + -(으)ㅂ시다:|읽읍시다;읽ㅂ시다;읽을까요;읽읍세요|읽읍시다|Consonant stem takes -읍시다.
+TASK|build|Build: Shall we take a stroll? [산책하다 - to stroll]|같이;산책할까요?|산책하을까요?;산책했어요?|산책하다 -> 산책할까요?
+ENTITY|l25_e4|Theater Poster|objects/book|12|8|Tonight's play starts at 7 PM.
+TASK|choice|Suggestion form of 먹다 (to eat) + 'Shall we?':|먹을까요?;먹ㄹ까요?;먹읍시다?;먹었어요?|먹을까요?|Consonant stem -> -을까요?
+TASK|fill|내일 다시 ___. (Let's meet again tomorrow.) [만나다]|만납시다;만나읍시다;만날까요;만났어요|만납시다|Vowel stem -> -ㅂ시다.
+ENDLEVEL
+LEVEL|26|Permission (-아도/어도 되다) & Prohibition (-(으)면 안 되다)|박물관 로비 (Museum Lobby)|9|10
+SUMMARY|Ask for permission ('May I...?') and state rules ('You must not...').
+TIP|Permission: -아도/어도 돼요? (May I...?) -> 여기에 앉아도 돼요? (May I sit here?).
+TIP|Prohibition: -(으)면 안 돼요 (You must not...) -> 여기서 뛰면 안 돼요 (You must not run here).
+TIP|Vowel harmony applies to -아도/어도 (하다 -> 해도 돼요).
+VOCAB|앉다=to sit;들어가다=to enter;찍다=to take (photo);뛰다=to run;먹다=to eat;여기=here
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T..f...~~~~...f..T
+MAP|T......~~~~......T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|TRRP..........PBPT
+MAP|TWWP..........PWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l26_e1|Curator (큐레이터)|sprites/npc_elder|2|7|박물관 관람 규칙을 안내해 드릴게요.
+TASK|fill|여기서 사진을 찍___ 돼요? (May I take a photo here?)|어도;아도;면;고|어도|찍다 has vowel ㅣ -> 찍어도 돼요?
+TASK|build|Build: You must not eat here. [먹다]|여기서;먹으면;안;돼요|먹면;먹어도|먹다 ends in consonant -> 먹으면 안 돼요.
+ENTITY|l26_e2|Guard (경비원)|sprites/npc_guide|15|7|조용히 관람해 주세요.
+TASK|choice|How do you ask 'May I go in?'|들어가도 돼요?;들어가어도 돼요?;들어가면 안 돼요?;들어가고 돼요?|들어가도 돼요?|들어가다 ends in ㅏ -> 들어가도 돼요?
+TASK|build|Build: You must not run here. [뛰다]|여기서;뛰면;안;돼요|뛰으면;뛰어도|뛰다 ends in vowel -> 뛰면 안 돼요.
+ENTITY|l26_e3|Bench|objects/book|9|4|A visitor's guide.
+TASK|choice|How do you say 'You may use this'?|이거 써도 돼요;이거 쓰도 돼요;이거 쓰면 안 돼요;이거 쓰고 돼요|이거 써도 돼요|쓰다 -> 써 + 도 돼요.
+TASK|build|Build: May I sit here? [앉다 - to sit]|여기에;앉아도;돼요?|앉어도;앉으면|앉다 has vowel ㅏ -> 앉아도 돼요?
+ENTITY|l26_e4|Museum Sign|objects/umbrella|5|9|Gallery entrance rules.
+TASK|choice|Prohibition form of 쓰다 (to use) + 'must not':|쓰면 안 돼요;쓰으면 안 돼요;써도 돼요;쓰고 안 돼요|쓰면 안 돼요|Vowel stem -> -면 안 돼요.
+TASK|fill|창문을 열___ 돼요? (May I open the window?) [열다]|어도;아도;면;고|어도|열다 has vowel ㅕ -> 열어도 돼요?
+ENDLEVEL
+LEVEL|27|Before (-기 전에) & After (-(으)ㄴ 후에)|아침 시장 (Morning Market)|9|10
+SUMMARY|Sequence events clearly in time using -기 전에 (before) and -(으)ㄴ 후에 (after).
+TIP|Before: Verb stem + -기 전에 (자기 전에 = before sleeping; 밥을 먹기 전에 = before eating).
+TIP|After: Verb stem + -(으)ㄴ 후에 (밥을 먹은 후에 = after eating; 영화를 본 후에 = after watching a movie).
+TIP|With nouns, just add 전에 / 후에 directly (식사 전에, 수업 후에).
+VOCAB|자다=to sleep;일어나다=to wake up;손을 씻다=wash hands;수업=class;운동하다=exercise;식사=meal
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRRRTT..TTBBBBBT
+MAP|TWWWWWTT..TTWWWWWT
+MAP|TFFFFF..PP..FFFFFT
+MAP|TFCCFF..PP..FFCCFT
+MAP|TFFFFF..PP..FFFFFT
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..........P..T
+MAP|T..P..f....f..P..T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T.......PP.......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l27_e1|Chef (셰프)|sprites/npc_chef|3|3|식사 전에는 꼭 손을 씻으세요!
+TASK|fill|밥을 먹___ 전에 손을 씻어요.|기;은;ㄴ;고|기|Before doing = stem + -기 전에.
+TASK|build|Build: Before sleeping, I read a book. [읽다 / 자다]|자기;전에;책을;읽어요|잔;후에|자다 + 기 전에.
+ENTITY|l27_e2|Student (학생)|sprites/npc_student|14|3|수업 끝난 후에 카페 갈 거예요.
+TASK|fill|영화를 ___ 후에 저녁을 먹었어요. (After watching a movie...) [보다]|본;보기;보는;볼|본|보다 ends in vowel -> 본 후에.
+TASK|build|Build: After eating, I drink coffee. [마시다 / 먹다]|밥을;먹은;후에;커피를;마셔요|먹기;전에|먹다 ends in consonant -> 먹은 후에.
+ENTITY|l27_e3|Apple|objects/apple|5|5|Washed and ready to eat.
+TASK|choice|Which means 'after exercising'?|운동한 후에;운동하기 전에;운동하는 후에;운동할 후에|운동한 후에|운동하다 -> 운동한 후에.
+TASK|build|Build: Before class, I drink coffee. [마시다 - to drink]|수업;전에;커피를;마셔요|후에;마시아요|Noun + 전에 = before [Noun].
+ENTITY|l27_e4|Bakery Counter|objects/coffee|13|5|Morning bread fresh from the oven.
+TASK|choice|Form of 일어나다 (to wake up) + 'after':|일어난 후에;일어나기 전에;일어나는 후에;일어날 후에|일어난 후에|Vowel stem -> -ㄴ 후에.
+TASK|fill|출발하___ 전에 확인하세요. [출발하다 - to depart]|기;ㄴ;은;고|기|Before doing = stem + -기 전에.
+ENDLEVEL
+LEVEL|28|Sequence (-고 나서) & Simultaneous Actions (-(으)면서)|북카페 (Book Cafe)|9|10
+SUMMARY|Express 'after finishing A, do B' (-고 나서) and 'while doing A, do B' (-(으)면서).
+TIP|-고 나서 emphasizes completing the first action before starting the next: 숙제를 하고 나서 놀아요.
+TIP|-(으)면서 means doing two things at the same time (same subject!): 음악을 들으면서 공부해요.
+TIP|Vowel/ㄹ stem -> -면서; consonant stem -> -으면서 (먹으면서).
+VOCAB|숙제하다=do homework;놀다=to play/hang out;음악=music;듣다=listen;걷다=walk;이야기하다=chat
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBBBBBBBBBBBBBT
+MAP|TWWWWWWWWWWWWWWWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T..P..........P..T
+MAP|T..P..PPPPPP..P..T
+MAP|T..P..P....P..P..T
+MAP|T..PPPP....PPPP..T
+MAP|T..f..........f..T
+MAP|T......PPPP......T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l28_e1|Student (학생)|sprites/npc_student|9|3|음악 들으면서 공부하면 집중이 잘 돼요.
+TASK|fill|음악을 들___ 공부해요. (I study while listening to music.) [공부하다]|으면서;면서;고 나서;기 전에|으면서|듣다 is ㄷ-irregular -> 들으면서.
+TASK|build|Build: I chat while drinking coffee. [마시다]|커피를;마시면서;이야기해요|마시으면서;마시고|마시다 ends in vowel -> 마시면서.
+ENTITY|l28_e2|Barista (바리스타)|sprites/npc_barista|4|5|일 끝나고 나서 운동해요.
+TASK|build|Build: After doing homework, I rest.|숙제를;하고;나서;쉬어요|하면서;하기|하다 + 고 나서.
+TASK|choice|Which means 'while eating rice'?|밥을 먹으면서;밥을 먹면서;밥을 먹고 나서;밥을 먹기 전에|밥을 먹으면서|먹다 ends in consonant -> 먹으면서.
+ENTITY|l28_e3|Book|objects/book|13|5|An open novel beside a latte.
+TASK|choice|True or false: -(으)면서 requires the same subject for both actions.|True;False;Only in past tense;Only for adjectives|True|Both simultaneous actions must be performed by the same subject.
+TASK|build|Build: I listen to music while walking. [걷다 / 듣다]|걸으면서;음악을;들어요|걷면서;들고|걷다 (ㄷ-irregular) -> 걸으면서.
+ENTITY|l28_e4|Cafe Window|objects/coffee|9|8|A sunny corner for reading.
+TASK|choice|Simultaneous form of 먹다 (to eat) + 'while':|먹으면서;먹면서;먹고 나서;먹기 전에|먹으면서|Consonant stem -> -으면서.
+TASK|fill|책을 읽___ 커피를 마셔요. [읽다 - to read]|으면서;면서;기 전에;은 후에|으면서|읽다 ends in consonant -> 읽으면서.
+ENDLEVEL
+LEVEL|29|Purpose of Motion (-(으)러 가다 / 오다)|남대문 시장 (Namdaemun Market)|9|10
+SUMMARY|State the purpose of going or coming somewhere using -(으)러 가다/오다.
+TIP|Vowel or ㄹ stem -> -러 가다/오다 (사러 가요, 놀러 와요).
+TIP|Consonant stem -> -으러 가다/오다 (먹으러 가요, 읽으러 가요).
+TIP|ONLY used with motion verbs like 가다, 오다, 다니다!
+VOCAB|사다=to buy;먹다=to eat;만나다=to meet;공부하다=to study;놀다=to hang out;운동하다=to exercise
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRT..PPPP..TBBBT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T...PPPPPPPPPP...T
+MAP|T...P..f..f..P...T
+MAP|T...PPPPPPPPPP...T
+MAP|TBBBT..PPPP..TRRRT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l29_e1|Vendor (상인)|sprites/npc_vendor|2|3|뭐 사러 오셨어요?
+TASK|fill|사과를 사___ 시장에 가요. [가다]|러;으러;고;면서|러|사다 ends in vowel -> 사러 가요.
+TASK|build|Build: I go to the restaurant to eat bibimbap. [가다 / 먹다]|비빔밥을;먹으러;식당에;가요|먹러;식당에서|먹다 ends in consonant -> 먹으러.
+ENTITY|l29_e2|Friend (친구)|sprites/npc_student|15|3|우리 집에 놀러 와요!
+TASK|choice|How do you say 'I came to meet a friend'?|친구를 만나러 왔어요;친구를 만나으러 왔어요;친구를 만나고 왔어요;친구를 만나서 왔어요|친구를 만나러 왔어요|만나다 -> 만나러 왔어요.
+TASK|build|Build: I go to the library to read a book. [가다 / 읽다]|책을;읽으러;도서관에;가요|읽러;도서관에서|읽다 -> 읽으러.
+ENTITY|l29_e3|Apple|objects/apple|9|5|Sweet market apples.
+TASK|choice|Correct form for 놀다 (to hang out) + -(으)러:|놀러;놀으러;노러;놀고러|놀러|ㄹ stems attach -러 directly.
+TASK|build|Build: I go to the park to exercise. [운동하다 - to exercise]|운동하러;공원에;가요|운동하으러;공원에서|운동하다 -> 운동하러 가요.
+ENTITY|l29_e4|Market Gate|objects/bibimbap|15|9|Delicious aromas drift from the food stalls.
+TASK|choice|Purpose form of 공부하다 (to study) + 'to go to':|공부하러 가요;공부하으러 가요;공부하고 가요;공부해서 가요|공부하러 가요|Vowel stem -> -러 가요.
+TASK|fill|친구를 만나___ 카페에 왔어요. [만나다 - to meet]|러;으러;고;면서|러|만나다 -> 만나러 왔어요.
+ENDLEVEL
+LEVEL|30|Trying (-아/어 보다) & Experience (-(으)ㄴ 적이 있다)|인사동 거리 (Insadong Street)|9|10
+SUMMARY|Talk about trying things out (-아/어 보다) and past life experiences (-(으)ㄴ 적이 있다/없다).
+TIP|-아/어 보다 = to try doing (먹어 봐요 = try eating, 입어 봐요 = try wearing).
+TIP|-(으)ㄴ 적이 있어요 = have had the experience of doing (한국에 간 적이 있어요).
+TIP|Combine them for 'have tried': 김치를 먹어 본 적이 있어요 (I have tried eating kimchi).
+VOCAB|입다=to wear;먹어 보다=try eating;가 보다=try going;제주도=Jeju Island;한복=hanbok;경험=experience
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T~~..TTRRRRTT..~~T
+MAP|T~~..TTWWWWTT..~~T
+MAP|T....TFFFFFFT....T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|T..P..........P..T
+MAP|T..PPPP....PPPP..T
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l30_e1|Shop Owner (주인)|sprites/npc_elder|9|3|예쁜 한복 한번 입어 보세요!
+TASK|fill|이 옷을 입___ 보세요. (Please try on these clothes.)|어;아;고;러|어|입다 has vowel ㅣ -> 입어 보세요.
+TASK|build|Build: Try eating bibimbap. [먹다]|비빔밥을;먹어;보세요|먹아;먹고|먹다 + 어 보다.
+ENTITY|l30_e2|Traveler (여행객)|sprites/npc_vendor|4|6|제주도에 가 본 적이 있어요?
+TASK|fill|제주도에 ___ 적이 있어요. (I have been to Jeju Island.) [있다 / 가다]|간;가는;갈;가은|간|가다 -> 간 적이 있어요.
+TASK|build|Build: I have tried eating tteokbokki. [먹다 / 있다]|떡볶이를;먹어;본;적이;있어요|보는;없어요|먹어 보다 -> 먹어 본 적이 있어요.
+ENTITY|l30_e3|Guide (안내원)|sprites/npc_guide|13|6|인사동은 처음이세요?
+TASK|choice|How do you say 'I have never ridden a horse'?|말을 탄 적이 없어요;말을 타는 적이 없어요;말을 탈 적이 없어요;말을 타기 적이 없어요|말을 탄 적이 없어요|타다 -> 탄 적이 없어요.
+TASK|build|Build: Try going to Seoul. [가다 - to go]|서울에;가;보세요|가어;가고|가다 + 아 보다 -> 가 보세요.
+ENTITY|l30_e4|Craft Shop|objects/book|5|9|Traditional Korean calligraphy brushes.
+TASK|choice|Experience form of 먹다 (to eat) + 'have eaten':|먹은 적이 있어요;먹는 적이 있어요;먹을 적이 있어요;먹기 적이 있어요|먹은 적이 있어요|Consonant stem -> -은 적이 있어요.
+TASK|fill|이 음식을 한번 먹___ 보세요. [먹다 - to eat]|어;아;고;러|어|먹다 + 어 보다 = try eating.
+ENDLEVEL
+LEVEL|31|Present Noun Modifiers (-는 + Noun)|서점 거리 (Bookstore Street)|9|9
+SUMMARY|Turn action verbs into relative clauses before a noun using -는 (the X that is doing / does).
+TIP|Attach -는 to ANY action verb stem to modify a following noun: 먹는 음식 (food that I eat), 좋아하는 노래 (song that I like).
+TIP|ㄹ-stem verbs drop ㄹ before -는: 살다 -> 사는 곳 (the place where I live), 만들다 -> 만드는 음식.
+TIP|Note: 있다/없다 also take -는 (맛있는 음식, 재미있는 책).
+VOCAB|좋아하다=to like;살다=to live;만들다=to make;일하다=to work;자주=often;노래=song
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBTT....TTRRRRT
+MAP|TWWWWTT....TTWWWWT
+MAP|TFFFF..PPPP..FFFFT
+MAP|TFCFF..PPPP..FFCRT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TPPPPPPPPPPPPPPPPT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|T~~....PPPP....~~T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l31_e1|Bookseller (서점 주인)|sprites/npc_elder|3|3|요즘 가장 잘 팔리는 책이에요.
+TASK|choice|Which means 'the food that I like'?|제가 좋아하는 음식;제가 좋아한 음식;제가 좋아할 음식;제가 좋아해요 음식|제가 좋아하는 음식|Present action verb modifier uses -는.
+TASK|build|Build: The place where I live. [살다]|제가;사는;곳|살는;산|살다 drops ㄹ before -는 -> 사는 곳.
+ENTITY|l31_e2|Student (학생)|sprites/npc_student|14|3|자주 가는 카페가 여기예요.
+TASK|fill|제가 자주 ___ 카페예요. (It's the cafe I often go to.) [가다]|가는;간;갈;가요|가는|Habitual present modifier uses -는.
+TASK|build|Build: A fun book. [재미있다]|재미있는;책|재미있은;재미있을|있다 takes -는 -> 재미있는.
+ENTITY|l31_e3|Book|objects/book|5|8|Bestseller display.
+TASK|choice|Correct modifier for 만들다 (the cake I am making):|만드는 케이크;만들는 케이크;만든 케이크;만들 케이크|만드는 케이크|Drop ㄹ before -는 -> 만드는.
+TASK|build|Build: The song I listen to often. [듣다 - to listen]|자주;듣는;노래|들은;들을|Present modifier takes -는: 듣는 노래.
+ENTITY|l31_e4|Library Shelf|objects/coffee|12|8|Recommended Korean novels.
+TASK|choice|Present noun modifier of 읽다 (book I am reading):|읽는 책;읽은 책;읽을 책;읽어요 책|읽는 책|Action verb present modifier -> -는.
+TASK|fill|제가 지금 ___ 음식이에요. [만들다 - to make]|만드는;만들는;만든;만들|만드는|Drop ㄹ before -는 -> 만드는.
+ENDLEVEL
+LEVEL|32|Past & Adjective Noun Modifiers (-(으)ㄴ + Noun)|한옥 마을 입구 (Hanok Village Gate)|9|10
+SUMMARY|Modify nouns with adjectives (예쁜 꽃) and past-tense action verbs (어제 본 영화).
+TIP|Adjectives in present tense use -(으)ㄴ: 예쁘다 -> 예쁜 꽃, 작다 -> 작은 집, 덥다 -> 더운 날씨.
+TIP|Action verbs in PAST tense use -(으)ㄴ: 어제 본 영화 (movie watched yesterday), 먹은 음식 (food eaten).
+TIP|Watch irregulars: ㅂ -> 운 (매운 음식), ㄹ drops (긴 머리).
+VOCAB|예쁘다=pretty;맵다=spicy;길다=long;어제=yesterday;사다=buy;영화=movie
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T..f...~~~~...f..T
+MAP|T......~~~~......T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|TRRP..........PBPT
+MAP|TWWP..........PWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l32_e1|Historian (해설사)|sprites/npc_guide|2|7|오래된 한옥이 정말 멋지죠?
+TASK|fill|어제 ___ 영화가 재미있었어요. (The movie I watched yesterday...) [보다]|본;보는;볼;봤어요|본|Past action modifier: 보다 -> 본.
+TASK|build|Build: Spicy food. [맵다]|매운;음식|맵은;맵는|맵다 is ㅂ-irregular -> 매운 음식.
+ENTITY|l32_e2|Vendor (상인)|sprites/npc_vendor|15|7|작은 기념품도 많아요!
+TASK|choice|Which means 'a small bag'?|작은 가방;작는 가방;작ㄴ 가방;작을 가방|작은 가방|작다 ends in consonant -> 작은.
+TASK|build|Build: The book I bought yesterday. [사다]|어제;산;책|사는;살|사다 past modifier -> 산 책.
+ENTITY|l32_e3|Elder (어르신)|sprites/npc_elder|9|4|더운 날씨에 고생이 많아요.
+TASK|choice|Adjective modifier for 덥다 (hot weather):|더운 날씨;덥은 날씨;덥는 날씨;더울 날씨|더운 날씨|ㅂ irregular -> 더운.
+TASK|build|Build: A pretty flower. [예쁘다 - pretty]|예쁜;꽃|예쁘은;예쁘는|예쁘다 ends in vowel -> 예쁜 꽃.
+ENTITY|l32_e4|Hanok Courtyard|objects/umbrella|5|9|Traditional tiled eaves and flowers.
+TASK|choice|Adjective noun modifier of 크다 (a big house):|큰 집;크은 집;크는 집;클 집|큰 집|크다 ends in vowel -> 큰 집.
+TASK|fill|어제 ___ 사과가 정말 달았어요. [사다 - to buy]|산;사는;살;사은|산|Past action modifier: 사다 -> 산.
+ENDLEVEL
+LEVEL|33|Future Noun Modifiers (-(으)ㄹ + Noun)|기차역 대합실 (Train Waiting Hall)|9|10
+SUMMARY|Describe nouns linked to future plans or things 'to do' using -(으)ㄹ.
+TIP|Vowel/ㄹ stem -> -ㄹ + Noun (내일 만날 친구 = friend I will meet tomorrow).
+TIP|Consonant stem -> -을 + Noun (읽을 책 = book to read, 먹을 음식 = food to eat).
+TIP|Very useful for 'something to eat' (먹을 것) and 'time to go' (갈 시간).
+VOCAB|시간=time;할 일=things to do;먹을 것=something to eat;내일=tomorrow;만나다=meet;읽다=read
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRRRTT..TTBBBBBT
+MAP|TWWWWWTT..TTWWWWWT
+MAP|TFFFFF..PP..FFFFFT
+MAP|TFCCFF..PP..FFCCFT
+MAP|TFFFFF..PP..FFFFFT
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..........P..T
+MAP|T..P..f....f..P..T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T.......PP.......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l33_e1|Traveler (여행객)|sprites/npc_vendor|3|3|기차에서 읽을 책을 샀어요.
+TASK|fill|내일 ___ 친구한테 전화했어요. (the friend I will meet tomorrow) [전화하다 / 만나다]|만날;만난;만나는;만나을|만날|Future modifier: 만나다 -> 만날.
+TASK|build|Build: Something to eat. [먹다]|먹을;것|먹는;먹은|먹다 + 을 것.
+ENTITY|l33_e2|Guide (안내원)|sprites/npc_guide|14|3|이제 출발할 시간이에요!
+TASK|choice|How do you say 'time to go'?|갈 시간;간 시간;가는 시간;가을 시간|갈 시간|가다 -> 갈 시간.
+TASK|build|Build: Things to do today. [하다]|오늘;할;일|한;하는|하다 -> 할 일.
+ENTITY|l33_e3|Book|objects/book|5|5|A thick travel novel.
+TASK|fill|주말에 ___ 책이 많아요. (There are many books to read on the weekend.) [읽다]|읽을;읽은;읽는;읽ㄹ|읽을|읽다 ends in consonant -> 읽을.
+TASK|build|Build: The movie I will watch tomorrow. [보다 - to watch]|내일;볼;영화|본;보는|Future modifier: 보다 -> 볼 영화.
+ENTITY|l33_e4|Platform Sign|objects/subway|13|5|Departures board for KTX trains.
+TASK|choice|Future noun modifier of 마시다 (coffee to drink):|마실 커피;마신 커피;마시는 커피;마시을 커피|마실 커피|Vowel stem -> -ㄹ + Noun.
+TASK|fill|오늘 ___ 일이 아주 많아요. [하다 - to do]|할;한;하는;하을|할|하다 -> 할 일 (things to do).
+ENDLEVEL
+LEVEL|34|Conditionals: If (-(으)면) & When (-(으)ㄹ 때)|전망대 (Observatory)|9|10
+SUMMARY|Express conditions with -(으)면 (if/when) and specific times with -(으)ㄹ 때 (when).
+TIP|-(으)면 = if/whenever: vowel/ㄹ -> -면 (가면), consonant -> -으면 (먹으면, 있으면).
+TIP|-(으)ㄹ 때 = when (at the time of): 갈 때 (when going), 먹을 때 (when eating), 학생일 때 (when I was a student).
+TIP|Past 'when' uses -았/었을 때 (어렸을 때 = when I was young).
+VOCAB|시간=time;비=rain;심심하다=bored;어리다=young;도착하다=arrive;연락하다=contact
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBBBBBBBBBBBBBT
+MAP|TWWWWWWWWWWWWWWWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T..P..........P..T
+MAP|T..P..PPPPPP..P..T
+MAP|T..P..P....P..P..T
+MAP|T..PPPP....PPPP..T
+MAP|T..f..........f..T
+MAP|T......PPPP......T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l34_e1|Elder (할머니)|sprites/npc_elder|9|3|시간이 있으면 또 놀러 오세요.
+TASK|build|Build: If you have time, please come again. [가다 / 있다]|시간이;있으면;또;오세요|있면;와서|있다 ends in consonant -> 있으면.
+TASK|fill|도착___ 연락하세요. (When you arrive, contact me.) [도착하다]|하면;하으면;할 때;해서|하면|도착하다 -> 도착하면.
+ENTITY|l34_e2|Student (학생)|sprites/npc_student|4|5|심심할 때 게임을 해요.
+TASK|choice|How do you say 'when I eat rice'?|밥을 먹을 때;밥을 먹ㄹ 때;밥을 먹면;밥을 먹은 때|밥을 먹을 때|먹다 ends in consonant -> 먹을 때.
+TASK|build|Build: When it rains, I stay home. [있다 / 오다]|비가;올;때;집에;있어요|오을;온|오다 -> 올 때.
+ENTITY|l34_e3|Guide (안내원)|sprites/npc_guide|13|5|날씨가 맑으면 남산이 잘 보여요.
+TASK|choice|What does '어렸을 때' mean?|When I was young;If I am young;Before being young;When I grow old|When I was young|어리다 + 었을 때.
+TASK|build|Build: If it rains, take an umbrella. [오다 / 쓰다]|비가;오면;우산을;쓰세요|오으면;와서|오다 -> 오면.
+ENTITY|l34_e4|Telescope|objects/book|9|8|A panoramic view of Seoul.
+TASK|choice|Conditional form of 먹다 (if you eat):|먹으면;먹면;먹을 때;먹어서|먹으면|Consonant stem -> -으면.
+TASK|fill|심심할 ___ 음악을 들어요. [심심하다 - bored]|때;면;후에;전에|때|-(으)ㄹ 때 = when.
+ENDLEVEL
+LEVEL|35|Reasons with -(으)니까 vs -아서/어서|버스 터미널 (Bus Terminal)|9|10
+SUMMARY|Learn when to use -(으)니까 for reasons — especially before commands and suggestions!
+TIP|Use -(으)니까 before imperatives (-(으)세요) and suggestions (-(으)ㅂ시다, -(으)ㄹ까요?) where -아서/어서 is forbidden!
+TIP|Example: 추우니까 옷을 입으세요 (Since it's cold, put on a coat).
+TIP|Vowel/ㄹ -> -니까 (가니까, 사니까); consonant -> -으니까 (먹으니까, 추우니까).
+VOCAB|춥다=cold;늦다=late;우산=umbrella;챙기다=pack/bring;서두르다=hurry;피곤하다=tired
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRT..PPPP..TBBBT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T...PPPPPPPPPP...T
+MAP|T...P..f..f..P...T
+MAP|T...PPPPPPPPPP...T
+MAP|TBBBT..PPPP..TRRRT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l35_e1|Guide (안내원)|sprites/npc_guide|2|3|시간이 없으니까 서두르세요!
+TASK|fill|비가 오___ 우산을 챙기세요. [사다]|니까;아서;으니까;지만|니까|Before command 챙기세요, use -(으)니까 -> 오니까.
+TASK|build|Build: Since it's cold, close the window. [춥다]|추우니까;창문을;닫으세요|추워서;춥니까|춥다 is ㅂ-irregular -> 추우니까.
+ENTITY|l35_e2|Friend (친구)|sprites/npc_student|15|3|배고프니까 빨리 밥 먹읍시다!
+TASK|choice|Which is grammatically correct?|늦었으니까 택시를 탑시다;늦어서 택시를 탑시다;늦었어서 택시를 탑시다;늦으니까서 택시를 탑시다|늦었으니까 택시를 탑시다|Suggestions (-(으)ㅂ시다) require -(으)니까, not -아서/어서.
+TASK|build|Build: Since I am tired, let's rest. [피곤하다]|피곤하니까;좀;쉽시다|피곤해서;피곤하으니까|피곤하다 + 니까.
+ENTITY|l35_e3|Umbrella|objects/umbrella|9|5|Good to carry on cloudy days.
+TASK|choice|Can past tense -았/었- come before -(으)니까?|Yes (먹었으니까);No, never;Only with adjectives;Only with 하다|Yes (먹었으니까)|Unlike -아서/어서, -(으)니까 freely allows past tense.
+TASK|build|Build: Since it's late, go home. [늦다 / 가다]|늦었으니까;집에;가세요|늦어서;늦으니까서|Before command 가세요, use -(으)니까.
+ENTITY|l35_e4|Ticket Counter|objects/coffee|15|9|Express bus schedule.
+TASK|choice|Reason form of 먹다 (to eat) before a suggestion:|먹었으니까;먹어서;먹었어서;먹니까|먹었으니까|Consonant/past stem -> -으니까.
+TASK|fill|날씨가 더우___ 물 많이 마시세요. [덥다 - hot]|니까;아서;어서;지만|니까|덥다 (ㅂ irregular) -> 더우니까 before command.
+ENDLEVEL
+LEVEL|36|Background & Soft Contrast (-는데 / -(으)ㄴ데)|골목 카페 (Alleyway Cafe)|9|10
+SUMMARY|Sound dramatically more natural using -는데 / -(으)ㄴ데 to set context or give soft contrast.
+TIP|Action verbs & 있다/없다 -> -는데 (가는데, 맛있는데).
+TIP|Adjectives -> -(으)ㄴ데 (비싼데, 작은데, 추운데). Nouns -> -인데 (학생인데).
+TIP|Used to set background ('I'm going to the cafe, want anything?') or gentle 'but' ('It's good, though a bit pricey').
+VOCAB|비싸다=expensive;좋다=good;찾다=look for;도와주다=help;학생=student;날씨=weather
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T~~..TTRRRRTT..~~T
+MAP|T~~..TTWWWWTT..~~T
+MAP|T....TFFFFFFT....T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|T..P..........P..T
+MAP|T..PPPP....PPPP..T
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l36_e1|Barista (바리스타)|sprites/npc_barista|9|3|이 원두가 좀 비싼데 향이 정말 좋아요.
+TASK|fill|날씨가 좋___ 산책할까요? (The weather is nice, so shall we walk?) [사다 / 하다]|은데;는데;인데;아서|은데|좋다 is a consonant-ending adjective -> 좋은데.
+TASK|build|Build: It's delicious, though a bit spicy. [맛있다]|맛있는데;조금;매워요|맛있은데;맛있인데|맛있다 takes -는데.
+ENTITY|l36_e2|Shopper (손님)|sprites/npc_vendor|4|6|길을 찾고 있는데 좀 도와주시겠어요?
+TASK|choice|Correct form for 학생 (noun) + background:|학생인데;학생는데;학생은데;학생지만|학생인데|Nouns take -인데.
+TASK|build|Build: I am going to Seoul, and... [가다]|서울에;가는데|서울에 가은데;서울에 가인데|Action verb 가다 -> 가는데.
+ENTITY|l36_e3|Coffee Cup|objects/coffee|13|6|Specialty pour-over coffee.
+TASK|choice|Correct form for 비싸다 (adjective):|비싼데;비싸는데;비싸은데;비싸인데|비싼데|Vowel-ending adjective takes -ㄴ데.
+TASK|build|Build: The weather is cold, so... [춥다 - cold]|날씨가;추운데|춥은데;춥는데|춥다 is ㅂ-irregular -> 추운데.
+ENTITY|l36_e4|Coffee Roaster|objects/book|5|9|Freshly roasted beans on display.
+TASK|choice|Background form of 작다 (small, adjective):|작은데;작는데;작인데;작아서|작은데|Consonant adjective -> -은데.
+TASK|fill|지금 숙제를 하___ 전화가 왔어요. [하다 - to do]|는데;은데;인데;지만|는데|Action verb -> -는데.
+ENDLEVEL
+LEVEL|37|Honorifics (-(으)시-, 께서, 드리다, 드시다)|한옥 마을 (Hanok Village)|9|9
+SUMMARY|Speak with proper respect toward elders, teachers, and seniors using Korean honorifics.
+TIP|Attach -(으)시- to the verb stem: 읽다 -> 읽으세요, 가다 -> 가세요, 마시다 -> 마시세요.
+TIP|Special honorific verbs: 먹다/마시다 -> 드시다, 자다 -> 주무시다, 주다 -> 드리다, 있다 -> 계시다.
+TIP|Honorific subject particle: 이/가 -> 께서; topic: 은/는 -> 께서는.
+VOCAB|할머니=grandmother;선생님=teacher;드시다=eat/drink (hon);주무시다=sleep (hon);계시다=be (hon);드리다=give (humble)
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBTT....TTRRRRT
+MAP|TWWWWTT....TTWWWWT
+MAP|TFFFF..PPPP..FFFFT
+MAP|TFCFF..PPPP..FFCRT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TPPPPPPPPPPPPPPPPT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|T~~....PPPP....~~T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l37_e1|Grandmother (할머니)|sprites/npc_elder|3|3|차 한 잔 같이 마실래요?
+TASK|fill|할머니께서 차를 ___. (Grandmother is drinking tea.) [하다 / 마시다]|마시세요;마세요;마셔요;마셨어요|마시세요|마시다 + 시 + 어요 -> 마시세요.
+TASK|choice|Honorific verb for 'to sleep' (자다):|주무시다;드시다;계시다;드리다|주무시다|주무시다 is the honorific verb for sleeping.
+ENTITY|l37_e2|Teacher (선생님)|sprites/npc_guide|14|3|질문 있으면 언제든 물어보세요.
+TASK|build|Build: The teacher is in the classroom. [계시다]|선생님께서;교실에;계세요|선생님이;있어요|께서 + 계시다 (honorific of 있다).
+TASK|fill|할아버지께 선물을 ___. (I gave a gift to Grandfather.) [하다 / 드리다]|드렸어요;주셨어요;드셨어요;계셨어요|드렸어요|드리다 is humble 'give to an elder'.
+ENTITY|l37_e3|Hot Bowl|objects/bibimbap|5|8|Prepared respectfully for elders.
+TASK|choice|Honorific form of 먹다 (to eat):|드시다;먹으시다;주무시다;말씀하시다|드시다|Always use 드시다 instead of 먹으시다.
+TASK|build|Build: Grandmother is sleeping. [주무시다 - to sleep (hon.)]|할머니께서;주무세요|할머니가;자세요|주무시다 -> 주무세요.
+ENTITY|l37_e4|Tea Table|objects/coffee|12|8|Traditional Korean tea set.
+TASK|choice|Honorific present of 읽다 (to read):|읽으세요;읽세요;읽어요;읽으셔요|읽으세요|Consonant stem + -(으)시- + 어요 -> 읽으세요.
+TASK|fill|할아버지께서 밥을 ___. [드시다 - to eat (hon.)]|드세요;먹어요;주무세요;계세요|드세요|드시다 -> 드세요.
+ENDLEVEL
+LEVEL|38|Casual Speech / Banmal (-아/어, -야/이야)|친구 집 앞 (Friend's House)|9|10
+SUMMARY|Switch smoothly into casual 반말 for close friends and younger people.
+TIP|Drop 요 from polite present/past: 먹어요 -> 먹어, 갔어요 -> 갔어, 공부해요 -> 공부해.
+TIP|Copula -이에요/예요 becomes -이야 (consonant) / -야 (vowel): 책이야, 커피야.
+TIP|I/My changes: 저 -> 나, 제 -> 내. You: 너.
+VOCAB|나=I (casual);너=you (casual);뭐 해?=what are you doing?;어디 가?=where are you going?;진짜=really;고마워=thanks
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T..f...~~~~...f..T
+MAP|T......~~~~......T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|TRRP..........PBPT
+MAP|TWWP..........PWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l38_e1|Best Friend (단짝)|sprites/npc_student|2|7|야, 오랜만이야! 잘 지냈어?
+TASK|choice|Casual (반말) form of '커피예요':|커피야;커피이야;커피예요;커피어|커피야|Vowel ending -> -야.
+TASK|build|Build (casual): What are you doing now? [하다]|너;지금;뭐;해?|해요?;저는|Drop 요 and use 너.
+ENTITY|l38_e2|Roommate (룸메이트)|sprites/npc_barista|15|7|오늘 저녁 뭐 먹을래?
+TASK|fill|어제 영화 ___. (Watched a movie yesterday [casual].) [보다]|봤어;봤어요;봐;볼 거야|봤어|봤어요 minus 요 -> 봤어.
+TASK|choice|Casual form of '책이에요':|책이야;책야;책어;책해|책이야|Consonant ending -> -이야.
+ENTITY|l38_e3|Apple|objects/apple|9|4|A snack on the desk.
+TASK|choice|Casual form of '감사합니다 / 고마워요':|고마워;고마워요;고맙습니다;고마야|고마워|Drop 요 from 고마워요 -> 고마워.
+TASK|build|Build (casual): Where are you going? [가다 - to go]|어디;가?|가요?;갑니까?|Drop 요 for casual speech.
+ENTITY|l38_e4|Game Console|objects/book|5|9|Two controllers sit on the rug.
+TASK|choice|Casual (반말) present of 먹다 (to eat):|먹어;먹어요;먹습니다;먹야|먹어|Drop 요 -> 먹어.
+TASK|fill|나도 같이 ___. (I'm going too [casual].) [가다]|가;가요;갑니다;가야|가|가요 minus 요 -> 가.
+ENDLEVEL
+LEVEL|39|Formal Speech (-습니다 / -ㅂ니다)|방송국 로비 (Broadcast Studio)|9|10
+SUMMARY|Deliver polished presentations, news, and formal greetings using -습니다 / -ㅂ니다.
+TIP|Consonant stem -> -습니다 (먹습니다, 읽습니다). Vowel/ㄹ stem -> -ㅂ니다 (갑니다, 만듭니다).
+TIP|Questions end in -습니까? / -ㅂ니까? (어디에 갑니까?).
+TIP|Past formal: -았/었습니다 (갔습니다, 공부했습니다).
+VOCAB|감사합니다=thank you;반갑습니다=nice to meet you;발표=presentation;시작하다=start;질문=question;뉴스=news
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRRRTT..TTBBBBBT
+MAP|TWWWWWTT..TTWWWWWT
+MAP|TFFFFF..PP..FFFFFT
+MAP|TFCCFF..PP..FFCCFT
+MAP|TFFFFF..PP..FFFFFT
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..........P..T
+MAP|T..P..f....f..P..T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T.......PP.......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l39_e1|Anchor (아나운서)|sprites/npc_guide|3|3|안녕하십니까? 오늘의 뉴스를 전해 드립니다.
+TASK|fill|지금부터 발표를 시작___. (I will now begin the presentation.) [시작하다]|합니다;습니다;해요;합니까|합니다|시작하다 ends in vowel -> 시작합니다.
+TASK|choice|Formal statement form of 먹다 (eat):|먹습니다;먹ㅂ니다;먹읍니다;먹습니까|먹습니다|Consonant stem -> -습니다.
+ENTITY|l39_e2|Interviewer (면접관)|sprites/npc_elder|14|3|자기소개 부탁드립니다.
+TASK|build|Build (formal): I am a student.|저는;학생입니다|학생이에요;학생습니다|Noun + 입니다.
+TASK|choice|Formal question for 'Do you have a question?'|질문이 있습니까?;질문이 있습니다?;질문이 있어요?;질문이 있ㅂ니까?|질문이 있습니까?|Questions use -습니까?
+ENTITY|l39_e3|Book|objects/book|5|5|A formal speech script.
+TASK|choice|Formal form of 만들다 (to make):|만듭니다;만들습니다;만들ㅂ니다;만드습니다|만듭니다|ㄹ drops before ㅂ -> 만듭니다.
+TASK|build|Build (formal): I eat bibimbap. [먹다 - to eat]|비빔밥을;먹습니다|먹ㅂ니다;먹어요|Consonant stem takes -습니다.
+ENTITY|l39_e4|Studio Mic|objects/coffee|13|5|On-air light glows softly.
+TASK|choice|Formal statement form of 가다 (to go):|갑니다;가습니다;갑니까;가요|갑니다|Vowel stem -> -ㅂ니다.
+TASK|fill|질문이 있으시면 말씀해 ___. [주다 - to give (formal)]|주십시오;주세요;줘;줍니다|주십시오|Formal polite request: 주십시오.
+ENDLEVEL
+LEVEL|40|Comparisons (보다, 제일/가장, 처럼/같이)|남산 타워 (Namsan Tower)|9|10
+SUMMARY|Compare places, foods, and people using 보다 (than), 제일/가장 (most), and 처럼 (like).
+TIP|A가 B보다 [Adj]: 서울이 부산보다 커요 (Seoul is bigger than Busan).
+TIP|Superlative: 제일 or 가장 + [Adj/Verb] (제일 맛있어요 = the most delicious).
+TIP|Simile: [Noun]처럼 or [Noun]같이 (한국 사람처럼 말해요 = speaks like a Korean person).
+VOCAB|보다=than;더=more;제일=most;가장=most;처럼=like;훨씬=much more
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBBBBBBBBBBBBBT
+MAP|TWWWWWWWWWWWWWWWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T..P..........P..T
+MAP|T..P..PPPPPP..P..T
+MAP|T..P..P....P..P..T
+MAP|T..PPPP....PPPP..T
+MAP|T..f..........f..T
+MAP|T......PPPP......T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l40_e1|Guide (안내원)|sprites/npc_guide|9|3|여기가 서울에서 제일 높은 곳이에요!
+TASK|fill|비행기가 기차___ 빨라요. (Airplanes are faster than trains.) [빠르다]|보다;처럼;제일;에서|보다|Attach 보다 to the thing being compared against.
+TASK|build|Build: Bibimbap is the most delicious. [맛있다 / 있다]|비빔밥이;제일;맛있어요|보다;처럼|제일 goes right before the adjective.
+ENTITY|l40_e2|Student (학생)|sprites/npc_student|4|5|와, 원어민처럼 자연스럽게 말하네요!
+TASK|choice|How do you say 'like a native speaker'?|원어민처럼;원어민보다;원어민제일;원어민에서|원어민처럼|Noun + 처럼 = like [Noun].
+TASK|build|Build: Coffee is cheaper than tea. [싸다]|커피가;차보다;더;싸요|차처럼;제일|A가 B보다 더 [Adj].
+ENTITY|l40_e3|Subway Sign|objects/subway|13|5|Subway vs Bus travel times.
+TASK|choice|Which word means 'much more' before an adjective?|훨씬;처럼;보다;아직|훨씬|훨씬 intensifies comparisons (훨씬 빨라요).
+TASK|build|Build: Seoul is bigger than Busan. [크다 - big]|서울이;부산보다;커요|부산처럼;크어요|A이 B보다 커요.
+ENTITY|l40_e4|Observation Map|objects/book|9|8|Comparing Korea's major cities.
+TASK|choice|How do you say 'more delicious than bibimbap'?|비빔밥보다 더 맛있어요;비빔밥처럼 더 맛있어요;비빔밥제일 맛있어요;비빔밥에서 맛있어요|비빔밥보다 더 맛있어요|Comparison uses 보다.
+TASK|fill|한국어가 ___ 재미있어요. (Korean is the most fun.) [재미있다]|제일;보다;처럼;더|제일|Superlative uses 제일 or 가장.
+ENDLEVEL
+LEVEL|41|Indirect Speech I: Statements (-다고 하다)|신문사 앞 (Newspaper Office)|9|10
+SUMMARY|Report what someone else said using indirect quotation (-다고 하다 / -(으)ㄴ다고 하다).
+TIP|Action verbs (present): consonant + -는다고 해요 (먹는다고 해요), vowel/ㄹ + -ㄴ다고 해요 (간다고 해요).
+TIP|Adjectives (present): stem + -다고 해요 (맛있다고 해요, 바쁘다고 해요).
+TIP|Past tense (all): -았/었다고 해요 (갔다고 해요). Nouns: -(이)라고 해요.
+VOCAB|말하다=say;듣다=hear;소식=news;바쁘다=busy;가다=go;학생=student
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRT..PPPP..TBBBT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T...PPPPPPPPPP...T
+MAP|T...P..f..f..P...T
+MAP|T...PPPPPPPPPP...T
+MAP|TBBBT..PPPP..TRRRT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l41_e1|Reporter (기자)|sprites/npc_guide|2|3|내일 눈이 온다고 해요!
+TASK|fill|민지 씨가 내일 부산에 ___ 해요. (Minji says she is going to Busan.) [가다 / 사다]|간다고;가다고;가는다고;갔다고|간다고|Present action verb 가다 (vowel) -> 간다고 해요.
+TASK|choice|Report adjective 'It is delicious' (맛있다):|맛있다고 해요;맛있는다고 해요;맛있ㄴ다고 해요;맛있라고 해요|맛있다고 해요|Adjectives attach -다고 해요 directly.
+ENTITY|l41_e2|Editor (편집장)|sprites/npc_elder|15|3|어제 회의가 끝났다고 들었어요.
+TASK|build|Build: My friend said they are busy. [바쁘다]|친구가;바쁘다고;했어요|바쁜다고;바쁘라고|Adjective 바쁘다 -> 바쁘다고 했어요.
+TASK|fill|어제 영화를 ___ 했어요. (Said they watched a movie yesterday.) [보다]|봤다고;본다고;보다고;볼다고|봤다고|Past indirect statement: 봤다고 했어요.
+ENTITY|l41_e3|Book|objects/book|9|5|Today's morning paper.
+TASK|choice|Indirect quote for noun 'is a student':|학생이라고 해요;학생다고 해요;학생는다고 해요;학생냐고 해요|학생이라고 해요|Nouns use -(이)라고 해요.
+TASK|build|Build: They said they eat rice. [먹다 - to eat]|밥을;먹는다고;했어요|먹다고;먹ㄴ다고|Action verb consonant stem -> 먹는다고.
+ENTITY|l41_e4|Newsstand|objects/coffee|15|9|Headlines from across Seoul.
+TASK|choice|Indirect statement of 읽다 (says they read):|읽는다고 해요;읽ㄴ다고 해요;읽다고 해요;읽라고 해요|읽는다고 해요|Present action verb consonant stem -> -는다고 해요.
+TASK|fill|친구가 어제 집에 ___ 했어요. [가다 - to go]|갔다고;간다고;가다고;갈다고|갔다고|Past indirect statement -> 갔다고 했어요.
+ENDLEVEL
+LEVEL|42|Indirect Speech II: Questions & Requests (-냐고 / -(으)라고)|고객 센터 (Service Center)|9|10
+SUMMARY|Quote questions with -냐고 하다 and commands/requests with -(으)라고 하다.
+TIP|Questions: -(느/으)냐고 해요 -> in modern speech, simply stem + -냐고 해요 (어디 가냐고 해요, 맛있냐고 해요).
+TIP|Commands/Requests: stem + -(으)라고 해요 (빨리 오라고 해요, 책을 읽으라고 해요).
+TIP|Suggestions ('Let's'): stem + -자고 해요 (같이 먹자고 해요).
+VOCAB|물어보다=ask;부탁하다=request;기다리다=wait;빨리=quickly;같이=together;조용히=quietly
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T~~..TTRRRRTT..~~T
+MAP|T~~..TTWWWWTT..~~T
+MAP|T....TFFFFFFT....T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|T..P..........P..T
+MAP|T..PPPP....PPPP..T
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l42_e1|Agent (상담원)|sprites/npc_barista|9|3|선생님께서 잠시 기다리라고 하셨어요.
+TASK|fill|친구가 어디 가___ 물어봤어요. (My friend asked where I'm going.) [보다]|냐고;다고;라고;자고|냐고|Indirect questions use -냐고.
+TASK|build|Build: Mom told me to eat rice. [먹다]|엄마가;밥을;먹으라고;했어요|먹라고;먹냐고|Consonant stem command -> 먹으라고 했어요.
+ENTITY|l42_e2|Student (학생)|sprites/npc_student|4|6|현우가 같이 영화 보자고 했어요!
+TASK|choice|Report suggestion 'Let's drink coffee':|커피 마시자고 했어요;커피 마시라고 했어요;커피 마시냐고 했어요;커피 마신다고 했어요|커피 마시자고 했어요|Quoted suggestions use -자고 하다.
+TASK|build|Build: The teacher told us to read the book. [읽다]|선생님이;책을;읽으라고;했어요|읽라고;읽자고|읽다 -> 읽으라고 했어요.
+ENTITY|l42_e3|Guide (안내원)|sprites/npc_guide|13|6|몇 시에 도착하냐고 물어보셨어요.
+TASK|choice|What does '빨리 오라고 했어요' mean?|Told me to come quickly;Asked if I came quickly;Suggested coming quickly;Said I came quickly|Told me to come quickly|-(으)라고 하다 quotes a command/request.
+TASK|build|Build: They asked if it is delicious. [맛있다 - delicious]|맛있냐고;물어봤어요|맛있다고;맛있라고|Indirect question uses -냐고.
+ENTITY|l42_e4|Help Desk|objects/book|5|9|Customer inquiry forms.
+TASK|choice|Indirect command of 앉다 (told me to sit):|앉으라고 했어요;앉라고 했어요;앉냐고 했어요;앉자고 했어요|앉으라고 했어요|Consonant stem command -> -(으)라고 했어요.
+TASK|fill|친구가 같이 밥을 먹___ 했어요. (Suggested eating together.) [먹다]|자고;라고;냐고;다고|자고|Indirect suggestion -> -자고 했어요.
+ENDLEVEL
+LEVEL|43|Guessing & Supposition (-(으)ㄴ/는 것 같다)|기상청 앞 (Weather Station)|9|9
+SUMMARY|Express soft opinions and guesses ('It seems like...', 'I think...') using -것 같다.
+TIP|Present action verb -> -는 것 같아요 (비가 오는 것 같아요 = It seems to be raining).
+TIP|Present adjective / Past action verb -> -(으)ㄴ 것 같아요 (비싼 것 같아요, 이미 간 것 같아요).
+TIP|Future / Prediction -> -(으)ㄹ 것 같아요 (내일 비가 올 것 같아요 = I think it will rain tomorrow).
+VOCAB|아마=probably;눈이 오다=snow;늦다=be late;맛있다=delicious;비싸다=expensive;좋다=good
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBTT....TTRRRRT
+MAP|TWWWWTT....TTWWWWT
+MAP|TFFFF..PPPP..FFFFT
+MAP|TFCFF..PPPP..FFCRT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TPPPPPPPPPPPPPPPPT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|T~~....PPPP....~~T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l43_e1|Forecaster (기상 캐스터)|sprites/npc_guide|3|3|오후에 비가 올 것 같아요.
+TASK|fill|내일 눈이 ___ 것 같아요. (I think it will snow tomorrow.) [오다]|올;온;오는;오을|올|Future prediction uses -(으)ㄹ 것 같아요.
+TASK|build|Build: I think this food is delicious. [맛있다]|이;음식이;맛있는;것;같아요|맛있은;맛있을|맛있다 takes -는 것 같아요.
+ENTITY|l43_e2|Friend (친구)|sprites/npc_student|14|3|길이 막혀서 좀 늦을 것 같아요.
+TASK|choice|How do you say 'I think it is expensive'?|비싼 것 같아요;비싸는 것 같아요;비쌀 것 같아요;비싸 것 같아요|비싼 것 같아요|Present adjective uses -(으)ㄴ 것 같아요.
+TASK|build|Build: I think my friend already left. [가다]|친구가;이미;간;것;같아요|가는;갈|Past action guess uses -(으)ㄴ 것 같아요.
+ENTITY|l43_e3|Umbrella|objects/umbrella|5|8|Clouds are gathering overhead.
+TASK|choice|What does '지금 자는 것 같아요' mean?|I think they are sleeping now;I think they will sleep;I think they slept;I want to sleep now|I think they are sleeping now|Present action verb + -는 것 같아요.
+TASK|build|Build: I think it will rain. [오다 - to come/rain]|비가;올;것;같아요|온;오는|Future guess uses -(으)ㄹ 것 같아요.
+ENTITY|l43_e4|Weather Map|objects/subway|12|8|Satellite clouds over the peninsula.
+TASK|choice|Present guess of 좋다 (I think it is good):|좋은 것 같아요;좋는 것 같아요;좋을 것 같아요;좋 것 같아요|좋은 것 같아요|Consonant adjective -> -은 것 같아요.
+TASK|fill|어제 친구가 영화를 ___ 것 같아요. [보다 - to watch]|본;보는;볼;보은|본|Past action guess -> -(으)ㄴ 것 같아요.
+ENDLEVEL
+LEVEL|44|Decisions (-기로 하다) & Promises (-(으)ㄹ게요)|새해 종각 (Bosingak Bell Pavilion)|9|10
+SUMMARY|State personal resolutions with -기로 하다 and make promises to someone with -(으)ㄹ게요.
+TIP|-기로 했어요 = decided to do (매일 운동하기로 했어요 = I decided to exercise every day).
+TIP|-(으)ㄹ게요 = I promise I will / I'll do (for the listener's benefit): 내일 연락할게요!
+TIP|Never use -(으)ㄹ게요 for third-person subjects or questions — only 'I'!
+VOCAB|결심하다=resolve;연락하다=contact;지키다=keep (promise);매일=every day;약속=promise;돕다=help
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T..f...~~~~...f..T
+MAP|T......~~~~......T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|TRRP..........PBPT
+MAP|TWWP..........PWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l44_e1|Friend (친구)|sprites/npc_student|2|7|올해부터 매일 한국어 공부하기로 했어요!
+TASK|fill|매일 운동___ 했어요. (I decided to exercise every day.) [운동하다 / 하다]|하기로;할게요;하려고;하게|하기로|-기로 하다 = to decide to do.
+TASK|build|Build: I'll call you tomorrow. [전화하다 / 하다]|내일;전화할게요|전화하기로;전화할까요|Promise to listener: -(으)ㄹ게요.
+ENTITY|l44_e2|Colleague (동료)|sprites/npc_barista|15|7|걱정 마세요, 제가 도와드릴게요!
+TASK|choice|How do you promise 'I will eat well'?|잘 먹을게요;잘 먹ㄹ게요;잘 먹기로 해요;잘 먹었어요|잘 먹을게요|Consonant stem takes -을게요.
+TASK|build|Build: We decided to meet at 6. [만나다]|여섯;시에;만나기로;했어요|만날게요;만나서|만나다 + 기로 했어요.
+ENTITY|l44_e3|Book|objects/book|9|4|A New Year's resolutions journal.
+TASK|choice|Which subject can use -(으)ㄹ게요?|Only first person (저/나);Anyone;Only third person;Only inanimate objects|Only first person (저/나)|-(으)ㄹ게요 expresses the speaker's own promise/willingness.
+TASK|build|Build: I decided to study Korean. [공부하다 - to study]|한국어를;공부하기로;했어요|공부할게요;공부하고|-기로 했어요 = decided to.
+ENTITY|l44_e4|Wish Wall|objects/umbrella|5|9|Wooden plaques with New Year goals.
+TASK|choice|Promise form of 가다 (I'll go):|갈게요;가을게요;가기로 해요;갔어요|갈게요|Vowel stem -> -ㄹ게요.
+TASK|fill|내일부터 일찍 일어나___ 했어요. [일어나다 - to wake up]|기로;ㄹ게요;고;면서|기로|Personal decision -> -기로 했어요.
+ENDLEVEL
+LEVEL|45|Regret (-(으)ㄹ 걸 그랬다) & Wishing (-았/었으면 좋겠다)|노을 다리 (Sunset Bridge)|9|10
+SUMMARY|Express hindsight regret ('I should have...') and warm wishes ('I wish / hope...').
+TIP|Regret: -(으)ㄹ 걸 그랬어요 (더 공부할 걸 그랬어요 = I should have studied more).
+TIP|Wishing: -았/었으면 좋겠어요 (날씨가 좋았으면 좋겠어요 = I hope the weather is nice / I wish...).
+TIP|Note: -았/었으면 좋겠다 uses past stem even when wishing about the present/future!
+VOCAB|후회하다=regret;합격하다=pass (exam);부자=rich person;미리=in advance;준비하다=prepare;행복하다=happy
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRRRTT..TTBBBBBT
+MAP|TWWWWWTT..TTWWWWWT
+MAP|TFFFFF..PP..FFFFFT
+MAP|TFCCFF..PP..FFCCFT
+MAP|TFFFFF..PP..FFFFFT
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..........P..T
+MAP|T..P..f....f..P..T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T.......PP.......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l45_e1|Student (학생)|sprites/npc_student|3|3|미리 공부할 걸 그랬어요...
+TASK|fill|우산을 가져___ 걸 그랬어요. (I should have brought an umbrella.) [사다 / 오다]|올;온;오는;왔을|올|Regret uses -(으)ㄹ 걸 그랬다 -> 가져올 걸 그랬어요.
+TASK|build|Build: I hope you pass the exam. [합격하다]|시험에;합격했으면;좋겠어요|합격할;걸|-았/었으면 좋겠어요 expresses a wish.
+ENTITY|l45_e2|Traveler (여행객)|sprites/npc_vendor|14|3|한국에 더 오래 살았으면 좋겠어요.
+TASK|choice|How do you say 'I should have bought it'?|살 걸 그랬어요;산 걸 그랬어요;사는 걸 그랬어요;샀으면 좋겠어요|살 걸 그랬어요|사다 -> 살 걸 그랬어요.
+TASK|build|Build: I hope tomorrow is warm. [따뜻하다]|내일;따뜻했으면;좋겠어요|따뜻할;그랬어요|따뜻하다 -> 따뜻했으면 좋겠어요.
+ENTITY|l45_e3|Umbrella|objects/umbrella|5|5|Left behind on a rainy day.
+TASK|choice|What does '일찍 잘 걸 그랬어요' mean?|I should have slept early;I hope I sleep early;I will sleep early;I decided to sleep early|I should have slept early|-(으)ㄹ 걸 그랬어요 expresses regret.
+TASK|build|Build: I should have eaten breakfast. [먹다 - to eat]|아침을;먹을;걸;그랬어요|먹은;먹는|Consonant stem -> 먹을 걸 그랬어요.
+ENTITY|l45_e4|Bridge Rail|objects/coffee|13|5|Warm orange sunset reflects on the water.
+TASK|choice|Regret form of 읽다 (I should have read it):|읽을 걸 그랬어요;읽은 걸 그랬어요;읽는 걸 그랬어요;읽었으면 좋겠어요|읽을 걸 그랬어요|Consonant stem -> -을 걸 그랬어요.
+TASK|fill|시간이 많___ 좋겠어요. [많다 - to be many/much]|았으면;으면;을 걸;아서|았으면|Wish uses past stem -았/었으면 좋겠어요.
+ENDLEVEL
+LEVEL|46|Passive Verbs (-이/히/리/기- & -아/어지다)|미술관 (Art Museum)|9|10
+SUMMARY|Understand how Korean expresses passive states (opened, heard, seen, became).
+TIP|Lexical passives use -이/히/리/기-: 보다->보이다 (be seen), 듣다->들리다 (be heard), 열다->열리다 (open), 닫다->닫히다 (close).
+TIP|하다 verbs often switch to 되다: 준비하다 -> 준비되다 (be prepared), 시작하다 -> 시작되다.
+TIP|-아/어지다 expresses 'become [Adj]' or passive state: 좋아지다 (become better), 만들어지다 (be made).
+VOCAB|보이다=be seen;들리다=be heard;열리다=be opened;닫히다=be closed;준비되다=be ready;좋아지다=become better
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBBBBBBBBBBBBBT
+MAP|TWWWWWWWWWWWWWWWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T..P..........P..T
+MAP|T..P..PPPPPP..P..T
+MAP|T..P..P....P..P..T
+MAP|T..PPPP....PPPP..T
+MAP|T..f..........f..T
+MAP|T......PPPP......T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l46_e1|Guide (안내원)|sprites/npc_guide|9|3|창밖으로 남산 타워가 잘 보여요!
+TASK|fill|문이 자동으로 ___. (The door opens automatically.) [열리다]|열려요;열어요;열해요;열어져요|열려요|열리다 (passive of 열다) -> 열려요.
+TASK|choice|Passive of 듣다 ('can be heard'):|들리다;듣히다;듣되다;들어지다|들리다|음악이 잘 들려요 = The music can be heard clearly.
+ENTITY|l46_e2|Artist (화가)|sprites/npc_elder|4|5|전시회가 모두 준비되었어요.
+TASK|build|Build: The weather became warm. [따뜻해지다]|날씨가;따뜻해졌어요|따뜻했어요;따뜻되요|따뜻하다 + 아/어지다 -> 따뜻해졌어요.
+TASK|fill|저기서 바다가 ___. (The ocean is visible from over there.)|보여요;봐요;보아져요;보돼요|보여요|보이다 -> 보여요.
+ENTITY|l46_e3|Book|objects/book|13|5|Art exhibition catalog.
+TASK|choice|Passive of 준비하다 (to prepare):|준비되다;준비히다;준비리다;준비기다|준비되다|Many noun+하다 verbs form passives with 되다.
+TASK|build|Build: The window closed. [닫히다 - to be closed]|창문이;닫혔어요|닫았어요;닫했어요|닫히다 (passive) + 었어요 -> 닫혔어요.
+ENTITY|l46_e4|Sculpture|objects/apple|9|8|A modern sculpture in the gallery.
+TASK|choice|Become-form of 좋다 (became better):|좋아졌어요;좋아됐어요;좋히었어요;좋렸어요|좋아졌어요|좋다 + 아/어지다 -> 좋아졌어요.
+TASK|fill|음악이 아주 잘 ___. [들리다 - to be heard]|들려요;들어요;듣어요;들어가요|들려요|들리다 (passive) -> 들려요.
+ENDLEVEL
+LEVEL|47|Causative Verbs (-게 하다 & -이/히/리/기/우-)|요리 교실 (Cooking Class)|9|10
+SUMMARY|Express 'making/letting someone do something' using -게 하다 and causative stems.
+TIP|Universal causative: Verb/Adj stem + -게 하다 (먹게 해요 = let/make eat, 웃게 해요 = make laugh).
+TIP|Short lexical causatives: 먹다->먹이다 (feed), 입다->입히다 (dress), 자다->재우다 (put to sleep), 울다->울리다 (make cry).
+TIP|The person being made to act takes 에게/한테 or 을/를.
+VOCAB|웃게 하다=make laugh;먹이다=to feed;입히다=to dress;재우다=put to sleep;알리다=inform;기다리다=wait
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TRRRT..PPPP..TBBBT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T...PPPPPPPPPP...T
+MAP|T...P..f..f..P...T
+MAP|T...PPPPPPPPPP...T
+MAP|TBBBT..PPPP..TRRRT
+MAP|TWWWT..PPPP..TWWWT
+MAP|TFFFT..PPPP..TFFFT
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l47_e1|Chef (셰프)|sprites/npc_chef|2|3|학생들에게 직접 요리하게 해요.
+TASK|fill|그 영화는 저를 울___ 했어요. (That movie made me cry.)|게;기;도록;고|게|Universal causative is stem + -게 하다.
+TASK|choice|Short causative of 입다 ('dress someone'):|입히다;입이다;입우다;입리다|입히다|아이에게 옷을 입혀요 = dress the child.
+ENTITY|l47_e2|Parent (부모님)|sprites/npc_elder|15|3|아이를 일찍 재웠어요.
+TASK|build|Build: That friend makes me laugh. [웃다]|그;친구는;나를;웃게;해요|웃고;웃어서|웃다 + 게 해요.
+TASK|choice|Short causative of 먹다 ('feed someone'):|먹이다;먹히다;먹리다;먹우다|먹이다|먹이다 = to feed (someone/a pet).
+ENTITY|l47_e3|Hot Bowl|objects/bibimbap|9|5|A freshly plated dish.
+TASK|choice|What does '오래 기다리게 해서 죄송해요' mean?|Sorry for making you wait long;Sorry for waiting long;Please wait long;I want to wait long|Sorry for making you wait long|기다리게 하다 = make someone wait.
+TASK|build|Build: I fed the puppy. [먹이다 - to feed]|강아지에게;밥을;먹였어요|먹었어요;먹혔어요|먹이다 (causative) -> 먹였어요.
+ENTITY|l47_e4|Kitchen Island|objects/apple|15|9|Fresh ingredients prepped for class.
+TASK|choice|Universal causative of 읽다 (make someone read):|읽게 하다;읽기 하다;읽고 하다;읽어서 하다|읽게 하다|Stem + -게 하다.
+TASK|fill|어머니가 아기를 일찍 ___. [재우다 - to put to sleep]|재웠어요;잤어요;주무셨어요;자게 했어요|재웠어요|재우다 (causative of 자다) -> 재웠어요.
+ENDLEVEL
+LEVEL|48|Concession: Even Though (-아/어도 & -(으)ㄹ지라도)|남산 성곽길 (Seoul City Wall)|9|10
+SUMMARY|Express persistence and concession ('even if / even though') with -아/어도.
+TIP|-아/어도 = even if / even though: 바빠도 운동해요 (Even though I'm busy, I exercise).
+TIP|Uses standard -아요/-어요 vowel harmony: 비싸다 -> 비싸도, 어렵다 -> 어려워도, 하다 -> 해도.
+TIP|Often paired with 아무리 ('no matter how'): 아무리 바빠도 (no matter how busy).
+VOCAB|아무리=no matter how;포기하다=give up;노력하다=make effort;어렵다=difficult;바쁘다=busy;비싸다=expensive
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T~~..TTRRRRTT..~~T
+MAP|T~~..TTWWWWTT..~~T
+MAP|T....TFFFFFFT....T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|T..P..........P..T
+MAP|T..PPPP....PPPP..T
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l48_e1|Hiker (등산객)|sprites/npc_guide|9|3|힘들어도 끝까지 올라가야죠!
+TASK|fill|아무리 바___ 밥은 꼭 먹어요. (No matter how busy, I always eat.) [먹다]|빠도;쁘도;빠서;쁘지만|빠도|바쁘다 drops ㅡ -> 바빠도.
+TASK|build|Build: Even if it is difficult, I don't give up. [않다 / 어렵다]|어려워도;포기하지;않아요|어렵도;어려워서|어렵다 (ㅂ irregular) -> 어려워도.
+ENTITY|l48_e2|Student (학생)|sprites/npc_student|4|6|비가 와도 축제를 할 거예요.
+TASK|choice|How do you say 'Even though it is expensive, I want to buy it'?|비싸도 사고 싶어요;비싸서 사고 싶어요;비싸면 사고 싶어요;비싸고 사고 싶어요|비싸도 사고 싶어요|비싸다 + 아/어도 -> 비싸도.
+TASK|build|Build: Even if it rains, I will go. [가다 / 오다]|비가;와도;갈;거예요|오도;와서|오다 -> 와도.
+ENTITY|l48_e3|Umbrella|objects/umbrella|13|6|Ready for any weather.
+TASK|choice|Correct form of 피곤하다 + -아/어도:|피곤해도;피곤하도;피곤하어도;피곤해서|피곤해도|하다 -> 해도.
+TASK|build|Build: Even if I am tired, I study. [피곤하다 - tired]|피곤해도;공부해요|피곤하도;피곤해서|피곤하다 -> 피곤해도.
+ENTITY|l48_e4|Wall Plaque|objects/book|5|9|History of the ancient stone wall.
+TASK|choice|Concession form of 먹다 (even if I eat):|먹어도;먹아도;먹고;먹으면|먹어도|먹다 has vowel ㅓ -> 먹어도.
+TASK|fill|아무리 힘들___ 끝까지 해 봐요. [힘들다 - hard/tiring]|어도;아도;어서;지만|어도|힘들다 + 어도 -> 힘들어도.
+ENDLEVEL
+LEVEL|49|Change of State (-게 되다) & Past Habits (-곤 하다)|추억의 거리 (Memory Lane)|9|9
+SUMMARY|Talk about how things turned out (-게 되다) and things you used to do often (-곤 하다).
+TIP|-게 되다 = ended up doing / came to be (often due to circumstances): 한국에서 살게 되었어요 (I ended up living in Korea).
+TIP|-곤 하다 = used to / often do as a habit: 어릴 때 공원에서 놀곤 했어요 (When young, I used to play in the park).
+TIP|Both attach cleanly to the verb stem with no irregular vowel changes!
+VOCAB|알게 되다=come to know;살게 되다=end up living;자주=often;어릴 때=when young;추억=memory;습관=habit
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|TBBBBTT....TTRRRRT
+MAP|TWWWWTT....TTWWWWT
+MAP|TFFFF..PPPP..FFFFT
+MAP|TFCFF..PPPP..FFCRT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TPPPPPPPPPPPPPPPPT
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|T~~....PPPP....~~T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l49_e1|Elder (어르신)|sprites/npc_elder|3|3|옛날에는 여기서 친구들과 놀곤 했어요.
+TASK|fill|우연히 그 친구를 알___ 되었어요. (I came to know that friend by chance.)|게;곤;기로;도록|게|-게 되다 expresses a change of state.
+TASK|build|Build: I ended up working in Seoul. [일하다]|서울에서;일하게;되었어요|일하곤;일하기로|일하다 + 게 되었어요.
+ENTITY|l49_e2|Developer (개발자)|sprites/npc_student|14|3|한국 문화에 관심이 생겨서 한국어를 배우게 되었어요.
+TASK|choice|What does '주말마다 등산하곤 해요' mean?|I often go hiking every weekend;I ended up hiking;I must hike;I regret hiking|I often go hiking every weekend|-곤 하다 expresses a repeated habit.
+TASK|build|Build: When I was young, I used to read books here. [읽다]|어릴;때;여기서;책을;읽곤;했어요|읽게;읽기로|읽다 + 곤 했어요.
+ENTITY|l49_e3|Book|objects/book|5|8|An old photo album.
+TASK|choice|Difference between -기로 하다 and -게 되다:|-기로 하다 = own decision, -게 되다 = circumstance/outcome;They are identical;-게 되다 is only negative;-기로 하다 is only past|-기로 하다 = own decision, -게 되다 = circumstance/outcome|-게 되다 emphasizes external circumstance or natural progression.
+TASK|build|Build: I came to like Korean food. [좋아하다 - to like]|한국;음식을;좋아하게;되었어요|좋아하곤;좋아하기로|좋아하다 + 게 되었어요.
+ENTITY|l49_e4|Old Cinema|objects/subway|12|8|Vintage movie posters on the wall.
+TASK|choice|Habit form of 가다 (used to go):|가곤 했어요;가게 되었어요;가기로 했어요;갈 걸 그랬어요|가곤 했어요|Stem + -곤 했어요 = used to.
+TASK|fill|한국 친구를 만나서 한국어를 잘하___ 되었어요. [잘하다]|게;곤;기로;도록|게|Change of state -> -게 되었어요.
+ENDLEVEL
+LEVEL|50|Seoul Mastery: Real-World Idioms & Nuance|광화문 광장 (Gwanghwamun Square)|9|10
+SUMMARY|Celebrate reaching Level 50! Combine everything you learned with natural Korean idioms and expressions.
+TIP|발이 넓다 (literally 'wide feet') = to know a lot of people / be well-connected.
+TIP|손이 크다 ('big hands') = to be very generous (especially with food).
+TIP|눈이 높다 ('high eyes') = to have high standards / be picky. 식은 죽 먹기 = piece of cake!
+VOCAB|발이 넓다=well-connected;손이 크다=generous;눈이 높다=high standards;식은 죽 먹기=piece of cake;덕분에=thanks to;수고하다=work hard
+MAP|TTTTTTTTTTTTTTTTTT
+MAP|T..f...~~~~...f..T
+MAP|T......~~~~......T
+MAP|T..PPPPPPPPPPPP..T
+MAP|T..P..f....f..P..T
+MAP|TRRP..........PBPT
+MAP|TWWP..........PWWT
+MAP|TFFPPPPPPPPPPPPFFT
+MAP|T......PPPP......T
+MAP|T..f...PPPP...f..T
+MAP|T......PPPP......T
+MAP|TTTTTTTTTTTTTTTTTT
+ENTITY|l50_e1|Master (스승님)|sprites/npc_elder|2|7|50단계까지 오시느라 정말 수고 많으셨어요!
+TASK|choice|What does '식은 죽 먹기' (eating cold porridge) mean?|A piece of cake (very easy);Very hungry;Very difficult;Bad weather|A piece of cake (very easy)|A classic Korean idiom meaning something is super easy.
+TASK|choice|What does '발이 넓다' mean?|To have a wide network of friends;To walk fast;To have big shoes;To travel often|To have a wide network of friends|Literally 'wide feet' -> knows people everywhere.
+ENTITY|l50_e2|Friend (친구)|sprites/npc_student|15|7|네 덕분에 한국어가 정말 많이 늘었어!
+TASK|fill|친구 ___ 한국 생활에 빨리 적응했어요. (Thanks to my friend...)|덕분에;때문에;처럼;보다|덕분에|덕분에 means 'thanks to' (positive cause).
+TASK|build|Build: Now Korean is a piece of cake!|이제;한국어는;식은;죽;먹기예요!|발이;넓어요|이제 한국어는 식은 죽 먹기예요!
+ENTITY|l50_e3|Chef (셰프)|sprites/npc_chef|9|4|우리 어머니는 손이 정말 크세요!
+TASK|choice|What does '손이 크다' mean?|Very generous (makes/gives plenty);Good at piano;Very strict;Always busy|Very generous (makes/gives plenty)|Commonly used when someone cooks huge portions for guests.
+TASK|build|Build: Thanks to my teacher, I passed. [합격하다 - to pass]|선생님;덕분에;합격했어요|때문에;보다|덕분에 = thanks to.
+ENTITY|l50_e4|Royal Gate|objects/bibimbap|5|9|The grand heart of Seoul celebrates your journey!
+TASK|choice|What does '눈이 높다' (high eyes) mean?|To have high standards / be picky;To be very tall;To see far away;To be sleepy|To have high standards / be picky|A common Korean idiom for being selective.
+TASK|fill|한국어 공부가 이제 식은 ___ 먹기예요! [이다]|죽;밥;물;빵|죽|식은 죽 먹기 = piece of cake!
+ENDLEVEL

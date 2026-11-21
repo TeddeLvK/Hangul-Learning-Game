@@ -1,0 +1,7 @@
+currentLevel=13
+unlockedLevel=13
+xp=1820
+playerX=412.7
+playerY=413.3
+completed=l10_e1,l10_e2,l10_e3,l10_e4,l11_e1,l11_e2,l11_e3,l11_e4,l12_e1,l12_e2,l12_e3,l12_e4,l1_e1,l1_e2,l1_e3,l1_e4,l2_e1,l2_e2,l2_e3,l2_e4,l3_e1,l3_e2,l3_e3,l3_e4,l4_e1,l4_e2,l4_e3,l4_e4,l5_e1,l5_e2,l5_e3,l5_e4,l6_e1,l6_e2,l6_e3,l6_e4,l7_e1,l7_e2,l7_e3,l7_e4,l8_e1,l8_e2,l8_e3,l8_e4,l9_e1,l9_e2,l9_e3,l9_e4
+seenIntros=1,2,3,4,5,6,7,8,9,10,11,12,13
