@@ -523,7 +523,7 @@ public class ExamOverlay {
                 g.setStroke(new BasicStroke(1.5f));
                 g.drawRoundRect(card.x, card.y, card.width, card.height, 12, 12);
 
-                String mark = rec.correct ? "✓" : "✗";
+                String mark = rec.correct ? "[OK]" : "[X]";
                 g.setFont(fCardTitle);
                 g.setColor(rec.correct ? UIUtils.SUCCESS : UIUtils.ERROR);
                 String pText = mark + "  Q" + rec.number + ". " + rec.task.prompt;

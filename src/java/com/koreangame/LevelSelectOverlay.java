@@ -152,11 +152,11 @@ public class LevelSelectOverlay {
                 status = "LOCKED";
             } else if (lv.id == 80) {
                 boolean finPassed = passedExams.contains("final_exam_80");
-                status = finPassed ? "100-Q FINAL PASSED ✓" : "100-Question Grand Final Exam";
+                status = finPassed ? "100-Q FINAL PASSED OK" : "100-Question Grand Final Exam";
                 highlightGold = finPassed;
             } else {
                 boolean examPassed = passedExams.contains("exam_lv" + lv.id);
-                String examTag = examPassed ? "  •  EXAM ✓" : (done == lv.entities.size() ? "  •  EXAM READY" : "");
+                String examTag = examPassed ? "  •  EXAM OK" : (done == lv.entities.size() ? "  •  EXAM READY" : "");
                 status = done + "/" + lv.entities.size() + " Done" + examTag;
                 highlightGold = (done == lv.entities.size());
             }

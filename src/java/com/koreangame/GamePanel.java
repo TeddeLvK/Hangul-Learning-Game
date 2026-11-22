@@ -782,7 +782,7 @@ public class GamePanel extends JPanel {
                 g.drawImage(eImg, exX, exY, s, s, null);
             }
             boolean passed = save.passedExams.contains(ex.id);
-            String tag = passed ? ex.badgeLabel + " ✓" : ex.badgeLabel;
+            String tag = passed ? ex.badgeLabel + " OK" : ex.badgeLabel;
             g.setFont(fExamTag);
             FontMetrics fmE = g.getFontMetrics();
             int tw = fmE.stringWidth(tag);
@@ -828,7 +828,7 @@ public class GamePanel extends JPanel {
 
             boolean done = save.completedEntities.contains(ent.id);
             Color bCol = done ? UIUtils.SUCCESS : UIUtils.GOLD;
-            String bTxt = done ? "✓" : "!";
+            String bTxt = done ? "OK" : "!";
             int cx = ex + s / 2;
             int cy = ey - 8 + (done ? 0 : bob);
             g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);

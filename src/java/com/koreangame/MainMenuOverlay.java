@@ -372,7 +372,7 @@ public class MainMenuOverlay {
                 g.fillOval(card.x + 14, card.y + 16, 30, 30);
                 g.setFont(fTitle);
                 g.setColor(unlocked ? new Color(18, 22, 30) : UIUtils.MUTED);
-                g.drawString(unlocked ? "✓" : "?", card.x + 24, card.y + 36);
+                g.drawString(unlocked ? "OK" : "?", card.x + 24, card.y + 36);
             }
 
             g.setFont(fTitle);
