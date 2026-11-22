@@ -33,6 +33,7 @@ public class GamePanel extends JPanel {
     private Level currentLevel;
     private final List<ExamSpec> activeExams = new ArrayList<>();
     private MainMenuOverlay mainMenuOverlay;
+    private MiniGameOverlay miniGameOverlay;
     private IntroOverlay introOverlay;
     private LevelSelectOverlay levelSelectOverlay;
     private TaskOverlay taskOverlay;
@@ -405,6 +406,7 @@ public class GamePanel extends JPanel {
 
     private boolean hasOverlay() {
         return mainMenuOverlay != null
+            || miniGameOverlay != null
             || introOverlay != null
             || levelSelectOverlay != null
             || taskOverlay != null
@@ -435,6 +437,10 @@ public class GamePanel extends JPanel {
                 save.seenIntros.add(currentLevel.id);
                 persist();
             }
+        } else if (action.startsWith("minigame:")) {
+            String mode = action.substring(9);
+            mainMenuOverlay = null;
+            miniGameOverlay = new MiniGameOverlay(mode, levels, glossary, assets);
         } else if (action.startsWith("load:")) {
             int idx = Integer.parseInt(action.substring(5));
             if (idx >= 0 && idx < saveSlots.length) {
@@ -539,6 +545,19 @@ public class GamePanel extends JPanel {
             handleMenuAction(mainMenuOverlay.onKeyPressed(code));
             return;
         }
+        if (miniGameOverlay != null) {
+            String res = miniGameOverlay.onKeyPressed(code);
+            if ("close".equals(res)) {
+                int earned = miniGameOverlay.getScore() * 15;
+                if (earned > 0) {
+                    save.xp += earned;
+                    persist();
+                }
+                miniGameOverlay = null;
+                mainMenuOverlay = new MainMenuOverlay(assets, saveSlots, activeSlot, false);
+            }
+            return;
+        }
         if (introOverlay != null) {
             if (introOverlay.onKeyPressed(code)) {
                 introOverlay = null;
@@ -616,6 +635,19 @@ public class GamePanel extends JPanel {
     private void handleMouseClicked(Point p) {
         if (mainMenuOverlay != null) {
             handleMenuAction(mainMenuOverlay.onMouseClicked(p));
+            return;
+        }
+        if (miniGameOverlay != null) {
+            String res = miniGameOverlay.onMouseClicked(p);
+            if ("close".equals(res)) {
+                int earned = miniGameOverlay.getScore() * 15;
+                if (earned > 0) {
+                    save.xp += earned;
+                    persist();
+                }
+                miniGameOverlay = null;
+                mainMenuOverlay = new MainMenuOverlay(assets, saveSlots, activeSlot, false);
+            }
             return;
         }
         if (introOverlay != null) {
@@ -770,7 +802,7 @@ public class GamePanel extends JPanel {
         int bob = (int) Math.round(Math.sin(anim * 5.0) * 3.0);
         int nearbyIdx = NativeEngine.nativeGetNearbyEntity();
         ExamSpec nearbyExam = findNearbyExam();
-        Font fBadge = assets.getFont(14, true);
+        Font fBadge = assets.getFont(11, true);
         Font fExamTag = assets.getFont(10, true);
         Font fPrompt = assets.getFont(12, true);
 
@@ -839,7 +871,7 @@ public class GamePanel extends JPanel {
             g.setFont(fBadge);
             g.setColor(new Color(18, 22, 30));
             FontMetrics fmB = g.getFontMetrics();
-            g.drawString(bTxt, cx - fmB.stringWidth(bTxt) / 2, cy + fmB.getAscent() / 2 - 2);
+            g.drawString(bTxt, cx - fmB.stringWidth(bTxt) / 2, cy + fmB.getAscent() / 2 - 1);
             g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_OFF);
 
             if (i == nearbyIdx && nearbyExam == null && !hasOverlay()) {
@@ -909,6 +941,8 @@ public class GamePanel extends JPanel {
 
         if (mainMenuOverlay != null) {
             mainMenuOverlay.draw(g, mousePos);
+        } else if (miniGameOverlay != null) {
+            miniGameOverlay.draw(g, mousePos);
         } else if (introOverlay != null) {
             introOverlay.draw(g, mousePos);
         } else if (levelSelectOverlay != null) {

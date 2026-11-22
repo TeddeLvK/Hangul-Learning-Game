@@ -17,6 +17,7 @@ public class MainMenuOverlay {
     private static final int VIEW_INFO = 1;
     private static final int VIEW_SLOTS = 2;
     private static final int VIEW_ACHIEVEMENTS = 3;
+    private static final int VIEW_MINIGAMES = 4;
     private static final int ACH_PER_PAGE = 6;
 
     private final AssetLoader assets;
@@ -27,14 +28,19 @@ public class MainMenuOverlay {
     private int confirmingResetSlot = -1;
     private int achPage = 0;
 
-    private final Rectangle startBtn = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 135, 304, 270, 40);
-    private final Rectangle slotsBtn = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 135, 352, 270, 40);
-    private final Rectangle achBtn = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 135, 400, 270, 40);
-    private final Rectangle infoBtn = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 135, 448, 270, 40);
-    private final Rectangle quitBtn = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 135, 496, 270, 40);
+    private final Rectangle startBtn = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 135, 276, 270, 38);
+    private final Rectangle miniBtn = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 135, 322, 270, 38);
+    private final Rectangle slotsBtn = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 135, 368, 270, 38);
+    private final Rectangle achBtn = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 135, 414, 270, 38);
+    private final Rectangle infoBtn = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 135, 460, 270, 38);
+    private final Rectangle quitBtn = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 135, 506, 270, 38);
     private final Rectangle backBtn = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 105, UIUtils.SCREEN_HEIGHT - 92, 210, 42);
     private final Rectangle achPrevBtn = new Rectangle(96, UIUtils.SCREEN_HEIGHT - 92, 110, 42);
     private final Rectangle achNextBtn = new Rectangle(UIUtils.SCREEN_WIDTH - 206, UIUtils.SCREEN_HEIGHT - 92, 110, 42);
+
+    private final Rectangle mgLettersRect = new Rectangle(112, 138, UIUtils.SCREEN_WIDTH - 224, 102);
+    private final Rectangle mgVocabRect = new Rectangle(112, 256, UIUtils.SCREEN_WIDTH - 224, 102);
+    private final Rectangle mgWritingRect = new Rectangle(112, 374, UIUtils.SCREEN_WIDTH - 224, 102);
 
     private final Rectangle[] slotPlayRects = new Rectangle[3];
     private final Rectangle[] slotResetRects = new Rectangle[3];
@@ -58,6 +64,12 @@ public class MainMenuOverlay {
     }
 
     public String onKeyPressed(int keyCode) {
+        if (view == VIEW_MINIGAMES) {
+            if (keyCode == KeyEvent.VK_ESCAPE) {
+                view = VIEW_MAIN;
+            }
+            return null;
+        }
         if (view == VIEW_ACHIEVEMENTS) {
             int totalPages = Math.max(1, (AchievementManager.getAll().size() + ACH_PER_PAGE - 1) / ACH_PER_PAGE);
             if (keyCode == KeyEvent.VK_ESCAPE) {
@@ -93,6 +105,8 @@ public class MainMenuOverlay {
         } else if (keyCode == KeyEvent.VK_A) {
             view = VIEW_ACHIEVEMENTS;
             achPage = 0;
+        } else if (keyCode == KeyEvent.VK_G) {
+            view = VIEW_MINIGAMES;
         }
         return null;
     }
@@ -101,6 +115,22 @@ public class MainMenuOverlay {
         if (view == VIEW_INFO) {
             if (backBtn.contains(p)) {
                 view = VIEW_MAIN;
+            }
+            return null;
+        }
+        if (view == VIEW_MINIGAMES) {
+            if (backBtn.contains(p)) {
+                view = VIEW_MAIN;
+                return null;
+            }
+            if (mgLettersRect.contains(p)) {
+                return "minigame:letters";
+            }
+            if (mgVocabRect.contains(p)) {
+                return "minigame:vocab";
+            }
+            if (mgWritingRect.contains(p)) {
+                return "minigame:writing";
             }
             return null;
         }
@@ -152,6 +182,10 @@ public class MainMenuOverlay {
         }
         if (startBtn.contains(p)) {
             return "start";
+        }
+        if (miniBtn.contains(p)) {
+            view = VIEW_MINIGAMES;
+            return null;
         }
         if (slotsBtn.contains(p)) {
             view = VIEW_SLOTS;
@@ -223,34 +257,38 @@ public class MainMenuOverlay {
             drawAchievementsPanel(g, mouse);
             return;
         }
+        if (view == VIEW_MINIGAMES) {
+            drawMiniGamesPanel(g, mouse);
+            return;
+        }
 
         SaveManager save = slots[activeSlot];
 
-        Rectangle panel = new Rectangle(144, 38, UIUtils.SCREEN_WIDTH - 288, UIUtils.SCREEN_HEIGHT - 76);
+        Rectangle panel = new Rectangle(144, 34, UIUtils.SCREEN_WIDTH - 288, UIUtils.SCREEN_HEIGHT - 68);
         g.setColor(UIUtils.PANEL);
         g.fillRoundRect(panel.x, panel.y, panel.width, panel.height, 22, 22);
         g.setColor(UIUtils.GOLD);
         g.setStroke(new BasicStroke(2.5f));
         g.drawRoundRect(panel.x, panel.y, panel.width, panel.height, 22, 22);
 
-        drawPixelSprite(g, getPlayerSpriteKeyForSave(save), panel.x + 34, panel.y + 42, 64);
-        drawPixelSprite(g, "sprites/npc_barista", panel.x + panel.width - 98, panel.y + 42, 64);
+        drawPixelSprite(g, getPlayerSpriteKeyForSave(save), panel.x + 34, panel.y + 40, 64);
+        drawPixelSprite(g, "sprites/npc_barista", panel.x + panel.width - 98, panel.y + 40, 64);
         drawPixelSprite(g, "objects/coffee", panel.x + 38, panel.y + panel.height - 96, 48);
         drawPixelSprite(g, "objects/bibimbap", panel.x + panel.width - 86, panel.y + panel.height - 96, 48);
 
         if (save.unlockedAchievements.contains(AchievementManager.HUNGER_GOD_ID)) {
-            drawPixelSprite(g, "objects/hunger_god_badge", panel.x + 48, panel.y + 110, 36);
+            drawPixelSprite(g, "objects/hunger_god_badge", panel.x + 48, panel.y + 108, 36);
             Font fHg = assets.getFont(10, true);
             g.setFont(fHg);
             g.setColor(UIUtils.GOLD);
-            g.drawString("HUNGER GOD", panel.x + 28, panel.y + 160);
+            g.drawString("HUNGER GOD", panel.x + 28, panel.y + 158);
         }
 
         Font fKr = assets.getFont(44, true);
         Font fEn = assets.getFont(22, true);
         Font fTag = assets.getFont(13, true);
         Font fSub = assets.getFont(13, false);
-        Font fBtn = assets.getFont(15, true);
+        Font fBtn = assets.getFont(14, true);
         Font fFoot = assets.getFont(12, false);
 
         g.setFont(fKr);
@@ -258,34 +296,34 @@ public class MainMenuOverlay {
         FontMetrics fmKr = g.getFontMetrics();
         int krX = (UIUtils.SCREEN_WIDTH - fmKr.stringWidth(krTitle)) / 2;
         g.setColor(new Color(14, 18, 28));
-        g.drawString(krTitle, krX + 3, panel.y + 80);
+        g.drawString(krTitle, krX + 3, panel.y + 76);
         g.setColor(UIUtils.GOLD);
-        g.drawString(krTitle, krX, panel.y + 77);
+        g.drawString(krTitle, krX, panel.y + 73);
 
         g.setFont(fEn);
         String enTitle = "HANGEULMON";
         FontMetrics fmEn = g.getFontMetrics();
         int enX = (UIUtils.SCREEN_WIDTH - fmEn.stringWidth(enTitle)) / 2;
         g.setColor(UIUtils.ACCENT);
-        g.drawString(enTitle, enX, panel.y + 112);
+        g.drawString(enTitle, enX, panel.y + 108);
 
         g.setFont(fTag);
         String krTag = "단어 마스터들의 부상";
         FontMetrics fmTag = g.getFontMetrics();
         int krTagX = (UIUtils.SCREEN_WIDTH - fmTag.stringWidth(krTag)) / 2;
         g.setColor(UIUtils.TEXT);
-        g.drawString(krTag, krTagX, panel.y + 138);
+        g.drawString(krTag, krTagX, panel.y + 132);
 
         String enTag = "Rise of the Word Masters";
         int enTagX = (UIUtils.SCREEN_WIDTH - fmTag.stringWidth(enTag)) / 2;
         g.setColor(UIUtils.MUTED);
-        g.drawString(enTag, enTagX, panel.y + 157);
+        g.drawString(enTag, enTagX, panel.y + 150);
 
         g.setColor(UIUtils.HUD_BORDER);
         g.setStroke(new BasicStroke(2f));
-        g.drawLine(panel.x + 64, panel.y + 172, panel.x + panel.width - 64, panel.y + 172);
+        g.drawLine(panel.x + 64, panel.y + 164, panel.x + panel.width - 64, panel.y + 164);
 
-        Rectangle statBox = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 205, panel.y + 184, 410, 40);
+        Rectangle statBox = new Rectangle(UIUtils.SCREEN_WIDTH / 2 - 205, panel.y + 174, 410, 38);
         g.setColor(UIUtils.PANEL_DARK);
         g.fillRoundRect(statBox.x, statBox.y, statBox.width, statBox.height, 12, 12);
         g.setColor(UIUtils.HUD_BORDER);
@@ -297,13 +335,14 @@ public class MainMenuOverlay {
         String chName = save.currentLevel == 80 ? "FINAL" : (save.currentLevel <= 50 ? "Ch.1" : "Ch.2");
         String stats = "Slot " + save.slotNumber + "  •  " + chName + " Lv." + save.currentLevel + "/80  •  " + save.xp + " XP  •  Ach: " + save.unlockedAchievements.size() + "/" + AchievementManager.getAll().size();
         FontMetrics fmStat = g.getFontMetrics();
-        g.drawString(stats, statBox.x + (statBox.width - fmStat.stringWidth(stats)) / 2, statBox.y + 25);
+        g.drawString(stats, statBox.x + (statBox.width - fmStat.stringWidth(stats)) / 2, statBox.y + 24);
 
         String startLabel = inGame
             ? "Resume Game  (Slot " + save.slotNumber + ")"
             : (save.hasProgress() ? "Continue  (Slot " + save.slotNumber + ")" : "Start Game  (Slot " + save.slotNumber + ")");
 
         UIUtils.drawButton(g, startBtn, startLabel, fBtn, UIUtils.SUCCESS, UIUtils.SUCCESS_HOVER, mouse, UIUtils.TEXT, null);
+        UIUtils.drawButton(g, miniBtn, "Mini Games (3)", fBtn, UIUtils.ACCENT, UIUtils.ACCENT_HOVER, mouse, UIUtils.TEXT, null);
         UIUtils.drawButton(g, slotsBtn, "Save Files (3 Slots)", fBtn, UIUtils.PANEL_LIGHT, UIUtils.ACCENT, mouse, UIUtils.TEXT, UIUtils.HUD_BORDER);
         UIUtils.drawButton(g, achBtn, "Achievements (" + save.unlockedAchievements.size() + "/" + AchievementManager.getAll().size() + ")", fBtn, UIUtils.PANEL_LIGHT, UIUtils.GOLD, mouse, UIUtils.TEXT, UIUtils.HUD_BORDER);
         UIUtils.drawButton(g, infoBtn, "Info & Controls", fBtn, UIUtils.PANEL_LIGHT, UIUtils.ACCENT, mouse, UIUtils.TEXT, UIUtils.HUD_BORDER);
@@ -311,9 +350,54 @@ public class MainMenuOverlay {
 
         g.setFont(fFoot);
         g.setColor(UIUtils.MUTED);
-        String foot = "[Enter] Play   •   [S] Saves   •   [A] Achievements   •   [F11] Fullscreen";
+        String foot = "[Enter] Play  •  [G] Mini Games  •  [S] Saves  •  [A] Achievements";
         FontMetrics fmFoot = g.getFontMetrics();
-        g.drawString(foot, (UIUtils.SCREEN_WIDTH - fmFoot.stringWidth(foot)) / 2, panel.y + panel.height - 16);
+        g.drawString(foot, (UIUtils.SCREEN_WIDTH - fmFoot.stringWidth(foot)) / 2, panel.y + panel.height - 14);
+    }
+
+    private void drawMiniGamesPanel(Graphics2D g, Point mouse) {
+        Rectangle panel = new Rectangle(64, 42, UIUtils.SCREEN_WIDTH - 128, UIUtils.SCREEN_HEIGHT - 84);
+        g.setColor(UIUtils.PANEL);
+        g.fillRoundRect(panel.x, panel.y, panel.width, panel.height, 20, 20);
+        g.setColor(UIUtils.GOLD);
+        g.setStroke(new BasicStroke(2f));
+        g.drawRoundRect(panel.x, panel.y, panel.width, panel.height, 20, 20);
+
+        Font fHead = assets.getFont(22, true);
+        Font fCardTitle = assets.getFont(17, true);
+        Font fBody = assets.getFont(13, false);
+        Font fBtn = assets.getFont(14, true);
+
+        g.setFont(fHead);
+        g.setColor(UIUtils.GOLD);
+        g.drawString("Mini Games  —  Choose a Practice Mode", panel.x + 28, panel.y + 42);
+
+        g.setFont(fBody);
+        g.setColor(UIUtils.MUTED);
+        g.drawString("Play 10-question practice rounds anytime to earn bonus XP!", panel.x + 28, panel.y + 66);
+
+        drawMiniGameCard(g, mgLettersRect, "1. Hangul Letters (한글 자모)", "Practice consonants, double consonants, and vowels.", mouse, fCardTitle, fBody);
+        drawMiniGameCard(g, mgVocabRect, "2. Vocabulary Drill (단어 연습)", "Match Korean and English words from across the game.", mouse, fCardTitle, fBody);
+        drawMiniGameCard(g, mgWritingRect, "3. Korean Word Writing (단어 쓰기)", "Type Korean words using the built-in Korean phone keyboard!", mouse, fCardTitle, fBody);
+
+        UIUtils.drawButton(g, backBtn, "Back to Menu [Esc]", fBtn, UIUtils.ACCENT, UIUtils.ACCENT_HOVER, mouse, UIUtils.TEXT, null);
+    }
+
+    private void drawMiniGameCard(Graphics2D g, Rectangle r, String title, String desc, Point mouse, Font fTitle, Font fBody) {
+        boolean hover = mouse != null && r.contains(mouse);
+        g.setColor(hover ? new Color(56, 70, 102) : UIUtils.PANEL_LIGHT);
+        g.fillRoundRect(r.x, r.y, r.width, r.height, 14, 14);
+        g.setColor(hover ? UIUtils.GOLD : UIUtils.HUD_BORDER);
+        g.setStroke(new BasicStroke(hover ? 2.5f : 1.5f));
+        g.drawRoundRect(r.x, r.y, r.width, r.height, 14, 14);
+
+        g.setFont(fTitle);
+        g.setColor(UIUtils.GOLD);
+        g.drawString(title, r.x + 22, r.y + 40);
+
+        g.setFont(fBody);
+        g.setColor(UIUtils.TEXT);
+        g.drawString(desc, r.x + 22, r.y + 70);
     }
 
     private void drawAchievementsPanel(Graphics2D g, Point mouse) {
@@ -370,9 +454,11 @@ public class MainMenuOverlay {
             } else {
                 g.setColor(unlocked ? UIUtils.SUCCESS : new Color(56, 64, 82));
                 g.fillOval(card.x + 14, card.y + 16, 30, 30);
-                g.setFont(fTitle);
+                g.setFont(assets.getFont(12, true));
                 g.setColor(unlocked ? new Color(18, 22, 30) : UIUtils.MUTED);
-                g.drawString(unlocked ? "OK" : "?", card.x + 24, card.y + 36);
+                String mark = unlocked ? "OK" : "?";
+                FontMetrics fmM = g.getFontMetrics();
+                g.drawString(mark, card.x + 29 - fmM.stringWidth(mark) / 2, card.y + 35);
             }
 
             g.setFont(fTitle);
@@ -436,7 +522,7 @@ public class MainMenuOverlay {
             g.setFont(fSlot);
             g.setColor(isActive ? UIUtils.GOLD : UIUtils.TEXT);
             boolean isHungerGod = s.unlockedAchievements.contains(AchievementManager.HUNGER_GOD_ID);
-            String title = "Save Slot " + s.slotNumber + (isActive ? " [Active]" : "") + (isHungerGod ? "  ★ HUNGER GOD" : "");
+            String title = "Save Slot " + s.slotNumber + (isActive ? " [Active]" : "") + (isHungerGod ? "  * HUNGER GOD" : "");
             g.drawString(title, card.x + 96, card.y + 34);
 
             g.setFont(fBody);
@@ -538,13 +624,13 @@ public class MainMenuOverlay {
 
         g.setFont(fSec);
         g.setColor(UIUtils.ACCENT);
-        g.drawString("Rewards & Achievements", x, y);
+        g.drawString("Rewards & Mini Games", x, y);
         y += 24;
 
         String[] features = {
             "• Crowns: Finish Chapter 1 for a Small Crown, and Chapter 2 for a Royal Crown.",
             "• Hunger God Badge: Score a perfect 100% on the Level 80 Grand Final Exam!",
-            "• 3 Save Slots: Switch or reset up to 3 independent save files anytime from the Main Menu."
+            "• Mini Games: Practice Hangul letters, vocabulary, and Korean typing from the Main Menu."
         };
         g.setFont(fBody);
         g.setColor(UIUtils.TEXT);
